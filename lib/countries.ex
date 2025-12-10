@@ -153,9 +153,6 @@ defmodule PkCountries do
 
   # -- Load countries from yaml files once on compile time ---
 
-  # Ensure :yamerl is running
-  Application.start(:yamerl)
-
   @countries PkCountries.Loader.load()
   @countries_by_alpha2 Map.new(@countries, &{String.upcase(&1.alpha2), &1})
   @countries_by_alpha3 Map.new(@countries, &{String.upcase(&1.alpha3), &1})

@@ -46,16 +46,13 @@ defmodule PkCountries.Subdivisions do
   defp convert_value(_, value),
     do: value
 
-  # Ensure :yamerl is running
-  Application.start(:yamerl)
-
   defp subdivisions(country_code) do
-    data_path = fn path ->
-      Path.join([:code.priv_dir(:pk_countries), "data"] ++ path)
-    end
+    Application.ensure_all_started(:yamerl)
+
+    path = Path.join([:code.priv_dir(:pk_countries), "data", "subdivisions", "#{country_code}.yaml"])
 
     try do
-      data_path.(["subdivisions", "#{country_code}.yaml"])
+      path
       |> :yamerl.decode_file()
       |> List.first()
     catch

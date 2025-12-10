@@ -10,6 +10,9 @@ defmodule PkCountries.Loader do
   # We need to transform that to maps:
   #    [%{name: "Germany', code: "DE"}, %{name: 'Austria', code: "AT"}]
   def load do
+    # Ensure :yamerl is running (needed at compile time)
+    Application.ensure_all_started(:yamerl)
+
     data_path(["countries.yaml"])
     |> :yamerl.decode_file()
     |> List.first()
