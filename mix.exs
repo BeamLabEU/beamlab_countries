@@ -8,7 +8,7 @@ defmodule PkCountries.MixProject do
     [
       app: :pk_countries,
       version: @version,
-      elixir: "~> 1.8",
+      elixir: "~> 1.18",
       deps: deps(),
       docs: docs(),
       package: package()
@@ -21,8 +21,8 @@ defmodule PkCountries.MixProject do
 
   defp deps do
     [
-      {:yamerl, "~> 0.7"},
-      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
+      {:yamerl, "~> 0.10"},
+      {:ex_doc, "~> 0.39", only: :dev, runtime: false},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false}
     ]
   end
