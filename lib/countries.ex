@@ -23,11 +23,25 @@ defmodule PkCountries do
       nil
 
   """
-  def get(country_code) do
-    case filter_by(:alpha2, country_code) do
-      [country] -> country
-      [] -> nil
-    end
+  def get(country_code) when is_binary(country_code) do
+    Map.get(countries_by_alpha2(), String.upcase(country_code))
+  end
+
+  @doc """
+  Returns one country given its alpha3 country code, or `nil` if not found.
+
+  ## Examples
+
+      iex> %PkCountries.Country{name: name} = PkCountries.get_by_alpha3("POL")
+      iex> name
+      "Poland"
+
+      iex> PkCountries.get_by_alpha3("INVALID")
+      nil
+
+  """
+  def get_by_alpha3(country_code) when is_binary(country_code) do
+    Map.get(countries_by_alpha3(), String.upcase(country_code))
   end
 
   @doc """
@@ -125,8 +139,10 @@ defmodule PkCountries do
   Application.start(:yamerl)
 
   @countries PkCountries.Loader.load()
+  @countries_by_alpha2 Map.new(@countries, &{String.upcase(&1.alpha2), &1})
+  @countries_by_alpha3 Map.new(@countries, &{String.upcase(&1.alpha3), &1})
 
-  defp countries do
-    @countries
-  end
+  defp countries, do: @countries
+  defp countries_by_alpha2, do: @countries_by_alpha2
+  defp countries_by_alpha3, do: @countries_by_alpha3
 end
