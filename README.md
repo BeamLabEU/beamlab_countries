@@ -1,10 +1,5 @@
 # PkCountries
 
-[![Module Version](https://img.shields.io/hexpm/v/pk_countries.svg)](https://hex.pm/packages/pk_countries)
-[![Hex Docs](https://img.shields.io/badge/hex-docs-9768d1.svg)](https://hexdocs.pm/pk_countries/)
-[![Total Download](https://img.shields.io/hexpm/dt/pk_countries.svg)](https://hex.pm/packages/pk_countries)
-[![License](https://img.shields.io/hexpm/l/pk_countries.svg)](https://github.com/BeamLabEU/pk_countries/blob/master/LICENSE)
-
 PkCountries is a collection of all sorts of useful information for every country in the [ISO 3166](https://en.wikipedia.org/wiki/ISO_3166) standard.
 
 It is based on the data from the Elixir library [Countries](https://github.com/SebastianSzturo/countries) and the Ruby Gem [Countries](https://github.com/hexorx/countries).
