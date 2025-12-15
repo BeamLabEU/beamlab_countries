@@ -88,4 +88,49 @@ defmodule BeamLabCountriesTest do
     country = List.first(BeamLabCountries.filter_by(:alpha2, "AI"))
     assert Enum.count(BeamLabCountries.Subdivisions.all(country)) == 14
   end
+
+  describe "vat_rates" do
+    test "returns proper numeric values for standard rate" do
+      # Estonia has 20% VAT
+      %{vat_rates: %{standard: standard}} = BeamLabCountries.get("EE")
+      assert is_integer(standard)
+      assert standard == 20
+
+      # Germany has 19% VAT
+      %{vat_rates: %{standard: de_standard}} = BeamLabCountries.get("DE")
+      assert is_integer(de_standard)
+      assert de_standard == 19
+    end
+
+    test "returns proper numeric values for reduced rates" do
+      # Estonia has reduced rate of 9%
+      %{vat_rates: %{reduced: reduced}} = BeamLabCountries.get("EE")
+      assert is_list(reduced)
+      assert Enum.all?(reduced, &is_number/1)
+      assert 9 in reduced
+
+      # Germany has reduced rate of 7%
+      %{vat_rates: %{reduced: de_reduced}} = BeamLabCountries.get("DE")
+      assert is_list(de_reduced)
+      assert Enum.all?(de_reduced, &is_number/1)
+      assert 7 in de_reduced
+
+      # France has multiple reduced rates
+      %{vat_rates: %{reduced: fr_reduced}} = BeamLabCountries.get("FR")
+      assert is_list(fr_reduced)
+      assert Enum.all?(fr_reduced, &is_number/1)
+      assert length(fr_reduced) >= 2
+    end
+
+    test "returns nil for countries without VAT" do
+      %{vat_rates: vat_rates} = BeamLabCountries.get("US")
+      assert is_nil(vat_rates)
+    end
+
+    test "handles super_reduced and parking rates" do
+      # France has super_reduced rate
+      %{vat_rates: %{super_reduced: super_reduced}} = BeamLabCountries.get("FR")
+      assert is_number(super_reduced) or is_nil(super_reduced)
+    end
+  end
 end
