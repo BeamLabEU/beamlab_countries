@@ -51,7 +51,7 @@ defmodule BeamLabCountries.Loader do
       eu_member: data["eu_member"],
       eea_member: data["eea_member"],
       alt_currency: data["alt_currency"],
-      vat_rates: atomize_keys(data["vat_rates"]),
+      vat_rates: normalize_vat_rates(data["vat_rates"]),
       postal_code: data["postal_code"],
       currency_code: data["currency_code"],
       start_of_week: data["start_of_week"]
@@ -65,4 +65,30 @@ defmodule BeamLabCountries.Loader do
   end
 
   defp atomize_keys(value), do: value
+
+  # VAT rates normalization to handle charlist representation issue.
+  #
+  # When YAML parser reads single-digit numbers in lists like `reduced: [9]`,
+  # Elixir represents them as charlists (e.g., ~c"\t" for [9]) because lists
+  # of integers 0-127 are displayed as charlists. This normalizes all rate
+  # values to ensure consistent integer/float representation.
+
+  defp normalize_vat_rates(nil), do: nil
+
+  defp normalize_vat_rates(map) when is_map(map) do
+    Map.new(map, fn {k, v} -> {String.to_atom(k), normalize_vat_value(v)} end)
+  end
+
+  defp normalize_vat_value(nil), do: nil
+
+  defp normalize_vat_value(list) when is_list(list) do
+    Enum.map(list, &ensure_numeric/1)
+  end
+
+  defp normalize_vat_value(value), do: ensure_numeric(value)
+
+  defp ensure_numeric(n) when is_integer(n), do: n
+  defp ensure_numeric(n) when is_float(n), do: n
+  defp ensure_numeric(nil), do: nil
+  defp ensure_numeric(_), do: nil
 end
