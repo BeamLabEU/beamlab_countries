@@ -34,6 +34,8 @@ MY:
   languages_spoken:
   - ms
   - en
+  - zh
+  - ta
   geo:
     latitude: 4.210484
     latitude_dec: '2.5490005016326904'

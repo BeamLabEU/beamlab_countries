@@ -49,6 +49,8 @@ LU:
   - fr
   - de
   - lb
+  - en
+  - pt
   geo:
     latitude: 49.815273
     latitude_dec: '49.77788162231445'

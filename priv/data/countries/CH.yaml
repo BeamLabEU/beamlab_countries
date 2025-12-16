@@ -52,6 +52,8 @@ CH:
   - de
   - fr
   - it
+  - rm
+  - en
   geo:
     latitude: 46.818188
     latitude_dec: '46.80379867553711'

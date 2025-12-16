@@ -38,6 +38,10 @@ IN:
   languages_spoken:
   - hi
   - en
+  - bn
+  - te
+  - ta
+  - mr
   geo:
     latitude: 20.593684
     latitude_dec: '23.4060115814209'

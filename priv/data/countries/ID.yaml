@@ -40,6 +40,8 @@ ID:
   - id
   languages_spoken:
   - id
+  - jv
+  - en
   geo:
     latitude: -0.789275
     latitude_dec: "-1.248089075088501"
