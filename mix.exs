@@ -2,7 +2,7 @@ defmodule BeamLabCountries.MixProject do
   use Mix.Project
 
   @source_url "https://github.com/BeamLabEU/beamlab_countries"
-  @version "1.0.1"
+  @version "1.0.3"
 
   def project do
     [
@@ -44,7 +44,8 @@ defmodule BeamLabCountries.MixProject do
     [
       description:
         "BeamLabCountries is a collection of all sorts of useful information for every country " <>
-          "in the [ISO 3166](https://wikipedia.org/wiki/ISO_3166) standard.",
+          "in the [ISO 3166](https://wikipedia.org/wiki/ISO_3166) standard. It includes country data, " <>
+          "subdivisions (states/provinces), international organizations, language information, and country name translations.",
       maintainers: ["BeamLab"],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/BeamLabEU/beamlab_countries"}

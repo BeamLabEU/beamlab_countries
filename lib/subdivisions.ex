@@ -21,7 +21,13 @@ defmodule BeamLabCountries.Subdivisions do
   end
 
   defp load_subdivisions(country_code) do
-    path = Path.join([:code.priv_dir(:beamlab_countries), "data", "subdivisions", "#{country_code}.yaml"])
+    path =
+      Path.join([
+        :code.priv_dir(:beamlab_countries),
+        "data",
+        "subdivisions",
+        "#{country_code}.yaml"
+      ])
 
     case YamlElixir.read_from_file(path) do
       {:ok, data} -> Map.to_list(data)

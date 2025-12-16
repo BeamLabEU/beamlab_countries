@@ -73,7 +73,9 @@ defmodule BeamLabCountries.Languages do
 
   # Build index of locale codes by base language code
   @locales_by_base @raw_locales
-                   |> Enum.group_by(fn {_code, data} -> data["base"] end, fn {code, _data} -> code end)
+                   |> Enum.group_by(fn {_code, data} -> data["base"] end, fn {code, _data} ->
+                     code
+                   end)
 
   # ============================================================================
   # Base Language Functions (existing API - backward compatible)

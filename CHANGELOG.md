@@ -5,6 +5,149 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.3] - 2025-12-16
+- Added continent, region & subregion 
+- Expand languages_spoken to include widely used languages 
+
+Updated ~70 country YAML files to include commonly spoken languages
+beyond just official languages. Added languages used in business,
+education, tourism, and by significant minority populations.
+
+## Europe
+
+### Baltic States
+- Estonia (EE): Russian (ru), English (en)
+- Latvia (LV): Russian (ru), English (en)
+- Lithuania (LT): Russian (ru), English (en), Polish (pl)
+
+### Eastern Europe
+- Ukraine (UA): Russian (ru), English (en)
+- Belarus (BY): English (en)
+- Moldova (MD): Russian (ru), Ukrainian (uk), English (en)
+- Poland (PL): English (en), German (de)
+- Czech Republic (CZ): English (en), German (de)
+- Slovakia (SK): Czech (cs), Hungarian (hu), English (en)
+- Hungary (HU): English (en), German (de)
+- Romania (RO): Hungarian (hu), English (en), French (fr)
+- Bulgaria (BG): Turkish (tr), English (en), Russian (ru)
+- Russia (RU): English (en), Tatar (tt), Ukrainian (uk)
+
+### Nordic Countries
+- Sweden (SE): English (en), Finnish (fi)
+- Norway (NO): English (en)
+- Denmark (DK): English (en), German (de)
+- Finland (FI): English (en), Russian (ru)
+- Iceland (IS): English (en), Danish (da)
+- Faroe Islands (FO): Danish (da), English (en)
+- Greenland (GL): Danish (da), English (en)
+
+### Western Europe
+- Germany (DE): English (en), Turkish (tr), Russian (ru)
+- France (FR): English (en), Arabic (ar), German (de)
+- Netherlands (NL): English (en), German (de), French (fr)
+- Belgium (BE): English (en)
+- Austria (AT): English (en), Turkish (tr), Croatian (hr)
+- Switzerland (CH): Romansh (rm), English (en)
+- Luxembourg (LU): English (en), Portuguese (pt)
+- Liechtenstein (LI): English (en)
+- Monaco (MC): Italian (it), English (en)
+
+### Southern Europe
+- Spain (ES): Catalan (ca), Galician (gl), Basque (eu), English (en)
+- Italy (IT): English (en), German (de), French (fr)
+- Portugal (PT): English (en), Spanish (es), French (fr)
+- Greece (GR): English (en), French (fr), German (de)
+- Croatia (HR): English (en), German (de), Italian (it)
+- Slovenia (SI): English (en), German (de), Croatian (hr), Italian (it)
+- Malta (MT): Italian (it)
+- Andorra (AD): Spanish (es), French (fr), Portuguese (pt)
+- San Marino (SM): English (en)
+- Gibraltar (GI): Spanish (es)
+
+### Balkans
+- Serbia (RS): Hungarian (hu), English (en), Romanian (ro)
+- Bosnia and Herzegovina (BA): English (en)
+- Montenegro (ME): English (en)
+- North Macedonia (MK): Albanian (sq), Turkish (tr), English (en)
+- Albania (AL): English (en), Italian (it), Greek (el)
+
+### British Isles & Channel Islands
+- United Kingdom (GB): Welsh (cy), Scottish Gaelic (gd), Polish (pl)
+- Ireland (IE): Polish (pl)
+- Jersey (JE): Portuguese (pt)
+- Guernsey (GG): Portuguese (pt)
+
+### Other European
+- Turkey (TR): Kurdish (ku), English (en), Arabic (ar)
+- Cyprus (CY): English (en)
+- Vatican (VA): English (en), German (de), French (fr)
+
+## Asia
+
+### East Asia
+- Japan (JP): English (en)
+- China (CN): English (en)
+- South Korea (KR): English (en)
+- Taiwan (TW): English (en)
+
+### Southeast Asia
+- Singapore (SG): Chinese (zh)
+- Malaysia (MY): Chinese (zh), Tamil (ta)
+- Indonesia (ID): Javanese (jv), English (en)
+- Philippines (PH): Cebuano (ceb)
+- Thailand (TH): English (en), Chinese (zh)
+- Vietnam (VN): English (en), Chinese (zh)
+- Cambodia (KH): English (en), French (fr)
+- Laos (LA): English (en), French (fr)
+- Myanmar (MM): English (en)
+
+### South Asia
+- India (IN): Bengali (bn), Telugu (te), Tamil (ta), Marathi (mr)
+- Pakistan (PK): Punjabi (pa), Sindhi (sd)
+- Bangladesh (BD): English (en)
+- Nepal (NP): English (en)
+- Sri Lanka (LK): English (en)
+
+### Central Asia
+- Kazakhstan (KZ): English (en)
+- Uzbekistan (UZ): English (en)
+
+### Middle East
+- United Arab Emirates (AE): English (en), Hindi (hi), Urdu (ur)
+- Saudi Arabia (SA): English (en)
+- Israel (IL): English (en), Russian (ru)
+- Qatar (QA): English (en)
+- Kuwait (KW): English (en)
+- Bahrain (BH): English (en)
+- Oman (OM): English (en)
+- Jordan (JO): English (en)
+- Lebanon (LB): English (en)
+
+## Americas
+
+### North America
+- United States (US): Spanish (es), Chinese (zh)
+- Canada (CA): Chinese (zh), Punjabi (pa)
+- Mexico (MX): English (en)
+
+### South America
+- Brazil (BR): English (en), Spanish (es)
+- Argentina (AR): English (en)
+- Colombia (CO): English (en)
+- Chile (CL): English (en)
+- Peru (PE): Quechua (qu), Aymara (ay), English (en)
+
+## Oceania
+- Australia (AU): Chinese (zh), Arabic (ar), Vietnamese (vi)
+- New Zealand (NZ): Maori (mi), Chinese (zh)
+
+## Africa
+- Egypt (EG): English (en), French (fr)
+- Nigeria (NG): Hausa (ha), Yoruba (yo), Igbo (ig)
+
+## [1.0.2] - 2025-12-15
+- Fix VAT rates being displayed as charlists instead of integer lists when single-digit reduced rates are parsed from YAML.
+
 ## [1.0.1] - 2025-12-12
 
 ### Added

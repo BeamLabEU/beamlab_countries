@@ -30,7 +30,9 @@ defmodule BeamLabCountries.Unions do
   # Build reverse lookup: country_alpha2 -> list of union codes
   @unions_by_country @unions
                      |> Enum.flat_map(fn union ->
-                       Enum.map(union.members, fn member -> {String.upcase(member), union.code} end)
+                       Enum.map(union.members, fn member ->
+                         {String.upcase(member), union.code}
+                       end)
                      end)
                      |> Enum.group_by(&elem(&1, 0), &elem(&1, 1))
 
