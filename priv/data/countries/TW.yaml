@@ -36,6 +36,9 @@ TW:
   languages_spoken:
   - zh
   - en
+  language_locales:
+    zh: zh-TW
+    en: en-US
   geo:
     latitude: 23.69781
     latitude_dec: '23.685789108276367'

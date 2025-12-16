@@ -32,6 +32,9 @@ CO:
   languages_spoken:
   - es
   - en
+  language_locales:
+    es: es-CO
+    en: en-US
   geo:
     latitude: 4.570868
     latitude_dec: '3.9976072311401367'

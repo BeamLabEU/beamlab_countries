@@ -61,6 +61,7 @@ defmodule BeamLabCountries.Country do
     :un_locode,
     :languages_official,
     :languages_spoken,
+    :language_locales,
     :nationality,
     :address_format,
     :dissolved_on,

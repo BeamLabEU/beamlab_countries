@@ -47,6 +47,10 @@ BR:
   - pt
   - en
   - es
+  language_locales:
+    pt: pt-BR
+    en: en-US
+    es: es-CO
   geo:
     latitude: -14.235004
     latitude_dec: "-10.81045150756836"

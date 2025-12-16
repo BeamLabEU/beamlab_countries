@@ -48,6 +48,8 @@ SE:
   - sv
   - en
   - fi
+  language_locales:
+    en: en-GB
   geo:
     latitude: 60.12816100000001
     latitude_dec: '62.67497253417969'

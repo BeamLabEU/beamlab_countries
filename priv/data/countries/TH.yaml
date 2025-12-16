@@ -38,6 +38,9 @@ TH:
   - th
   - en
   - zh
+  language_locales:
+    en: en-GB
+    zh: zh-CN
   geo:
     latitude: 15.870032
     latitude_dec: '14.48458194732666'

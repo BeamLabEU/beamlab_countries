@@ -44,6 +44,9 @@ AU:
   - zh
   - ar
   - vi
+  language_locales:
+    en: en-AU
+    zh: zh-CN
   geo:
     latitude: -25.274398
     latitude_dec: "-25.585241317749023"

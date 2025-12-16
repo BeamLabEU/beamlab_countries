@@ -50,6 +50,8 @@ IE:
   - en
   - ga
   - pl
+  language_locales:
+    en: en-GB
   geo:
     latitude: 53.41291
     latitude_dec: '53.1827278137207'

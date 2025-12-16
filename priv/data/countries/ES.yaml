@@ -52,6 +52,9 @@ ES:
   - gl
   - eu
   - en
+  language_locales:
+    es: es-ES
+    en: en-GB
   geo:
     latitude: 40.46366700000001
     latitude_dec: '40.396026611328125'

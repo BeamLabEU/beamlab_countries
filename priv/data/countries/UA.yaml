@@ -48,6 +48,8 @@ UA:
   - uk
   - ru
   - en
+  language_locales:
+    en: en-GB
   geo:
     latitude: 48.379433
     latitude_dec: '48.92656326293945'

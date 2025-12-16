@@ -36,6 +36,9 @@ MY:
   - en
   - zh
   - ta
+  language_locales:
+    en: en-GB
+    zh: zh-CN
   geo:
     latitude: 4.210484
     latitude_dec: '2.5490005016326904'

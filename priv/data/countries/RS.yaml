@@ -36,6 +36,8 @@ RS:
   - hu
   - en
   - ro
+  language_locales:
+    en: en-GB
   geo:
     latitude: 44.016521
     latitude_dec: '44.23297119140625'

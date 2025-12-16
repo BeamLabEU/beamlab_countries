@@ -39,6 +39,10 @@ US:
   - en
   - es
   - zh
+  language_locales:
+    en: en-US
+    es: es-MX
+    zh: zh-CN
   geo:
     latitude: 37.09024
     latitude_dec: '39.44325637817383'

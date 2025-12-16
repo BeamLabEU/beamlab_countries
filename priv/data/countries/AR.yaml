@@ -41,6 +41,9 @@ AR:
   - es
   - gn
   - en
+  language_locales:
+    es: es-AR
+    en: en-US
   geo:
     latitude: -38.416097
     latitude_dec: "-37.071964263916016"

@@ -50,6 +50,10 @@ FR:
   - en
   - ar
   - de
+  language_locales:
+    fr: fr-FR
+    en: en-GB
+    de: de-DE
   geo:
     latitude: 46.227638
     latitude_dec: '46.63727951049805'

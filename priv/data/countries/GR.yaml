@@ -49,6 +49,10 @@ GR:
   - en
   - fr
   - de
+  language_locales:
+    en: en-GB
+    fr: fr-FR
+    de: de-DE
   geo:
     latitude: 39.074208
     latitude_dec: '39.68437194824219'

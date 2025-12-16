@@ -45,6 +45,11 @@ PT:
   - en
   - es
   - fr
+  language_locales:
+    pt: pt-PT
+    en: en-GB
+    es: es-ES
+    fr: fr-FR
   geo:
     latitude: 39.39987199999999
     latitude_dec: '39.64200973510742'

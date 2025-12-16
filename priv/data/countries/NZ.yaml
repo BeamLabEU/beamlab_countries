@@ -47,6 +47,9 @@ NZ:
   - en
   - mi
   - zh
+  language_locales:
+    en: en-AU
+    zh: zh-CN
   geo:
     latitude: -40.900557
     latitude_dec: "-44.05629348754883"

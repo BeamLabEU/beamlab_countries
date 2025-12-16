@@ -40,6 +40,8 @@ TR:
   - ku
   - en
   - ar
+  language_locales:
+    en: en-GB
   geo:
     latitude: 38.963745
     latitude_dec: '39.05101013183594'

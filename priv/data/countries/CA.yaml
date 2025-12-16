@@ -39,6 +39,10 @@ CA:
   - fr
   - zh
   - pa
+  language_locales:
+    en: en-CA
+    fr: fr-CA
+    zh: zh-CN
   geo:
     latitude: 56.130366
     latitude_dec: '62.832908630371094'

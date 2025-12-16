@@ -51,6 +51,9 @@ HR:
   - en
   - de
   - it
+  language_locales:
+    en: en-GB
+    de: de-DE
   geo:
     latitude: 45.1
     latitude_dec: '45.444305419921875'

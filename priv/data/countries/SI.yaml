@@ -50,6 +50,9 @@ SI:
   - de
   - hr
   - it
+  language_locales:
+    en: en-GB
+    de: de-DE
   geo:
     latitude: 46.151241
     latitude_dec: '46.1202392578125'

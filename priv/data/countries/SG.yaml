@@ -41,6 +41,9 @@ SG:
   - ms
   - ta
   - zh
+  language_locales:
+    en: en-GB
+    zh: zh-CN
   geo:
     latitude: 1.352083
     latitude_dec: '1.3219958543777466'

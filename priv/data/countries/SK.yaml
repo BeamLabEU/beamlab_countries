@@ -49,6 +49,8 @@ SK:
   - cs
   - hu
   - en
+  language_locales:
+    en: en-GB
   geo:
     latitude: 48.669026
     latitude_dec: '48.70748519897461'
