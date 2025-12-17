@@ -91,10 +91,10 @@ defmodule BeamLabCountriesTest do
 
   describe "vat_rates" do
     test "returns proper numeric values for standard rate" do
-      # Estonia has 20% VAT
+      # Estonia has 24% VAT (updated 2025)
       %{vat_rates: %{standard: standard}} = BeamLabCountries.get("EE")
       assert is_integer(standard)
-      assert standard == 20
+      assert standard == 24
 
       # Germany has 19% VAT
       %{vat_rates: %{standard: de_standard}} = BeamLabCountries.get("DE")

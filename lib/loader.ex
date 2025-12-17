@@ -45,6 +45,7 @@ defmodule BeamLabCountries.Loader do
       un_locode: data["un_locode"],
       languages_official: data["languages_official"],
       languages_spoken: data["languages_spoken"],
+      language_locales: atomize_keys(data["language_locales"]),
       nationality: data["nationality"],
       address_format: data["address_format"],
       dissolved_on: data["dissolved_on"],
