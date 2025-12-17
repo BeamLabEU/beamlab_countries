@@ -28,9 +28,10 @@ SK:
   eu_member: true
   eea_member: true
   vat_rates:
-    standard: 20
+    standard: 23
     reduced:
-    - 10
+    - 5
+    - 19
     super_reduced: 
     parking: 
   postal_code: true
