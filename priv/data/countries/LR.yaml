@@ -48,3 +48,4 @@ LR:
         lng: -11.5355999
   currency_code: LRD
   start_of_week: monday
+  subdivision_type: Region

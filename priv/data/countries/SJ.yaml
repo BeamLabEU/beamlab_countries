@@ -50,3 +50,4 @@ SJ:
         lng: -10.5468751
   currency_code: NOK
   start_of_week: monday
+  subdivision_type: Region

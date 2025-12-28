@@ -48,3 +48,4 @@ MW:
         lng: 32.6725205
   currency_code: MWK
   start_of_week: monday
+  subdivision_type: Region

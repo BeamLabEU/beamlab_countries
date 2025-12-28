@@ -48,3 +48,4 @@ TK:
         lng: -172.6625061
   currency_code: NZD
   start_of_week: monday
+  subdivision_type: Region

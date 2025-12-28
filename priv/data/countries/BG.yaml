@@ -71,3 +71,4 @@ BG:
         lng: 22.3573446
   currency_code: BGN
   start_of_week: monday
+  subdivision_type: Province

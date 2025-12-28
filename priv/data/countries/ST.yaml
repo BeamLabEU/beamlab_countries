@@ -51,3 +51,4 @@ ST:
         lng: 6.328125
   currency_code: STD
   start_of_week: monday
+  subdivision_type: Region

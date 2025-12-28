@@ -49,3 +49,4 @@ GW:
         lng: -16.9518999
   currency_code: XOF
   start_of_week: monday
+  subdivision_type: Region

@@ -65,3 +65,4 @@ AU:
         lng: 110.9510339
   currency_code: AUD
   start_of_week: monday
+  subdivision_type: State

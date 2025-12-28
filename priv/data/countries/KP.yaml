@@ -53,3 +53,4 @@ KP:
         lng: 124.1718463
   currency_code: KPW
   start_of_week: monday
+  subdivision_type: Province

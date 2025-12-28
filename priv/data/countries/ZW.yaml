@@ -55,3 +55,4 @@ ZW:
         lng: 25.237368
   currency_code: USD
   start_of_week: monday
+  subdivision_type: Region

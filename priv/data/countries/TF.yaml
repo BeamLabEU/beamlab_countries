@@ -49,3 +49,4 @@ TF:
         lng: 68.4832763
   currency_code: EUR
   start_of_week: monday
+  subdivision_type: Region

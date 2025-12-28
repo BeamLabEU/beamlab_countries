@@ -48,3 +48,4 @@ BI:
         lng: 29.000993
   currency_code: BIF
   start_of_week: monday
+  subdivision_type: Region

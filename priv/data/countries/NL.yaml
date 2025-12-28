@@ -70,3 +70,4 @@ NL:
         lng: 3.3316001
   currency_code: EUR
   start_of_week: monday
+  subdivision_type: Province

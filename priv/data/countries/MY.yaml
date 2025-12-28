@@ -57,3 +57,4 @@ MY:
         lng: 98.9353999
   currency_code: MYR
   start_of_week: sunday
+  subdivision_type: State

@@ -56,3 +56,4 @@ VA:
         lng: 12.4457286
   currency_code: EUR
   start_of_week: monday
+  subdivision_type: Region

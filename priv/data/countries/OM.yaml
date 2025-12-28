@@ -55,3 +55,4 @@ OM:
         lng: 52.0000018
   currency_code: OMR
   start_of_week: sunday
+  subdivision_type: Governorate

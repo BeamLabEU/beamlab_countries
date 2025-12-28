@@ -70,3 +70,4 @@ PL:
         lng: 14.1228641
   currency_code: PLN
   start_of_week: monday
+  subdivision_type: Voivodeship

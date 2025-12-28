@@ -48,3 +48,4 @@ BQ:
         lng: -68.5149
   currency_code: USD
   start_of_week: monday
+  subdivision_type: Region

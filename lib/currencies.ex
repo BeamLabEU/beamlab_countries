@@ -339,7 +339,8 @@ defmodule BeamLabCountries.Currencies do
       "₽1,234.56"
 
   """
-  def format(amount, currency_code, opts \\ []) when is_number(amount) and is_binary(currency_code) do
+  def format(amount, currency_code, opts \\ [])
+      when is_number(amount) and is_binary(currency_code) do
     case get(currency_code) do
       nil ->
         nil

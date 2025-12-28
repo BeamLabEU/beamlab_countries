@@ -51,3 +51,4 @@ DZ:
         lng: -8.667611299999999
   currency_code: DZD
   start_of_week: sunday
+  subdivision_type: Province

@@ -49,3 +49,4 @@ KE:
         lng: 33.90982109999999
   currency_code: KES
   start_of_week: monday
+  subdivision_type: County

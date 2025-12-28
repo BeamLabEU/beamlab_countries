@@ -50,3 +50,4 @@ SZ:
         lng: 30.79064
   currency_code: SZL
   start_of_week: monday
+  subdivision_type: Region

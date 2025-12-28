@@ -35,7 +35,8 @@ defmodule BeamLabCountries.Country do
           vat_rates: map() | nil,
           postal_code: String.t() | nil,
           currency_code: String.t() | nil,
-          start_of_week: String.t() | nil
+          start_of_week: String.t() | nil,
+          subdivision_type: String.t() | nil
         }
 
   defstruct [
@@ -71,6 +72,7 @@ defmodule BeamLabCountries.Country do
     :vat_rates,
     :postal_code,
     :currency_code,
-    :start_of_week
+    :start_of_week,
+    :subdivision_type
   ]
 end

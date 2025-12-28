@@ -50,3 +50,4 @@ SS:
         lng: 23.4408491
   currency_code: SSP
   start_of_week: sunday
+  subdivision_type: State

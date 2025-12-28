@@ -59,3 +59,4 @@ NG:
         lng: 2.676932
   currency_code: NGN
   start_of_week: monday
+  subdivision_type: State

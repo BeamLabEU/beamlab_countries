@@ -48,3 +48,4 @@ MZ:
         lng: 30.2155501
   currency_code: MZN
   start_of_week: monday
+  subdivision_type: Region

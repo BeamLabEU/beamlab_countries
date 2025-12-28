@@ -54,3 +54,4 @@ AL:
         lng: 19.1217
   currency_code: ALL
   start_of_week: monday
+  subdivision_type: County

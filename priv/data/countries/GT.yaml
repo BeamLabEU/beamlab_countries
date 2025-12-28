@@ -46,3 +46,4 @@ GT:
         lng: -92.2714
   currency_code: GTQ
   start_of_week: monday
+  subdivision_type: Department

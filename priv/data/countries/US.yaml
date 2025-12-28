@@ -61,3 +61,4 @@ US:
         lng: 170.5957
   currency_code: USD
   start_of_week: sunday
+  subdivision_type: State

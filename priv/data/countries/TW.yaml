@@ -57,3 +57,4 @@ TW:
         lng: 116.6665
   currency_code: TWD
   start_of_week: monday
+  subdivision_type: County

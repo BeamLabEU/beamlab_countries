@@ -54,3 +54,4 @@ HK:
         lng: 113.8259001
   currency_code: HKD
   start_of_week: monday
+  subdivision_type: District

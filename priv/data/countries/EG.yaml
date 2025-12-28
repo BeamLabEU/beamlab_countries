@@ -61,3 +61,4 @@ EG:
         lng: 24.696775
   currency_code: EGP
   start_of_week: sunday
+  subdivision_type: Governorate

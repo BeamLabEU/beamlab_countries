@@ -48,3 +48,4 @@ EC:
         lng: -92.60379999999999
   currency_code: USD
   start_of_week: monday
+  subdivision_type: Province

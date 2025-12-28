@@ -44,3 +44,4 @@ BV:
         lng: 3.2773591
   currency_code: NOK
   start_of_week: monday
+  subdivision_type: Region

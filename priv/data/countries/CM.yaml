@@ -52,3 +52,4 @@ CM:
         lng: 8.3936001
   currency_code: XAF
   start_of_week: monday
+  subdivision_type: Region

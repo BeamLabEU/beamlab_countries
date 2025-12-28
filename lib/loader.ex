@@ -55,7 +55,8 @@ defmodule BeamLabCountries.Loader do
       vat_rates: normalize_vat_rates(data["vat_rates"]),
       postal_code: data["postal_code"],
       currency_code: data["currency_code"],
-      start_of_week: data["start_of_week"]
+      start_of_week: data["start_of_week"],
+      subdivision_type: data["subdivision_type"]
     }
   end
 

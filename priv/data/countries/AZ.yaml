@@ -53,3 +53,4 @@ AZ:
         lng: 44.7632599
   currency_code: AZN
   start_of_week: monday
+  subdivision_type: District

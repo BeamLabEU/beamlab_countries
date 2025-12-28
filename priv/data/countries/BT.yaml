@@ -49,3 +49,4 @@ BT:
         lng: 88.74647350000001
   currency_code: BTN
   start_of_week: monday
+  subdivision_type: Region

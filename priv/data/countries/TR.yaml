@@ -60,3 +60,4 @@ TR:
         lng: 25.5377
   currency_code: TRY
   start_of_week: monday
+  subdivision_type: Province
