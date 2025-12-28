@@ -49,3 +49,4 @@ IM:
         lng: -4.8301808
   currency_code: IMP
   start_of_week: monday
+  subdivision_type: Region

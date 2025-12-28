@@ -48,3 +48,4 @@ PR:
         lng: -67.95158169999999
   currency_code: USD
   start_of_week: monday
+  subdivision_type: Municipality

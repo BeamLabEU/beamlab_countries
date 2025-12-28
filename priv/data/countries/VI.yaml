@@ -52,3 +52,4 @@ VI:
         lng: -65.1101
   currency_code: USD
   start_of_week: monday
+  subdivision_type: Region

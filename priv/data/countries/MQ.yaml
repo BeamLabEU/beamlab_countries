@@ -47,3 +47,4 @@ MQ:
         lng: -61.24191279999999
   currency_code: EUR
   start_of_week: monday
+  subdivision_type: Region

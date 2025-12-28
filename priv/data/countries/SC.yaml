@@ -49,3 +49,4 @@ SC:
         lng: 45.9832764
   currency_code: SCR
   start_of_week: monday
+  subdivision_type: Region

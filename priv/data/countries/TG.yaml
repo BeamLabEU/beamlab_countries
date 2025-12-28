@@ -46,3 +46,4 @@ TG:
         lng: -0.144042
   currency_code: XOF
   start_of_week: monday
+  subdivision_type: Region

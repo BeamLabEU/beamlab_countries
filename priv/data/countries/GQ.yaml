@@ -52,3 +52,4 @@ GQ:
         lng: 5.541900099999999
   currency_code: XAF
   start_of_week: monday
+  subdivision_type: Region

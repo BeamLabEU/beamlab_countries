@@ -46,3 +46,4 @@ VE:
         lng: -73.35155809999999
   currency_code: VES
   start_of_week: monday
+  subdivision_type: State

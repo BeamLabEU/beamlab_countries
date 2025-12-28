@@ -58,3 +58,4 @@ IL:
         lng: 34.2673871
   currency_code: ILS
   start_of_week: sunday
+  subdivision_type: District

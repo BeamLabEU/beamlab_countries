@@ -71,3 +71,4 @@ RO:
         lng: 20.2617593
   currency_code: RON
   start_of_week: monday
+  subdivision_type: County

@@ -53,3 +53,4 @@ AS:
         lng: -171.0076904
   currency_code: USD
   start_of_week: monday
+  subdivision_type: Region

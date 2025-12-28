@@ -69,3 +69,4 @@ FI:
         lng: 20.4565003
   currency_code: EUR
   start_of_week: monday
+  subdivision_type: Region

@@ -65,3 +65,4 @@ MX:
         lng: -118.6523001
   currency_code: MXN
   start_of_week: monday
+  subdivision_type: State

@@ -68,3 +68,4 @@ SE:
         lng: 10.5798
   currency_code: SEK
   start_of_week: monday
+  subdivision_type: County

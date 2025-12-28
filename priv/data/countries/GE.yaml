@@ -49,3 +49,4 @@ GE:
         lng: 39.9792001
   currency_code: GEL
   start_of_week: monday
+  subdivision_type: Region

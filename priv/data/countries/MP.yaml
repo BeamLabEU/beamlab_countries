@@ -52,3 +52,4 @@ MP:
         lng: 144.7668457
   currency_code: USD
   start_of_week: monday
+  subdivision_type: Region

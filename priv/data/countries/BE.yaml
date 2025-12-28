@@ -74,3 +74,4 @@ BE:
         lng: 2.5240999
   currency_code: EUR
   start_of_week: monday
+  subdivision_type: Province

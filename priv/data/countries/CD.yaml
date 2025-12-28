@@ -60,3 +60,4 @@ CD:
         lng: 12.1454
   currency_code: CDF
   start_of_week: monday
+  subdivision_type: Region

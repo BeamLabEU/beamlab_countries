@@ -70,3 +70,4 @@ IE:
         lng: -10.7666001
   currency_code: EUR
   start_of_week: monday
+  subdivision_type: County

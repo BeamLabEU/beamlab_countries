@@ -72,3 +72,4 @@ FR:
         lng: -5.5591
   currency_code: EUR
   start_of_week: monday
+  subdivision_type: Region

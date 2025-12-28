@@ -69,3 +69,4 @@ DK:
         lng: 7.855200099999999
   currency_code: DKK
   start_of_week: monday
+  subdivision_type: Region

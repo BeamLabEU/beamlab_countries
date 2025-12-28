@@ -48,3 +48,4 @@ ZM:
         lng: 21.999351
   currency_code: ZMW
   start_of_week: monday
+  subdivision_type: Region

@@ -48,3 +48,4 @@ CC:
         lng: 96.8134118
   currency_code: AUD
   start_of_week: monday
+  subdivision_type: Region

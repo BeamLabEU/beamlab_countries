@@ -52,3 +52,4 @@ TC:
         lng: -72.52069999999999
   currency_code: USD
   start_of_week: monday
+  subdivision_type: Region

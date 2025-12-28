@@ -72,3 +72,4 @@ HU:
         lng: 16.1133077
   currency_code: HUF
   start_of_week: monday
+  subdivision_type: County

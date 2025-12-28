@@ -49,3 +49,4 @@ IR:
         lng: 44.0326949
   currency_code: IRR
   start_of_week: saturday
+  subdivision_type: Province

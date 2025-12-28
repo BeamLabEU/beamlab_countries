@@ -49,3 +49,4 @@ HT:
         lng: -74.6082
   currency_code: HTG
   start_of_week: monday
+  subdivision_type: Department

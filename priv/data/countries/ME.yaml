@@ -55,3 +55,4 @@ ME:
         lng: 18.4337921
   currency_code: EUR
   start_of_week: monday
+  subdivision_type: Municipality

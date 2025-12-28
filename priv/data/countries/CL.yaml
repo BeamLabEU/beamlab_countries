@@ -52,3 +52,4 @@ CL:
         lng: -110.0281
   currency_code: CLP
   start_of_week: monday
+  subdivision_type: Region

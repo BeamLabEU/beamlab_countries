@@ -46,3 +46,4 @@ KI:
         lng: 168.8818359
   currency_code: AUD
   start_of_week: monday
+  subdivision_type: Region

@@ -49,3 +49,4 @@ LS:
         lng: 27.011231
   currency_code: LSL
   start_of_week: monday
+  subdivision_type: Region

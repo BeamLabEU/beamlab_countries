@@ -48,3 +48,4 @@ PY:
         lng: -62.63813879999999
   currency_code: PYG
   start_of_week: monday
+  subdivision_type: Department
