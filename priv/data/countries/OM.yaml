@@ -37,6 +37,9 @@ OM:
   languages_spoken:
   - ar
   - en
+  language_locales:
+    ar: ar
+    en: en-GB
   geo:
     latitude: 21.4735329
     latitude_dec: '20.566621780395508'

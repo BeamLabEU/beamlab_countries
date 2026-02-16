@@ -40,6 +40,11 @@ IL:
   - ar
   - en
   - ru
+  language_locales:
+    ar: ar
+    en: en-GB
+    he: he
+    ru: ru
   geo:
     latitude: 31.046051
     latitude_dec: '31.814193725585938'

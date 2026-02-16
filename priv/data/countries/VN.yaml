@@ -36,6 +36,7 @@ VN:
   - zh
   language_locales:
     en: en-GB
+    vi: vi
     zh: zh-CN
   geo:
     latitude: 14.058324

@@ -37,6 +37,9 @@ BH:
   languages_spoken:
   - ar
   - en
+  language_locales:
+    ar: ar
+    en: en-GB
   geo:
     latitude: 26.0667
     latitude_dec: '26.094240188598633'

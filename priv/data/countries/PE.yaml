@@ -35,8 +35,10 @@ PE:
   - ay
   - en
   language_locales:
-    es: es-CO
+    ay: ay
     en: en-US
+    es: es-CO
+    qu: qu
   geo:
     latitude: -9.189967
     latitude_dec: "-9.212532997131348"

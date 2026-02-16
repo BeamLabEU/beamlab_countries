@@ -57,6 +57,17 @@ ZA:
   - ve
   - xh
   - zu
+  language_locales:
+    af: af
+    en: en-GB
+    nr: nr
+    ss: ss
+    st: st
+    tn: tn
+    ts: ts
+    ve: ve
+    xh: xh
+    zu: zu
   geo:
     latitude: -30.559482
     latitude_dec: "-29.046184539794922"

@@ -30,6 +30,9 @@ LI:
   languages_spoken:
   - de
   - en
+  language_locales:
+    de: de-DE
+    en: en-GB
   geo:
     latitude: 47.166
     latitude_dec: '47.14126968383789'

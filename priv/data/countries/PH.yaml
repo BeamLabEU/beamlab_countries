@@ -46,6 +46,9 @@ PH:
   - tl
   - en
   - ceb
+  language_locales:
+    en: en-GB
+    tl: tl
   geo:
     latitude: 12.879721
     latitude_dec: '11.112666130065918'

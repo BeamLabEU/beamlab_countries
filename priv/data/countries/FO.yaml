@@ -34,6 +34,10 @@ FO:
   - fo
   - da
   - en
+  language_locales:
+    da: da
+    en: en-GB
+    fo: fo
   geo:
     latitude: 61.89263500000001
     latitude_dec: '62.009559631347656'

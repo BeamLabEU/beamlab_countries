@@ -28,6 +28,8 @@ TG:
   - fr
   languages_spoken:
   - fr
+  language_locales:
+    fr: fr-FR
   geo:
     latitude: 8.619543
     latitude_dec: '8.513226509094238'

@@ -31,6 +31,9 @@ UG:
   languages_spoken:
   - en
   - sw
+  language_locales:
+    en: en-GB
+    sw: sw
   geo:
     latitude: 1.373333
     latitude_dec: '1.2773280143737793'

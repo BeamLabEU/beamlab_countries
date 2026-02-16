@@ -41,6 +41,10 @@ MT:
   - mt
   - en
   - it
+  language_locales:
+    en: en-GB
+    it: it
+    mt: mt
   geo:
     latitude: 35.937496
     latitude_dec: '35.93336486816406'

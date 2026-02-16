@@ -36,6 +36,10 @@ BY:
   - be
   - ru
   - en
+  language_locales:
+    be: be
+    en: en-GB
+    ru: ru
   geo:
     latitude: 53.709807
     latitude_dec: '53.54347229003906'

@@ -34,6 +34,10 @@ BO:
   - es
   - ay
   - qu
+  language_locales:
+    ay: ay
+    es: es-CO
+    qu: qu
   geo:
     latitude: -16.290154
     latitude_dec: "-16.713054656982422"

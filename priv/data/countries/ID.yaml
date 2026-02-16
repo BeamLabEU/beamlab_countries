@@ -44,6 +44,8 @@ ID:
   - en
   language_locales:
     en: en-GB
+    id: id
+    jv: jv
   geo:
     latitude: -0.789275
     latitude_dec: "-1.248089075088501"

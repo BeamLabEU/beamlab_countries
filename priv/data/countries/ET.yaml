@@ -32,6 +32,8 @@ ET:
   - am
   languages_spoken:
   - am
+  language_locales:
+    am: am
   geo:
     latitude: 9.145000000000001
     latitude_dec: '8.626703262329102'

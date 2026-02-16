@@ -28,6 +28,8 @@ PW:
   - en
   languages_spoken:
   - en
+  language_locales:
+    en: en-GB
   geo:
     latitude: 7.514979999999999
     latitude_dec: '7.441900730133057'

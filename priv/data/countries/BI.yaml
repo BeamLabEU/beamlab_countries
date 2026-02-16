@@ -30,6 +30,9 @@ BI:
   languages_spoken:
   - fr
   - rn
+  language_locales:
+    fr: fr-FR
+    rn: rn
   geo:
     latitude: -3.373056
     latitude_dec: "-3.365208148956299"

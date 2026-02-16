@@ -32,6 +32,10 @@ CX:
   - en
   - zh
   - ms
+  language_locales:
+    en: en-GB
+    ms: ms
+    zh: zh-CN
   geo:
     latitude: -10.447525
     latitude_dec: "-10.490290641784668"

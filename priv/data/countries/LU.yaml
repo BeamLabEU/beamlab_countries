@@ -51,6 +51,12 @@ LU:
   - lb
   - en
   - pt
+  language_locales:
+    de: de-DE
+    en: en-GB
+    fr: fr-FR
+    lb: lb
+    pt: pt-PT
   geo:
     latitude: 49.815273
     latitude_dec: '49.77788162231445'

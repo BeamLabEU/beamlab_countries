@@ -34,6 +34,8 @@ MN:
   - mn
   languages_spoken:
   - mn
+  language_locales:
+    mn: mn
   geo:
     latitude: 46.862496
     latitude_dec: '46.83647918701172'

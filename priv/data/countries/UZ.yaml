@@ -35,6 +35,10 @@ UZ:
   - uz
   - ru
   - en
+  language_locales:
+    en: en-GB
+    ru: ru
+    uz: uz
   geo:
     latitude: 41.377491
     latitude_dec: '41.77239227294922'

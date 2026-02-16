@@ -31,6 +31,10 @@ LA:
   - lo
   - en
   - fr
+  language_locales:
+    en: en-GB
+    fr: fr-FR
+    lo: lo
   geo:
     latitude: 19.85627
     latitude_dec: '18.65074920654297'

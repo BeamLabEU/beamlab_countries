@@ -48,6 +48,9 @@ LT:
   - pl
   language_locales:
     en: en-GB
+    lt: lt
+    pl: pl
+    ru: ru
   geo:
     latitude: 55.169438
     latitude_dec: '55.33871841430664'

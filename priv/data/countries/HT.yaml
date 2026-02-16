@@ -31,6 +31,9 @@ HT:
   languages_spoken:
   - fr
   - ht
+  language_locales:
+    fr: fr-FR
+    ht: ht
   geo:
     latitude: 18.971187
     latitude_dec: '19.0732421875'

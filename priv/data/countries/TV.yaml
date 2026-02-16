@@ -28,6 +28,8 @@ TV:
   - en
   languages_spoken:
   - en
+  language_locales:
+    en: en-GB
   geo:
     latitude: -7.4784205
     latitude_dec: "-7.471305847167969"

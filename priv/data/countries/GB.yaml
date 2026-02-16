@@ -55,7 +55,10 @@ GB:
   - gd
   - pl
   language_locales:
+    cy: cy
     en: en-GB
+    gd: gd
+    pl: pl
   geo:
     latitude: 55.378051
     latitude_dec: '54.56088638305664'

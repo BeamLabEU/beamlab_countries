@@ -38,6 +38,9 @@ KW:
   languages_spoken:
   - ar
   - en
+  language_locales:
+    ar: ar
+    en: en-GB
   geo:
     latitude: 29.31166
     latitude_dec: '29.321941375732422'

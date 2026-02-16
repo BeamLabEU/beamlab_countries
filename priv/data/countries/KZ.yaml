@@ -34,6 +34,10 @@ KZ:
   - kk
   - ru
   - en
+  language_locales:
+    en: en-GB
+    kk: kk
+    ru: ru
   geo:
     latitude: 48.019573
     latitude_dec: '48.14600372314453'

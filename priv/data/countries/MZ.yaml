@@ -30,6 +30,8 @@ MZ:
   - pt
   languages_spoken:
   - pt
+  language_locales:
+    pt: pt-PT
   geo:
     latitude: -18.665695
     latitude_dec: "-17.555864334106445"

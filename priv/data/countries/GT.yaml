@@ -28,6 +28,8 @@ GT:
   - es
   languages_spoken:
   - es
+  language_locales:
+    es: es-MX
   geo:
     latitude: 15.783471
     latitude_dec: '15.670565605163574'

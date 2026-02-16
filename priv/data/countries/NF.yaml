@@ -32,6 +32,8 @@ NF:
   - en
   languages_spoken:
   - en
+  language_locales:
+    en: en-GB
   geo:
     latitude: -29.040835
     latitude_dec: "-29.036962509155273"

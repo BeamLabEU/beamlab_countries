@@ -35,6 +35,9 @@ KG:
   languages_spoken:
   - ky
   - ru
+  language_locales:
+    ky: ky
+    ru: ru
   geo:
     latitude: 41.20438
     latitude_dec: '41.46435546875'

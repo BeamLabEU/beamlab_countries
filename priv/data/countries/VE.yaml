@@ -28,6 +28,8 @@ VE:
   - es
   languages_spoken:
   - es
+  language_locales:
+    es: es-CO
   geo:
     latitude: 6.42375
     latitude_dec: '7.665388584136963'

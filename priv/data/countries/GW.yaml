@@ -31,6 +31,8 @@ GW:
   - pt
   languages_spoken:
   - pt
+  language_locales:
+    pt: pt-PT
   geo:
     latitude: 11.803749
     latitude_dec: '12.115862846374512'

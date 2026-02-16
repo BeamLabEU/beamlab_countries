@@ -32,6 +32,9 @@ SS:
   languages_spoken:
   - ar
   - en
+  language_locales:
+    ar: ar
+    en: en-GB
   geo:
     latitude: 6.876991899999999
     latitude_dec: '7.303858280181885'

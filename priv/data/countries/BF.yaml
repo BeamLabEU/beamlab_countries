@@ -30,6 +30,9 @@ BF:
   languages_spoken:
   - fr
   - ff
+  language_locales:
+    ff: ff
+    fr: fr-FR
   geo:
     latitude: 12.238333
     latitude_dec: '12.284985542297363'

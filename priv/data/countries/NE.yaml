@@ -29,6 +29,8 @@ NE:
   - fr
   languages_spoken:
   - fr
+  language_locales:
+    fr: fr-FR
   geo:
     latitude: 17.607789
     latitude_dec: '17.424074172973633'

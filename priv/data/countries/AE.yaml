@@ -48,6 +48,11 @@ AE:
   - en
   - hi
   - ur
+  language_locales:
+    ar: ar
+    en: en-GB
+    hi: hi
+    ur: ur
   geo:
     latitude: 23.424076
     latitude_dec: '23.684776306152344'

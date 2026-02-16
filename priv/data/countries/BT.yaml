@@ -31,6 +31,8 @@ BT:
   - dz
   languages_spoken:
   - dz
+  language_locales:
+    dz: dz
   geo:
     latitude: 27.514162
     latitude_dec: '27.416879653930664'

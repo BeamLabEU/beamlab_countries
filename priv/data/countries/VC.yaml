@@ -35,6 +35,8 @@ VC:
   - en
   languages_spoken:
   - en
+  language_locales:
+    en: en-US
   geo:
     latitude: 13.2528179
     latitude_dec: '13.217251777648926'

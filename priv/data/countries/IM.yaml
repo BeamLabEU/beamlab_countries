@@ -31,6 +31,9 @@ IM:
   languages_spoken:
   - en
   - gv
+  language_locales:
+    en: en-GB
+    gv: gv
   geo:
     latitude: 54.236107
     latitude_dec: '54.22451400756836'

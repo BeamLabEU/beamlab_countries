@@ -33,6 +33,10 @@ GU:
   - en
   - ch
   - es
+  language_locales:
+    ch: ch
+    en: en-GB
+    es: es-CO
   geo:
     latitude: 13.444304
     latitude_dec: '13.42112922668457'

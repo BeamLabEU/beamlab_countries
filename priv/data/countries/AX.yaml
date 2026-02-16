@@ -28,6 +28,8 @@ AX:
   - sv
   languages_spoken:
   - sv
+  language_locales:
+    sv: sv
   geo:
     latitude: 60.1785247
     latitude_dec: '60.2023811340332'

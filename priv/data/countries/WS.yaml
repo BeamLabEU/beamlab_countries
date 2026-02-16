@@ -31,6 +31,9 @@ WS:
   languages_spoken:
   - sm
   - en
+  language_locales:
+    en: en-GB
+    sm: sm
   geo:
     latitude: -13.759029
     latitude_dec: "-13.668972969055176"

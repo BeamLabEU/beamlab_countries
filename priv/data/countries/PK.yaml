@@ -34,6 +34,11 @@ PK:
   - ur
   - pa
   - sd
+  language_locales:
+    en: en-GB
+    pa: pa
+    sd: sd
+    ur: ur
   geo:
     latitude: 30.375321
     latitude_dec: '29.923219680786133'

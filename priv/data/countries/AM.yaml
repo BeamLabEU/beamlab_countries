@@ -33,6 +33,9 @@ AM:
   languages_spoken:
   - hy
   - ru
+  language_locales:
+    hy: hy
+    ru: ru
   geo:
     latitude: 40.069099
     latitude_dec: '40.29266357421875'

@@ -43,6 +43,8 @@ SG:
   - zh
   language_locales:
     en: en-GB
+    ms: ms
+    ta: ta
     zh: zh-CN
   geo:
     latitude: 1.352083

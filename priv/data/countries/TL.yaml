@@ -32,6 +32,8 @@ TL:
   - pt
   languages_spoken:
   - pt
+  language_locales:
+    pt: pt-PT
   geo:
     latitude: -8.874217
     latitude_dec: "-8.804786682128906"

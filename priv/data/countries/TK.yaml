@@ -30,6 +30,8 @@ TK:
   - en
   languages_spoken:
   - en
+  language_locales:
+    en: en-GB
   geo:
     latitude: -9.200199999999999
     latitude_dec: "-8.979207992553711"

@@ -40,6 +40,8 @@ SY:
   - ar
   languages_spoken:
   - ar
+  language_locales:
+    ar: ar
   geo:
     latitude: 34.80207499999999
     latitude_dec: '35.03312683105469'

@@ -32,6 +32,9 @@ GN:
   languages_spoken:
   - fr
   - ff
+  language_locales:
+    ff: ff
+    fr: fr-FR
   geo:
     latitude: 9.945587
     latitude_dec: '10.429302215576172'

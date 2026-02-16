@@ -28,6 +28,8 @@ CR:
   - es
   languages_spoken:
   - es
+  language_locales:
+    es: es-MX
   geo:
     latitude: 9.748916999999999
     latitude_dec: '9.884991645812988'

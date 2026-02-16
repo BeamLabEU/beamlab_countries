@@ -28,6 +28,8 @@ GM:
   - en
   languages_spoken:
   - en
+  language_locales:
+    en: en-GB
   geo:
     latitude: 13.443182
     latitude_dec: '13.440265655517578'

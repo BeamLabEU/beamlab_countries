@@ -41,6 +41,9 @@ SA:
   languages_spoken:
   - ar
   - en
+  language_locales:
+    ar: ar
+    en: en-GB
   geo:
     latitude: 23.885942
     latitude_dec: '23.994726181030273'

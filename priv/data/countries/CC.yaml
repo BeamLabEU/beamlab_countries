@@ -30,6 +30,8 @@ CC:
   - en
   languages_spoken:
   - en
+  language_locales:
+    en: en-GB
   geo:
     latitude: -12.1706919
     latitude_dec: "-12.200602531433105"

@@ -32,6 +32,8 @@ PM:
   - fr
   languages_spoken:
   - fr
+  language_locales:
+    fr: fr-FR
   geo:
     latitude: 46.8852
     latitude_dec: '46.90594482421875'

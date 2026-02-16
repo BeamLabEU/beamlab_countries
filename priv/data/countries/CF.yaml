@@ -34,6 +34,9 @@ CF:
   languages_spoken:
   - fr
   - sg
+  language_locales:
+    fr: fr-FR
+    sg: sg
   geo:
     latitude: 6.611110999999999
     latitude_dec: '6.574123382568359'

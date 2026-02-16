@@ -30,6 +30,9 @@ PR:
   languages_spoken:
   - es
   - en
+  language_locales:
+    en: en-US
+    es: es-MX
   geo:
     latitude: 18.220833
     latitude_dec: '18.2491397857666'

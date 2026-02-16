@@ -34,6 +34,9 @@ GQ:
   languages_spoken:
   - es
   - fr
+  language_locales:
+    es: es-CO
+    fr: fr-FR
   geo:
     latitude: 1.650801
     latitude_dec: '1.5331259965896606'

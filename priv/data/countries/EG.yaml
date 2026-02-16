@@ -41,6 +41,7 @@ EG:
   - en
   - fr
   language_locales:
+    ar: ar
     en: en-GB
     fr: fr-FR
   geo:

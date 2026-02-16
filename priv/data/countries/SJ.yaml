@@ -32,6 +32,8 @@ SJ:
   - 'no'
   languages_spoken:
   - 'no'
+  language_locales:
+    no: no
   geo:
     latitude: 77.55360399999999
     latitude_dec: '71.04893493652344'

@@ -40,6 +40,10 @@ LB:
   - ar
   - fr
   - en
+  language_locales:
+    ar: ar
+    en: en-GB
+    fr: fr-FR
   geo:
     latitude: 33.854721
     latitude_dec: '33.925411224365234'

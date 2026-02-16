@@ -32,6 +32,9 @@ MG:
   languages_spoken:
   - fr
   - mg
+  language_locales:
+    fr: fr-FR
+    mg: mg
   geo:
     latitude: -18.766947
     latitude_dec: "-19.27239418029785"

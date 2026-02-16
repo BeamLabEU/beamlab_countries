@@ -31,6 +31,8 @@ GH:
   - en
   languages_spoken:
   - en
+  language_locales:
+    en: en-GB
   geo:
     latitude: 7.946527
     latitude_dec: '7.921330451965332'

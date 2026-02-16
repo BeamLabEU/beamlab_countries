@@ -31,6 +31,8 @@ MV:
   - dv
   languages_spoken:
   - dv
+  language_locales:
+    dv: dv
   geo:
     latitude: 1.977247
     latitude_dec: '4.185884952545166'

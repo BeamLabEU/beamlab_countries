@@ -32,6 +32,8 @@ PG:
   - en
   languages_spoken:
   - en
+  language_locales:
+    en: en-GB
   geo:
     latitude: -6.314992999999999
     latitude_dec: "-6.889159679412842"

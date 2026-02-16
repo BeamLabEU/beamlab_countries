@@ -33,6 +33,8 @@ DZ:
   - ar
   languages_spoken:
   - ar
+  language_locales:
+    ar: ar
   geo:
     latitude: 28.033886
     latitude_dec: '28.213645935058594'

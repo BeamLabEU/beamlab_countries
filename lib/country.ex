@@ -26,6 +26,7 @@ defmodule BeamLabCountries.Country do
           un_locode: String.t() | nil,
           languages_official: [String.t()] | nil,
           languages_spoken: [String.t()] | nil,
+          language_locales: map() | nil,
           nationality: String.t() | nil,
           address_format: String.t() | nil,
           dissolved_on: String.t() | nil,

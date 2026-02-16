@@ -51,6 +51,9 @@ FI:
   - ru
   language_locales:
     en: en-GB
+    fi: fi
+    ru: ru
+    sv: sv
   geo:
     latitude: 61.92410999999999
     latitude_dec: '64.28858184814453'

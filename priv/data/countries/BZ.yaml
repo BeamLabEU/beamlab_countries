@@ -31,6 +31,9 @@ BZ:
   languages_spoken:
   - en
   - es
+  language_locales:
+    en: en-US
+    es: es-MX
   geo:
     latitude: 17.189877
     latitude_dec: '17.225292205810547'

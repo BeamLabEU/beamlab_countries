@@ -5,6 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.7] - 2026-02-16
+- Complete locale and language_locales coverage across all countries
+
+### Added
+
+- **54 new locale entries** in `locales.json` (86 -> 140 total) for spoken languages that previously had no locale mapping (Greek, Hausa, Zulu, Swahili, Norwegian Bokmal/Nynorsk, Afrikaans, and 48 others)
+- **`language_locales` populated for 247 countries** -- maps every spoken language that has a locale entry to its correct regional variant
+  - Multi-variant languages (en, fr, de, es, pt, zh) resolve to the appropriate regional variant based on geography (e.g., `en: en-GB` for Kenya, `en: en-US` for Jamaica)
+  - Single-variant languages map to themselves (e.g., `el: el` for Greek, `sw: sw` for Swahili)
+  - Only 3 countries remain without `language_locales` (AN, AQ, BV -- no spoken languages defined)
+- 5 new tests validating `language_locales` mappings, including a test that all locale references are valid
+
+### Fixed
+
+- Languages like Greek (`el`), Hausa (`ha`), Norwegian Bokmal (`nb`) were unreachable via `Languages.get_locale/1` -- now return proper Locale structs
+- Countries speaking only single-variant languages (e.g., Afghanistan, Mongolia, Iran, Georgia) previously had nil `language_locales` -- now fully mapped
+
 ## [1.0.6] - 2025-12-29
 - Subdivisons added to countries
 

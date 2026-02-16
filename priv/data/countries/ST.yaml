@@ -33,6 +33,8 @@ ST:
   - pt
   languages_spoken:
   - pt
+  language_locales:
+    pt: pt-PT
   geo:
     latitude: 0.18636
     latitude_dec: '0.275555282831192'

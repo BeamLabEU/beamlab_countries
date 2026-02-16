@@ -29,6 +29,8 @@ SN:
   - fr
   languages_spoken:
   - fr
+  language_locales:
+    fr: fr-FR
   geo:
     latitude: 14.497401
     latitude_dec: '14.36251163482666'

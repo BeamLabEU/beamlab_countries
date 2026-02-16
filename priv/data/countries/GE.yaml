@@ -31,6 +31,8 @@ GE:
   - ka
   languages_spoken:
   - ka
+  language_locales:
+    ka: ka
   geo:
     latitude: 42.315407
     latitude_dec: '42.3207845'

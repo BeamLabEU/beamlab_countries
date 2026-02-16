@@ -39,6 +39,7 @@ JP:
   - en
   language_locales:
     en: en-US
+    ja: ja
   geo:
     latitude: 36.204824
     latitude_dec: '36.281646728515625'

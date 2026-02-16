@@ -29,6 +29,8 @@ SV:
   - es
   languages_spoken:
   - es
+  language_locales:
+    es: es-MX
   geo:
     latitude: 13.794185
     latitude_dec: '13.671636581420898'

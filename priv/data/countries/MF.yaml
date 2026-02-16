@@ -31,6 +31,10 @@ MF:
   - en
   - fr
   - nl
+  language_locales:
+    en: en-US
+    fr: fr-FR
+    nl: nl
   geo:
     latitude: 18.08255
     latitude_dec: '18.042224884033203'

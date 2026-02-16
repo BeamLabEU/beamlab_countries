@@ -33,6 +33,9 @@ CG:
   languages_spoken:
   - fr
   - ln
+  language_locales:
+    fr: fr-FR
+    ln: ln
   geo:
     latitude: -0.228021
     latitude_dec: "-2.879866123199463"

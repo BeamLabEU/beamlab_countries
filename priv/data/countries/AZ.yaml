@@ -35,6 +35,9 @@ AZ:
   languages_spoken:
   - az
   - hy
+  language_locales:
+    az: az
+    hy: hy
   geo:
     latitude: 40.143105
     latitude_dec: '40.33100509643555'

@@ -40,8 +40,8 @@ CN:
   - zh
   - en
   language_locales:
-    zh: zh-CN
     en: en-GB
+    zh: zh-CN
   geo:
     latitude: 35.86166
     latitude_dec: '36.55308532714844'

@@ -29,6 +29,9 @@ GI:
   languages_spoken:
   - en
   - es
+  language_locales:
+    en: en-GB
+    es: es-ES
   geo:
     latitude: 36.140751
     latitude_dec: '36.135841369628906'

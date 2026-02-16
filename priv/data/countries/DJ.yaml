@@ -32,6 +32,9 @@ DJ:
   languages_spoken:
   - ar
   - fr
+  language_locales:
+    ar: ar
+    fr: fr-FR
   geo:
     latitude: 11.825138
     latitude_dec: '11.742591857910156'

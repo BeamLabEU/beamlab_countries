@@ -36,6 +36,11 @@ AL:
   - en
   - it
   - el
+  language_locales:
+    el: el
+    en: en-GB
+    it: it
+    sq: sq
   geo:
     latitude: 41.153332
     latitude_dec: '41.11113357543945'

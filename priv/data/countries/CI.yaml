@@ -33,6 +33,8 @@ CI:
   - fr
   languages_spoken:
   - fr
+  language_locales:
+    fr: fr-FR
   geo:
     latitude: 7.539988999999999
     latitude_dec: '7.598755359649658'

@@ -28,6 +28,8 @@ NI:
   - es
   languages_spoken:
   - es
+  language_locales:
+    es: es-MX
   geo:
     latitude: 12.865416
     latitude_dec: '12.903773307800293'

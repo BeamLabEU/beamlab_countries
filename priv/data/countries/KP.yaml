@@ -35,6 +35,8 @@ KP:
   - ko
   languages_spoken:
   - ko
+  language_locales:
+    ko: ko
   geo:
     latitude: 40.339852
     latitude_dec: '40.077640533447266'

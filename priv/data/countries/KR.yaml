@@ -46,6 +46,7 @@ KR:
   - en
   language_locales:
     en: en-US
+    ko: ko
   geo:
     latitude: 35.907757
     latitude_dec: '40.077640533447266'

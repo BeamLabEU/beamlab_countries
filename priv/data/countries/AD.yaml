@@ -35,6 +35,11 @@ AD:
   - es
   - fr
   - pt
+  language_locales:
+    ca: ca
+    es: es-ES
+    fr: fr-FR
+    pt: pt-PT
   geo:
     latitude: 42.506285
     latitude_dec: '42.5506591796875'

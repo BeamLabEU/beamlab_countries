@@ -31,6 +31,8 @@ TF:
   - fr
   languages_spoken:
   - fr
+  language_locales:
+    fr: fr-FR
   geo:
     latitude: -49.280366
     latitude_dec: "-49.563865661621094"

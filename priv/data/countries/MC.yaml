@@ -32,6 +32,10 @@ MC:
   - fr
   - it
   - en
+  language_locales:
+    en: en-GB
+    fr: fr-FR
+    it: it
   geo:
     latitude: 43.73841760000001
     latitude_dec: '43.738929748535156'

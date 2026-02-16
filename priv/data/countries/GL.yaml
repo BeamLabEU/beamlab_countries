@@ -38,6 +38,10 @@ GL:
   - kl
   - da
   - en
+  language_locales:
+    da: da
+    en: en-US
+    kl: kl
   geo:
     latitude: 71.706936
     latitude_dec: '74.34954833984375'

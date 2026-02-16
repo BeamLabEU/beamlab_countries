@@ -38,6 +38,12 @@ VA:
   - en
   - de
   - fr
+  language_locales:
+    de: de-DE
+    en: en-GB
+    fr: fr-FR
+    it: it
+    la: la
   geo:
     latitude: 41.902916
     latitude_dec: '41.90308380126953'

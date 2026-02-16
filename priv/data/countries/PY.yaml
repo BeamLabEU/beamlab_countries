@@ -30,6 +30,9 @@ PY:
   languages_spoken:
   - es
   - gn
+  language_locales:
+    es: es-CO
+    gn: gn
   geo:
     latitude: -23.442503
     latitude_dec: "-23.24028968811035"

@@ -33,6 +33,9 @@ SO:
   languages_spoken:
   - so
   - ar
+  language_locales:
+    ar: ar
+    so: so
   geo:
     latitude: 5.152149
     latitude_dec: '5.948267459869385'

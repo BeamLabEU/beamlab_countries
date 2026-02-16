@@ -38,6 +38,8 @@ YE:
   - ar
   languages_spoken:
   - ar
+  language_locales:
+    ar: ar
   geo:
     latitude: 15.552727
     latitude_dec: '15.888387680053711'

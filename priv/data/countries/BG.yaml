@@ -52,7 +52,10 @@ BG:
   - en
   - ru
   language_locales:
+    bg: bg
     en: en-GB
+    ru: ru
+    tr: tr
   geo:
     latitude: 42.733883
     latitude_dec: '42.7661018371582'

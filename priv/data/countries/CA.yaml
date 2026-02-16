@@ -42,6 +42,7 @@ CA:
   language_locales:
     en: en-CA
     fr: fr-CA
+    pa: pa
     zh: zh-CN
   geo:
     latitude: 56.130366

@@ -33,6 +33,10 @@ GG:
   - en
   - fr
   - pt
+  language_locales:
+    en: en-GB
+    fr: fr-FR
+    pt: pt-PT
   geo:
     latitude: 49.465691
     latitude_dec: '49.72008514404297'

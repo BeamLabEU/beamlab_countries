@@ -31,6 +31,9 @@ SC:
   languages_spoken:
   - fr
   - en
+  language_locales:
+    en: en-GB
+    fr: fr-FR
   geo:
     latitude: -4.679574
     latitude_dec: "-4.669795036315918"

@@ -29,6 +29,10 @@ JE:
   - en
   - fr
   - pt
+  language_locales:
+    en: en-GB
+    fr: fr-FR
+    pt: pt-PT
   geo:
     latitude: 49.214439
     latitude_dec: '49.2285041809082'

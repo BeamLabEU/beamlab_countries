@@ -40,6 +40,10 @@ PS:
   - ar
   - he
   - en
+  language_locales:
+    ar: ar
+    en: en-GB
+    he: he
   geo:
     latitude: 31.952162
     latitude_dec: '31.946392059326172'

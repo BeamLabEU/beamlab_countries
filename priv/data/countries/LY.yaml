@@ -35,6 +35,8 @@ LY:
   - ar
   languages_spoken:
   - ar
+  language_locales:
+    ar: ar
   geo:
     latitude: 26.3351
     latitude_dec: '27.23609733581543'

@@ -32,6 +32,8 @@ GA:
   - fr
   languages_spoken:
   - fr
+  language_locales:
+    fr: fr-FR
   geo:
     latitude: -0.803689
     latitude_dec: "-0.6345400810241699"

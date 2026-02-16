@@ -32,6 +32,8 @@ CK:
   - en
   languages_spoken:
   - en
+  language_locales:
+    en: en-GB
   geo:
     latitude: -21.236736
     latitude_dec: "-21.22330665588379"

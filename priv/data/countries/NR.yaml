@@ -30,6 +30,9 @@ NR:
   languages_spoken:
   - en
   - na
+  language_locales:
+    en: en-GB
+    na: na
   geo:
     latitude: -0.522778
     latitude_dec: "-0.5316064953804016"

@@ -30,6 +30,8 @@ BB:
   - en
   languages_spoken:
   - en
+  language_locales:
+    en: en-US
   geo:
     latitude: 13.193887
     latitude_dec: '13.178098678588867'

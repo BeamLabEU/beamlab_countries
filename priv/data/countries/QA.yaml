@@ -36,6 +36,9 @@ QA:
   languages_spoken:
   - ar
   - en
+  language_locales:
+    ar: ar
+    en: en-GB
   geo:
     latitude: 25.354826
     latitude_dec: '25.413625717163086'

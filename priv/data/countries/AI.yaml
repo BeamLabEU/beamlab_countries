@@ -29,6 +29,8 @@ AI:
   - en
   languages_spoken:
   - en
+  language_locales:
+    en: en-US
   geo:
     latitude: 18.220554
     latitude_dec: '18.22646713256836'

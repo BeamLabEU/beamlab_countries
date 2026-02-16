@@ -33,6 +33,9 @@ KM:
   languages_spoken:
   - ar
   - fr
+  language_locales:
+    ar: ar
+    fr: fr-FR
   geo:
     latitude: -11.6455
     latitude_dec: "-11.86610221862793"

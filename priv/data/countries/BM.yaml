@@ -31,6 +31,8 @@ BM:
   - en
   languages_spoken:
   - en
+  language_locales:
+    en: en-US
   geo:
     latitude: 32.3078
     latitude_dec: '32.302669525146484'

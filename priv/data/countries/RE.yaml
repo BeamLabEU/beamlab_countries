@@ -30,6 +30,8 @@ RE:
   - fr
   languages_spoken:
   - fr
+  language_locales:
+    fr: fr-FR
   geo:
     latitude: -21.115141
     latitude_dec: "-21.146299362182617"

@@ -58,6 +58,8 @@ AT:
   language_locales:
     de: de-AT
     en: en-GB
+    hr: hr
+    tr: tr
   geo:
     latitude: 47.516231
     latitude_dec: '47.58843994140625'

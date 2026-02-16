@@ -34,6 +34,9 @@ MR:
   languages_spoken:
   - ar
   - fr
+  language_locales:
+    ar: ar
+    fr: fr-FR
   geo:
     latitude: 21.00789
     latitude_dec: '20.258995056152344'

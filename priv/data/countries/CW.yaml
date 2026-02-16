@@ -28,6 +28,8 @@ CW:
   - nl
   languages_spoken:
   - nl
+  language_locales:
+    nl: nl
   geo:
     latitude: 12.16957
     latitude_dec: '12.163220405578613'

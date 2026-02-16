@@ -34,6 +34,10 @@ KH:
   - km
   - en
   - fr
+  language_locales:
+    en: en-GB
+    fr: fr-FR
+    km: km
   geo:
     latitude: 12.565679
     latitude_dec: '12.570423126220703'

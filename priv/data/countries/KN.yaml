@@ -35,6 +35,8 @@ KN:
   - en
   languages_spoken:
   - en
+  language_locales:
+    en: en-US
   geo:
     latitude: 17.357822
     latitude_dec: '17.24447250366211'

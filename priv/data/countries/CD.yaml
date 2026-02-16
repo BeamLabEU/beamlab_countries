@@ -42,6 +42,12 @@ CD:
   - kg
   - sw
   - lu
+  language_locales:
+    fr: fr-FR
+    kg: kg
+    ln: ln
+    lu: lu
+    sw: sw
   geo:
     latitude: -4.038333
     latitude_dec: "-2.879866123199463"

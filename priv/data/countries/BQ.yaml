@@ -30,6 +30,9 @@ BQ:
   languages_spoken:
   - nl
   - en
+  language_locales:
+    en: en-US
+    nl: nl
   geo:
     latitude: 12.1783611
     latitude_dec: '12.178361'

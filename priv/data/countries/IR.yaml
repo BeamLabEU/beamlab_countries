@@ -31,6 +31,8 @@ IR:
   - fa
   languages_spoken:
   - fa
+  language_locales:
+    fa: fa
   geo:
     latitude: 32.427908
     latitude_dec: '32.50077819824219'

@@ -32,6 +32,9 @@ SZ:
   languages_spoken:
   - en
   - ss
+  language_locales:
+    en: en-GB
+    ss: ss
   geo:
     latitude: -26.522503
     latitude_dec: "-26.565134048461914"

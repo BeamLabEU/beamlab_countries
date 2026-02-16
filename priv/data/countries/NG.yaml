@@ -41,6 +41,9 @@ NG:
   - ig
   language_locales:
     en: en-GB
+    ha: ha
+    ig: ig
+    yo: yo
   geo:
     latitude: 9.081999
     latitude_dec: '9.559505462646484'

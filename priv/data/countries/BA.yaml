@@ -45,6 +45,11 @@ BA:
   - hr
   - sr
   - en
+  language_locales:
+    bs: bs
+    en: en-GB
+    hr: hr
+    sr: sr
   geo:
     latitude: 43.915886
     latitude_dec: '44.16533279418945'

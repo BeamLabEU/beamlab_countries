@@ -35,6 +35,9 @@ TJ:
   languages_spoken:
   - tg
   - ru
+  language_locales:
+    ru: ru
+    tg: tg
   geo:
     latitude: 38.861034
     latitude_dec: '38.879764556884766'

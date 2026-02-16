@@ -34,6 +34,8 @@ TC:
   - en
   languages_spoken:
   - en
+  language_locales:
+    en: en-US
   geo:
     latitude: 21.694025
     latitude_dec: '21.758726119995117'

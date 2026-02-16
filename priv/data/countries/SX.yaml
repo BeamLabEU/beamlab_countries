@@ -31,6 +31,9 @@ SX:
   languages_spoken:
   - nl
   - en
+  language_locales:
+    en: en-US
+    nl: nl
   geo:
     latitude: 18.04248
     latitude_dec: '18.042224884033203'

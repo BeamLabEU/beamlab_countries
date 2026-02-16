@@ -30,6 +30,8 @@ EC:
   - es
   languages_spoken:
   - es
+  language_locales:
+    es: es-CO
   geo:
     latitude: -1.831239
     latitude_dec: "-1.421528935432434"

@@ -34,6 +34,9 @@ MP:
   languages_spoken:
   - en
   - ch
+  language_locales:
+    ch: ch
+    en: en-GB
   geo:
     latitude: 15.0979
     latitude_dec: '15.262779235839844'

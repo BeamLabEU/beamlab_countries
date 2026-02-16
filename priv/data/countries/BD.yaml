@@ -30,6 +30,9 @@ BD:
   languages_spoken:
   - bn
   - en
+  language_locales:
+    bn: bn
+    en: en-GB
   geo:
     latitude: 23.684994
     latitude_dec: '23.730104446411133'

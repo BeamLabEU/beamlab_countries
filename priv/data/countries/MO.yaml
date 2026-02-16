@@ -31,6 +31,9 @@ MO:
   languages_spoken:
   - zh
   - pt
+  language_locales:
+    pt: pt-PT
+    zh: zh-CN
   geo:
     latitude: 22.198745
     latitude_dec: '22.140748977661133'

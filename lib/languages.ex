@@ -22,7 +22,7 @@ defmodule BeamLabCountries.Languages do
       #=> "English (United States)"
 
       BeamLabCountries.Languages.all_locales() |> length()
-      #=> 85
+      #=> 140
 
   ## Country-Language Associations
 
@@ -319,7 +319,7 @@ defmodule BeamLabCountries.Languages do
   ## Examples
 
       iex> BeamLabCountries.Languages.locale_count()
-      85
+      140
 
   """
   def locale_count do

@@ -29,6 +29,8 @@ MQ:
   - fr
   languages_spoken:
   - fr
+  language_locales:
+    fr: fr-FR
   geo:
     latitude: 14.641528
     latitude_dec: '14.642807960510254'

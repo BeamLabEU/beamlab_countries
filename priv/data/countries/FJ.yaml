@@ -36,6 +36,11 @@ FJ:
   - fj
   - hi
   - ur
+  language_locales:
+    en: en-GB
+    fj: fj
+    hi: hi
+    ur: ur
   geo:
     latitude: -17.713371
     latitude_dec: "-17.658161163330078"

@@ -28,6 +28,8 @@ YT:
   - fr
   languages_spoken:
   - fr
+  language_locales:
+    fr: fr-FR
   geo:
     latitude: -12.8275
     latitude_dec: "-12.79636001586914"

@@ -29,6 +29,8 @@ HM:
   - en
   languages_spoken:
   - en
+  language_locales:
+    en: en-GB
   geo:
     latitude: -53.08181
     latitude_dec: "-53.080108642578125"

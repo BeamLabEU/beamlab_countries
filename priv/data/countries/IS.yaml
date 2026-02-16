@@ -48,6 +48,10 @@ IS:
   - is
   - en
   - da
+  language_locales:
+    da: da
+    en: en-GB
+    is: is
   geo:
     latitude: 64.963051
     latitude_dec: '64.9285659790039'

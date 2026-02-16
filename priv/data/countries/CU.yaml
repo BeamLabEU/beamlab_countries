@@ -29,6 +29,8 @@ CU:
   - es
   languages_spoken:
   - es
+  language_locales:
+    es: es-MX
   geo:
     latitude: 21.521757
     latitude_dec: '22.066335678100586'

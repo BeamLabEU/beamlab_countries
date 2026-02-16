@@ -34,6 +34,10 @@ AF:
   - ps
   - uz
   - tk
+  language_locales:
+    ps: ps
+    tk: tk
+    uz: uz
   geo:
     latitude: 33.93911
     latitude_dec: '33.833248138427734'

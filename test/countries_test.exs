@@ -89,6 +89,85 @@ defmodule BeamLabCountriesTest do
     assert Enum.count(BeamLabCountries.Subdivisions.all(country)) == 14
   end
 
+  describe "language_locales" do
+    test "is populated for countries with multi-variant languages" do
+      # UK uses British English
+      country = BeamLabCountries.get("GB")
+      assert %{en: "en-GB"} = country.language_locales
+
+      # US uses American English
+      country = BeamLabCountries.get("US")
+      assert %{en: "en-US"} = country.language_locales
+
+      # Canada has both English and French variants
+      country = BeamLabCountries.get("CA")
+      assert %{en: "en-CA", fr: "fr-CA"} = country.language_locales
+    end
+
+    test "all language_locales map to valid locales" do
+      invalid_mappings =
+        BeamLabCountries.all()
+        |> Enum.reject(&is_nil(&1.language_locales))
+        |> Enum.flat_map(fn country ->
+          country.language_locales
+          |> Map.values()
+          |> Enum.reject(&BeamLabCountries.Languages.valid_locale?/1)
+          |> Enum.map(&{country.alpha2, &1})
+        end)
+
+      assert invalid_mappings == [],
+             "Found invalid locale mappings: #{inspect(invalid_mappings)}"
+    end
+
+    test "is nil for countries without spoken languages" do
+      # Only countries with no spoken languages have nil language_locales
+      # Antarctica
+      country = BeamLabCountries.get("AQ")
+      assert is_nil(country.language_locales)
+
+      # Bouvet Island
+      country = BeamLabCountries.get("BV")
+      assert is_nil(country.language_locales)
+    end
+
+    test "includes single-variant locale mappings" do
+      # Afghanistan speaks ps, uz, tk - all single-variant
+      af = BeamLabCountries.get("AF")
+      assert af.language_locales[:ps] == "ps"
+      assert af.language_locales[:uz] == "uz"
+      assert af.language_locales[:tk] == "tk"
+
+      # Mongolia speaks mn - single-variant
+      mn = BeamLabCountries.get("MN")
+      assert mn.language_locales[:mn] == "mn"
+    end
+
+    test "maps languages spoken to appropriate regional variants" do
+      # Kenya was a British colony, uses British English
+      ke = BeamLabCountries.get("KE")
+      assert ke.language_locales[:en] == "en-GB"
+
+      # Jamaica is in the Americas, uses American English
+      jm = BeamLabCountries.get("JM")
+      assert jm.language_locales[:en] == "en-US"
+
+      # Luxembourg maps multiple languages
+      lu = BeamLabCountries.get("LU")
+      assert lu.language_locales[:de] == "de-DE"
+      assert lu.language_locales[:fr] == "fr-FR"
+      assert lu.language_locales[:en] == "en-GB"
+      assert lu.language_locales[:pt] == "pt-PT"
+
+      # Brazil uses Brazilian Portuguese
+      br = BeamLabCountries.get("BR")
+      assert br.language_locales[:pt] == "pt-BR"
+
+      # Portugal uses European Portuguese
+      pt = BeamLabCountries.get("PT")
+      assert pt.language_locales[:pt] == "pt-PT"
+    end
+  end
+
   describe "vat_rates" do
     test "returns proper numeric values for standard rate" do
       # Estonia has 24% VAT (updated 2025)

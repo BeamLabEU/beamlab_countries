@@ -29,6 +29,8 @@ HN:
   - es
   languages_spoken:
   - es
+  language_locales:
+    es: es-MX
   geo:
     latitude: 15.199999
     latitude_dec: '14.975032806396484'

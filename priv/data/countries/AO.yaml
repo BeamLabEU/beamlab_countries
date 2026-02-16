@@ -28,6 +28,8 @@ AO:
   - pt
   languages_spoken:
   - pt
+  language_locales:
+    pt: pt-PT
   geo:
     latitude: 47.516231
     latitude_dec: "-12.333555221557617"

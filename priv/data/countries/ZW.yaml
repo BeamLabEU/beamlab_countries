@@ -37,6 +37,10 @@ ZW:
   - en
   - sn
   - nd
+  language_locales:
+    en: en-GB
+    nd: nd
+    sn: sn
   geo:
     latitude: -19.015438
     latitude_dec: "-19.000280380249023"

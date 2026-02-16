@@ -47,6 +47,11 @@ CY:
   - tr
   - hy
   - en
+  language_locales:
+    el: el
+    en: en-GB
+    hy: hy
+    tr: tr
   geo:
     latitude: 35.126413
     latitude_dec: '35.11473846435547'

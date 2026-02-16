@@ -32,6 +32,9 @@ EH:
   languages_spoken:
   - es
   - fr
+  language_locales:
+    es: es-CO
+    fr: fr-FR
   geo:
     latitude: 24.215527
     latitude_dec: '25'

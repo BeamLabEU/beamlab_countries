@@ -34,6 +34,9 @@ TD:
   languages_spoken:
   - ar
   - fr
+  language_locales:
+    ar: ar
+    fr: fr-FR
   geo:
     latitude: 15.454166
     latitude_dec: '15.367652893066406'

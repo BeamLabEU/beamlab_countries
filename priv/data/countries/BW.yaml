@@ -30,6 +30,9 @@ BW:
   languages_spoken:
   - en
   - tn
+  language_locales:
+    en: en-GB
+    tn: tn
   geo:
     latitude: -22.328474
     latitude_dec: "-22.186752319335938"

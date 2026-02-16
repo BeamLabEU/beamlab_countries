@@ -43,7 +43,12 @@ IN:
   - ta
   - mr
   language_locales:
+    bn: bn
     en: en-GB
+    hi: hi
+    mr: mr
+    ta: ta
+    te: te
   geo:
     latitude: 20.593684
     latitude_dec: '23.4060115814209'

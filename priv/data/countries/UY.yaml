@@ -29,6 +29,8 @@ UY:
   - es
   languages_spoken:
   - es
+  language_locales:
+    es: es-CO
   geo:
     latitude: -32.522779
     latitude_dec: "-32.96965408325195"

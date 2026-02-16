@@ -40,6 +40,9 @@ JO:
   languages_spoken:
   - ar
   - en
+  language_locales:
+    ar: ar
+    en: en-GB
   geo:
     latitude: 30.585164
     latitude_dec: '31.2757625579834'

@@ -28,6 +28,8 @@ BN:
   - ms
   languages_spoken:
   - ms
+  language_locales:
+    ms: ms
   geo:
     latitude: 4.535277
     latitude_dec: '4.5703840255737305'

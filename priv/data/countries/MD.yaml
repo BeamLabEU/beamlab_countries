@@ -36,6 +36,11 @@ MD:
   - ru
   - uk
   - en
+  language_locales:
+    en: en-GB
+    ro: ro
+    ru: ru
+    uk: uk
   geo:
     latitude: 47.411631
     latitude_dec: '47.203704833984375'

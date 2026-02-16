@@ -49,8 +49,9 @@ DK:
   - en
   - de
   language_locales:
-    en: en-GB
+    da: da
     de: de-DE
+    en: en-GB
   geo:
     latitude: 56.26392
     latitude_dec: '56.10176086425781'

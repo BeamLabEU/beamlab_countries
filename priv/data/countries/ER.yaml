@@ -34,6 +34,10 @@ ER:
   - en
   - ar
   - ti
+  language_locales:
+    ar: ar
+    en: en-GB
+    ti: ti
   geo:
     latitude: 15.179384
     latitude_dec: '15.397199630737305'

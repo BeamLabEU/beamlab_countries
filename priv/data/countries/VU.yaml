@@ -34,6 +34,10 @@ VU:
   - bi
   - en
   - fr
+  language_locales:
+    bi: bi
+    en: en-GB
+    fr: fr-FR
   geo:
     latitude: -15.376706
     latitude_dec: "-16.376684188842773"

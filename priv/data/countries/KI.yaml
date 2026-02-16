@@ -28,6 +28,8 @@ KI:
   - en
   languages_spoken:
   - en
+  language_locales:
+    en: en-GB
   geo:
     latitude: 1.8708833
     latitude_dec: '1.842833161354065'

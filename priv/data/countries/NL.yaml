@@ -49,9 +49,10 @@ NL:
   - de
   - fr
   language_locales:
-    en: en-GB
     de: de-DE
+    en: en-GB
     fr: fr-FR
+    nl: nl
   geo:
     latitude: 52.132633
     latitude_dec: '52.34225845336914'

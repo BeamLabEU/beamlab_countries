@@ -30,6 +30,9 @@ MW:
   languages_spoken:
   - en
   - ny
+  language_locales:
+    en: en-GB
+    ny: ny
   geo:
     latitude: -13.254308
     latitude_dec: "-13.523577690124512"

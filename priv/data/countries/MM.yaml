@@ -30,6 +30,9 @@ MM:
   languages_spoken:
   - my
   - en
+  language_locales:
+    en: en-GB
+    my: my
   geo:
     latitude: 21.916221
     latitude_dec: '20.330142974853516'

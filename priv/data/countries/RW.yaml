@@ -34,6 +34,10 @@ RW:
   - rw
   - en
   - fr
+  language_locales:
+    en: en-GB
+    fr: fr-FR
+    rw: rw
   geo:
     latitude: -1.940278
     latitude_dec: "-1.9999498128890991"

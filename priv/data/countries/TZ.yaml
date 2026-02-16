@@ -33,6 +33,9 @@ TZ:
   languages_spoken:
   - sw
   - en
+  language_locales:
+    en: en-GB
+    sw: sw
   geo:
     latitude: -6.369028
     latitude_dec: "-6.306897163391113"

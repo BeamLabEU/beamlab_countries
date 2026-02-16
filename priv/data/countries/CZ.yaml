@@ -52,8 +52,10 @@ CZ:
   - en
   - de
   language_locales:
-    en: en-GB
+    cs: cs
     de: de-DE
+    en: en-GB
+    sk: sk
   geo:
     latitude: 49.81749199999999
     latitude_dec: '49.739105224609375'

@@ -31,6 +31,9 @@ KE:
   languages_spoken:
   - en
   - sw
+  language_locales:
+    en: en-GB
+    sw: sw
   geo:
     latitude: -0.023559
     latitude_dec: '0.5765031576156616'

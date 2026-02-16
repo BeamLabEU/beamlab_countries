@@ -45,6 +45,11 @@ MK:
   - sq
   - tr
   - en
+  language_locales:
+    en: en-GB
+    mk: mk
+    sq: sq
+    tr: tr
   geo:
     latitude: 41.608635
     latitude_dec: '41.60045623779297'

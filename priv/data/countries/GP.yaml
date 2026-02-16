@@ -29,6 +29,8 @@ GP:
   - fr
   languages_spoken:
   - fr
+  language_locales:
+    fr: fr-FR
   geo:
     latitude: 16.265
     latitude_dec: '16.256731033325195'

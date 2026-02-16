@@ -34,6 +34,9 @@ NA:
   languages_spoken:
   - en
   - af
+  language_locales:
+    af: af
+    en: en-GB
   geo:
     latitude: -22.95764
     latitude_dec: "-22.150699615478516"

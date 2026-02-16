@@ -28,6 +28,8 @@ ML:
   - fr
   languages_spoken:
   - fr
+  language_locales:
+    fr: fr-FR
   geo:
     latitude: 17.570692
     latitude_dec: '17.35776710510254'

@@ -32,6 +32,8 @@ CV:
   - pt
   languages_spoken:
   - pt
+  language_locales:
+    pt: pt-PT
   geo:
     latitude: 15.120142
     latitude_dec: '15.183002471923828'
