@@ -1,4 +1,4 @@
-# BeamLabCountries
+# BEAM Lab Countries
 
 BeamLabCountries is a collection of all sorts of useful information for every country in the [ISO 3166](https://en.wikipedia.org/wiki/ISO_3166) standard. It includes country data, subdivisions (states/provinces), international organizations, language information, and country name translations.
 
