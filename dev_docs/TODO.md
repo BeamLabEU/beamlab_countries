@@ -1,6 +1,6 @@
 # TODO
 
-Improvement proposals for PkCountries library.
+Improvement proposals for BeamLabCountries library.
 
 ## Completed
 
@@ -12,6 +12,11 @@ Improvement proposals for PkCountries library.
 - [x] Simplified `equals_or_contains_in_list/2` with `Enum.any?/2`
 - [x] Cleaned up `Application.start(:yamerl)` - now uses `ensure_all_started/1`
 - [x] Added `count/0` helper
+- [x] Added `eu_members/0` convenience function
+- [x] Added `filter_by/1` for multi-attribute filtering (keyword list)
+- [x] Added `Subdivisions.get/2` - get specific subdivision by country and ID
+- [x] Added `BeamLabCountries.Random` module - `country/0`, `flag/0`
+- [x] Added `dialyxir` with `mix precommit` and `mix quality` aliases
 
 ## Medium Priority
 
@@ -23,27 +28,9 @@ Subdivisions are read from disk on every `Subdivisions.all/1` call. Options:
 
 ## Low Priority / Nice to Have
 
-### Add `get_subdivision/2`
-Get specific subdivision by country and ID:
-```elixir
-PkCountries.Subdivisions.get("US", "US-CA")
-# %PkCountries.Subdivision{id: "US-CA", name: "California", ...}
-```
-
 ### Add typespec annotations
 Add `@spec` for all public functions to enable Dialyzer and improve docs:
 ```elixir
 @spec get(String.t()) :: Country.t() | nil
 @spec filter_by(atom(), term()) :: [Country.t()]
-```
-
-### Add `eu_members/0` convenience function
-```elixir
-PkCountries.eu_members()
-# [%PkCountries.Country{alpha2: "AT", ...}, ...]
-```
-
-### Support filtering by multiple attributes
-```elixir
-PkCountries.filter_by(region: "Europe", eu_member: true)
 ```

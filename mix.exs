@@ -11,7 +11,12 @@ defmodule BeamLabCountries.MixProject do
       elixir: "~> 1.18",
       deps: deps(),
       docs: docs(),
-      package: package()
+      package: package(),
+      aliases: aliases(),
+      dialyzer: [
+        plt_file: {:no_warn, "priv/plts/dialyzer.plt"},
+        plt_add_apps: [:ex_unit]
+      ]
     ]
   end
 
@@ -23,7 +28,8 @@ defmodule BeamLabCountries.MixProject do
     [
       {:yaml_elixir, "~> 2.12"},
       {:ex_doc, "~> 0.39", only: :dev, runtime: false},
-      {:credo, "~> 1.7", only: [:dev, :test], runtime: false}
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
+      {:dialyxir, "~> 1.4", only: [:dev, :test], runtime: false}
     ]
   end
 
@@ -37,6 +43,14 @@ defmodule BeamLabCountries.MixProject do
       source_url: @source_url,
       source_ref: "v#{@version}",
       formatters: ["html"]
+    ]
+  end
+
+  defp aliases do
+    [
+      quality: ["format", "credo --strict", "dialyzer"],
+      "quality.ci": ["format --check-formatted", "credo --strict", "dialyzer"],
+      precommit: ["compile", "quality"]
     ]
   end
 

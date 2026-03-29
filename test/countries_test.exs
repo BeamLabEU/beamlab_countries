@@ -76,6 +76,44 @@ defmodule BeamLabCountriesTest do
       countries = BeamLabCountries.filter_by(:national_destination_code_lengths, "2")
       assert Enum.count(countries) == 200
     end
+
+    test "filters by multiple attributes" do
+      countries = BeamLabCountries.filter_by(region: "Europe", eu_member: true)
+      assert length(countries) == 26
+      assert Enum.all?(countries, & &1.eu_member)
+      assert Enum.all?(countries, &(&1.region == "Europe"))
+    end
+
+    test "filters by multiple attributes with no results" do
+      countries = BeamLabCountries.filter_by(region: "Africa", eu_member: true)
+      assert countries == []
+    end
+  end
+
+  describe "eu_members/0" do
+    test "returns 27 EU member countries" do
+      eu = BeamLabCountries.eu_members()
+      assert length(eu) == 27
+    end
+
+    test "all are EU members" do
+      eu = BeamLabCountries.eu_members()
+      assert Enum.all?(eu, & &1.eu_member)
+    end
+
+    test "includes known EU members" do
+      eu_alpha2 = BeamLabCountries.eu_members() |> Enum.map(& &1.alpha2) |> MapSet.new()
+      assert "DE" in eu_alpha2
+      assert "FR" in eu_alpha2
+      assert "PL" in eu_alpha2
+    end
+
+    test "excludes non-EU countries" do
+      eu_alpha2 = BeamLabCountries.eu_members() |> Enum.map(& &1.alpha2) |> MapSet.new()
+      refute "US" in eu_alpha2
+      refute "GB" in eu_alpha2
+      refute "CH" in eu_alpha2
+    end
   end
 
   test "get country subdivisions" do

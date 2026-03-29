@@ -12,6 +12,8 @@ mix test test/countries_test.exs:12  # Run specific test by line number
 mix credo --strict    # Run static analysis
 mix format            # Format code
 mix docs              # Generate documentation
+mix precommit         # Run compile + format + credo + dialyzer
+mix quality           # Run format + credo + dialyzer
 ```
 
 ## Architecture

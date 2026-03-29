@@ -100,7 +100,7 @@ defmodule BeamLabCountries do
 
   Returns a list of `BeamLabCountries.Country` structs
 
-  ## Examples
+  ## Single attribute
 
       iex> countries = BeamLabCountries.filter_by(:region, "Europe")
       iex> Enum.count(countries)
@@ -114,12 +114,32 @@ defmodule BeamLabCountries do
       iex> Enum.map(countries, &Map.get(&1, :name)) |> List.first
       "United Kingdom of Great Britain and Northern Ireland"
 
+  ## Multiple attributes
+
+      iex> countries = BeamLabCountries.filter_by(region: "Europe", eu_member: true)
+      iex> length(countries)
+      26
+
+      iex> countries = BeamLabCountries.filter_by(region: "Europe", eea_member: true)
+      iex> length(countries)
+      30
+
   """
-  def filter_by(attribute, value) do
+  def filter_by(attribute, value) when is_atom(attribute) do
     Enum.filter(countries(), fn country ->
       country
       |> Map.get(attribute)
       |> equals_or_contains_in_list(value)
+    end)
+  end
+
+  def filter_by(criteria) when is_list(criteria) do
+    Enum.filter(countries(), fn country ->
+      Enum.all?(criteria, fn {attribute, value} ->
+        country
+        |> Map.get(attribute)
+        |> equals_or_contains_in_list(value)
+      end)
     end)
   end
 
@@ -141,6 +161,22 @@ defmodule BeamLabCountries do
     do: value |> String.downcase() |> String.replace(~r/\s+/, "")
 
   defp normalize(value), do: value
+
+  @doc """
+  Returns all EU member countries.
+
+  ## Examples
+
+      iex> eu = BeamLabCountries.eu_members()
+      iex> length(eu)
+      27
+      iex> Enum.map(eu, &Map.get(&1, :alpha2)) |> Enum.take(3)
+      ["AT", "BE", "BG"]
+
+  """
+  def eu_members do
+    filter_by(:eu_member, true)
+  end
 
   @doc """
   Checks if country for specific attribute and value exists.

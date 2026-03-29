@@ -25,6 +25,9 @@ countries-*.tar
 # Temporary files for e.g. tests.
 /tmp
 
+# Dialyzer PLT files
+/priv/plts/
+
 # OSX
 .DS_Store
 .AppleDouble
