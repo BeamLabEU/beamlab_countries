@@ -13,6 +13,7 @@ SE:
   ioc: SWE
   gec: SW
   name: Sweden
+  short_name: Sweden
   flag: '🇸🇪'
   national_destination_code_lengths:
   - 2

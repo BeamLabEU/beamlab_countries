@@ -8,6 +8,7 @@ MY:
   ioc: MAS
   gec: MY
   name: Malaysia
+  short_name: Malaysia
   flag: '🇲🇾'
   national_destination_code_lengths:
   - 2

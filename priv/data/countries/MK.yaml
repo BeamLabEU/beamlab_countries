@@ -13,6 +13,7 @@ MK:
   ioc: MKD
   gec: MK
   name: Macedonia (the former Yugoslav Republic of)
+  short_name: North Macedonia
   flag: '🇲🇰'
   national_destination_code_lengths:
   - 2

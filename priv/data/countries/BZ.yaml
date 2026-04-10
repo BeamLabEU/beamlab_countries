@@ -8,6 +8,7 @@ BZ:
   ioc: BIZ
   gec: BH
   name: Belize
+  short_name: Belize
   flag: '🇧🇿'
   national_destination_code_lengths:
   - 2

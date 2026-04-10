@@ -8,6 +8,7 @@ NR:
   ioc: NRU
   gec: NR
   name: Nauru
+  short_name: Nauru
   flag: '🇳🇷'
   national_destination_code_lengths:
   - 2

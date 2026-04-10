@@ -8,6 +8,7 @@ BN:
   ioc: BRU
   gec: BX
   name: Brunei Darussalam
+  short_name: Brunei
   flag: '🇧🇳'
   national_destination_code_lengths:
   - 2

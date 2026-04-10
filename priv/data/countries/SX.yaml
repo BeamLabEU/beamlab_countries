@@ -9,6 +9,7 @@ SX:
   ioc: 
   gec: NN
   name: Sint Maarten (Dutch part)
+  short_name: Sint Maarten
   flag: '🇸🇽'
   national_destination_code_lengths:
   - 3

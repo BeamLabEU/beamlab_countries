@@ -9,6 +9,7 @@ VC:
   ioc: VIN
   gec: VC
   name: Saint Vincent and the Grenadines
+  short_name: Saint Vincent and the Grenadines
   flag: '🇻🇨'
   national_destination_code_lengths:
   - 3

@@ -8,6 +8,7 @@ SS:
   ioc:
   gec: OD
   name: South Sudan
+  short_name: South Sudan
   flag: '🇸🇸'
   national_destination_code_lengths:
   - 2

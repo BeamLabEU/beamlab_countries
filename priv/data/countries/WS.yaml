@@ -8,6 +8,7 @@ WS:
   ioc: SAM
   gec: WS
   name: Samoa
+  short_name: Samoa
   flag: '🇼🇸'
   national_destination_code_lengths:
   - 2

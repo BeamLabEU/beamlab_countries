@@ -8,6 +8,7 @@ HT:
   ioc: HAI
   gec: HA
   name: Haiti
+  short_name: Haiti
   flag: '🇭🇹'
   national_destination_code_lengths:
   - 2

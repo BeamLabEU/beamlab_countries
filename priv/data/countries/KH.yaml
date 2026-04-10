@@ -8,6 +8,7 @@ KH:
   ioc: CAM
   gec: CB
   name: Cambodia
+  short_name: Cambodia
   flag: '🇰🇭'
   national_destination_code_lengths:
   - 2

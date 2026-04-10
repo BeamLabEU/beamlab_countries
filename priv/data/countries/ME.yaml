@@ -8,6 +8,7 @@ ME:
   ioc: MNE
   gec: MJ
   name: Montenegro
+  short_name: Montenegro
   flag: '🇲🇪'
   national_destination_code_lengths:
   - 2

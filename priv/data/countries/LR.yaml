@@ -8,6 +8,7 @@ LR:
   ioc: LBR
   gec: LI
   name: Liberia
+  short_name: Liberia
   flag: '🇱🇷'
   national_destination_code_lengths:
   - 2

@@ -8,6 +8,7 @@ LA:
   ioc: LAO
   gec: LA
   name: Lao People's Democratic Republic
+  short_name: Laos
   flag: '🇱🇦'
   national_destination_code_lengths:
   - 2

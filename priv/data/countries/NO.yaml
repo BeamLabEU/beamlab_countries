@@ -13,6 +13,7 @@
   ioc: NOR
   gec: 'NO'
   name: Norway
+  short_name: Norway
   flag: '🇳🇴'
   national_destination_code_lengths:
   - 2

@@ -8,6 +8,7 @@ CC:
   ioc: 
   gec: CK
   name: Cocos (Keeling) Islands
+  short_name: Cocos Islands
   flag: '🇨🇨'
   national_destination_code_lengths:
   - 2

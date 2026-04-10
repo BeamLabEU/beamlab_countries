@@ -13,6 +13,7 @@ BA:
   ioc: BIH
   gec: BK
   name: Bosnia and Herzegovina
+  short_name: Bosnia and Herzegovina
   flag: '🇧🇦'
   national_destination_code_lengths:
   - 2

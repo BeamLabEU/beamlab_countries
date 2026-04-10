@@ -8,6 +8,7 @@ VE:
   ioc: VEN
   gec: VE
   name: Venezuela (Bolivarian Republic of)
+  short_name: Venezuela
   flag: '🇻🇪'
   national_destination_code_lengths:
   - 2

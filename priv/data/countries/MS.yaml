@@ -9,6 +9,7 @@ MS:
   ioc: 
   gec: MH
   name: Montserrat
+  short_name: Montserrat
   flag: '🇲🇸'
   national_destination_code_lengths:
   - 3

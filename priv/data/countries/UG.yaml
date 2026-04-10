@@ -8,6 +8,7 @@ UG:
   ioc: UGA
   gec: UG
   name: Uganda
+  short_name: Uganda
   flag: '🇺🇬'
   national_destination_code_lengths:
   - 2

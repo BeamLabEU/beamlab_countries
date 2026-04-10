@@ -8,6 +8,7 @@ PG:
   ioc: PNG
   gec: PP
   name: Papua New Guinea
+  short_name: Papua New Guinea
   flag: '🇵🇬'
   national_destination_code_lengths:
   - 2

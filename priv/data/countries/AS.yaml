@@ -9,6 +9,7 @@ AS:
   ioc: ASA
   gec: AQ
   name: American Samoa
+  short_name: American Samoa
   flag: '🇦🇸'
   national_destination_code_lengths:
   - 3

@@ -9,6 +9,7 @@ NA:
   ioc: NAM
   gec: WA
   name: Namibia
+  short_name: Namibia
   flag: '🇳🇦'
   national_destination_code_lengths:
   - 2

@@ -8,6 +8,7 @@ YT:
   ioc: 
   gec: MF
   name: Mayotte
+  short_name: Mayotte
   flag: '🇾🇹'
   national_destination_code_lengths:
   - 2

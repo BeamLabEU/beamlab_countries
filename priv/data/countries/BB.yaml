@@ -9,6 +9,7 @@ BB:
   ioc: BAR
   gec: BB
   name: Barbados
+  short_name: Barbados
   flag: '🇧🇧'
   national_destination_code_lengths:
   - 3

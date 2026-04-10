@@ -8,6 +8,7 @@ WF:
   ioc: 
   gec: WF
   name: Wallis and Futuna
+  short_name: Wallis and Futuna
   flag: '🇼🇫'
   national_destination_code_lengths:
   - 2

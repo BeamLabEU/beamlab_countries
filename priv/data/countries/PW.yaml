@@ -8,6 +8,7 @@ PW:
   ioc: PLW
   gec: PS
   name: Palau
+  short_name: Palau
   flag: '🇵🇼'
   national_destination_code_lengths:
   - 2

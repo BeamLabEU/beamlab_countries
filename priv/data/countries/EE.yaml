@@ -8,6 +8,7 @@ EE:
   ioc: EST
   gec: EN
   name: Estonia
+  short_name: Estonia
   flag: '🇪🇪'
   national_destination_code_lengths:
   - 2

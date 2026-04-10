@@ -9,6 +9,7 @@ PA:
   ioc: PAN
   gec: PM
   name: Panama
+  short_name: Panama
   flag: '🇵🇦'
   national_destination_code_lengths:
   - 2

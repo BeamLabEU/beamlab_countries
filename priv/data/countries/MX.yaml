@@ -13,6 +13,7 @@ MX:
   ioc: MEX
   gec: MX
   name: Mexico
+  short_name: Mexico
   flag: '🇲🇽'
   national_destination_code_lengths:
   - 2

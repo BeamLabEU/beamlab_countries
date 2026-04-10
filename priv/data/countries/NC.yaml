@@ -8,6 +8,7 @@ NC:
   ioc: 
   gec: NC
   name: New Caledonia
+  short_name: New Caledonia
   flag: '🇳🇨'
   national_destination_code_lengths:
   - 2

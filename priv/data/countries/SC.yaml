@@ -8,6 +8,7 @@ SC:
   ioc: SEY
   gec: SE
   name: Seychelles
+  short_name: Seychelles
   flag: '🇸🇨'
   national_destination_code_lengths:
   - 2

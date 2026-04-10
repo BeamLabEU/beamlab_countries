@@ -8,6 +8,7 @@ MO:
   ioc: 
   gec: MC
   name: Macao
+  short_name: Macao
   flag: '🇲🇴'
   national_destination_code_lengths:
   - 2

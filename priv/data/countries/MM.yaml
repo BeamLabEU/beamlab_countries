@@ -8,6 +8,7 @@ MM:
   ioc: MYA
   gec: BM
   name: Myanmar
+  short_name: Myanmar
   flag: '🇲🇲'
   national_destination_code_lengths:
   - 2

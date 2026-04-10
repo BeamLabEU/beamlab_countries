@@ -28,6 +28,7 @@ defmodule BeamLabCountries.Loader do
       alpha3: data["alpha3"],
       currency: data["currency"],
       name: data["name"],
+      short_name: data["short_name"],
       flag: data["flag"],
       unofficial_names: data["unofficial_names"],
       continent: data["continent"],
@@ -36,6 +37,7 @@ defmodule BeamLabCountries.Loader do
       geo: atomize_keys(data["geo"]),
       world_region: data["world_region"],
       country_code: data["country_code"],
+      phone_prefix: phone_prefix(data["country_code"]),
       national_destination_code_lengths: data["national_destination_code_lengths"],
       national_number_lengths: data["national_number_lengths"],
       international_prefix: data["international_prefix"],
@@ -59,6 +61,9 @@ defmodule BeamLabCountries.Loader do
       subdivision_type: data["subdivision_type"]
     }
   end
+
+  defp phone_prefix(nil), do: nil
+  defp phone_prefix(code), do: "+" <> code
 
   defp atomize_keys(nil), do: nil
 

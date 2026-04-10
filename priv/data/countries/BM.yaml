@@ -9,6 +9,7 @@ BM:
   ioc: BER
   gec: BD
   name: Bermuda
+  short_name: Bermuda
   flag: '🇧🇲'
   national_destination_code_lengths:
   - 3

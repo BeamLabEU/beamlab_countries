@@ -8,6 +8,7 @@ BF:
   ioc: BUR
   gec: UV
   name: Burkina Faso
+  short_name: Burkina Faso
   flag: '🇧🇫'
   national_destination_code_lengths:
   - 2

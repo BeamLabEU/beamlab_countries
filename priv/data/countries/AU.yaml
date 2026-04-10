@@ -13,6 +13,7 @@ AU:
   ioc: AUS
   gec: AS
   name: Australia
+  short_name: Australia
   flag: '🇦🇺'
   national_destination_code_lengths:
   - 2

@@ -6,6 +6,7 @@ BQ:
   country_code: '599'
   international_prefix: '00'
   name: Bonaire, Sint Eustatius and Saba
+  short_name: Bonaire
   flag: '🇧🇶'
   national_destination_code_lengths:
   - 2

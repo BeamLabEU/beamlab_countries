@@ -8,6 +8,7 @@ DZ:
   ioc: ALG
   gec: AG
   name: Algeria
+  short_name: Algeria
   flag: '🇩🇿'
   national_destination_code_lengths:
   - 2

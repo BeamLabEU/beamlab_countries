@@ -13,6 +13,7 @@ TW:
   ioc: TPE
   gec: TW
   name: Taiwan, Province of China
+  short_name: Taiwan
   flag: '🇹🇼'
   national_destination_code_lengths:
   - 2

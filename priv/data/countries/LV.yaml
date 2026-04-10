@@ -8,6 +8,7 @@ LV:
   ioc: LAT
   gec: LG
   name: Latvia
+  short_name: Latvia
   flag: '🇱🇻'
   national_destination_code_lengths:
   - 2

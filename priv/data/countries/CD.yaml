@@ -8,6 +8,7 @@ CD:
   ioc: COD
   gec: CG
   name: Congo (Democratic Republic of the)
+  short_name: DR Congo
   flag: '🇨🇩'
   national_destination_code_lengths:
   - 2

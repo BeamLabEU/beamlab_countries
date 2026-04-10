@@ -8,6 +8,7 @@ VU:
   ioc: VAN
   gec: NH
   name: Vanuatu
+  short_name: Vanuatu
   flag: '🇻🇺'
   national_destination_code_lengths:
   - 2

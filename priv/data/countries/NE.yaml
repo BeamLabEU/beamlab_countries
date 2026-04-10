@@ -8,6 +8,7 @@ NE:
   ioc: NIG
   gec: NG
   name: Niger
+  short_name: Niger
   flag: '🇳🇪'
   national_destination_code_lengths:
   - 2

@@ -8,6 +8,7 @@ GA:
   ioc: GAB
   gec: GB
   name: Gabon
+  short_name: Gabon
   flag: '🇬🇦'
   national_destination_code_lengths:
   - 2

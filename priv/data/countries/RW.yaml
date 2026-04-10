@@ -8,6 +8,7 @@ RW:
   ioc: RWA
   gec: RW
   name: Rwanda
+  short_name: Rwanda
   flag: '🇷🇼'
   national_destination_code_lengths:
   - 2

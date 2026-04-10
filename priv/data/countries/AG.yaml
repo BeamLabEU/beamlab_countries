@@ -9,6 +9,7 @@ AG:
   ioc: ANT
   gec: AC
   name: Antigua and Barbuda
+  short_name: Antigua and Barbuda
   flag: '🇦🇬'
   national_destination_code_lengths:
   - 3

@@ -8,6 +8,7 @@ SD:
   ioc: SUD
   gec: SU
   name: Sudan
+  short_name: Sudan
   flag: '🇸🇩'
   national_destination_code_lengths:
   - 2

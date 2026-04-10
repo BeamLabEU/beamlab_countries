@@ -13,6 +13,7 @@ FI:
   ioc: FIN
   gec: FI
   name: Finland
+  short_name: Finland
   flag: '🇫🇮'
   national_destination_code_lengths:
   - 2

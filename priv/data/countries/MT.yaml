@@ -8,6 +8,7 @@ MT:
   ioc: MLT
   gec: MT
   name: Malta
+  short_name: Malta
   flag: '🇲🇹'
   national_destination_code_lengths:
   - 2

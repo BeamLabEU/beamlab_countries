@@ -8,6 +8,7 @@ CY:
   ioc: CYP
   gec: CY
   name: Cyprus
+  short_name: Cyprus
   flag: '🇨🇾'
   national_destination_code_lengths:
   - 2

@@ -8,6 +8,7 @@ NI:
   ioc: NCA
   gec: NU
   name: Nicaragua
+  short_name: Nicaragua
   flag: '🇳🇮'
   national_destination_code_lengths:
   - 2

@@ -8,6 +8,7 @@ CM:
   ioc: CMR
   gec: CM
   name: Cameroon
+  short_name: Cameroon
   flag: '🇨🇲'
   national_destination_code_lengths:
   - 2

@@ -13,6 +13,7 @@ GL:
   ioc: 
   gec: GL
   name: Greenland
+  short_name: Greenland
   flag: '🇬🇱'
   national_destination_code_lengths:
   - 2

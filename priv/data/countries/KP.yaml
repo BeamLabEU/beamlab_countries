@@ -8,6 +8,7 @@ KP:
   ioc: PRK
   gec: KN
   name: Korea (Democratic People's Republic of)
+  short_name: North Korea
   flag: '🇰🇵'
   national_destination_code_lengths:
   - 2

@@ -8,6 +8,7 @@ PK:
   ioc: PAK
   gec: PK
   name: Pakistan
+  short_name: Pakistan
   flag: '🇵🇰'
   national_destination_code_lengths:
   - 2

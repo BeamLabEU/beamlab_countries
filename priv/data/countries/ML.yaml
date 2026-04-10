@@ -8,6 +8,7 @@ ML:
   ioc: MLI
   gec: ML
   name: Mali
+  short_name: Mali
   flag: '🇲🇱'
   national_destination_code_lengths:
   - 2

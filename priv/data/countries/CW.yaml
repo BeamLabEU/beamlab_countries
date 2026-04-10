@@ -8,6 +8,7 @@ CW:
   ioc: 
   gec: UC
   name: Curaçao
+  short_name: Curaçao
   flag: '🇨🇼'
   national_destination_code_lengths:
   - 2

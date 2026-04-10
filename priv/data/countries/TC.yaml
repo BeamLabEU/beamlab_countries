@@ -9,6 +9,7 @@ TC:
   ioc: 
   gec: TK
   name: Turks and Caicos Islands
+  short_name: Turks and Caicos Islands
   flag: '🇹🇨'
   national_destination_code_lengths:
   - 3

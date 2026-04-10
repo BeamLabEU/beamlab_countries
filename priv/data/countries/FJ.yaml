@@ -8,6 +8,7 @@ FJ:
   ioc: FIJ
   gec: FJ
   name: Fiji
+  short_name: Fiji
   flag: '🇫🇯'
   national_destination_code_lengths:
   - 2

@@ -8,6 +8,7 @@ UY:
   ioc: URU
   gec: UY
   name: Uruguay
+  short_name: Uruguay
   flag: '🇺🇾'
   national_destination_code_lengths:
   - 2

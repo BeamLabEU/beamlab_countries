@@ -13,6 +13,7 @@ SY:
   ioc: SYR
   gec: SY
   name: Syrian Arab Republic
+  short_name: Syria
   flag: '🇸🇾'
   national_destination_code_lengths:
   - 2

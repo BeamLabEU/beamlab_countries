@@ -13,6 +13,7 @@ SI:
   ioc: SLO
   gec: SI
   name: Slovenia
+  short_name: Slovenia
   flag: '🇸🇮'
   national_destination_code_lengths:
   - 2

@@ -8,6 +8,7 @@ CF:
   ioc: CAF
   gec: CT
   name: Central African Republic
+  short_name: Central African Republic
   flag: '🇨🇫'
   national_destination_code_lengths:
   - 2

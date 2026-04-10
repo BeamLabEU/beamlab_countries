@@ -9,6 +9,7 @@ AI:
   ioc: 
   gec: AV
   name: Anguilla
+  short_name: Anguilla
   flag: '🇦🇮'
   national_destination_code_lengths:
   - 3
