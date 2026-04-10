@@ -9,6 +9,7 @@ LS:
   ioc: LES
   gec: LT
   name: Lesotho
+  short_name: Lesotho
   flag: '🇱🇸'
   national_destination_code_lengths:
   - 2

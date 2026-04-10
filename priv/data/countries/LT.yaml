@@ -8,6 +8,7 @@ LT:
   ioc: LTU
   gec: LH
   name: Lithuania
+  short_name: Lithuania
   flag: '🇱🇹'
   national_destination_code_lengths:
   - 2

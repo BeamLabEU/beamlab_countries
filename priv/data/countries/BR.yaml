@@ -13,6 +13,7 @@ BR:
   ioc: BRA
   gec: BR
   name: Brazil
+  short_name: Brazil
   flag: '🇧🇷'
   national_destination_code_lengths:
   - 2

@@ -9,6 +9,7 @@ TJ:
   ioc: TJK
   gec: TI
   name: Tajikistan
+  short_name: Tajikistan
   flag: '🇹🇯'
   national_destination_code_lengths:
   - 2

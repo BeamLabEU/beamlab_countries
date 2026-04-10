@@ -8,6 +8,7 @@ AL:
   ioc: ALB
   gec: AL
   name: Albania
+  short_name: Albania
   flag: '🇦🇱'
   national_destination_code_lengths:
   - 2

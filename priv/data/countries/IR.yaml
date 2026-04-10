@@ -8,6 +8,7 @@ IR:
   ioc: IRI
   gec: IR
   name: Iran (Islamic Republic of)
+  short_name: Iran
   flag: '🇮🇷'
   national_destination_code_lengths:
   - 2

@@ -13,6 +13,7 @@ CH:
   ioc: SUI
   gec: SZ
   name: Switzerland
+  short_name: Switzerland
   flag: '🇨🇭'
   national_destination_code_lengths:
   - 2

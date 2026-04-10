@@ -8,6 +8,7 @@ LI:
   ioc: LIE
   gec: LS
   name: Liechtenstein
+  short_name: Liechtenstein
   flag: '🇱🇮'
   national_destination_code_lengths:
   - 2

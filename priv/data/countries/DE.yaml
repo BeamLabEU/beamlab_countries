@@ -13,6 +13,7 @@ DE:
   ioc: GER
   gec: GM
   name: Germany
+  short_name: Germany
   flag: '🇩🇪'
   national_destination_code_lengths:
   - 2

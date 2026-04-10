@@ -15,6 +15,7 @@ GB:
   ioc: GBR
   gec: UK
   name: United Kingdom of Great Britain and Northern Ireland
+  short_name: United Kingdom
   flag: '🇬🇧'
   national_destination_code_lengths:
   - 2

@@ -8,6 +8,7 @@ BI:
   ioc: BDI
   gec: BY
   name: Burundi
+  short_name: Burundi
   flag: '🇧🇮'
   national_destination_code_lengths:
   - 2

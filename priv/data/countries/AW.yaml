@@ -8,6 +8,7 @@ AW:
   ioc: ARU
   gec: AA
   name: Aruba
+  short_name: Aruba
   flag: '🇦🇼'
   national_destination_code_lengths:
   - 2

@@ -14,6 +14,7 @@ OM:
   ioc: OMA
   gec: MU
   name: Oman
+  short_name: Oman
   flag: '🇴🇲'
   national_destination_code_lengths:
   - 2

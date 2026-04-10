@@ -8,6 +8,7 @@ VA:
   ioc: 
   gec: VT
   name: Holy See
+  short_name: Vatican City
   flag: '🇻🇦'
   national_destination_code_lengths:
   - 3

@@ -8,6 +8,7 @@ UZ:
   ioc: UZB
   gec: UZ
   name: Uzbekistan
+  short_name: Uzbekistan
   flag: '🇺🇿'
   national_destination_code_lengths:
   - 2

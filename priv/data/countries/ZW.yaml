@@ -8,6 +8,7 @@ ZW:
   ioc: ZIM
   gec: ZI
   name: Zimbabwe
+  short_name: Zimbabwe
   flag: '🇿🇼'
   national_destination_code_lengths:
   - 2

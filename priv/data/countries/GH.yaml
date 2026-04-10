@@ -8,6 +8,7 @@ GH:
   ioc: GHA
   gec: GH
   name: Ghana
+  short_name: Ghana
   flag: '🇬🇭'
   national_destination_code_lengths:
   - 2

@@ -8,6 +8,7 @@ TN:
   ioc: TUN
   gec: TS
   name: Tunisia
+  short_name: Tunisia
   flag: '🇹🇳'
   national_destination_code_lengths:
   - 2

@@ -8,6 +8,7 @@ BY:
   ioc: BLR
   gec: BO
   name: Belarus
+  short_name: Belarus
   flag: '🇧🇾'
   national_destination_code_lengths:
   - 2

@@ -8,6 +8,7 @@ SM:
   ioc: SMR
   gec: SM
   name: San Marino
+  short_name: San Marino
   flag: '🇸🇲'
   national_destination_code_lengths:
   - 2

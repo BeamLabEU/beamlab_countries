@@ -8,6 +8,7 @@ PM:
   ioc: 
   gec: SB
   name: Saint Pierre and Miquelon
+  short_name: Saint Pierre and Miquelon
   flag: '🇵🇲'
   national_destination_code_lengths:
   - 2

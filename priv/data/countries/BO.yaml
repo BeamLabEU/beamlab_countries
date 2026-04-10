@@ -8,6 +8,7 @@ BO:
   ioc: BOL
   gec: BL
   name: Bolivia (Plurinational State of)
+  short_name: Bolivia
   flag: '🇧🇴'
   national_destination_code_lengths:
   - 2

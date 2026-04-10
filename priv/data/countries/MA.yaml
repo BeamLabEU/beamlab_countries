@@ -8,6 +8,7 @@ MA:
   ioc: MAR
   gec: MO
   name: Morocco
+  short_name: Morocco
   flag: '🇲🇦'
   national_destination_code_lengths:
   - 2

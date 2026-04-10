@@ -13,6 +13,7 @@ US:
   ioc: USA
   gec: US
   name: United States of America
+  short_name: United States
   flag: '🇺🇸'
   national_destination_code_lengths:
   - 3

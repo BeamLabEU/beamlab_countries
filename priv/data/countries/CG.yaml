@@ -8,6 +8,7 @@ CG:
   ioc: CGO
   gec: CF
   name: Congo
+  short_name: Congo
   flag: '🇨🇬'
   national_destination_code_lengths:
   - 2

@@ -8,6 +8,7 @@ ZM:
   ioc: ZAM
   gec: ZA
   name: Zambia
+  short_name: Zambia
   flag: '🇿🇲'
   national_destination_code_lengths:
   - 2

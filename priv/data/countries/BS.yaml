@@ -9,6 +9,7 @@ BS:
   ioc: BAH
   gec: BF
   name: Bahamas
+  short_name: Bahamas
   flag: '🇧🇸'
   national_destination_code_lengths:
   - 3

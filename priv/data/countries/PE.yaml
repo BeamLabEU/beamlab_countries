@@ -8,6 +8,7 @@ PE:
   ioc: PER
   gec: PE
   name: Peru
+  short_name: Peru
   flag: '🇵🇪'
   national_destination_code_lengths:
   - 2

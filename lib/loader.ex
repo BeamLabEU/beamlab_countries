@@ -28,6 +28,7 @@ defmodule BeamLabCountries.Loader do
       alpha3: data["alpha3"],
       currency: data["currency"],
       name: data["name"],
+      short_name: data["short_name"],
       flag: data["flag"],
       unofficial_names: data["unofficial_names"],
       continent: data["continent"],

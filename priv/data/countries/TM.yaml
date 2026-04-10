@@ -8,6 +8,7 @@ TM:
   ioc: TKM
   gec: TX
   name: Turkmenistan
+  short_name: Turkmenistan
   flag: '🇹🇲'
   national_destination_code_lengths:
   - 2

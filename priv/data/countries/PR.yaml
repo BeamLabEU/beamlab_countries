@@ -8,6 +8,7 @@ PR:
   ioc: PUR
   gec: RQ
   name: Puerto Rico
+  short_name: Puerto Rico
   flag: '🇵🇷'
   national_destination_code_lengths:
   - 3

@@ -8,6 +8,7 @@ FK:
   ioc: 
   gec: FK
   name: Falkland Islands (Malvinas)
+  short_name: Falkland Islands
   flag: '🇫🇰'
   national_destination_code_lengths:
   - 2

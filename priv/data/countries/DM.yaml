@@ -9,6 +9,7 @@ DM:
   ioc: DMA
   gec: DO
   name: Dominica
+  short_name: Dominica
   flag: '🇩🇲'
   national_destination_code_lengths:
   - 3

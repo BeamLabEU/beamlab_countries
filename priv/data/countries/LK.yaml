@@ -8,6 +8,7 @@ LK:
   ioc: SRI
   gec: CE
   name: Sri Lanka
+  short_name: Sri Lanka
   flag: '🇱🇰'
   national_destination_code_lengths:
   - 2

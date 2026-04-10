@@ -8,6 +8,7 @@ TV:
   ioc: TUV
   gec: TV
   name: Tuvalu
+  short_name: Tuvalu
   flag: '🇹🇻'
   national_destination_code_lengths:
   - 2

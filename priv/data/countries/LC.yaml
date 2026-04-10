@@ -9,6 +9,7 @@ LC:
   ioc: LCA
   gec: ST
   name: Saint Lucia
+  short_name: Saint Lucia
   flag: '🇱🇨'
   national_destination_code_lengths:
   - 3

@@ -13,6 +13,7 @@ FR:
   ioc: FRA
   gec: FR
   name: France
+  short_name: France
   flag: '🇫🇷'
   national_destination_code_lengths:
   - 1

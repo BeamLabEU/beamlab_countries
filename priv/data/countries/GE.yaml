@@ -8,6 +8,7 @@ GE:
   ioc: GEO
   gec: GG
   name: Georgia
+  short_name: Georgia
   flag: '🇬🇪'
   national_destination_code_lengths:
   - 2

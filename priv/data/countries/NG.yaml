@@ -8,6 +8,7 @@ NG:
   ioc: NGR
   gec: NI
   name: Nigeria
+  short_name: Nigeria
   flag: '🇳🇬'
   national_destination_code_lengths:
   - 2

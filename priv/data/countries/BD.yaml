@@ -8,6 +8,7 @@ BD:
   ioc: BAN
   gec: BG
   name: Bangladesh
+  short_name: Bangladesh
   flag: '🇧🇩'
   national_destination_code_lengths:
   - 2

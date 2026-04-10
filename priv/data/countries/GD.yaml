@@ -9,6 +9,7 @@ GD:
   ioc: GRN
   gec: GJ
   name: Grenada
+  short_name: Grenada
   flag: '🇬🇩'
   national_destination_code_lengths:
   - 3

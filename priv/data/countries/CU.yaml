@@ -8,6 +8,7 @@ CU:
   ioc: CUB
   gec: CU
   name: Cuba
+  short_name: Cuba
   flag: '🇨🇺'
   national_destination_code_lengths:
   - 2

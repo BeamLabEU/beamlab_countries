@@ -8,6 +8,7 @@ TO:
   ioc: TGA
   gec: TN
   name: Tonga
+  short_name: Tonga
   flag: '🇹🇴'
   national_destination_code_lengths:
   - 2

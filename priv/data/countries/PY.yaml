@@ -8,6 +8,7 @@ PY:
   ioc: PAR
   gec: PA
   name: Paraguay
+  short_name: Paraguay
   flag: '🇵🇾'
   national_destination_code_lengths:
   - 2

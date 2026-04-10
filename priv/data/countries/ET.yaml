@@ -8,6 +8,7 @@ ET:
   ioc: ETH
   gec: ET
   name: Ethiopia
+  short_name: Ethiopia
   flag: '🇪🇹'
   national_destination_code_lengths:
   - 2

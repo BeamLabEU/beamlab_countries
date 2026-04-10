@@ -9,6 +9,7 @@ JM:
   ioc: JAM
   gec: JM
   name: Jamaica
+  short_name: Jamaica
   flag: '🇯🇲'
   national_destination_code_lengths:
   - 3

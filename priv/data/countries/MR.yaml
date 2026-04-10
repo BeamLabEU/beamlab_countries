@@ -8,6 +8,7 @@ MR:
   ioc: MTN
   gec: MR
   name: Mauritania
+  short_name: Mauritania
   flag: '🇲🇷'
   national_destination_code_lengths:
   - 2

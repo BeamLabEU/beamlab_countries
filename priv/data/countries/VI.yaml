@@ -8,6 +8,7 @@ VI:
   ioc: ISV
   gec: VQ
   name: Virgin Islands (U.S.)
+  short_name: US Virgin Islands
   flag: '🇻🇮'
   national_destination_code_lengths:
   - 3

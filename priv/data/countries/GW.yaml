@@ -8,6 +8,7 @@ GW:
   ioc: GBS
   gec: PU
   name: Guinea-Bissau
+  short_name: 'Guinea-Bissau'
   flag: '🇬🇼'
   national_destination_code_lengths:
   - 2

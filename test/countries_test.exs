@@ -90,6 +90,36 @@ defmodule BeamLabCountriesTest do
     end
   end
 
+  describe "short_name" do
+    test "all countries have a short_name" do
+      assert Enum.all?(BeamLabCountries.all(), &(not is_nil(&1.short_name)))
+    end
+
+    test "returns common short name for countries with long official names" do
+      assert BeamLabCountries.get("US").short_name == "United States"
+      assert BeamLabCountries.get("GB").short_name == "United Kingdom"
+      assert BeamLabCountries.get("KR").short_name == "South Korea"
+      assert BeamLabCountries.get("RU").short_name == "Russia"
+      assert BeamLabCountries.get("TW").short_name == "Taiwan"
+      assert BeamLabCountries.get("IR").short_name == "Iran"
+      assert BeamLabCountries.get("VN").short_name == "Vietnam"
+    end
+
+    test "short_name equals name for countries without a common alternative" do
+      assert BeamLabCountries.get("DE").short_name == "Germany"
+      assert BeamLabCountries.get("FR").short_name == "France"
+      assert BeamLabCountries.get("JP").short_name == "Japan"
+    end
+
+    test "can look up country by short_name" do
+      %{alpha2: "RU"} = BeamLabCountries.get_by(:short_name, "Russia")
+    end
+
+    test "can filter by short_name" do
+      [%{alpha2: "KR"}] = BeamLabCountries.filter_by(:short_name, "South Korea")
+    end
+  end
+
   describe "eu_members/0" do
     test "returns 27 EU member countries" do
       eu = BeamLabCountries.eu_members()

@@ -8,6 +8,7 @@ FO:
   ioc: FRO
   gec: FO
   name: Faroe Islands
+  short_name: Faroe Islands
   flag: '🇫🇴'
   national_destination_code_lengths:
   - 2

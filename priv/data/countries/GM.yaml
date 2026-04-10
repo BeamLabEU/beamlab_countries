@@ -8,6 +8,7 @@ GM:
   ioc: GAM
   gec: GA
   name: Gambia
+  short_name: Gambia
   flag: '🇬🇲'
   national_destination_code_lengths:
   - 2

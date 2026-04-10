@@ -8,6 +8,7 @@ AD:
   ioc: AND
   gec: AN
   name: Andorra
+  short_name: Andorra
   flag: '🇦🇩'
   national_destination_code_lengths:
   - 2

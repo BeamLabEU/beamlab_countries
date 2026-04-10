@@ -8,6 +8,7 @@ MW:
   ioc: MAW
   gec: MI
   name: Malawi
+  short_name: Malawi
   flag: '🇲🇼'
   national_destination_code_lengths:
   - 2

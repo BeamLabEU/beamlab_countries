@@ -8,6 +8,7 @@ MV:
   ioc: MDV
   gec: MV
   name: Maldives
+  short_name: Maldives
   flag: '🇲🇻'
   national_destination_code_lengths:
   - 2

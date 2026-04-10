@@ -8,6 +8,7 @@ IM:
   ioc: 
   gec: IM
   name: Isle of Man
+  short_name: Isle of Man
   flag: '🇮🇲'
   national_destination_code_lengths: []
   national_number_lengths: []

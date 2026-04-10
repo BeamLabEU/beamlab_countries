@@ -13,6 +13,7 @@ HR:
   ioc: CRO
   gec: HR
   name: Croatia
+  short_name: Croatia
   flag: '🇭🇷'
   national_destination_code_lengths:
   - 2

@@ -13,6 +13,7 @@ EG:
   ioc: EGY
   gec: EG
   name: Egypt
+  short_name: Egypt
   flag: '🇪🇬'
   national_destination_code_lengths:
   - 2

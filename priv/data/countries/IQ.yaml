@@ -8,6 +8,7 @@ IQ:
   ioc: IRQ
   gec: IZ
   name: Iraq
+  short_name: Iraq
   flag: '🇮🇶'
   national_destination_code_lengths:
   - 2

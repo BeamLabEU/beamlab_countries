@@ -8,6 +8,7 @@ MN:
   ioc: MGL
   gec: MG
   name: Mongolia
+  short_name: Mongolia
   flag: '🇲🇳'
   national_destination_code_lengths:
   - 2

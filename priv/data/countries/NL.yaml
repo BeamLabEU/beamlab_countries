@@ -13,6 +13,7 @@ NL:
   ioc: NED
   gec: NL
   name: Netherlands
+  short_name: Netherlands
   flag: '🇳🇱'
   national_destination_code_lengths:
   - 2

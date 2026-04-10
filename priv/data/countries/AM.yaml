@@ -8,6 +8,7 @@ AM:
   ioc: ARM
   gec: AM
   name: Armenia
+  short_name: Armenia
   flag: '🇦🇲'
   national_destination_code_lengths:
   - 2

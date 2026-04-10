@@ -8,6 +8,7 @@ NU:
   ioc: 
   gec: NE
   name: Niue
+  short_name: Niue
   flag: '🇳🇺'
   national_destination_code_lengths:
   - 2

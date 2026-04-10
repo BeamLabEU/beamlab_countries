@@ -8,6 +8,7 @@ RS:
   ioc: SRB
   gec: RI
   name: Serbia
+  short_name: Serbia
   flag: '🇷🇸'
   national_destination_code_lengths:
   - 2

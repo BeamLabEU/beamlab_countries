@@ -13,6 +13,7 @@ HK:
   ioc: HKG
   gec: HK
   name: Hong Kong
+  short_name: Hong Kong
   flag: '🇭🇰'
   national_destination_code_lengths:
   - 2
