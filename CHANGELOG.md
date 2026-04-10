@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.8 - 2026-04-10
+
+### Added
+- `short_name` field — simplified country names for display (e.g. "United Kingdom" instead of "United Kingdom of Great Britain and Northern Ireland")
+- `phone_prefix` field — international calling prefix with "+" (e.g. "+372" for Estonia)
+
+### Changed
+- Updated deps (credo, ex_doc, yaml_elixir)
+
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
