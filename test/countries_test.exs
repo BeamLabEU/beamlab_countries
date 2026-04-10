@@ -120,6 +120,27 @@ defmodule BeamLabCountriesTest do
     end
   end
 
+  describe "phone_prefix" do
+    test "formats country_code with + prefix" do
+      assert BeamLabCountries.get("EE").phone_prefix == "+372"
+      assert BeamLabCountries.get("US").phone_prefix == "+1"
+      assert BeamLabCountries.get("GB").phone_prefix == "+44"
+      assert BeamLabCountries.get("PL").phone_prefix == "+48"
+    end
+
+    test "is nil when country has no country_code" do
+      no_code =
+        BeamLabCountries.all()
+        |> Enum.filter(&is_nil(&1.country_code))
+
+      assert Enum.all?(no_code, &is_nil(&1.phone_prefix))
+    end
+
+    test "can look up country by phone_prefix" do
+      %{alpha2: "EE"} = BeamLabCountries.get_by(:phone_prefix, "+372")
+    end
+  end
+
   describe "eu_members/0" do
     test "returns 27 EU member countries" do
       eu = BeamLabCountries.eu_members()
