@@ -18,13 +18,13 @@ After you are done, run `mix deps.get` in your shell to fetch and compile beamla
 
 ## Documentation
 
-Full documentation is available at [HexDocs](https://hexdocs.pm/beamlab_countries).
+Full documentation is available at [HexDocs](https://beamlab-countries.hexdocs.pm).
 
-- [BeamLabCountries](https://hexdocs.pm/beamlab_countries/BeamLabCountries.html) - Main country API
-- [BeamLabCountries.Unions](https://hexdocs.pm/beamlab_countries/BeamLabCountries.Unions.html) - International organizations
-- [BeamLabCountries.Languages](https://hexdocs.pm/beamlab_countries/BeamLabCountries.Languages.html) - Languages and locales
-- [BeamLabCountries.Translations](https://hexdocs.pm/beamlab_countries/BeamLabCountries.Translations.html) - Country name translations
-- [BeamLabCountries.Subdivisions](https://hexdocs.pm/beamlab_countries/BeamLabCountries.Subdivisions.html) - States/provinces
+- [BeamLabCountries](https://beamlab-countries.hexdocs.pm/BeamLabCountries.html) - Main country API
+- [BeamLabCountries.Unions](https://beamlab-countries.hexdocs.pm/BeamLabCountries.Unions.html) - International organizations
+- [BeamLabCountries.Languages](https://beamlab-countries.hexdocs.pm/BeamLabCountries.Languages.html) - Languages and locales
+- [BeamLabCountries.Translations](https://beamlab-countries.hexdocs.pm/BeamLabCountries.Translations.html) - Country name translations
+- [BeamLabCountries.Subdivisions](https://beamlab-countries.hexdocs.pm/BeamLabCountries.Subdivisions.html) - States/provinces
 
 ## Usage
 
