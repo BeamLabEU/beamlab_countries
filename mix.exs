@@ -2,7 +2,7 @@ defmodule BeamLabCountries.MixProject do
   use Mix.Project
 
   @source_url "https://github.com/BeamLabEU/beamlab_countries"
-  @version "1.0.8"
+  @version "1.1.0"
 
   def project do
     [
@@ -41,7 +41,7 @@ defmodule BeamLabCountries.MixProject do
       ],
       main: "readme",
       source_url: @source_url,
-      source_ref: "v#{@version}",
+      source_ref: @version,
       formatters: ["html"]
     ]
   end
