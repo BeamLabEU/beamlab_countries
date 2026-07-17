@@ -4,4 +4,12 @@ defmodule BeamLabCountries.Subdivision do
   """
 
   defstruct [:id, :name, :unofficial_names, :translations, :geo]
+
+  @type t :: %__MODULE__{
+          id: String.t() | nil,
+          name: String.t() | nil,
+          unofficial_names: term() | nil,
+          translations: %{optional(atom()) => String.t()} | nil,
+          geo: map() | nil
+        }
 end

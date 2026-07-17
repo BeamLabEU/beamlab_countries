@@ -1,80 +1,71 @@
 defmodule BeamLabCountries.Subdivisions do
   @moduledoc """
   Module for providing subdivisions related functions.
+
+  Subdivision data is loaded at compile time, so lookups are fast
+  and no filesystem access happens at runtime.
   """
 
+  alias BeamLabCountries.Country
   alias BeamLabCountries.Subdivision
 
+  # Load subdivisions from yaml files once on compile time
+  @subdivisions BeamLabCountries.SubdivisionLoader.load()
+
   @doc """
-  Returns all subdivisions by country.
+  Returns all subdivisions for a country.
+
+  Accepts a `BeamLabCountries.Country` struct or an alpha2 country code
+  (case-insensitive). Returns an empty list when the country is unknown
+  or has no subdivision data.
 
   ## Examples
 
-      iex> country = BeamLabCountries.get("PL")
-      iex> BeamLabCountries.Subdivisions.all(country)
+      iex> BeamLabCountries.Subdivisions.all("PL") |> length()
+      16
+
+      iex> country = BeamLabCountries.get("BR")
+      iex> BeamLabCountries.Subdivisions.all(country) |> length()
+      27
+
+      iex> BeamLabCountries.Subdivisions.all("XX")
+      []
 
   """
-  def all(country) do
-    country.alpha2
-    |> load_subdivisions()
-    |> Enum.map(&convert_subdivision/1)
+  @spec all(Country.t() | String.t()) :: [Subdivision.t()]
+  def all(%Country{alpha2: alpha2}), do: all(alpha2)
+
+  def all(country_code) when is_binary(country_code) do
+    @subdivisions
+    |> Map.get(String.upcase(country_code), %{})
+    |> Map.values()
   end
 
   @doc """
   Returns one subdivision by country and subdivision ID, or `nil` if not found.
 
+  Accepts a `BeamLabCountries.Country` struct or an alpha2 country code.
+  Both the country code and the subdivision ID are case-insensitive.
+
   ## Examples
 
-      BeamLabCountries.Subdivisions.get("US", "CA")
-      # => %BeamLabCountries.Subdivision{id: "CA", name: "California", ...}
+      iex> BeamLabCountries.Subdivisions.get("US", "CA").name
+      "California"
 
-      BeamLabCountries.Subdivisions.get("US", "XX")
-      # => nil
+      iex> BeamLabCountries.Subdivisions.get("us", "ca").name
+      "California"
+
+      iex> BeamLabCountries.Subdivisions.get("US", "XX")
+      nil
 
   """
+  @spec get(Country.t() | String.t(), String.t()) :: Subdivision.t() | nil
+  def get(%Country{alpha2: alpha2}, subdivision_id), do: get(alpha2, subdivision_id)
+
   def get(country_code, subdivision_id)
       when is_binary(country_code) and is_binary(subdivision_id) do
-    country_code
-    |> load_subdivisions()
-    |> Enum.find_value(fn {id, data} ->
-      if id == subdivision_id, do: convert_subdivision({id, data})
-    end)
+    @subdivisions
+    |> Map.get(String.upcase(country_code), %{})
+    |> Map.get(String.upcase(subdivision_id))
   end
-
-  def get(%BeamLabCountries.Country{alpha2: alpha2}, subdivision_id) do
-    get(alpha2, subdivision_id)
-  end
-
-  defp load_subdivisions(country_code) do
-    path =
-      Path.join([
-        :code.priv_dir(:beamlab_countries),
-        "data",
-        "subdivisions",
-        "#{country_code}.yaml"
-      ])
-
-    case YamlElixir.read_from_file(path) do
-      {:ok, data} -> Map.to_list(data)
-      {:error, _} -> []
-    end
-  end
-
-  defp convert_subdivision({id, data}) do
-    %Subdivision{
-      id: id,
-      name: data["name"],
-      unofficial_names: data["unofficial_names"],
-      translations: atomize_keys(data["translations"]),
-      geo: atomize_keys(data["geo"])
-    }
-  end
-
-  defp atomize_keys(nil), do: nil
-
-  defp atomize_keys(map) when is_map(map) do
-    Map.new(map, fn {k, v} -> {String.to_atom(k), atomize_keys(v)} end)
-  end
-
-  defp atomize_keys(value), do: value
 end

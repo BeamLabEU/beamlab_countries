@@ -4,11 +4,11 @@ defmodule BeamLabCountries.Country do
   """
 
   @type t :: %__MODULE__{
-          number: integer() | nil,
-          alpha2: String.t() | nil,
-          alpha3: String.t() | nil,
+          number: String.t() | nil,
+          alpha2: String.t(),
+          alpha3: String.t(),
           currency: String.t() | nil,
-          name: String.t() | nil,
+          name: String.t(),
           short_name: String.t() | nil,
           flag: String.t() | nil,
           unofficial_names: [String.t()] | nil,
@@ -21,7 +21,7 @@ defmodule BeamLabCountries.Country do
           phone_prefix: String.t() | nil,
           national_destination_code_lengths: [integer()] | nil,
           national_number_lengths: [integer()] | nil,
-          international_prefix: String.t() | nil,
+          international_prefix: String.t() | integer() | nil,
           national_prefix: String.t() | nil,
           ioc: String.t() | nil,
           gec: String.t() | nil,
@@ -36,7 +36,7 @@ defmodule BeamLabCountries.Country do
           eea_member: boolean() | nil,
           alt_currency: String.t() | nil,
           vat_rates: map() | nil,
-          postal_code: String.t() | nil,
+          postal_code: boolean() | nil,
           currency_code: String.t() | nil,
           start_of_week: String.t() | nil,
           subdivision_type: String.t() | nil

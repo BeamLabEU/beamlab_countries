@@ -10,7 +10,7 @@ defmodule BeamLabCountries.Translations do
       "Polen"
 
       iex> BeamLabCountries.Translations.get_name("US", "ja")
-      "アメリカ合衆国"
+      "米国"
 
       iex> BeamLabCountries.Translations.get_name("DE", "pl")
       "Niemcy"
@@ -48,6 +48,7 @@ defmodule BeamLabCountries.Translations do
       nil
 
   """
+  @spec get_name(String.t(), String.t()) :: String.t() | nil
   def get_name(country_code, locale) when is_binary(country_code) and is_binary(locale) do
     code = String.upcase(country_code)
     loc = String.downcase(locale)
@@ -70,6 +71,7 @@ defmodule BeamLabCountries.Translations do
       "Polen"
 
   """
+  @spec get_all_names(String.t()) :: %{optional(String.t()) => String.t()}
   def get_all_names(country_code) when is_binary(country_code) do
     code = String.upcase(country_code)
 
@@ -91,6 +93,7 @@ defmodule BeamLabCountries.Translations do
       true
 
   """
+  @spec supported_locales() :: [String.t()]
   def supported_locales do
     @supported_locales
   end
@@ -107,6 +110,7 @@ defmodule BeamLabCountries.Translations do
       false
 
   """
+  @spec locale_supported?(String.t()) :: boolean()
   def locale_supported?(locale) when is_binary(locale) do
     String.downcase(locale) in @supported_locales
   end

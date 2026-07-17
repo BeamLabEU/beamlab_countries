@@ -17,20 +17,18 @@ Improvement proposals for BeamLabCountries library.
 - [x] Added `Subdivisions.get/2` - get specific subdivision by country and ID
 - [x] Added `BeamLabCountries.Random` module - `country/0`, `flag/0`
 - [x] Added `dialyxir` with `mix precommit` and `mix quality` aliases
+- [x] Fixed `Currencies.format/3` for negative amounts (sign dropped, double dot)
+- [x] Subdivisions embedded at compile time - no runtime disk I/O, path-traversal-safe,
+      case-insensitive lookups, `all/1` accepts an alpha2 code (supersedes "Cache subdivisions")
+- [x] `yaml_elixir` is now compile-time only (`runtime: false`)
+- [x] `@external_resource` for all YAML/JSON data files - data edits trigger recompilation
+- [x] Case-insensitive locale lookups (`get_locale/1`, `valid_locale?/1`); `parse_locale/1` upcases region
+- [x] `@spec` annotations for all public functions
+- [x] Doctest coverage for `Translations`, `Subdivisions`, `Language`, `Locale`; stale examples fixed
+- [x] GitHub Actions CI (legacy `.travis.yml` removed)
 
-## Medium Priority
+## Data-Level Work
 
-### Cache subdivisions
-Subdivisions are read from disk on every `Subdivisions.all/1` call. Options:
-- Load at compile time (increases binary size)
-- Add ETS-based caching
-- Use `persistent_term` for caching
-
-## Low Priority / Nice to Have
-
-### Add typespec annotations
-Add `@spec` for all public functions to enable Dialyzer and improve docs:
-```elixir
-@spec get(String.t()) :: Country.t() | nil
-@spec filter_by(atom(), term()) :: [Country.t()]
-```
+See `dev_docs/2026-03-28_roadmap.md` for remaining data improvements
+(translation locales, missing subdivisions for 26 countries, additional unions,
+time zones, borders).

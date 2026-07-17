@@ -3,6 +3,13 @@ defmodule BeamLabCountries.Loader do
 
   alias BeamLabCountries.Country
 
+  @data_dir Path.join([:code.priv_dir(:beamlab_countries), "data"])
+
+  @external_resource Path.join(@data_dir, "countries.yaml")
+  for file <- Path.wildcard(Path.join([@data_dir, "countries", "*.yaml"])) do
+    @external_resource file
+  end
+
   @doc """
   Loads all country data from YAML files at compile time.
   """

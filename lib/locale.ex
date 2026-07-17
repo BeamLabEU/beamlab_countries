@@ -28,7 +28,10 @@ defmodule BeamLabCountries.Locale do
         name: "English (United States)",
         native_name: "English (US)",
         flag: "🇺🇸",
-        country_name: "United States of America"
+        country_name: "United States of America",
+        continent: "North America",
+        region: "Americas",
+        subregion: "Northern America"
       }
 
   """

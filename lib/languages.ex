@@ -41,7 +41,6 @@ defmodule BeamLabCountries.Languages do
   @languages @languages_path
              |> File.read!()
              |> JSON.decode!()
-             |> Map.new(fn {code, data} -> {code, data} end)
 
   # Load locales from JSON at compile time
   @locales_path Path.join([:code.priv_dir(:beamlab_countries), "data", "locales.json"])
@@ -96,6 +95,7 @@ defmodule BeamLabCountries.Languages do
       "Japanese"
 
   """
+  @spec get_name(String.t()) :: String.t() | nil
   def get_name(code) when is_binary(code) do
     case Map.get(@languages, String.downcase(code)) do
       nil -> nil
@@ -118,6 +118,7 @@ defmodule BeamLabCountries.Languages do
       "日本語 (にほんご)"
 
   """
+  @spec get_native_name(String.t()) :: String.t() | nil
   def get_native_name(code) when is_binary(code) do
     case Map.get(@languages, String.downcase(code)) do
       nil -> nil
@@ -137,6 +138,7 @@ defmodule BeamLabCountries.Languages do
       nil
 
   """
+  @spec get(String.t()) :: Language.t() | nil
   def get(code) when is_binary(code) do
     case Map.get(@languages, String.downcase(code)) do
       nil ->
@@ -163,6 +165,7 @@ defmodule BeamLabCountries.Languages do
       iex> %BeamLabCountries.Language{} = hd(languages)
 
   """
+  @spec all() :: [Language.t()]
   def all do
     @languages
     |> Enum.map(fn {_code, data} ->
@@ -185,6 +188,7 @@ defmodule BeamLabCountries.Languages do
       true
 
   """
+  @spec all_codes() :: [String.t()]
   def all_codes do
     Map.keys(@languages)
   end
@@ -198,6 +202,7 @@ defmodule BeamLabCountries.Languages do
       184
 
   """
+  @spec count() :: non_neg_integer()
   def count do
     map_size(@languages)
   end
@@ -214,6 +219,7 @@ defmodule BeamLabCountries.Languages do
       false
 
   """
+  @spec valid?(String.t()) :: boolean()
   def valid?(code) when is_binary(code) do
     Map.has_key?(@languages, String.downcase(code))
   end
@@ -241,12 +247,16 @@ defmodule BeamLabCountries.Languages do
       iex> locale.flag
       "🇺🇸"
 
+      iex> BeamLabCountries.Languages.get_locale("EN-us").code
+      "en-US"
+
       iex> BeamLabCountries.Languages.get_locale("invalid")
       nil
 
   """
+  @spec get_locale(String.t()) :: Locale.t() | nil
   def get_locale(code) when is_binary(code) do
-    case Map.get(@locales, code) do
+    case Map.get(@locales, normalize_locale_code(code)) do
       nil ->
         nil
 
@@ -279,6 +289,7 @@ defmodule BeamLabCountries.Languages do
       iex> %BeamLabCountries.Locale{} = hd(locales)
 
   """
+  @spec all_locales() :: [Locale.t()]
   def all_locales do
     @locales
     |> Enum.map(fn {_code, data} ->
@@ -309,6 +320,7 @@ defmodule BeamLabCountries.Languages do
       true
 
   """
+  @spec all_locale_codes() :: [String.t()]
   def all_locale_codes do
     Map.keys(@locales)
   end
@@ -322,6 +334,7 @@ defmodule BeamLabCountries.Languages do
       140
 
   """
+  @spec locale_count() :: non_neg_integer()
   def locale_count do
     map_size(@locales)
   end
@@ -340,6 +353,7 @@ defmodule BeamLabCountries.Languages do
       4
 
   """
+  @spec locales_for_language(String.t()) :: [Locale.t()]
   def locales_for_language(base_code) when is_binary(base_code) do
     locale_codes = Map.get(@locales_by_base, String.downcase(base_code), [])
 
@@ -357,12 +371,16 @@ defmodule BeamLabCountries.Languages do
       iex> BeamLabCountries.Languages.valid_locale?("en-US")
       true
 
+      iex> BeamLabCountries.Languages.valid_locale?("EN-us")
+      true
+
       iex> BeamLabCountries.Languages.valid_locale?("invalid")
       false
 
   """
+  @spec valid_locale?(String.t()) :: boolean()
   def valid_locale?(code) when is_binary(code) do
-    Map.has_key?(@locales, code)
+    Map.has_key?(@locales, normalize_locale_code(code))
   end
 
   @doc """
@@ -379,11 +397,24 @@ defmodule BeamLabCountries.Languages do
       iex> BeamLabCountries.Languages.parse_locale("ja")
       {"ja", nil}
 
+      iex> BeamLabCountries.Languages.parse_locale("EN-us")
+      {"en", "US"}
+
   """
+  @spec parse_locale(String.t()) :: {String.t(), String.t() | nil}
   def parse_locale(code) when is_binary(code) do
     case String.split(code, "-", parts: 2) do
-      [base, region] -> {String.downcase(base), region}
+      [base, region] -> {String.downcase(base), String.upcase(region)}
       [base] -> {String.downcase(base), nil}
+    end
+  end
+
+  # Normalizes a locale code to the canonical "base-REGION" form used
+  # as keys in the locales data (e.g. "EN-us" -> "en-US", "JA" -> "ja").
+  defp normalize_locale_code(code) do
+    case parse_locale(code) do
+      {base, nil} -> base
+      {base, region} -> base <> "-" <> region
     end
   end
 
@@ -405,6 +436,7 @@ defmodule BeamLabCountries.Languages do
       true
 
   """
+  @spec countries_for_language(String.t()) :: [BeamLabCountries.Country.t()]
   def countries_for_language(lang_code) when is_binary(lang_code) do
     code = String.downcase(lang_code)
 
@@ -428,6 +460,7 @@ defmodule BeamLabCountries.Languages do
       true
 
   """
+  @spec country_names_for_language(String.t()) :: [String.t()]
   def country_names_for_language(lang_code) when is_binary(lang_code) do
     lang_code
     |> countries_for_language()
@@ -446,6 +479,7 @@ defmodule BeamLabCountries.Languages do
       true
 
   """
+  @spec flags_for_language(String.t()) :: [String.t()]
   def flags_for_language(lang_code) when is_binary(lang_code) do
     lang_code
     |> countries_for_language()

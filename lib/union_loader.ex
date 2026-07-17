@@ -3,6 +3,13 @@ defmodule BeamLabCountries.UnionLoader do
 
   alias BeamLabCountries.Union
 
+  @data_dir Path.join([:code.priv_dir(:beamlab_countries), "data"])
+
+  @external_resource Path.join(@data_dir, "unions.yaml")
+  for file <- Path.wildcard(Path.join([@data_dir, "unions", "*.yaml"])) do
+    @external_resource file
+  end
+
   @doc """
   Loads all union data from YAML files at compile time.
   """

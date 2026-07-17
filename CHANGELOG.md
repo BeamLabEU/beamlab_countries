@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file.
 
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## Unreleased
+
+### Fixed
+- `Currencies.format/3` produced malformed output for negative amounts (e.g. `"$-1,234..56"`) and dropped the sign for amounts between -1 and 0
+- `Subdivisions.get/2` / `Subdivisions.all/1` allowed path traversal via unsanitized country codes and could crash with `BadMapError` on non-map YAML files
+- `Subdivisions` lookups are now case-insensitive for both country codes and subdivision IDs, consistent with `BeamLabCountries.get/1`
+- `Languages.get_locale/1` and `Languages.valid_locale?/1` now normalize locale codes (e.g. `"EN-us"`)
+- `Languages.parse_locale/1` now upcases the region part (e.g. `"EN-us"` -> `{"en", "US"}`)
+- Country, union, and subdivision data files are now tracked via `@external_resource`, so editing them triggers recompilation
+
+### Changed
+- Subdivision data is loaded at compile time instead of being read and parsed from disk on every call; `Subdivisions.all/1` now also accepts an alpha2 code string
+- `yaml_elixir` is now a compile-time-only dependency (`runtime: false`)
+
+### Added
+- `@spec` annotations for all public functions; `Subdivision.t` type; required `alpha2`/`alpha3`/`name` in `Country.t`
+- Doctest coverage for `Translations` (new test module), `Subdivisions`, `Language`, and `Locale`
+- GitHub Actions CI running `mix test` and `mix precommit`
+
+### Removed
+- Legacy `.travis.yml` (pinned Elixir 1.9.1, incompatible with the required `~> 1.18`)
+
 ## 1.0.8 - 2026-04-10
 
 ### Added
@@ -10,9 +35,6 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 - Updated deps (credo, ex_doc, yaml_elixir)
-
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [1.0.7] - 2026-02-16
 - Complete locale and language_locales coverage across all countries

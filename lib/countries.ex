@@ -6,6 +6,7 @@ defmodule BeamLabCountries do
   @doc """
   Returns all countries.
   """
+  @spec all() :: [BeamLabCountries.Country.t()]
   def all do
     countries()
   end
@@ -19,6 +20,7 @@ defmodule BeamLabCountries do
       250
 
   """
+  @spec count() :: non_neg_integer()
   def count do
     length(countries())
   end
@@ -36,6 +38,7 @@ defmodule BeamLabCountries do
       nil
 
   """
+  @spec get(String.t()) :: BeamLabCountries.Country.t() | nil
   def get(country_code) when is_binary(country_code) do
     Map.get(countries_by_alpha2(), String.upcase(country_code))
   end
@@ -53,6 +56,7 @@ defmodule BeamLabCountries do
       nil
 
   """
+  @spec get_by_alpha3(String.t()) :: BeamLabCountries.Country.t() | nil
   def get_by_alpha3(country_code) when is_binary(country_code) do
     Map.get(countries_by_alpha3(), String.upcase(country_code))
   end
@@ -67,6 +71,7 @@ defmodule BeamLabCountries do
       "Poland"
 
   """
+  @spec get!(String.t()) :: BeamLabCountries.Country.t()
   def get!(country_code) do
     case get(country_code) do
       nil -> raise ArgumentError, "no country found for code: #{inspect(country_code)}"
@@ -87,6 +92,7 @@ defmodule BeamLabCountries do
       nil
 
   """
+  @spec get_by(atom(), term()) :: BeamLabCountries.Country.t() | nil
   def get_by(attribute, value) do
     Enum.find(countries(), fn country ->
       country
@@ -125,6 +131,7 @@ defmodule BeamLabCountries do
       30
 
   """
+  @spec filter_by(atom(), term()) :: [BeamLabCountries.Country.t()]
   def filter_by(attribute, value) when is_atom(attribute) do
     Enum.filter(countries(), fn country ->
       country
@@ -133,6 +140,7 @@ defmodule BeamLabCountries do
     end)
   end
 
+  @spec filter_by(keyword()) :: [BeamLabCountries.Country.t()]
   def filter_by(criteria) when is_list(criteria) do
     Enum.filter(countries(), fn country ->
       Enum.all?(criteria, fn {attribute, value} ->
@@ -174,6 +182,7 @@ defmodule BeamLabCountries do
       ["AT", "BE", "BG"]
 
   """
+  @spec eu_members() :: [BeamLabCountries.Country.t()]
   def eu_members do
     filter_by(:eu_member, true)
   end
@@ -192,6 +201,7 @@ defmodule BeamLabCountries do
       false
 
   """
+  @spec exists?(atom(), term()) :: boolean()
   def exists?(attribute, value) do
     Enum.any?(countries(), fn country ->
       country

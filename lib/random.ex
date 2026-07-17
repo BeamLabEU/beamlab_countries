@@ -21,8 +21,9 @@ defmodule BeamLabCountries.Random do
 
   ## Examples
 
-      iex> BeamLabCountries.Random.flag()
-      "\\xF0\\x9F\\x87\\xBA\\x93"
+      flag = BeamLabCountries.Random.flag()
+      String.valid?(flag)
+      #=> true
 
   """
   @spec flag() :: String.t()

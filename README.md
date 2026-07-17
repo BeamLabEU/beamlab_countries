@@ -68,7 +68,7 @@ eu_countries = BeamLabCountries.filter_by(:eu_member, true)
 # By language (countries where English is spoken)
 english_speaking = BeamLabCountries.filter_by(:languages_spoken, "en")
 Enum.count(english_speaking)
-# 92
+# 167
 ```
 
 Check if a country exists:
@@ -193,10 +193,10 @@ locale = Languages.get_locale("en-US")
 
 # Get all locales
 Languages.all_locales()
-# Returns 85 locales sorted by name
+# Returns 140 locales sorted by name
 
 Languages.locale_count()
-# 85
+# 140
 
 # Get all regional variants for a language
 Languages.locales_for_language("en")
@@ -224,7 +224,7 @@ alias BeamLabCountries.Languages
 # Get all countries where English is spoken
 countries = Languages.countries_for_language("en")
 length(countries)
-# 92
+# 167
 
 # Get just the country names
 Languages.country_names_for_language("es")

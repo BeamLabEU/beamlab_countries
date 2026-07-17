@@ -15,7 +15,7 @@ defmodule BeamLabCountries.MixProject do
       aliases: aliases(),
       dialyzer: [
         plt_file: {:no_warn, "priv/plts/dialyzer.plt"},
-        plt_add_apps: [:ex_unit]
+        plt_add_apps: [:ex_unit, :yaml_elixir, :yamerl]
       ]
     ]
   end
@@ -26,7 +26,7 @@ defmodule BeamLabCountries.MixProject do
 
   defp deps do
     [
-      {:yaml_elixir, "~> 2.12"},
+      {:yaml_elixir, "~> 2.12", runtime: false},
       {:ex_doc, "~> 0.39", only: :dev, runtime: false},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.4", only: [:dev, :test], runtime: false}

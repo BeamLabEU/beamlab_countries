@@ -1,6 +1,8 @@
 defmodule BeamLabCountries.LanguagesTest do
   use ExUnit.Case, async: true
   doctest BeamLabCountries.Languages
+  doctest BeamLabCountries.Language
+  doctest BeamLabCountries.Locale
 
   alias BeamLabCountries.Language
   alias BeamLabCountries.Languages

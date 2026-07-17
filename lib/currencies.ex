@@ -3,7 +3,7 @@ defmodule BeamLabCountries.Currencies do
   Module for looking up currency information from ISO 4217 codes.
 
   This module provides currency data including names, symbols, and decimal precision
-  for 164 world currencies. Data is loaded at compile time for fast lookups.
+  for 155 world currencies. Data is loaded at compile time for fast lookups.
 
   ## Examples
 
@@ -46,6 +46,7 @@ defmodule BeamLabCountries.Currencies do
       nil
 
   """
+  @spec get(String.t()) :: BeamLabCountries.Currency.t() | nil
   def get(code) when is_binary(code) do
     case Map.get(@currencies, String.upcase(code)) do
       nil ->
@@ -77,6 +78,7 @@ defmodule BeamLabCountries.Currencies do
       ** (ArgumentError) Unknown currency code: INVALID
 
   """
+  @spec get!(String.t()) :: BeamLabCountries.Currency.t()
   def get!(code) when is_binary(code) do
     case get(code) do
       nil -> raise ArgumentError, "Unknown currency code: #{code}"
@@ -99,6 +101,7 @@ defmodule BeamLabCountries.Currencies do
       nil
 
   """
+  @spec name(String.t()) :: String.t() | nil
   def name(code) when is_binary(code) do
     case Map.get(@currencies, String.upcase(code)) do
       nil -> nil
@@ -124,6 +127,7 @@ defmodule BeamLabCountries.Currencies do
       nil
 
   """
+  @spec symbol(String.t()) :: String.t() | nil
   def symbol(code) when is_binary(code) do
     case Map.get(@currencies, String.upcase(code)) do
       nil -> nil
@@ -149,6 +153,7 @@ defmodule BeamLabCountries.Currencies do
       nil
 
   """
+  @spec symbol_native(String.t()) :: String.t() | nil
   def symbol_native(code) when is_binary(code) do
     case Map.get(@currencies, String.upcase(code)) do
       nil -> nil
@@ -178,6 +183,7 @@ defmodule BeamLabCountries.Currencies do
       nil
 
   """
+  @spec decimal_digits(String.t()) :: non_neg_integer() | nil
   def decimal_digits(code) when is_binary(code) do
     case Map.get(@currencies, String.upcase(code)) do
       nil -> nil
@@ -204,6 +210,7 @@ defmodule BeamLabCountries.Currencies do
       nil
 
   """
+  @spec for_country(String.t()) :: BeamLabCountries.Currency.t() | nil
   def for_country(country_code) when is_binary(country_code) do
     case BeamLabCountries.get(country_code) do
       nil -> nil
@@ -222,6 +229,7 @@ defmodule BeamLabCountries.Currencies do
       iex> %BeamLabCountries.Currency{} = hd(currencies)
 
   """
+  @spec all() :: [BeamLabCountries.Currency.t()]
   def all do
     @currencies
     |> Enum.map(fn {_code, data} ->
@@ -249,6 +257,7 @@ defmodule BeamLabCountries.Currencies do
       true
 
   """
+  @spec all_codes() :: [String.t()]
   def all_codes do
     Map.keys(@currencies) |> Enum.sort()
   end
@@ -262,6 +271,7 @@ defmodule BeamLabCountries.Currencies do
       155
 
   """
+  @spec count() :: non_neg_integer()
   def count do
     map_size(@currencies)
   end
@@ -281,6 +291,7 @@ defmodule BeamLabCountries.Currencies do
       false
 
   """
+  @spec valid?(String.t()) :: boolean()
   def valid?(code) when is_binary(code) do
     Map.has_key?(@currencies, String.upcase(code))
   end
@@ -301,6 +312,7 @@ defmodule BeamLabCountries.Currencies do
       true
 
   """
+  @spec countries_for_currency(String.t()) :: [BeamLabCountries.Country.t()]
   def countries_for_currency(currency_code) when is_binary(currency_code) do
     code = String.upcase(currency_code)
 
@@ -338,7 +350,16 @@ defmodule BeamLabCountries.Currencies do
       iex> BeamLabCountries.Currencies.format(1234.56, "RUB", native: true)
       "₽1,234.56"
 
+      iex> BeamLabCountries.Currencies.format(-1234.56, "USD")
+      "$-1,234.56"
+
+      iex> BeamLabCountries.Currencies.format(-0.5, "USD")
+      "$-0.50"
+
+  Intended for display purposes only; uses float arithmetic.
+
   """
+  @spec format(number(), String.t(), keyword()) :: String.t() | nil
   def format(amount, currency_code, opts \\ [])
       when is_number(amount) and is_binary(currency_code) do
     case get(currency_code) do
@@ -361,7 +382,8 @@ defmodule BeamLabCountries.Currencies do
 
   # Format a number with thousand separators and decimal places
   defp format_number(amount, decimal_digits) do
-    rounded = Float.round(amount / 1, decimal_digits)
+    sign = if amount < 0, do: "-", else: ""
+    rounded = Float.round(abs(amount) / 1, decimal_digits)
 
     {integer_part, decimal_part} =
       if decimal_digits == 0 do
@@ -384,6 +406,6 @@ defmodule BeamLabCountries.Currencies do
       |> Enum.join(",")
       |> String.reverse()
 
-    "#{formatted_integer}#{decimal_part}"
+    "#{sign}#{formatted_integer}#{decimal_part}"
   end
 end
