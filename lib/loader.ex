@@ -103,6 +103,5 @@ defmodule BeamLabCountries.Loader do
 
   defp ensure_numeric(n) when is_integer(n), do: n
   defp ensure_numeric(n) when is_float(n), do: n
-  defp ensure_numeric(nil), do: nil
   defp ensure_numeric(_), do: nil
 end

@@ -316,6 +316,23 @@ defmodule BeamLabCountries.LanguagesTest do
     end
   end
 
+  describe "country language codes" do
+    # ISO 639-3 codes with no ISO 639-1 equivalent that the country data
+    # references anyway (Maithili, Bhojpuri, Newar, Cebuano).
+    @iso_639_3_only ~w(mai bho new ceb)
+
+    test "every official/spoken language code is a known language" do
+      unknown =
+        for country <- BeamLabCountries.all(),
+            code <- (country.languages_official || []) ++ (country.languages_spoken || []),
+            code not in @iso_639_3_only,
+            not Languages.valid?(code),
+            do: {country.alpha2, code}
+
+      assert unknown == [], "unknown language codes: #{inspect(unknown)}"
+    end
+  end
+
   describe "country_names_for_language/1" do
     test "returns country names where English is spoken" do
       names = Languages.country_names_for_language("en")

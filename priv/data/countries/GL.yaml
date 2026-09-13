@@ -9,7 +9,7 @@ GL:
   alpha2: GL
   alpha3: GRL
   country_code: '299'
-  international_prefix: 009
+  international_prefix: '009'
   ioc: 
   gec: GL
   name: Greenland

@@ -50,12 +50,6 @@ defmodule BeamLabCountries.Languages do
                |> File.read!()
                |> JSON.decode!()
 
-  # Build country lookup for enriching locales with flag and country_name
-  # We need to defer this to runtime since BeamLabCountries may not be compiled yet
-  defp get_country(code) do
-    BeamLabCountries.get(code)
-  end
-
   # Build locales with enriched data (flag, country_name from Country)
   @locales @raw_locales
            |> Enum.map(fn {code, data} ->
@@ -180,17 +174,20 @@ defmodule BeamLabCountries.Languages do
   end
 
   @doc """
-  Returns all language codes.
+  Returns all language codes, sorted.
 
   ## Examples
 
       iex> "en" in BeamLabCountries.Languages.all_codes()
       true
 
+      iex> BeamLabCountries.Languages.all_codes() |> Enum.take(3)
+      ["aa", "ab", "ae"]
+
   """
   @spec all_codes() :: [String.t()]
   def all_codes do
-    Map.keys(@languages)
+    @languages |> Map.keys() |> Enum.sort()
   end
 
   @doc """
@@ -261,20 +258,7 @@ defmodule BeamLabCountries.Languages do
         nil
 
       data ->
-        country = get_country(data["region"])
-
-        %Locale{
-          code: data["code"],
-          base_code: data["base"],
-          region_code: data["region"],
-          name: data["name"],
-          native_name: data["nativeName"],
-          flag: country && country.flag,
-          country_name: country && country.name,
-          continent: country && country.continent,
-          region: country && country.region,
-          subregion: country && country.subregion
-        }
+        to_locale(data)
     end
   end
 
@@ -292,37 +276,25 @@ defmodule BeamLabCountries.Languages do
   @spec all_locales() :: [Locale.t()]
   def all_locales do
     @locales
-    |> Enum.map(fn {_code, data} ->
-      country = get_country(data["region"])
-
-      %Locale{
-        code: data["code"],
-        base_code: data["base"],
-        region_code: data["region"],
-        name: data["name"],
-        native_name: data["nativeName"],
-        flag: country && country.flag,
-        country_name: country && country.name,
-        continent: country && country.continent,
-        region: country && country.region,
-        subregion: country && country.subregion
-      }
-    end)
+    |> Enum.map(fn {_code, data} -> to_locale(data) end)
     |> Enum.sort_by(& &1.name)
   end
 
   @doc """
-  Returns all locale codes.
+  Returns all locale codes, sorted.
 
   ## Examples
 
       iex> "en-US" in BeamLabCountries.Languages.all_locale_codes()
       true
 
+      iex> BeamLabCountries.Languages.all_locale_codes() |> Enum.take(3)
+      ["af", "am", "ar"]
+
   """
   @spec all_locale_codes() :: [String.t()]
   def all_locale_codes do
-    Map.keys(@locales)
+    @locales |> Map.keys() |> Enum.sort()
   end
 
   @doc """
@@ -407,6 +379,25 @@ defmodule BeamLabCountries.Languages do
       [base, region] -> {String.downcase(base), String.upcase(region)}
       [base] -> {String.downcase(base), nil}
     end
+  end
+
+  # Country-derived fields (flag, names, geography) are resolved at runtime so
+  # this module does not depend on `BeamLabCountries` at compile time.
+  defp to_locale(data) do
+    country = BeamLabCountries.get(data["region"])
+
+    %Locale{
+      code: data["code"],
+      base_code: data["base"],
+      region_code: data["region"],
+      name: data["name"],
+      native_name: data["nativeName"],
+      flag: country && country.flag,
+      country_name: country && country.name,
+      continent: country && country.continent,
+      region: country && country.region,
+      subregion: country && country.subregion
+    }
   end
 
   # Normalizes a locale code to the canonical "base-REGION" form used

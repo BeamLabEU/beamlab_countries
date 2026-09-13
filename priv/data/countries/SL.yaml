@@ -47,6 +47,6 @@ SL:
       southwest:
         lat: 6.8446
         lng: -13.4032999
-  currency_code: SLL
+  currency_code: SLE
   start_of_week: monday
   subdivision_type: Region

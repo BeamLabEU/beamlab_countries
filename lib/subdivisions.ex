@@ -12,8 +12,15 @@ defmodule BeamLabCountries.Subdivisions do
   # Load subdivisions from yaml files once on compile time
   @subdivisions BeamLabCountries.SubdivisionLoader.load()
 
+  # Pre-sorted lists for all/1. Maps with more than 32 keys have no defined
+  # iteration order, so `Map.values/1` alone would return e.g. the 60 US
+  # subdivisions in an arbitrary (though stable) order.
+  @subdivision_lists Map.new(@subdivisions, fn {code, by_id} ->
+                       {code, by_id |> Map.values() |> Enum.sort_by(& &1.id)}
+                     end)
+
   @doc """
-  Returns all subdivisions for a country.
+  Returns all subdivisions for a country, sorted by subdivision ID.
 
   Accepts a `BeamLabCountries.Country` struct or an alpha2 country code
   (case-insensitive). Returns an empty list when the country is unknown
@@ -23,6 +30,9 @@ defmodule BeamLabCountries.Subdivisions do
 
       iex> BeamLabCountries.Subdivisions.all("PL") |> length()
       16
+
+      iex> BeamLabCountries.Subdivisions.all("US") |> Enum.map(& &1.id) |> Enum.take(3)
+      ["AA", "AE", "AK"]
 
       iex> country = BeamLabCountries.get("BR")
       iex> BeamLabCountries.Subdivisions.all(country) |> length()
@@ -36,9 +46,7 @@ defmodule BeamLabCountries.Subdivisions do
   def all(%Country{alpha2: alpha2}), do: all(alpha2)
 
   def all(country_code) when is_binary(country_code) do
-    @subdivisions
-    |> Map.get(String.upcase(country_code), %{})
-    |> Map.values()
+    Map.get(@subdivision_lists, String.upcase(country_code), [])
   end
 
   @doc """

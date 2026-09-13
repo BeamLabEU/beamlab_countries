@@ -49,18 +49,8 @@ defmodule BeamLabCountries.Currencies do
   @spec get(String.t()) :: BeamLabCountries.Currency.t() | nil
   def get(code) when is_binary(code) do
     case Map.get(@currencies, String.upcase(code)) do
-      nil ->
-        nil
-
-      data ->
-        %Currency{
-          code: data["code"],
-          name: data["name"],
-          name_plural: data["name_plural"],
-          symbol: data["symbol"],
-          symbol_native: data["symbol_native"],
-          decimal_digits: data["decimal_digits"]
-        }
+      nil -> nil
+      data -> to_currency(data)
     end
   end
 
@@ -194,7 +184,8 @@ defmodule BeamLabCountries.Currencies do
   @doc """
   Returns the Currency struct for a given country's alpha2 code.
 
-  Uses the `currency_code` field from the country data.
+  Uses the `currency_code` field from the country data. Returns `nil` when the
+  country is unknown or has no `currency_code`.
 
   ## Examples
 
@@ -213,8 +204,8 @@ defmodule BeamLabCountries.Currencies do
   @spec for_country(String.t()) :: BeamLabCountries.Currency.t() | nil
   def for_country(country_code) when is_binary(country_code) do
     case BeamLabCountries.get(country_code) do
-      nil -> nil
-      country -> get(country.currency_code)
+      %{currency_code: code} when is_binary(code) -> get(code)
+      _ -> nil
     end
   end
 
@@ -232,16 +223,7 @@ defmodule BeamLabCountries.Currencies do
   @spec all() :: [BeamLabCountries.Currency.t()]
   def all do
     @currencies
-    |> Enum.map(fn {_code, data} ->
-      %Currency{
-        code: data["code"],
-        name: data["name"],
-        name_plural: data["name_plural"],
-        symbol: data["symbol"],
-        symbol_native: data["symbol_native"],
-        decimal_digits: data["decimal_digits"]
-      }
-    end)
+    |> Enum.map(fn {_code, data} -> to_currency(data) end)
     |> Enum.sort_by(& &1.code)
   end
 
@@ -378,6 +360,17 @@ defmodule BeamLabCountries.Currencies do
           :after -> "#{formatted_number}#{symbol}"
         end
     end
+  end
+
+  defp to_currency(data) do
+    %Currency{
+      code: data["code"],
+      name: data["name"],
+      name_plural: data["name_plural"],
+      symbol: data["symbol"],
+      symbol_native: data["symbol_native"],
+      decimal_digits: data["decimal_digits"]
+    }
   end
 
   # Format a number with thousand separators and decimal places

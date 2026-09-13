@@ -9,6 +9,12 @@ defmodule BeamLabCountries.SubdivisionsTest do
       assert BeamLabCountries.Subdivisions.all("us") == subdivisions
     end
 
+    test "returns subdivisions sorted by ID, also for countries with more than 32 entries" do
+      ids = BeamLabCountries.Subdivisions.all("US") |> Enum.map(& &1.id)
+      assert length(ids) > 32
+      assert ids == Enum.sort(ids)
+    end
+
     test "returns empty list for country without subdivision data" do
       assert BeamLabCountries.Subdivisions.all("XX") == []
     end

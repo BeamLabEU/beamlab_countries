@@ -141,6 +141,22 @@ defmodule BeamLabCountriesTest do
     end
   end
 
+  describe "international_prefix" do
+    test "is a string or nil for every country" do
+      bad =
+        BeamLabCountries.all()
+        |> Enum.reject(&(is_nil(&1.international_prefix) or is_binary(&1.international_prefix)))
+        |> Enum.map(&{&1.alpha2, &1.international_prefix})
+
+      assert bad == [], "non-string international_prefix values: #{inspect(bad)}"
+    end
+
+    test "keeps leading zeros" do
+      assert BeamLabCountries.get("ZA").international_prefix == "09"
+      assert BeamLabCountries.get("NG").international_prefix == "009"
+    end
+  end
+
   describe "eu_members/0" do
     test "returns 27 EU member countries" do
       eu = BeamLabCountries.eu_members()

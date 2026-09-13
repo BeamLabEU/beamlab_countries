@@ -24,8 +24,8 @@ BeamLabCountries is a compile-time data library providing ISO 3166 country infor
 
 **Compile-time data loading**: Modules use loaders to parse all data during compilation. This means:
 - Changes to YAML/JSON files require recompilation (`mix compile --force`)
-- No runtime file I/O for lookups (except subdivisions)
-- Uses `yaml_elixir` for YAML and `Jason` for JSON parsing
+- No runtime file I/O for lookups
+- Uses `yaml_elixir` for YAML and the built-in `JSON` module for JSON parsing
 - Pre-built maps for fast lookups (alpha2, alpha3, union membership)
 
 ### Module Structure
@@ -34,10 +34,16 @@ BeamLabCountries is a compile-time data library providing ISO 3166 country infor
 - `BeamLabCountries` (lib/countries.ex) - Main API: `all/0`, `count/0`, `get/1`, `get!/1`, `get_by/2`, `get_by_alpha3/1`, `filter_by/2`, `exists?/2`
 - `BeamLabCountries.Country` (lib/country.ex) - Struct with 41 fields (alpha2, alpha3, name, short_name, phone_prefix, region, currency, eu_member, eea_member, languages_official, etc.)
 - `BeamLabCountries.Loader` (lib/loader.ex) - Compile-time YAML parser for country data
+- `BeamLabCountries.Random` (lib/random.ex) - `country/0`, `flag/0`
 
 **Subdivisions Modules:**
-- `BeamLabCountries.Subdivisions` (lib/subdivisions.ex) - Runtime loader: `all/1`
+- `BeamLabCountries.Subdivisions` (lib/subdivisions.ex) - Compile-time data: `all/1` (sorted by id), `get/2`; both accept a `%Country{}` or alpha2 code
 - `BeamLabCountries.Subdivision` (lib/subdivision.ex) - Struct with 5 fields (id, name, unofficial_names, translations, geo)
+- `BeamLabCountries.SubdivisionLoader` (lib/subdivision_loader.ex) - Compile-time YAML parser for subdivision data
+
+**Currencies Modules:**
+- `BeamLabCountries.Currencies` (lib/currencies.ex) - ISO 4217 lookup: `get/1`, `get!/1`, `name/1`, `symbol/1`, `symbol_native/1`, `decimal_digits/1`, `for_country/1`, `countries_for_currency/1`, `all/0`, `all_codes/0`, `count/0`, `valid?/1`, `format/3`
+- `BeamLabCountries.Currency` (lib/currency.ex) - Struct with 6 fields (code, name, name_plural, symbol, symbol_native, decimal_digits)
 
 **Unions Modules (International Organizations):**
 - `BeamLabCountries.Unions` (lib/unions.ex) - API: `all/0`, `count/0`, `get/1`, `get!/1`, `for_country/1`, `codes_for_country/1`, `filter_by/2`, `exists?/1`, `member?/2`, `member_countries/1`
@@ -50,7 +56,7 @@ BeamLabCountries is a compile-time data library providing ISO 3166 country infor
   - Locales: `get_locale/1`, `all_locales/0`, `all_locale_codes/0`, `locale_count/0`, `locales_for_language/1`, `valid_locale?/1`, `parse_locale/1`
   - Country associations: `countries_for_language/1`, `country_names_for_language/1`, `flags_for_language/1`
 - `BeamLabCountries.Language` (lib/language.ex) - Struct with 4 fields (code, name, native_name, family)
-- `BeamLabCountries.Locale` (lib/locale.ex) - Struct with 7 fields (code, base_code, region_code, name, native_name, flag, country_name)
+- `BeamLabCountries.Locale` (lib/locale.ex) - Struct with 10 fields (code, base_code, region_code, name, native_name, flag, country_name, continent, region, subregion)
 
 **Translations Module:**
 - `BeamLabCountries.Translations` (lib/translations.ex) - Country name translations: `get_name/2`, `get_all_names/1`, `supported_locales/0`, `locale_supported?/1`
@@ -59,8 +65,9 @@ BeamLabCountries is a compile-time data library providing ISO 3166 country infor
 
 - `priv/data/countries.yaml` - List of country codes to load
 - `priv/data/countries/{CODE}.yaml` - Individual country data files (250 countries)
-- `priv/data/subdivisions/{CODE}.yaml` - Subdivision data (loaded at runtime, not compile-time)
-- `priv/data/unions/{CODE}.yaml` - Union/organization data files (13 unions: eu, nato, g7, g20, etc.)
+- `priv/data/subdivisions/{CODE}.yaml` - Subdivision data (224 countries)
+- `priv/data/unions.yaml` / `priv/data/unions/{CODE}.yaml` - Union/organization data files (13 unions: eu, nato, g7, g20, etc.)
 - `priv/data/languages.json` - Language codes and names (184 languages)
-- `priv/data/locales.json` - Regional locale data (85 locales: en-US, es-ES, pt-BR, etc.)
+- `priv/data/currencies.json` - ISO 4217 currency data (155 currencies)
+- `priv/data/locales.json` - Regional locale data (140 locales: en-US, es-ES, pt-BR, etc.)
 - `priv/data/locales/{LOCALE}.json` - Country name translations (16 locales: ar, de, en, es, et, fr, it, ja, ko, nl, pl, pt, ru, sv, uk, zh)

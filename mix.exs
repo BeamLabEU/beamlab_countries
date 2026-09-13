@@ -2,7 +2,7 @@ defmodule BeamLabCountries.MixProject do
   use Mix.Project
 
   @source_url "https://github.com/BeamLabEU/beamlab_countries"
-  @version "1.2.0"
+  @version "1.2.1"
 
   def project do
     [
@@ -36,8 +36,9 @@ defmodule BeamLabCountries.MixProject do
   defp docs do
     [
       extras: [
-        "LICENSE.md": [title: "License"],
-        "README.md": [title: "Overview"]
+        "README.md": [title: "Overview"],
+        "CHANGELOG.md": [title: "Changelog"],
+        "LICENSE.md": [title: "License"]
       ],
       main: "readme",
       source_url: @source_url,
@@ -70,6 +71,9 @@ defmodule BeamLabCountries.MixProject do
           "subdivisions (states/provinces), international organizations, language information, and country name translations.",
       maintainers: ["BeamLab"],
       licenses: ["MIT"],
+      # Hex packages files from disk, not git, so the local dialyzer PLT
+      # (priv/plts, ~3 MB) would otherwise ship with every release.
+      exclude_patterns: [~r"^priv/plts"],
       links: %{"GitHub" => "https://github.com/BeamLabEU/beamlab_countries"}
     ]
   end

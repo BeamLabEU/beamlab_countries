@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.2.1 - 2026-09-13
+
+### Fixed
+- `Currencies.for_country/1` raised `FunctionClauseError` for countries without a `currency_code` (`AN`); it now returns `nil`
+- `Subdivisions.all/1` returned subdivisions in arbitrary order for countries with more than 32 entries (e.g. `US`); results are now sorted by subdivision ID
+- The Hex package included the local dialyzer PLT (`priv/plts/`, ~3 MB); it is now excluded via `exclude_patterns`
+- `international_prefix` was parsed as the integer `9` for `GL`, `NG` and `ZA` (unquoted `009` / `09` in YAML); it is now always a string, and `Country.t` reflects that
+- Country data: `AN` gained `currency_code: ANG`; `SL` uses `SLE` (replaced `SLL` in 2022) and `ST` uses `STN` (replaced `STD` in 2018); `IM` / `JE` use `GBP` and `TV` uses `AUD` instead of the non-ISO `IMP` / `JEP` / `TVD`, so `Currencies.for_country/1` resolves for every country; `NP` lists `ur` instead of the ISO 639-3 `urd`
+- `.gitignore` ignored `countries-*.tar` but the Hex tarball is named `beamlab_countries-*.tar`
+
+### Changed
+- `Languages.all_codes/0` and `Languages.all_locale_codes/0` now return sorted lists
+- Tests guard the data invariants above (every `currency_code` is a known currency, every language code is known, `international_prefix` is a string, subdivisions are sorted)
+- `CHANGELOG.md` is included in the generated docs
+
 ## 1.2.0 - 2026-08-14
 
 ### Added

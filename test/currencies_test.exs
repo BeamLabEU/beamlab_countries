@@ -137,6 +137,22 @@ defmodule BeamLabCountries.CurrenciesTest do
     test "returns nil for invalid country" do
       assert Currencies.for_country("INVALID") == nil
     end
+
+    test "every country with a currency_code resolves to a known currency" do
+      unknown =
+        BeamLabCountries.all()
+        |> Enum.reject(&(is_nil(&1.currency_code) or Currencies.valid?(&1.currency_code)))
+        |> Enum.map(&{&1.alpha2, &1.currency_code})
+
+      assert unknown == [], "countries with unknown currency_code: #{inspect(unknown)}"
+    end
+
+    test "every country has a currency_code" do
+      missing =
+        BeamLabCountries.all() |> Enum.filter(&is_nil(&1.currency_code)) |> Enum.map(& &1.alpha2)
+
+      assert missing == []
+    end
   end
 
   describe "all/0" do

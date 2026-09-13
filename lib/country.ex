@@ -21,7 +21,7 @@ defmodule BeamLabCountries.Country do
           phone_prefix: String.t() | nil,
           national_destination_code_lengths: [integer()] | nil,
           national_number_lengths: [integer()] | nil,
-          international_prefix: String.t() | integer() | nil,
+          international_prefix: String.t() | nil,
           national_prefix: String.t() | nil,
           ioc: String.t() | nil,
           gec: String.t() | nil,
