@@ -53,3 +53,5 @@ PY:
   currency_code: PYG
   start_of_week: monday
   subdivision_type: Department
+  timezones:
+  - America/Asuncion

@@ -66,3 +66,5 @@ SG:
   currency_code: SGD
   start_of_week: monday
   subdivision_type: District
+  timezones:
+  - Asia/Singapore

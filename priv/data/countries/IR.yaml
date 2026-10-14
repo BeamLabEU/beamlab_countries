@@ -53,3 +53,5 @@ IR:
   currency_code: IRR
   start_of_week: saturday
   subdivision_type: Province
+  timezones:
+  - Asia/Tehran

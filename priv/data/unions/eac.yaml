@@ -1,0 +1,19 @@
+---
+eac:
+  # 8 partner states (Somalia joined 2024).
+  code: eac
+  name: East African Community
+  type: economic_political
+  founded: "2000-07-07"
+  headquarters: Arusha, Tanzania
+  website: https://www.eac.int
+  wikipedia: https://en.wikipedia.org/wiki/East_African_Community
+  members:
+    - BI
+    - CD
+    - KE
+    - RW
+    - SO
+    - SS
+    - TZ
+    - UG

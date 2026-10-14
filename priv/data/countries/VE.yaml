@@ -50,3 +50,5 @@ VE:
   currency_code: VES
   start_of_week: monday
   subdivision_type: State
+  timezones:
+  - America/Caracas

@@ -63,3 +63,5 @@ JO:
   currency_code: JOD
   start_of_week: sunday
   subdivision_type: Governorate
+  timezones:
+  - Asia/Amman

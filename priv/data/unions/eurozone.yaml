@@ -1,0 +1,33 @@
+---
+eurozone:
+  # 21 members. Bulgaria (BG) adopted the euro on 2026-01-01 (21st member); Croatia joined 2023.
+  # States using the euro without membership (AD, MC, SM, VA by agreement; ME, XK unilaterally) are excluded.
+  code: eurozone
+  name: Euro Area
+  type: economic
+  founded: "1999-01-01"
+  headquarters: Frankfurt, Germany
+  website: https://www.ecb.europa.eu/euro/html/index.en.html
+  wikipedia: https://en.wikipedia.org/wiki/Eurozone
+  members:
+    - AT
+    - BE
+    - BG
+    - HR
+    - CY
+    - EE
+    - FI
+    - FR
+    - DE
+    - GR
+    - IE
+    - IT
+    - LV
+    - LT
+    - LU
+    - MT
+    - NL
+    - PT
+    - SK
+    - SI
+    - ES

@@ -50,3 +50,5 @@ GT:
   currency_code: GTQ
   start_of_week: monday
   subdivision_type: Department
+  timezones:
+  - America/Guatemala

@@ -47,8 +47,8 @@ defmodule BeamLabCountries.Loader do
       phone_prefix: phone_prefix(data["country_code"]),
       national_destination_code_lengths: data["national_destination_code_lengths"],
       national_number_lengths: data["national_number_lengths"],
-      international_prefix: data["international_prefix"],
-      national_prefix: data["national_prefix"],
+      international_prefix: blank_to_nil(data["international_prefix"]),
+      national_prefix: blank_to_nil(data["national_prefix"]),
       ioc: data["ioc"],
       gec: data["gec"],
       un_locode: data["un_locode"],
@@ -58,16 +58,21 @@ defmodule BeamLabCountries.Loader do
       nationality: data["nationality"],
       address_format: data["address_format"],
       dissolved_on: data["dissolved_on"],
-      eu_member: data["eu_member"],
-      eea_member: data["eea_member"],
+      eu_member: data["eu_member"] == true,
+      eea_member: data["eea_member"] == true,
       alt_currency: data["alt_currency"],
       vat_rates: normalize_vat_rates(data["vat_rates"]),
       postal_code: data["postal_code"],
       currency_code: data["currency_code"],
       start_of_week: data["start_of_week"],
-      subdivision_type: data["subdivision_type"]
+      subdivision_type: data["subdivision_type"],
+      timezones: data["timezones"] || []
     }
   end
+
+  # The upstream data uses the literal string "None" for "no prefix".
+  defp blank_to_nil(value) when value in [nil, "", "None"], do: nil
+  defp blank_to_nil(value), do: value
 
   defp phone_prefix(nil), do: nil
   defp phone_prefix(code), do: "+" <> code

@@ -67,3 +67,30 @@ RU:
   currency_code: RUB
   start_of_week: monday
   subdivision_type: Oblast
+  timezones:
+  - Europe/Kaliningrad
+  - Europe/Moscow
+  - Europe/Kirov
+  - Europe/Volgograd
+  - Europe/Astrakhan
+  - Europe/Saratov
+  - Europe/Ulyanovsk
+  - Europe/Samara
+  - Asia/Yekaterinburg
+  - Asia/Omsk
+  - Asia/Novosibirsk
+  - Asia/Barnaul
+  - Asia/Tomsk
+  - Asia/Novokuznetsk
+  - Asia/Krasnoyarsk
+  - Asia/Irkutsk
+  - Asia/Chita
+  - Asia/Yakutsk
+  - Asia/Khandyga
+  - Asia/Vladivostok
+  - Asia/Ust-Nera
+  - Asia/Magadan
+  - Asia/Sakhalin
+  - Asia/Srednekolymsk
+  - Asia/Kamchatka
+  - Asia/Anadyr

@@ -26,6 +26,10 @@ Improvement proposals for BeamLabCountries library.
 - [x] `@spec` annotations for all public functions
 - [x] Doctest coverage for `Translations`, `Subdivisions`, `Language`, `Locale`; stale examples fixed
 - [x] GitHub Actions CI (legacy `.travis.yml` removed)
+- [x] Time zones, 7 new translation locales, 16 new unions, union membership fixes
+- [x] Misnamed subdivision files (KY, TJ), nil subdivision names, `unofficial_names` always a list
+- [x] nil-safe lookups, unknown-attribute errors in `filter_by`, compile-time normalized filtering
+- [x] `Translations.get_name/3` with fallback; new data files trigger recompilation
 
 ## Data-Level Work
 

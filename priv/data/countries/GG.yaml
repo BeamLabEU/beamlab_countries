@@ -57,3 +57,5 @@ GG:
   currency_code: GBP
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Europe/Guernsey

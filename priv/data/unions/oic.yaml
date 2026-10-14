@@ -1,0 +1,69 @@
+---
+oic:
+  # 57 member states. Syria's membership (suspended 2012) was restored in March 2025. Palestine (PS) is a member.
+  # Observers (BA, CF, TH, RU, Turkish Cypriot State) are excluded.
+  code: oic
+  name: Organisation of Islamic Cooperation
+  type: political
+  founded: "1969-09-25"
+  headquarters: Jeddah, Saudi Arabia
+  website: https://www.oic-oci.org
+  wikipedia: https://en.wikipedia.org/wiki/Organisation_of_Islamic_Cooperation
+  members:
+    - DZ
+    - BJ
+    - BF
+    - CM
+    - TD
+    - KM
+    - DJ
+    - EG
+    - GA
+    - GM
+    - GN
+    - GW
+    - CI
+    - LY
+    - ML
+    - MR
+    - MA
+    - MZ
+    - NE
+    - NG
+    - SN
+    - SL
+    - SO
+    - SD
+    - TG
+    - TN
+    - UG
+    - AF
+    - AZ
+    - BH
+    - BD
+    - BN
+    - ID
+    - IR
+    - IQ
+    - JO
+    - KZ
+    - KW
+    - KG
+    - LB
+    - MY
+    - MV
+    - OM
+    - PK
+    - PS
+    - QA
+    - SA
+    - SY
+    - TJ
+    - TR
+    - TM
+    - AE
+    - UZ
+    - YE
+    - AL
+    - GY
+    - SR

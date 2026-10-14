@@ -88,3 +88,5 @@ ZA:
   currency_code: ZAR
   start_of_week: monday
   subdivision_type: Province
+  timezones:
+  - Africa/Johannesburg

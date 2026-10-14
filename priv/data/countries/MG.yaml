@@ -55,3 +55,5 @@ MG:
   currency_code: MGA
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Indian/Antananarivo

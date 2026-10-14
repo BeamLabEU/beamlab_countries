@@ -3,7 +3,9 @@ defmodule BeamLabCountries.Unions do
   Module for working with international unions, organizations, and country groupings.
 
   This module provides functions to query unions such as the European Union, NATO,
-  G7, ASEAN, and other international organizations.
+  G7, BRICS, ASEAN, the Commonwealth, and other international organizations.
+  Membership reflects the situation at the time of the last data update; members that
+  are suspended (e.g. Venezuela in Mercosur) are still listed and noted in the data file.
 
   ## Examples
 
@@ -57,7 +59,7 @@ defmodule BeamLabCountries.Unions do
   ## Examples
 
       iex> BeamLabCountries.Unions.count()
-      13
+      29
 
   """
   @spec count() :: non_neg_integer()
@@ -82,6 +84,8 @@ defmodule BeamLabCountries.Unions do
   def get(union_code) when is_binary(union_code) do
     Map.get(@unions_by_code, String.downcase(union_code))
   end
+
+  def get(_union_code), do: nil
 
   @doc """
   Returns one union given its code, or raises if not found.
@@ -112,11 +116,10 @@ defmodule BeamLabCountries.Unions do
 
   """
   @spec for_country(String.t()) :: [Union.t()]
-  def for_country(country_code) when is_binary(country_code) do
-    case Map.get(@unions_by_country, String.upcase(country_code)) do
-      nil -> []
-      union_codes -> Enum.map(union_codes, &get/1)
-    end
+  def for_country(country_code) do
+    country_code
+    |> codes_for_country()
+    |> Enum.map(&get/1)
   end
 
   @doc """
@@ -133,6 +136,8 @@ defmodule BeamLabCountries.Unions do
   def codes_for_country(country_code) when is_binary(country_code) do
     Map.get(@unions_by_country, String.upcase(country_code), [])
   end
+
+  def codes_for_country(_country_code), do: []
 
   @doc """
   Filters unions by given attribute and value.
@@ -168,6 +173,8 @@ defmodule BeamLabCountries.Unions do
     Map.has_key?(@unions_by_code, String.downcase(union_code))
   end
 
+  def exists?(_union_code), do: false
+
   @doc """
   Checks if a country is a member of a union.
 
@@ -189,6 +196,8 @@ defmodule BeamLabCountries.Unions do
     end
   end
 
+  def member?(_country_code, _union_code), do: false
+
   @doc """
   Returns all member countries of a union as Country structs.
 
@@ -200,10 +209,10 @@ defmodule BeamLabCountries.Unions do
 
   """
   @spec member_countries(String.t()) :: [BeamLabCountries.Country.t()]
-  def member_countries(union_code) when is_binary(union_code) do
+  def member_countries(union_code) do
     case get(union_code) do
       nil -> []
-      union -> Enum.map(union.members, &BeamLabCountries.get/1) |> Enum.reject(&is_nil/1)
+      union -> union.members |> Enum.map(&BeamLabCountries.get/1) |> Enum.reject(&is_nil/1)
     end
   end
 end

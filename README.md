@@ -9,7 +9,7 @@ It is based on the data from the pretty popular but abandoned Elixir library [Co
 ```elixir
 defp deps do
   [
-    {:beamlab_countries, "~> 1.0"}
+    {:beamlab_countries, "~> 2.0"}
   ]
 end
 ```
@@ -68,7 +68,33 @@ eu_countries = BeamLabCountries.filter_by(:eu_member, true)
 # By language (countries where English is spoken)
 english_speaking = BeamLabCountries.filter_by(:languages_spoken, "en")
 Enum.count(english_speaking)
-# 167
+# 168
+```
+
+Time zones are IANA identifiers, and can be filtered like any other attribute:
+
+```elixir
+BeamLabCountries.get("EE").timezones
+# ["Europe/Tallinn"]
+
+BeamLabCountries.get("US").timezones |> length()
+# 29
+
+BeamLabCountries.get_by(:timezones, "Europe/Tallinn").alpha2
+# "EE"
+```
+
+`eu_member` and `eea_member` are always booleans, so non-members can be filtered with
+`filter_by(:eu_member, false)`. Lookups return `nil` for unknown or non-string codes, while
+`filter_by/1,2`, `get_by/2` and `exists?/2` raise `ArgumentError` for attributes that are
+not fields of `BeamLabCountries.Country`:
+
+```elixir
+BeamLabCountries.get(nil)
+# nil
+
+BeamLabCountries.filter_by(:regoin, "Europe")
+# ** (ArgumentError) unknown country attribute: :regoin, expected one of: ...
 ```
 
 Check if a country exists:
@@ -105,7 +131,9 @@ alias BeamLabCountries.Unions
 
 # Get all unions
 Unions.all()
-# Returns 13 unions: EU, NATO, G7, G20, ASEAN, OPEC, OECD, APEC, Mercosur, USMCA, African Union, EEA, EFTA
+# Returns 29 unions: EU, EEA, EFTA, NATO, G7, G20, APEC, ASEAN, Mercosur, USMCA, African Union,
+# OPEC, OECD, BRICS, CIS, OIC, Pacific Alliance, Commonwealth, Arab League, GCC, Schengen,
+# Eurozone, SCO, CARICOM, ECOWAS, SADC, EAC, Council of Europe and CPTPP
 
 # Get a specific union
 eu = Unions.get("eu")
@@ -154,7 +182,7 @@ Languages.get_native_name("de")
 # "Deutsch"
 
 Languages.get_native_name("zh")
-# "中文"
+# "中文 (Zhōngwén), 汉语, 漢語"
 
 # Get full language info as struct
 Languages.get("fr")
@@ -224,7 +252,7 @@ alias BeamLabCountries.Languages
 # Get all countries where English is spoken
 countries = Languages.countries_for_language("en")
 length(countries)
-# 167
+# 168
 
 # Get just the country names
 Languages.country_names_for_language("es")
@@ -255,6 +283,13 @@ Translations.get_name("US", "zh")
 Translations.get_name("FR", "ar")
 # "فرنسا"
 
+# Regional locales are reduced to their language, and a fallback can be given
+Translations.get_name("AT", "de-AT")
+# "Österreich"
+
+Translations.get_name("AT", "xx", fallback: "en")
+# "Austria"
+
 # Get country name in all supported languages
 Translations.get_all_names("IT")
 # %{"ar" => "إيطاليا", "de" => "Italien", "en" => "Italy", "es" => "Italia",
@@ -262,7 +297,8 @@ Translations.get_all_names("IT")
 
 # Check supported locales
 Translations.supported_locales()
-# ["ar", "de", "en", "es", "et", "fr", "it", "ja", "ko", "nl", "pl", "pt", "ru", "sv", "uk", "zh"]
+# ["ar", "cs", "de", "en", "es", "et", "fr", "hi", "id", "it", "ja", "ko", "nl", "pl", "pt",
+#  "ro", "ru", "sv", "th", "tr", "uk", "vi", "zh"]
 
 Translations.locale_supported?("ja")
 # true

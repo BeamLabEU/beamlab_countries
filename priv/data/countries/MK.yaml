@@ -70,3 +70,5 @@ MK:
   currency_code: MKD
   start_of_week: monday
   subdivision_type: Municipality
+  timezones:
+  - Europe/Skopje

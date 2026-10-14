@@ -1,0 +1,24 @@
+---
+cptpp:
+  # 12 parties in force (UK since 2024-12-15). Costa Rica concluded accession talks in May 2026 but has not ratified/entered into force;
+  # Uruguay, Indonesia, Philippines, UAE, China, Taiwan and others are applicants only.
+  code: cptpp
+  name: Comprehensive and Progressive Agreement for Trans-Pacific Partnership
+  type: trade
+  founded: "2018-12-30"
+  headquarters: No permanent secretariat (New Zealand is depositary)
+  website: https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/cptpp
+  wikipedia: https://en.wikipedia.org/wiki/Comprehensive_and_Progressive_Agreement_for_Trans-Pacific_Partnership
+  members:
+    - AU
+    - BN
+    - CA
+    - CL
+    - JP
+    - MY
+    - MX
+    - NZ
+    - PE
+    - SG
+    - VN
+    - GB

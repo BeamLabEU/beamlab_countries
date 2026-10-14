@@ -72,3 +72,6 @@ UA:
   currency_code: UAH
   start_of_week: monday
   subdivision_type: Oblast
+  timezones:
+  - Europe/Simferopol
+  - Europe/Kyiv

@@ -54,3 +54,5 @@ SC:
   currency_code: SCR
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Indian/Mahe

@@ -56,3 +56,5 @@ AM:
   currency_code: AMD
   start_of_week: monday
   subdivision_type: Province
+  timezones:
+  - Asia/Yerevan

@@ -55,3 +55,5 @@ CI:
   currency_code: XOF
   start_of_week: monday
   subdivision_type: District
+  timezones:
+  - Africa/Abidjan

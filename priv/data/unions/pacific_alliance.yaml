@@ -1,0 +1,15 @@
+---
+pacific_alliance:
+  # Full members only. Associate members (e.g. SG, AU, CA, NZ) and observers are excluded.
+  code: pacific_alliance
+  name: Pacific Alliance
+  type: trade
+  founded: "2011-04-28"
+  headquarters: No permanent secretariat (rotating pro tempore presidency)
+  website: https://alianzapacifico.net
+  wikipedia: https://en.wikipedia.org/wiki/Pacific_Alliance
+  members:
+    - CL
+    - CO
+    - MX
+    - PE

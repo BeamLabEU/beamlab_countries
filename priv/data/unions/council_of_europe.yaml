@@ -1,0 +1,57 @@
+---
+council_of_europe:
+  # 46 members. Russia (RU) was expelled on 2022-03-16 and is excluded. Belarus was never a member. Kosovo is not a member.
+  code: council_of_europe
+  name: Council of Europe
+  type: political
+  founded: "1949-05-05"
+  headquarters: Strasbourg, France
+  website: https://www.coe.int
+  wikipedia: https://en.wikipedia.org/wiki/Council_of_Europe
+  members:
+    - AL
+    - AD
+    - AM
+    - AT
+    - AZ
+    - BE
+    - BA
+    - BG
+    - HR
+    - CY
+    - CZ
+    - DK
+    - EE
+    - FI
+    - FR
+    - GE
+    - DE
+    - GR
+    - HU
+    - IS
+    - IE
+    - IT
+    - LV
+    - LI
+    - LT
+    - LU
+    - MT
+    - MD
+    - MC
+    - ME
+    - NL
+    - MK
+    - NO
+    - PL
+    - PT
+    - RO
+    - SM
+    - RS
+    - SK
+    - SI
+    - ES
+    - SE
+    - CH
+    - TR
+    - UA
+    - GB

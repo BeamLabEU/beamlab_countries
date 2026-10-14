@@ -8,14 +8,11 @@ AN:
   currency_code: ANG
   international_prefix: '00'
   ioc: AHO
-  gec: 
-  latitude: ''
-  longitude: ''
+  gec:
   name: Netherlands Antilles
   short_name: Netherlands Antilles
   flag: '🇦🇳'
-  names:
-  - Netherlands Antilles
+  unofficial_names:
   - Niederländische Antillen
   - Antilles néerlandaises
   - Antillas Holandesas
@@ -31,16 +28,33 @@ AN:
   subregion: Caribbean
   world_region: AMER
   un_locode: AN
-  languages:
+  nationality: Dutch
+  languages_official:
+  - nl
+  languages_spoken:
   - nl
   - en
-  nationality: Dutch
+  language_locales:
+    nl: nl
   dissolved_on: '2010-10-10'
   postal_code: false
-  min_longitude: "-69.166667"
-  min_latitude: '12.016667'
-  max_longitude: "-62.933333"
-  max_latitude: '18.05'
-  latitude_dec: '12.189866065979004'
-  longitude_dec: "-68.28852081298828"
+  geo:
+    latitude: 12.189866
+    latitude_dec: '12.189866065979004'
+    longitude: -68.288521
+    longitude_dec: "-68.28852081298828"
+    max_latitude: 18.05
+    max_longitude: -62.933333
+    min_latitude: 12.016667
+    min_longitude: -69.166667
+    bounds:
+      northeast:
+        lat: 18.05
+        lng: -62.933333
+      southwest:
+        lat: 12.016667
+        lng: -69.166667
+  start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - America/Curacao

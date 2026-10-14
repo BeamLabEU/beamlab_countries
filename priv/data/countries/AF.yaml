@@ -58,3 +58,5 @@ AF:
   currency_code: AFN
   start_of_week: monday
   subdivision_type: Province
+  timezones:
+  - Asia/Kabul

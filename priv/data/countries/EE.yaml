@@ -67,3 +67,5 @@ EE:
   currency_code: EUR
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Europe/Tallinn

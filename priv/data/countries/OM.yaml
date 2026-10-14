@@ -60,3 +60,5 @@ OM:
   currency_code: OMR
   start_of_week: sunday
   subdivision_type: Governorate
+  timezones:
+  - Asia/Muscat

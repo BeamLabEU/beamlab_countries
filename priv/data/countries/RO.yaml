@@ -75,3 +75,5 @@ RO:
   currency_code: RON
   start_of_week: monday
   subdivision_type: County
+  timezones:
+  - Europe/Bucharest

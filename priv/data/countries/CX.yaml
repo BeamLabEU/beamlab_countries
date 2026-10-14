@@ -56,3 +56,5 @@ CX:
   currency_code: AUD
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Indian/Christmas

@@ -54,3 +54,5 @@ WF:
   currency_code: XPF
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Pacific/Wallis

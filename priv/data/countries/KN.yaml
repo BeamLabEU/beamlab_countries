@@ -57,3 +57,5 @@ KN:
   currency_code: XCD
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - America/St_Kitts

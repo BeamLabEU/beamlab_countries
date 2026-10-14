@@ -52,3 +52,5 @@ PA:
   currency_code: PAB
   start_of_week: monday
   subdivision_type: Province
+  timezones:
+  - America/Panama

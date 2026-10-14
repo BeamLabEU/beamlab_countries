@@ -1,0 +1,67 @@
+---
+commonwealth:
+  # 56 member states. Gabon and Togo joined in 2022; Gabon's partial suspension was lifted in July 2025.
+  code: commonwealth
+  name: Commonwealth of Nations
+  type: political
+  founded: "1949-04-28"
+  headquarters: London, United Kingdom
+  website: https://thecommonwealth.org
+  wikipedia: https://en.wikipedia.org/wiki/Commonwealth_of_Nations
+  members:
+    - AG
+    - AU
+    - BS
+    - BD
+    - BB
+    - BZ
+    - BW
+    - BN
+    - CM
+    - CA
+    - CY
+    - DM
+    - SZ
+    - FJ
+    - GA
+    - GM
+    - GH
+    - GD
+    - GY
+    - IN
+    - JM
+    - KE
+    - KI
+    - LS
+    - MW
+    - MY
+    - MV
+    - MT
+    - MU
+    - MZ
+    - NA
+    - NR
+    - NZ
+    - NG
+    - PK
+    - PG
+    - RW
+    - KN
+    - LC
+    - VC
+    - WS
+    - SC
+    - SL
+    - SG
+    - SB
+    - ZA
+    - LK
+    - TZ
+    - TG
+    - TO
+    - TT
+    - TV
+    - UG
+    - GB
+    - VU
+    - ZM

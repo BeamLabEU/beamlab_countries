@@ -54,3 +54,5 @@ FK:
   currency_code: FKP
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Atlantic/Stanley

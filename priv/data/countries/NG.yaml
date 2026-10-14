@@ -64,3 +64,5 @@ NG:
   currency_code: NGN
   start_of_week: monday
   subdivision_type: State
+  timezones:
+  - Africa/Lagos

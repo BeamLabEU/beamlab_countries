@@ -1,6 +1,10 @@
 defmodule BeamLabCountries.Country do
   @moduledoc """
   Country struct.
+
+  `eu_member` and `eea_member` are always booleans (`false` for non-members).
+  `timezones` is a list of IANA time zone identifiers (e.g. `"Europe/Tallinn"`),
+  in the order used by the IANA `zone.tab` file.
   """
 
   @type t :: %__MODULE__{
@@ -32,14 +36,15 @@ defmodule BeamLabCountries.Country do
           nationality: String.t() | nil,
           address_format: String.t() | nil,
           dissolved_on: String.t() | nil,
-          eu_member: boolean() | nil,
-          eea_member: boolean() | nil,
+          eu_member: boolean(),
+          eea_member: boolean(),
           alt_currency: String.t() | nil,
           vat_rates: map() | nil,
           postal_code: boolean() | nil,
           currency_code: String.t() | nil,
           start_of_week: String.t() | nil,
-          subdivision_type: String.t() | nil
+          subdivision_type: String.t() | nil,
+          timezones: [String.t()]
         }
 
   defstruct [
@@ -71,13 +76,14 @@ defmodule BeamLabCountries.Country do
     :nationality,
     :address_format,
     :dissolved_on,
-    :eu_member,
-    :eea_member,
     :alt_currency,
     :vat_rates,
     :postal_code,
     :currency_code,
     :start_of_week,
-    :subdivision_type
+    :subdivision_type,
+    eu_member: false,
+    eea_member: false,
+    timezones: []
   ]
 end

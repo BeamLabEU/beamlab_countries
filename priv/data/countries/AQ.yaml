@@ -47,3 +47,14 @@ AQ:
   currency_code: USD
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Antarctica/McMurdo
+  - Antarctica/Casey
+  - Antarctica/Davis
+  - Antarctica/DumontDUrville
+  - Antarctica/Mawson
+  - Antarctica/Palmer
+  - Antarctica/Rothera
+  - Antarctica/Syowa
+  - Antarctica/Troll
+  - Antarctica/Vostok

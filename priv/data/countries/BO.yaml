@@ -58,3 +58,5 @@ BO:
   currency_code: BOB
   start_of_week: monday
   subdivision_type: Department
+  timezones:
+  - America/La_Paz

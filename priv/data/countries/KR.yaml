@@ -67,3 +67,5 @@ KR:
   currency_code: KRW
   start_of_week: monday
   subdivision_type: Province
+  timezones:
+  - Asia/Seoul

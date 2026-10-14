@@ -61,3 +61,5 @@ AL:
   currency_code: ALL
   start_of_week: monday
   subdivision_type: County
+  timezones:
+  - Europe/Tirane

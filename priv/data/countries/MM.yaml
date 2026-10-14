@@ -53,3 +53,5 @@ MM:
   currency_code: MMK
   start_of_week: monday
   subdivision_type: State
+  timezones:
+  - Asia/Yangon

@@ -65,3 +65,5 @@ NP:
   currency_code: NPR
   start_of_week: sunday
   subdivision_type: Province
+  timezones:
+  - Asia/Kathmandu

@@ -1,0 +1,27 @@
+---
+sadc:
+  # 16 members.
+  code: sadc
+  name: Southern African Development Community
+  type: economic_political
+  founded: "1992-08-17"
+  headquarters: Gaborone, Botswana
+  website: https://www.sadc.int
+  wikipedia: https://en.wikipedia.org/wiki/Southern_African_Development_Community
+  members:
+    - AO
+    - BW
+    - KM
+    - CD
+    - SZ
+    - LS
+    - MG
+    - MW
+    - MU
+    - MZ
+    - NA
+    - SC
+    - ZA
+    - TZ
+    - ZM
+    - ZW

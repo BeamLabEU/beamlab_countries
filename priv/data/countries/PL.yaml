@@ -73,3 +73,5 @@ PL:
   currency_code: PLN
   start_of_week: monday
   subdivision_type: Voivodeship
+  timezones:
+  - Europe/Warsaw

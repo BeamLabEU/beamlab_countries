@@ -64,6 +64,18 @@ defmodule BeamLabCountries.Languages do
            end)
            |> Map.new()
 
+  # Language structs are pure data, so build them once at compile time
+  @language_structs Map.new(@languages, fn {code, data} ->
+                      {code,
+                       %Language{
+                         code: data["639-1"],
+                         name: data["name"],
+                         native_name: data["nativeName"],
+                         family: data["family"]
+                       }}
+                    end)
+  @languages_sorted @language_structs |> Map.values() |> Enum.sort_by(& &1.name)
+
   # Build index of locale codes by base language code
   @locales_by_base @raw_locales
                    |> Enum.group_by(fn {_code, data} -> data["base"] end, fn {code, _data} ->
@@ -90,12 +102,7 @@ defmodule BeamLabCountries.Languages do
 
   """
   @spec get_name(String.t()) :: String.t() | nil
-  def get_name(code) when is_binary(code) do
-    case Map.get(@languages, String.downcase(code)) do
-      nil -> nil
-      data -> data["name"]
-    end
-  end
+  def get_name(code), do: with(%Language{name: name} <- get(code), do: name)
 
   @doc """
   Returns the native name for a language code.
@@ -113,12 +120,7 @@ defmodule BeamLabCountries.Languages do
 
   """
   @spec get_native_name(String.t()) :: String.t() | nil
-  def get_native_name(code) when is_binary(code) do
-    case Map.get(@languages, String.downcase(code)) do
-      nil -> nil
-      data -> data["nativeName"]
-    end
-  end
+  def get_native_name(code), do: with(%Language{native_name: name} <- get(code), do: name)
 
   @doc """
   Returns full language info as a Language struct for a language code.
@@ -133,20 +135,8 @@ defmodule BeamLabCountries.Languages do
 
   """
   @spec get(String.t()) :: Language.t() | nil
-  def get(code) when is_binary(code) do
-    case Map.get(@languages, String.downcase(code)) do
-      nil ->
-        nil
-
-      data ->
-        %Language{
-          code: data["639-1"],
-          name: data["name"],
-          native_name: data["nativeName"],
-          family: data["family"]
-        }
-    end
-  end
+  def get(code) when is_binary(code), do: Map.get(@language_structs, String.downcase(code))
+  def get(_code), do: nil
 
   @doc """
   Returns all languages as Language structs.
@@ -160,18 +150,7 @@ defmodule BeamLabCountries.Languages do
 
   """
   @spec all() :: [Language.t()]
-  def all do
-    @languages
-    |> Enum.map(fn {_code, data} ->
-      %Language{
-        code: data["639-1"],
-        name: data["name"],
-        native_name: data["nativeName"],
-        family: data["family"]
-      }
-    end)
-    |> Enum.sort_by(& &1.name)
-  end
+  def all, do: @languages_sorted
 
   @doc """
   Returns all language codes, sorted.
@@ -217,9 +196,8 @@ defmodule BeamLabCountries.Languages do
 
   """
   @spec valid?(String.t()) :: boolean()
-  def valid?(code) when is_binary(code) do
-    Map.has_key?(@languages, String.downcase(code))
-  end
+  def valid?(code) when is_binary(code), do: Map.has_key?(@languages, String.downcase(code))
+  def valid?(_code), do: false
 
   # ============================================================================
   # Locale Functions (new API)
@@ -254,13 +232,12 @@ defmodule BeamLabCountries.Languages do
   @spec get_locale(String.t()) :: Locale.t() | nil
   def get_locale(code) when is_binary(code) do
     case Map.get(@locales, normalize_locale_code(code)) do
-      nil ->
-        nil
-
-      data ->
-        to_locale(data)
+      nil -> nil
+      data -> to_locale(data)
     end
   end
+
+  def get_locale(_code), do: nil
 
   @doc """
   Returns all locales as Locale structs, sorted by name.
@@ -335,6 +312,8 @@ defmodule BeamLabCountries.Languages do
     |> Enum.sort_by(& &1.name)
   end
 
+  def locales_for_language(_base_code), do: []
+
   @doc """
   Checks if a locale code is valid.
 
@@ -354,6 +333,8 @@ defmodule BeamLabCountries.Languages do
   def valid_locale?(code) when is_binary(code) do
     Map.has_key?(@locales, normalize_locale_code(code))
   end
+
+  def valid_locale?(_code), do: false
 
   @doc """
   Parses a locale code into its base language code and region code.
@@ -381,8 +362,7 @@ defmodule BeamLabCountries.Languages do
     end
   end
 
-  # Country-derived fields (flag, names, geography) are resolved at runtime so
-  # this module does not depend on `BeamLabCountries` at compile time.
+  # Country-derived locale fields (flag, names, geography) are resolved at runtime.
   defp to_locale(data) do
     country = BeamLabCountries.get(data["region"])
 
@@ -413,6 +393,17 @@ defmodule BeamLabCountries.Languages do
   # Country-Language Association Functions
   # ============================================================================
 
+  # Index of language code => countries speaking it, sorted by country name
+  @countries_by_language BeamLabCountries.all()
+                         |> Enum.sort_by(& &1.name)
+                         |> Enum.flat_map(fn country ->
+                           (country.languages_spoken || [])
+                           |> Enum.map(&String.downcase/1)
+                           |> Enum.uniq()
+                           |> Enum.map(&{&1, country})
+                         end)
+                         |> Enum.group_by(&elem(&1, 0), &elem(&1, 1))
+
   @doc """
   Returns all countries where a language is spoken.
 
@@ -429,15 +420,10 @@ defmodule BeamLabCountries.Languages do
   """
   @spec countries_for_language(String.t()) :: [BeamLabCountries.Country.t()]
   def countries_for_language(lang_code) when is_binary(lang_code) do
-    code = String.downcase(lang_code)
-
-    BeamLabCountries.all()
-    |> Enum.filter(fn country ->
-      languages = country.languages_spoken || []
-      code in Enum.map(languages, &String.downcase/1)
-    end)
-    |> Enum.sort_by(& &1.name)
+    Map.get(@countries_by_language, String.downcase(lang_code), [])
   end
+
+  def countries_for_language(_lang_code), do: []
 
   @doc """
   Returns country names where a language is spoken.
@@ -452,7 +438,7 @@ defmodule BeamLabCountries.Languages do
 
   """
   @spec country_names_for_language(String.t()) :: [String.t()]
-  def country_names_for_language(lang_code) when is_binary(lang_code) do
+  def country_names_for_language(lang_code) do
     lang_code
     |> countries_for_language()
     |> Enum.map(& &1.name)
@@ -471,7 +457,7 @@ defmodule BeamLabCountries.Languages do
 
   """
   @spec flags_for_language(String.t()) :: [String.t()]
-  def flags_for_language(lang_code) when is_binary(lang_code) do
+  def flags_for_language(lang_code) do
     lang_code
     |> countries_for_language()
     |> Enum.map(& &1.flag)

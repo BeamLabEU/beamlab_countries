@@ -54,3 +54,5 @@ BZ:
   currency_code: BZD
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - America/Belize

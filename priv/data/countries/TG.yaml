@@ -50,3 +50,5 @@ TG:
   currency_code: XOF
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Africa/Lome

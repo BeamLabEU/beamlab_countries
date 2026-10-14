@@ -73,3 +73,5 @@ AE:
   currency_code: AED
   start_of_week: sunday
   subdivision_type: Emirate
+  timezones:
+  - Asia/Dubai

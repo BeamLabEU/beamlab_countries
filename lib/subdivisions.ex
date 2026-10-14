@@ -49,6 +49,8 @@ defmodule BeamLabCountries.Subdivisions do
     Map.get(@subdivision_lists, String.upcase(country_code), [])
   end
 
+  def all(_country_code), do: []
+
   @doc """
   Returns one subdivision by country and subdivision ID, or `nil` if not found.
 
@@ -76,4 +78,6 @@ defmodule BeamLabCountries.Subdivisions do
     |> Map.get(String.upcase(country_code), %{})
     |> Map.get(String.upcase(subdivision_id))
   end
+
+  def get(_country_code, _subdivision_id), do: nil
 end

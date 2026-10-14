@@ -57,3 +57,5 @@ TD:
   currency_code: XAF
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Africa/Ndjamena

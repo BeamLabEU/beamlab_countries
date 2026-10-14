@@ -1,0 +1,23 @@
+---
+brics:
+  # Full members only (10). Partner countries (DZ, BY, BO, CU, KZ, MY, NG, TH, TR, UG, UZ, VN) are excluded.
+  # Saudi Arabia (SA) is excluded: invited in 2023 but has not formally confirmed membership (attended the 2026 New Delhi summit as invited country);
+  # some sources, e.g. India's chair materials, count it as an 11th member.
+  code: brics
+  name: BRICS
+  type: economic_political
+  founded: "2009-06-16"
+  headquarters: No permanent secretariat (rotating chairmanship)
+  website: https://infobrics.org
+  wikipedia: https://en.wikipedia.org/wiki/BRICS
+  members:
+    - BR
+    - RU
+    - IN
+    - CN
+    - ZA
+    - EG
+    - ET
+    - IR
+    - AE
+    - ID

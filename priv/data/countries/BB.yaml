@@ -52,3 +52,5 @@ BB:
   currency_code: BBD
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - America/Barbados

@@ -5,6 +5,34 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 2.0.0 - 2026-10-14
+
+Contains several behaviour changes (marked **Breaking**).
+
+### Added
+- `Country.timezones` — IANA time zone identifiers for every country (from tzdb 2026b `zone.tab`), filterable via `filter_by(:timezones, "Europe/Tallinn")`
+- 7 country-name locales for `Translations`: `cs`, `hi`, `id`, `ro`, `th`, `tr`, `vi` (CLDR) — 23 locales in total
+- 16 unions: `brics`, `cis`, `oic`, `pacific_alliance`, `commonwealth`, `arab_league`, `gcc`, `schengen`, `eurozone`, `sco`, `caricom`, `ecowas`, `sadc`, `eac`, `council_of_europe`, `cptpp` — 29 in total
+- `Translations.get_name/3` with a `:fallback` locale option; regional locales (`"de-AT"`, `"pt_BR"`) are reduced to their language
+- Netherlands Antilles (`AN`) is complete: modern data format, languages, geo, week start, translations in all locales
+
+### Fixed
+- Cayman Islands (`KY`) and Tajikistan (`TJ`) had no subdivisions: their data files were named `Ky.yaml` / `Tj.yaml`. The build now fails for subdivision files not named after an uppercase alpha2 code
+- 1,069 subdivisions had `name: nil` (e.g. all of `AL`, `CZ`, `LV`); `name` now falls back to the English translation
+- `Subdivision.unofficial_names` was sometimes a string and sometimes a list; it is now always a list
+- Union data: `asean` gained `TL`; `opec` lost `AO` (left 2024) and `AE` (left 2026-05-01); `eea` no longer lists `CH`; `african_union` gained `EH`; `mercosur` gained `BO`
+- `Currencies.format/3` printed `"$-1,234.56"` and `"$-0.00"`; the sign now precedes the symbol (`"-$1,234.56"`) and is dropped when the amount rounds to zero
+- New locale files or subdivision files are picked up by a plain `mix compile` (previously only edits to existing files triggered recompilation)
+
+### Changed
+- **Breaking:** `eu_member` and `eea_member` are `false` (not `nil`) for non-members
+- **Breaking:** `national_prefix` / `international_prefix` are `nil` instead of the string `"None"` when a country has none
+- **Breaking:** `filter_by/1,2`, `get_by/2` and `exists?/2` raise `ArgumentError` for attributes that are not `Country` fields instead of silently matching nothing
+- **Breaking:** `Currencies.format/3` raises `ArgumentError` for an invalid `:symbol_position`, and the sign placement changed (see above)
+- Lookup functions across `BeamLabCountries`, `Unions`, `Currencies`, `Languages`, `Translations` and `Subdivisions` return `nil` / `false` / `[]` for non-string input instead of raising `FunctionClauseError`
+- `filter_by`, `get_by` and `exists?` compare against attribute values normalized at compile time (about 150x faster); `Languages` structs and the language-to-countries index are also built at compile time
+- Docs: corrected field counts and the English-speaking-countries count, documented time zones and the new error behaviour
+
 ## 1.2.1 - 2026-09-13
 
 ### Fixed

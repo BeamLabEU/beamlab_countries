@@ -71,3 +71,6 @@ NZ:
   currency_code: NZD
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Pacific/Auckland
+  - Pacific/Chatham

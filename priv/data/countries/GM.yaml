@@ -50,3 +50,5 @@ GM:
   currency_code: GMD
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Africa/Banjul

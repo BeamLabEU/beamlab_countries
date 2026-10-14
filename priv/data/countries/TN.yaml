@@ -58,3 +58,5 @@ TN:
   currency_code: TND
   start_of_week: monday
   subdivision_type: Governorate
+  timezones:
+  - Africa/Tunis

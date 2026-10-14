@@ -64,3 +64,5 @@ LB:
   currency_code: LBP
   start_of_week: monday
   subdivision_type: Governorate
+  timezones:
+  - Asia/Beirut

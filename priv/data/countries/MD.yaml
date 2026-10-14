@@ -61,3 +61,5 @@ MD:
   currency_code: MDL
   start_of_week: monday
   subdivision_type: District
+  timezones:
+  - Europe/Chisinau

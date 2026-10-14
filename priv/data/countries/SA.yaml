@@ -64,3 +64,5 @@ SA:
   currency_code: SAR
   start_of_week: sunday
   subdivision_type: Region
+  timezones:
+  - Asia/Riyadh

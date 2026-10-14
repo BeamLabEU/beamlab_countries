@@ -54,3 +54,8 @@ CL:
   currency_code: CLP
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - America/Santiago
+  - America/Coyhaique
+  - America/Punta_Arenas
+  - Pacific/Easter

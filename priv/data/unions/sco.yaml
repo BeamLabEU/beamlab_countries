@@ -1,0 +1,21 @@
+---
+sco:
+  # 10 members (Iran joined 2023, Belarus 2024). Observers (MN, AF) and dialogue partners are excluded.
+  code: sco
+  name: Shanghai Cooperation Organisation
+  type: political
+  founded: "2001-06-15"
+  headquarters: Beijing, China
+  website: http://eng.sectsco.org
+  wikipedia: https://en.wikipedia.org/wiki/Shanghai_Cooperation_Organisation
+  members:
+    - BY
+    - CN
+    - IN
+    - IR
+    - KZ
+    - KG
+    - PK
+    - RU
+    - TJ
+    - UZ

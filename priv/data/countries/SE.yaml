@@ -72,3 +72,5 @@ SE:
   currency_code: SEK
   start_of_week: monday
   subdivision_type: County
+  timezones:
+  - Europe/Stockholm

@@ -56,3 +56,5 @@ TC:
   currency_code: USD
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - America/Grand_Turk

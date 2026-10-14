@@ -70,3 +70,5 @@
   currency_code: NOK
   start_of_week: monday
   subdivision_type: County
+  timezones:
+  - Europe/Oslo

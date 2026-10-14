@@ -55,3 +55,5 @@ GN:
   currency_code: GNF
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Africa/Conakry

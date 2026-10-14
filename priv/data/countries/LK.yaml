@@ -55,3 +55,5 @@ LK:
   currency_code: LKR
   start_of_week: monday
   subdivision_type: Province
+  timezones:
+  - Asia/Colombo

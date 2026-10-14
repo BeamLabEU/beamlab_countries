@@ -5,7 +5,7 @@ defmodule BeamLabCountries.UnionsTest do
   describe "all/0" do
     test "returns all unions" do
       unions = BeamLabCountries.Unions.all()
-      assert length(unions) == 13
+      assert length(unions) == 29
       assert is_list(unions)
     end
 

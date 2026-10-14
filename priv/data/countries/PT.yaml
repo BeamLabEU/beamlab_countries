@@ -70,3 +70,7 @@ PT:
   currency_code: EUR
   start_of_week: monday
   subdivision_type: District
+  timezones:
+  - Europe/Lisbon
+  - Atlantic/Madeira
+  - Atlantic/Azores

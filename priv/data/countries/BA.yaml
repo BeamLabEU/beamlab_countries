@@ -70,3 +70,5 @@ BA:
   currency_code: BAM
   start_of_week: monday
   subdivision_type: Canton
+  timezones:
+  - Europe/Sarajevo

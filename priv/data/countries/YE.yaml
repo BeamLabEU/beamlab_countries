@@ -60,3 +60,5 @@ YE:
   currency_code: YER
   start_of_week: sunday
   subdivision_type: Governorate
+  timezones:
+  - Asia/Aden

@@ -1,0 +1,33 @@
+---
+arab_league:
+  # 22 members. Syria was readmitted in May 2023. Observers (AM, BR, TD, ER, GR, IN, VE) are excluded.
+  code: arab_league
+  name: League of Arab States
+  type: political
+  founded: "1945-03-22"
+  headquarters: Cairo, Egypt
+  website: https://www.lasportal.org
+  wikipedia: https://en.wikipedia.org/wiki/Arab_League
+  members:
+    - DZ
+    - BH
+    - KM
+    - DJ
+    - EG
+    - IQ
+    - JO
+    - KW
+    - LB
+    - LY
+    - MR
+    - MA
+    - OM
+    - PS
+    - QA
+    - SA
+    - SO
+    - SD
+    - SY
+    - TN
+    - AE
+    - YE

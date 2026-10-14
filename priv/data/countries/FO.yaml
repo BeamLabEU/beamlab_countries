@@ -58,3 +58,5 @@ FO:
   currency_code: DKK
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Atlantic/Faroe

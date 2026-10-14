@@ -53,3 +53,5 @@ MV:
   currency_code: MVR
   start_of_week: sunday
   subdivision_type: Region
+  timezones:
+  - Indian/Maldives

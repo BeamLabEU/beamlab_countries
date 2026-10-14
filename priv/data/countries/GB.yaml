@@ -79,3 +79,5 @@ GB:
   currency_code: GBP
   start_of_week: monday
   subdivision_type: County
+  timezones:
+  - Europe/London

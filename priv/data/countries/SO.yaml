@@ -56,3 +56,5 @@ SO:
   currency_code: SOS
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Africa/Mogadishu

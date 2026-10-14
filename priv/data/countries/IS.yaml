@@ -72,3 +72,5 @@ IS:
   currency_code: ISK
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Atlantic/Reykjavik

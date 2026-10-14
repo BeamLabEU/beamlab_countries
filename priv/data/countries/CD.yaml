@@ -68,3 +68,6 @@ CD:
   currency_code: CDF
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Africa/Kinshasa
+  - Africa/Lubumbashi

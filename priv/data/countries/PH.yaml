@@ -69,3 +69,5 @@ PH:
   currency_code: PHP
   start_of_week: monday
   subdivision_type: Province
+  timezones:
+  - Asia/Manila

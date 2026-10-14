@@ -61,3 +61,5 @@ RS:
   currency_code: RSD
   start_of_week: monday
   subdivision_type: District
+  timezones:
+  - Europe/Belgrade

@@ -50,3 +50,5 @@ NU:
   currency_code: NZD
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Pacific/Niue

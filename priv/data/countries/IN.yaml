@@ -69,3 +69,5 @@ IN:
   currency_code: INR
   start_of_week: monday
   subdivision_type: State
+  timezones:
+  - Asia/Kolkata

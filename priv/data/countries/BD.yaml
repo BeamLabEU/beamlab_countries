@@ -53,3 +53,5 @@ BD:
   currency_code: BDT
   start_of_week: sunday
   subdivision_type: Division
+  timezones:
+  - Asia/Dhaka

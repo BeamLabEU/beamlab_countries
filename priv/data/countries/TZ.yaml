@@ -56,3 +56,5 @@ TZ:
   currency_code: TZS
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Africa/Dar_es_Salaam

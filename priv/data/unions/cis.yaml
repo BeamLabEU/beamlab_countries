@@ -1,0 +1,23 @@
+---
+cis:
+  # Moldova (MD) is INCLUDED: its parliament denounced the CIS founding treaties in April 2026, but under international law
+  # its membership only ends on 2027-04-08 (12 months after notification), so it is still a member as of 2026-10.
+  # Turkmenistan (TM) is EXCLUDED: associate member since 2005, never ratified the CIS Charter.
+  # Ukraine never ratified the Charter and ended participation in statutory bodies in 2018; Georgia left in 2009.
+  code: cis
+  name: Commonwealth of Independent States
+  type: political
+  founded: "1991-12-08"
+  headquarters: Minsk, Belarus
+  website: https://e-cis.info
+  wikipedia: https://en.wikipedia.org/wiki/Commonwealth_of_Independent_States
+  members:
+    - AM
+    - AZ
+    - BY
+    - KZ
+    - KG
+    - MD
+    - RU
+    - TJ
+    - UZ

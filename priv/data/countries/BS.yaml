@@ -52,3 +52,5 @@ BS:
   currency_code: BSD
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - America/Nassau

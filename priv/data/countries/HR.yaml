@@ -76,3 +76,5 @@ HR:
   currency_code: HRK
   start_of_week: monday
   subdivision_type: County
+  timezones:
+  - Europe/Zagreb

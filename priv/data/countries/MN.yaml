@@ -56,3 +56,6 @@ MN:
   currency_code: MNT
   start_of_week: monday
   subdivision_type: Province
+  timezones:
+  - Asia/Ulaanbaatar
+  - Asia/Hovd

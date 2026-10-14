@@ -64,3 +64,6 @@ PS:
   currency_code: ILS
   start_of_week: sunday
   subdivision_type: Region
+  timezones:
+  - Asia/Gaza
+  - Asia/Hebron

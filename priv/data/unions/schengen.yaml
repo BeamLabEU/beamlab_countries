@@ -1,0 +1,41 @@
+---
+schengen:
+  # 29 full members: 25 EU states + IS, LI, NO, CH. Bulgaria and Romania joined fully on 2025-01-01.
+  # Cyprus (CY) and Ireland (IE) are EU members outside Schengen. Microstates with open borders (AD, MC, SM, VA) are not formal members and are excluded.
+  code: schengen
+  name: Schengen Area
+  type: political
+  founded: "1995-03-26"
+  headquarters: No central seat (governed via the EU Council, Brussels)
+  website: https://home-affairs.ec.europa.eu/policies/schengen_en
+  wikipedia: https://en.wikipedia.org/wiki/Schengen_Area
+  members:
+    - AT
+    - BE
+    - BG
+    - HR
+    - CZ
+    - DK
+    - EE
+    - FI
+    - FR
+    - DE
+    - GR
+    - HU
+    - IS
+    - IT
+    - LV
+    - LI
+    - LT
+    - LU
+    - MT
+    - NL
+    - NO
+    - PL
+    - PT
+    - RO
+    - SK
+    - SI
+    - ES
+    - SE
+    - CH

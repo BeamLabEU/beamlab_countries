@@ -76,3 +76,5 @@ CZ:
   currency_code: CZK
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Europe/Prague

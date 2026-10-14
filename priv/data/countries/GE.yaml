@@ -53,3 +53,5 @@ GE:
   currency_code: GEL
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Asia/Tbilisi

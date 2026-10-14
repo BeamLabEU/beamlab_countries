@@ -57,3 +57,5 @@ SD:
   currency_code: SDG
   start_of_week: monday
   subdivision_type: State
+  timezones:
+  - Africa/Khartoum

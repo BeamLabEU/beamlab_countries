@@ -55,3 +55,5 @@ ST:
   currency_code: STN
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Africa/Sao_Tome

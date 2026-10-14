@@ -54,3 +54,5 @@ CV:
   currency_code: CVE
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Atlantic/Cape_Verde

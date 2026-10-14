@@ -57,3 +57,5 @@ LY:
   currency_code: LYD
   start_of_week: sunday
   subdivision_type: District
+  timezones:
+  - Africa/Tripoli

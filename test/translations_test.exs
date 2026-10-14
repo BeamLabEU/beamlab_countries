@@ -50,6 +50,25 @@ defmodule BeamLabCountries.TranslationsTest do
     end
   end
 
+  describe "get_name/3" do
+    test "reduces regional locales to their language" do
+      assert Translations.get_name("DE", "pl-PL") == Translations.get_name("DE", "pl")
+      assert Translations.get_name("DE", "pl_PL") == Translations.get_name("DE", "pl")
+    end
+
+    test "falls back to the given locale" do
+      assert Translations.get_name("PL", "xx") == nil
+      assert Translations.get_name("PL", "xx", fallback: "en") == "Poland"
+      assert Translations.get_name("XX", "de", fallback: "en") == nil
+    end
+
+    test "is nil-safe" do
+      assert Translations.get_name(nil, "en") == nil
+      assert Translations.get_name("PL", nil) == nil
+      refute Translations.locale_supported?(nil)
+    end
+  end
+
   describe "get_all_names/1" do
     test "returns a name for every supported locale" do
       names = Translations.get_all_names("IT")
@@ -63,10 +82,18 @@ defmodule BeamLabCountries.TranslationsTest do
   end
 
   describe "supported_locales/0 and locale_supported?/1" do
-    test "lists 16 locales including Estonian" do
+    test "lists 23 sorted locales including Estonian and the newest additions" do
       locales = Translations.supported_locales()
-      assert length(locales) == 16
-      assert "et" in locales
+      assert length(locales) == 23
+      assert locales == Enum.sort(locales)
+      assert Enum.all?(~w(et hi tr th vi id cs ro), &(&1 in locales))
+    end
+
+    test "every supported locale names every country" do
+      for locale <- Translations.supported_locales(), country <- BeamLabCountries.all() do
+        assert Translations.get_name(country.alpha2, locale),
+               "#{country.alpha2} has no #{locale} name"
+      end
     end
 
     test "locale_supported?/1 is case insensitive" do

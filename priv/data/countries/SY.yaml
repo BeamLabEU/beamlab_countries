@@ -62,3 +62,5 @@ SY:
   currency_code: SYP
   start_of_week: monday
   subdivision_type: Governorate
+  timezones:
+  - Asia/Damascus

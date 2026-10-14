@@ -52,3 +52,5 @@ GI:
   currency_code: GIP
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Europe/Gibraltar

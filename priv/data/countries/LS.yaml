@@ -54,3 +54,5 @@ LS:
   currency_code: LSL
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Africa/Maseru

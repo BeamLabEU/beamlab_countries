@@ -54,3 +54,5 @@ HT:
   currency_code: HTG
   start_of_week: monday
   subdivision_type: Department
+  timezones:
+  - America/Port-au-Prince

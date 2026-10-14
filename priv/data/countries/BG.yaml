@@ -76,3 +76,5 @@ BG:
   currency_code: BGN
   start_of_week: monday
   subdivision_type: Province
+  timezones:
+  - Europe/Sofia

@@ -59,3 +59,5 @@ PK:
   currency_code: PKR
   start_of_week: monday
   subdivision_type: Province
+  timezones:
+  - Asia/Karachi

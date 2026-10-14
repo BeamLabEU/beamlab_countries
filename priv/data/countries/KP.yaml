@@ -57,3 +57,5 @@ KP:
   currency_code: KPW
   start_of_week: monday
   subdivision_type: Province
+  timezones:
+  - Asia/Pyongyang

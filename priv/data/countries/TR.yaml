@@ -65,3 +65,5 @@ TR:
   currency_code: TRY
   start_of_week: monday
   subdivision_type: Province
+  timezones:
+  - Europe/Istanbul

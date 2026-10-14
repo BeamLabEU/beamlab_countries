@@ -53,3 +53,5 @@ JM:
   currency_code: JMD
   start_of_week: monday
   subdivision_type: Parish
+  timezones:
+  - America/Jamaica

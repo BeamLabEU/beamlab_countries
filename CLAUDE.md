@@ -32,7 +32,7 @@ BeamLabCountries is a compile-time data library providing ISO 3166 country infor
 
 **Country Modules:**
 - `BeamLabCountries` (lib/countries.ex) - Main API: `all/0`, `count/0`, `get/1`, `get!/1`, `get_by/2`, `get_by_alpha3/1`, `filter_by/2`, `exists?/2`
-- `BeamLabCountries.Country` (lib/country.ex) - Struct with 41 fields (alpha2, alpha3, name, short_name, phone_prefix, region, currency, eu_member, eea_member, languages_official, etc.)
+- `BeamLabCountries.Country` (lib/country.ex) - Struct with 37 fields (alpha2, alpha3, name, short_name, phone_prefix, region, currency, eu_member, eea_member, languages_official, timezones, etc.)
 - `BeamLabCountries.Loader` (lib/loader.ex) - Compile-time YAML parser for country data
 - `BeamLabCountries.Random` (lib/random.ex) - `country/0`, `flag/0`
 
@@ -59,15 +59,15 @@ BeamLabCountries is a compile-time data library providing ISO 3166 country infor
 - `BeamLabCountries.Locale` (lib/locale.ex) - Struct with 10 fields (code, base_code, region_code, name, native_name, flag, country_name, continent, region, subregion)
 
 **Translations Module:**
-- `BeamLabCountries.Translations` (lib/translations.ex) - Country name translations: `get_name/2`, `get_all_names/1`, `supported_locales/0`, `locale_supported?/1`
+- `BeamLabCountries.Translations` (lib/translations.ex) - Country name translations: `get_name/2,3`, `get_all_names/1`, `supported_locales/0`, `locale_supported?/1`
 
 ### Data Location
 
 - `priv/data/countries.yaml` - List of country codes to load
 - `priv/data/countries/{CODE}.yaml` - Individual country data files (250 countries)
-- `priv/data/subdivisions/{CODE}.yaml` - Subdivision data (224 countries)
-- `priv/data/unions.yaml` / `priv/data/unions/{CODE}.yaml` - Union/organization data files (13 unions: eu, nato, g7, g20, etc.)
+- `priv/data/subdivisions/{CODE}.yaml` - Subdivision data (224 countries). File names must be uppercase alpha2 codes; the loader fails the build otherwise
+- `priv/data/unions.yaml` / `priv/data/unions/{CODE}.yaml` - Union/organization data files (29 unions: eu, nato, g7, g20, brics, schengen, eurozone, etc.)
 - `priv/data/languages.json` - Language codes and names (184 languages)
 - `priv/data/currencies.json` - ISO 4217 currency data (155 currencies)
 - `priv/data/locales.json` - Regional locale data (140 locales: en-US, es-ES, pt-BR, etc.)
-- `priv/data/locales/{LOCALE}.json` - Country name translations (16 locales: ar, de, en, es, et, fr, it, ja, ko, nl, pl, pt, ru, sv, uk, zh)
+- `priv/data/locales/{LOCALE}.json` - Country name translations (23 locales: ar, cs, de, en, es, et, fr, hi, id, it, ja, ko, nl, pl, pt, ro, ru, sv, th, tr, uk, vi, zh)

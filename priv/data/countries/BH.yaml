@@ -60,3 +60,5 @@ BH:
   currency_code: BHD
   start_of_week: monday
   subdivision_type: Governorate
+  timezones:
+  - Asia/Bahrain

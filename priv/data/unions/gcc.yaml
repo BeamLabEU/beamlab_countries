@@ -1,0 +1,16 @@
+---
+gcc:
+  code: gcc
+  name: Gulf Cooperation Council
+  type: economic_political
+  founded: "1981-05-25"
+  headquarters: Riyadh, Saudi Arabia
+  website: https://www.gcc-sg.org
+  wikipedia: https://en.wikipedia.org/wiki/Gulf_Cooperation_Council
+  members:
+    - BH
+    - KW
+    - OM
+    - QA
+    - SA
+    - AE

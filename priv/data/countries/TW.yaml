@@ -59,3 +59,5 @@ TW:
   currency_code: TWD
   start_of_week: monday
   subdivision_type: County
+  timezones:
+  - Asia/Taipei

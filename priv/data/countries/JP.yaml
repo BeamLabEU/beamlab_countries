@@ -60,3 +60,5 @@ JP:
   currency_code: JPY
   start_of_week: monday
   subdivision_type: Prefecture
+  timezones:
+  - Asia/Tokyo

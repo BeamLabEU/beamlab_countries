@@ -67,3 +67,16 @@ MX:
   currency_code: MXN
   start_of_week: monday
   subdivision_type: State
+  timezones:
+  - America/Mexico_City
+  - America/Cancun
+  - America/Merida
+  - America/Monterrey
+  - America/Matamoros
+  - America/Chihuahua
+  - America/Ciudad_Juarez
+  - America/Ojinaga
+  - America/Mazatlan
+  - America/Bahia_Banderas
+  - America/Hermosillo
+  - America/Tijuana

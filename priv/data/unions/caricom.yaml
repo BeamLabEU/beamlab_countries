@@ -1,0 +1,27 @@
+---
+caricom:
+  # 15 full members. Montserrat (MS) is a full member although it is a British Overseas Territory (it has its own ISO 3166-1 code).
+  # Associate members (AI, BM, VG, KY, CW, GF, MQ, TC) and observers are excluded.
+  code: caricom
+  name: Caribbean Community
+  type: economic_political
+  founded: "1973-07-04"
+  headquarters: Georgetown, Guyana
+  website: https://caricom.org
+  wikipedia: https://en.wikipedia.org/wiki/Caribbean_Community
+  members:
+    - AG
+    - BS
+    - BB
+    - BZ
+    - DM
+    - GD
+    - GY
+    - HT
+    - JM
+    - MS
+    - KN
+    - LC
+    - VC
+    - SR
+    - TT

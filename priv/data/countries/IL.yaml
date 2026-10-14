@@ -65,3 +65,5 @@ IL:
   currency_code: ILS
   start_of_week: sunday
   subdivision_type: District
+  timezones:
+  - Asia/Jerusalem

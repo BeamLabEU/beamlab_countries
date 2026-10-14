@@ -59,3 +59,5 @@ QA:
   currency_code: QAR
   start_of_week: sunday
   subdivision_type: Municipality
+  timezones:
+  - Asia/Qatar

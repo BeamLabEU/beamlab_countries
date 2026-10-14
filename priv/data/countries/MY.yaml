@@ -61,3 +61,6 @@ MY:
   currency_code: MYR
   start_of_week: sunday
   subdivision_type: State
+  timezones:
+  - Asia/Kuala_Lumpur
+  - Asia/Kuching

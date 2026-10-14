@@ -1,0 +1,24 @@
+---
+ecowas:
+  # 12 members. Mali, Burkina Faso and Niger withdrew effective 2025-01-29 and are excluded.
+  # Guinea-Bissau is suspended (since Nov 2025) but remains a member; Guinea's suspension was lifted in Jan 2026.
+  code: ecowas
+  name: Economic Community of West African States
+  type: economic_political
+  founded: "1975-05-28"
+  headquarters: Abuja, Nigeria
+  website: https://ecowas.int
+  wikipedia: https://en.wikipedia.org/wiki/Economic_Community_of_West_African_States
+  members:
+    - BJ
+    - CV
+    - CI
+    - GM
+    - GH
+    - GN
+    - GW
+    - LR
+    - NG
+    - SN
+    - SL
+    - TG

@@ -55,3 +55,5 @@ TM:
   currency_code: TMT
   start_of_week: monday
   subdivision_type: Region
+  timezones:
+  - Asia/Ashgabat

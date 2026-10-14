@@ -72,3 +72,6 @@ CY:
   currency_code: EUR
   start_of_week: monday
   subdivision_type: District
+  timezones:
+  - Asia/Nicosia
+  - Asia/Famagusta
