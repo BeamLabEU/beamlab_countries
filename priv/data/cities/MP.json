@@ -1,0 +1,4 @@
+[
+  {"id":7828758,"name":"Saipan","native_name":"Saipan","translations":{"ko":"사이판","ru":"Сайпан"},"subdivision":null,"population":48220,"latitude":15.21233,"longitude":145.7545,"timezone":"Pacific/Saipan","capital":true},
+  {"id":7267949,"name":"San Jose","native_name":"San Jose","translations":{"ar":"قرية سان خوسيه","es":"Pueblo San Jose","hi":"सैन जोस गांव","id":"Desa San Jose","ja":"サンホセ村","pt":"Vila San Jose","ru":"Сан Хосе","tr":"San Jose Köyü"},"subdivision":null,"population":15000,"latitude":14.96823,"longitude":145.61998,"timezone":"Pacific/Saipan","capital":false}
+]

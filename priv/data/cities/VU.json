@@ -1,0 +1,9 @@
+[
+  {"id":2135171,"name":"Port Vila","native_name":"Port Vila","translations":{"fr":"Port-Vila","ja":"ポートビラ","ko":"포트빌라","ru":"Порт-Вила","uk":"Порт-Віла"},"subdivision":null,"population":35901,"latitude":-17.73648,"longitude":168.31366,"timezone":"Pacific/Efate","capital":true},
+  {"id":2136150,"name":"Luganville","native_name":"Luganville","translations":{"ar":"لوغانفيل","hi":"लुगनविले","ja":"ルーガンビル","ko":"루간빌","ru":"Люганвиль","zh":"卢甘维尔"},"subdivision":null,"population":13397,"latitude":-15.51989,"longitude":167.16235,"timezone":"Pacific/Efate","capital":false},
+  {"id":2135517,"name":"Norsup","native_name":"Norsup","subdivision":null,"population":2998,"latitude":-16.06536,"longitude":167.39714,"timezone":"Pacific/Efate","capital":false},
+  {"id":2136825,"name":"Isangel","native_name":"Isangel","translations":{"ar":"إيسانجيل","hi":"इसांगेल","ja":"イサンゲル","ru":"Исангел"},"subdivision":null,"population":1437,"latitude":-19.54167,"longitude":169.28167,"timezone":"Pacific/Efate","capital":false},
+  {"id":2135175,"name":"Port-Olry","native_name":"Port-Olry","subdivision":null,"population":1300,"latitude":-15.04175,"longitude":167.07265,"timezone":"Pacific/Efate","capital":false},
+  {"id":2134814,"name":"Sola","native_name":"Sola","translations":{"ar":"سولا","hi":"सोला","ja":"ソラ","ru":"Сола"},"subdivision":null,"population":1171,"latitude":-13.87611,"longitude":167.55167,"timezone":"Pacific/Efate","capital":false},
+  {"id":8581458,"name":"Saratamata","native_name":"Saratamata","translations":{"ar":"سارتاماتا","hi":"सारातामता","ja":"サラタマタ","ru":"Саратамата"},"subdivision":null,"population":0,"latitude":-15.28625,"longitude":167.99125,"timezone":"Pacific/Efate","capital":false}
+]

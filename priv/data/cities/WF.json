@@ -1,0 +1,4 @@
+[
+  {"id":4034821,"name":"Mata-Utu","native_name":"Mata-Utu","translations":{"ja":"マタウトゥ","ko":"마타우투","nl":"Matâutu","pl":"Mata Utu","ru":"Мата-Уту","th":"มาตา-อูตู","uk":"Мата-Уту","zh":"马塔乌图"},"subdivision":null,"population":1200,"latitude":-13.28163,"longitude":-176.17453,"timezone":"Pacific/Wallis","capital":true},
+  {"id":4034778,"name":"Leava","native_name":"Leava","translations":{"ar":"ليافا","hi":"लिआवा","ja":"レアヴァ","ru":"Леава"},"subdivision":null,"population":480,"latitude":-14.29333,"longitude":-178.15833,"timezone":"Pacific/Wallis","capital":false}
+]

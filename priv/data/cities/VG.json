@@ -1,0 +1,4 @@
+[
+  {"id":3577430,"name":"Road Town","native_name":"Road Town","translations":{"ar":"رود تاون","ja":"ロードタウン","ko":"로드타운","ru":"Род-Таун","uk":"Род-Таун","zh":"罗德城"},"subdivision":null,"population":8449,"latitude":18.42693,"longitude":-64.62079,"timezone":"America/Tortola","capital":true},
+  {"id":3577369,"name":"Spanish Town","native_name":"Spanish Town","translations":{"ja":"スパニッシュ・タウン","zh":"西班牙镇"},"subdivision":null,"population":3800,"latitude":18.4481,"longitude":-64.43474,"timezone":"America/Tortola","capital":false}
+]

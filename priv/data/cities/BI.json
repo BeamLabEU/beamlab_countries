@@ -1,0 +1,12 @@
+[
+  {"id":425378,"name":"Bujumbura","native_name":"Bujumbura","translations":{"ar":"بوجومبورا","es":"Buyumbura","hi":"बुजुम्बुरा","ja":"ブジュンブラ","ko":"부줌부라","pl":"Bużumbura","ru":"Бужумбура","th":"บูจุมบูรา","uk":"Бужумбура","zh":"布琼布拉"},"subdivision":null,"population":769317,"latitude":-3.38193,"longitude":29.36142,"timezone":"Africa/Bujumbura","capital":false},
+  {"id":426272,"name":"Gitega","native_name":"Gitega","translations":{"ru":"Гитеге"},"subdivision":null,"population":64904,"latitude":-3.42708,"longitude":29.92463,"timezone":"Africa/Bujumbura","capital":true},
+  {"id":430569,"name":"Ngozi","native_name":"Ngozi","translations":{"ar":"نقوزي","hi":"नगोजी","ja":"ンゴジ","ru":"Нгози","zh":"恩戈齊"},"subdivision":null,"population":61716,"latitude":-2.9075,"longitude":29.8306,"timezone":"Africa/Bujumbura","capital":false},
+  {"id":423549,"name":"Rumonge","native_name":"Rumonge","translations":{"ar":"رومونجي","hi":"रुमोंगे","ja":"ルモンジェ","ru":"Румонже"},"subdivision":null,"population":55599,"latitude":-3.9736,"longitude":29.4386,"timezone":"Africa/Bujumbura","capital":false},
+  {"id":430021,"name":"Cibitoke","native_name":"Cibitoke","translations":{"ar":"سيبيتوكي","hi":"सिबिटोके","ja":"シビトケ","ru":"Сибиток"},"subdivision":null,"population":36959,"latitude":-2.8869,"longitude":29.1248,"timezone":"Africa/Bujumbura","capital":false},
+  {"id":430952,"name":"Kayanza","native_name":"Kayanza","translations":{"ar":"كايانزا","hi":"काएंजा","ja":"カヤンザ","ru":"Каянза"},"subdivision":null,"population":33682,"latitude":-2.9221,"longitude":29.6293,"timezone":"Africa/Bujumbura","capital":false},
+  {"id":428515,"name":"Bubanza","native_name":"Bubanza","translations":{"ar":"بوبانزا","hi":"बुबंजा","ja":"ブバンザ","ru":"Бубанза","zh":"布班扎"},"subdivision":null,"population":30996,"latitude":-3.0804,"longitude":29.391,"timezone":"Africa/Bujumbura","capital":false},
+  {"id":421930,"name":"Vyanda","native_name":"Vyanda","translations":{"ru":"Вянда"},"subdivision":null,"population":29685,"latitude":-4.1024,"longitude":29.606,"timezone":"Africa/Bujumbura","capital":false},
+  {"id":426423,"name":"Zanandore","native_name":"Zanandore","subdivision":null,"population":27867,"latitude":-3.2548,"longitude":30.11404,"timezone":"Africa/Bujumbura","capital":false},
+  {"id":425309,"name":"Gatumba","native_name":"Gatumba","subdivision":null,"population":18104,"latitude":-3.33333,"longitude":29.25,"timezone":"Africa/Bujumbura","capital":false}
+]

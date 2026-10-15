@@ -1,0 +1,13 @@
+[
+  {"id":2310046,"name":"Bata","native_name":"Bata","translations":{"ar":"باتا","ja":"バタ","ko":"바타","ru":"Бата","uk":"Бата","zh":"巴塔"},"subdivision":null,"population":173046,"latitude":1.86391,"longitude":9.76582,"timezone":"Africa/Malabo","capital":false},
+  {"id":2309527,"name":"Malabo","native_name":"Malabo","translations":{"ar":"مالابو","ja":"マラボ","ko":"말라보","ru":"Малабо","th":"มาลาโบ","uk":"Малабо","zh":"馬拉博"},"subdivision":null,"population":155963,"latitude":3.75578,"longitude":8.78166,"timezone":"Africa/Malabo","capital":false},
+  {"id":2309332,"name":"Ebebiyin","native_name":"Ebebiyin","translations":{"ja":"エベビイン","ko":"에베비인","ru":"Эбебьин","uk":"Ебебіїн","zh":"埃贝比因"},"subdivision":null,"population":24831,"latitude":2.15218,"longitude":11.33013,"timezone":"Africa/Malabo","capital":false},
+  {"id":2310309,"name":"Añisoc","native_name":"Añisok","translations":{"en":"Añisok","es":"Añisok","ja":"アニソク","ru":"Анисок","zh":"阿尼索克"},"subdivision":null,"population":16626,"latitude":1.8658,"longitude":10.76892,"timezone":"Africa/Malabo","capital":false},
+  {"id":2310547,"name":"Aconibe","native_name":"Aconibe","subdivision":null,"population":16543,"latitude":1.29683,"longitude":10.93691,"timezone":"Africa/Malabo","capital":false},
+  {"id":2309528,"name":"Luba","native_name":"Luba","translations":{"ja":"ルバ","ko":"루바","ru":"Луба","zh":"盧巴"},"subdivision":null,"population":8655,"latitude":3.45683,"longitude":8.55465,"timezone":"Africa/Malabo","capital":false},
+  {"id":2308994,"name":"Evinayong","native_name":"Evinayong","subdivision":null,"population":8462,"latitude":1.43677,"longitude":10.55124,"timezone":"Africa/Malabo","capital":false},
+  {"id":2310745,"name":"Abaamang","native_name":"Abaamang","subdivision":null,"population":7729,"latitude":1.67558,"longitude":10.63073,"timezone":"Africa/Malabo","capital":false},
+  {"id":2307795,"name":"Mongomo","native_name":"Mongomo","subdivision":null,"population":6393,"latitude":1.62742,"longitude":11.31346,"timezone":"Africa/Malabo","capital":false},
+  {"id":2306737,"name":"Aual","native_name":"Aual","subdivision":null,"population":6335,"latitude":-1.44556,"longitude":5.62722,"timezone":"Africa/Malabo","capital":false},
+  {"id":12226438,"name":"Ciudad de la Paz","native_name":"Ciudad de la Paz","translations":{"ar":"سيوداد دي لا باز","pt":"Cidade da Paz","ru":"Сьюдад-де-ла-Пас","uk":"Сьюдад-де-ла-Пас","zh":"拉巴斯城"},"subdivision":null,"population":2000,"latitude":1.5925,"longitude":10.82361,"timezone":"Africa/Malabo","capital":true}
+]

@@ -1,0 +1,12 @@
+[
+  {"id":2422465,"name":"Conakry","native_name":"Conakry","translations":{"ja":"コナクリ","ko":"코나크리","pl":"Konakry","pt":"Conacri","ru":"Конакри","zh":"科納克里"},"subdivision":null,"population":1928389,"latitude":9.53795,"longitude":-13.67729,"timezone":"Africa/Conakry","capital":true},
+  {"id":2416969,"name":"Nzérékoré","native_name":"Nzérékoré","translations":{"ja":"ンゼレコレ","ko":"은제레코레","ru":"Нзерекоре","uk":"Нзерекоре"},"subdivision":null,"population":226426,"latitude":7.75624,"longitude":-8.8179,"timezone":"Africa/Conakry","capital":false},
+  {"id":2419992,"name":"Kankan","native_name":"Kankan","translations":{"ja":"カンカン","ko":"캉칸","ru":"Канкан","uk":"Канкан"},"subdivision":null,"population":221428,"latitude":10.38542,"longitude":-9.30568,"timezone":"Africa/Conakry","capital":false},
+  {"id":2417786,"name":"Manéah","native_name":"Manéah","translations":{"ru":"Манеах"},"subdivision":null,"population":194297,"latitude":9.73333,"longitude":-13.41667,"timezone":"Africa/Conakry","capital":false},
+  {"id":2421535,"name":"Dubréka","native_name":"Dubréka","translations":{"ru":"Дубрека"},"subdivision":null,"population":182296,"latitude":9.79111,"longitude":-13.52333,"timezone":"Africa/Conakry","capital":false},
+  {"id":2419533,"name":"Kindia","native_name":"Kindia","translations":{"ru":"Киндиа"},"subdivision":null,"population":161024,"latitude":10.05692,"longitude":-12.86576,"timezone":"Africa/Conakry","capital":false},
+  {"id":2415703,"name":"Siguiri","native_name":"Siguiri","translations":{"ru":"Сигири"},"subdivision":null,"population":148018,"latitude":11.42282,"longitude":-9.16852,"timezone":"Africa/Conakry","capital":false},
+  {"id":2416402,"name":"Kamsar","native_name":"Kamsar","translations":{"ru":"Комсар"},"subdivision":null,"population":148000,"latitude":10.65,"longitude":-14.61667,"timezone":"Africa/Conakry","capital":false},
+  {"id":2419472,"name":"Kissidougou","native_name":"Kissidougou","translations":{"ru":"Кисидугу"},"subdivision":null,"population":116019,"latitude":9.1848,"longitude":-10.09987,"timezone":"Africa/Conakry","capital":false},
+  {"id":2418362,"name":"Labé","native_name":"Labé","translations":{"ru":"Лаба"},"subdivision":null,"population":107571,"latitude":11.31823,"longitude":-12.28332,"timezone":"Africa/Conakry","capital":false}
+]

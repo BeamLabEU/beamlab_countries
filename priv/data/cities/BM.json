@@ -1,0 +1,4 @@
+[
+  {"id":3573061,"name":"Saint George","native_name":"Saint George","translations":{"de":"Saint George’s","ja":"セント・ジョージ","ko":"세인트조지스","ru":"Сент-Джордж","zh":"圣乔治斯"},"subdivision":null,"population":1896,"latitude":32.38167,"longitude":-64.67806,"timezone":"Atlantic/Bermuda","capital":false},
+  {"id":3573197,"name":"Hamilton","native_name":"Hamilton","translations":{"ar":"هاميلتون","ja":"ハミルトン","ko":"해밀턴","ru":"Гамильтон","th":"แฮมิลตัน","uk":"Гамільтон","zh":"哈密尔顿"},"subdivision":null,"population":902,"latitude":32.2949,"longitude":-64.78303,"timezone":"Atlantic/Bermuda","capital":true}
+]

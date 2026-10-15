@@ -1,0 +1,12 @@
+[
+  {"id":2399697,"name":"Libreville","native_name":"Libreville","translations":{"ar":"ليبرفيل","hi":"लिबरेविले","ja":"リーブルヴィル","ko":"리브르빌","ru":"Либревиль","th":"ลีเบรอวิล","uk":"Лібревіль","zh":"利伯维尔"},"subdivision":null,"population":846090,"latitude":0.39241,"longitude":9.45356,"timezone":"Africa/Libreville","capital":true},
+  {"id":2396518,"name":"Port-Gentil","native_name":"Port-Gentil","translations":{"ar":"بورت جنتيل","ja":"ポールジャンティ","ko":"포르장티","pl":"Port Gentil","ro":"Mandji","ru":"Порт-Жантиль","zh":"让蒂尔港"},"subdivision":null,"population":164018,"latitude":-0.71933,"longitude":8.78151,"timezone":"Africa/Libreville","capital":false},
+  {"id":2400555,"name":"Franceville","native_name":"Franceville","translations":{"ar":"فرانسفيل","ja":"フランスヴィル","ko":"프랑스빌","ru":"Франсвиль","uk":"Франсвіль","zh":"弗朗斯维尔"},"subdivision":null,"population":132895,"latitude":-1.63333,"longitude":13.58357,"timezone":"Africa/Libreville","capital":false},
+  {"id":2396657,"name":"Owendo","native_name":"Owendo","subdivision":null,"population":95313,"latitude":0.29123,"longitude":9.50465,"timezone":"Africa/Libreville","capital":false},
+  {"id":2396646,"name":"Oyem","native_name":"Oyem","translations":{"ja":"オイェム"},"subdivision":null,"population":72939,"latitude":1.5995,"longitude":11.57933,"timezone":"Africa/Libreville","capital":false},
+  {"id":2398269,"name":"Moanda","native_name":"Moanda","translations":{"ar":"مواندا","ja":"モアンダ","ko":"모안다","ru":"Моанда","th":"มวนดา","uk":"Моанда","zh":"莫安达"},"subdivision":null,"population":71099,"latitude":-1.56652,"longitude":13.1987,"timezone":"Africa/Libreville","capital":false},
+  {"id":2397169,"name":"Ntoum","native_name":"Ntoum","subdivision":null,"population":62445,"latitude":0.39051,"longitude":9.76096,"timezone":"Africa/Libreville","capital":false},
+  {"id":2399888,"name":"Lambaréné","native_name":"Lambaréné","translations":{"ja":"ランバレネ","ko":"랑바레네","ru":"Ламбарене","uk":"Ламбарене","zh":"兰巴雷内"},"subdivision":null,"population":46605,"latitude":-0.7001,"longitude":10.24055,"timezone":"Africa/Libreville","capital":false},
+  {"id":2398073,"name":"Mouila","native_name":"Mouila","subdivision":null,"population":43342,"latitude":-1.86846,"longitude":11.05594,"timezone":"Africa/Libreville","capital":false},
+  {"id":2396253,"name":"Tchibanga","native_name":"Tchibanga","subdivision":null,"population":36108,"latitude":-2.93323,"longitude":10.98178,"timezone":"Africa/Libreville","capital":false}
+]

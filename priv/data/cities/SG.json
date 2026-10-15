@@ -1,0 +1,6 @@
+[
+  {"id":1880252,"name":"Singapore","native_name":"Singapore","translations":{"ar":"سنغافورة","de":"Singapur","es":"Singapur","fr":"Singapour","hi":"सिंगापुर","ja":"シンガポール","ko":"싱가포르","pt":"Singapura","ru":"Сингапур","th":"สิงค์โปร","uk":"Сінгапур","zh":"新加坡"},"subdivision":null,"population":5638700,"latitude":1.28967,"longitude":103.85007,"timezone":"Asia/Singapore","capital":true},
+  {"id":7289760,"name":"Sengkang","native_name":"Sengkang","translations":{"ru":"Сенгканг Новый город","zh":"盛港"},"subdivision":null,"population":267600,"latitude":1.39167,"longitude":103.89444,"timezone":"Asia/Singapore","capital":false},
+  {"id":1881953,"name":"Jurong Town","native_name":"ஜூரோங்","translations":{"ru":"Джуронг","zh":"裕廊"},"subdivision":null,"population":262730,"latitude":1.33417,"longitude":103.72278,"timezone":"Asia/Singapore","capital":false},
+  {"id":1882316,"name":"Woodlands","native_name":"Woodlands","translations":{"ru":"Вудландс","zh":"兀兰"},"subdivision":null,"population":254440,"latitude":1.43801,"longitude":103.78877,"timezone":"Asia/Singapore","capital":false}
+]

@@ -1,0 +1,9 @@
+[
+  {"id":2110257,"name":"Tarawa","native_name":"Tarawa","translations":{"it":"Tarawa Sud","ko":"타라와","nl":"Zuid-Tarawa","pt":"Tarawa do Sul","ro":"South Tarawa","ru":"Южная Тарава","uk":"Тарава"},"subdivision":null,"population":40311,"latitude":1.3278,"longitude":172.97696,"timezone":"Pacific/Tarawa","capital":true},
+  {"id":7601774,"name":"Bikenibeu Village","native_name":"Bikenibeu Village","subdivision":null,"population":6170,"latitude":1.3673,"longitude":173.12415,"timezone":"Pacific/Tarawa","capital":false},
+  {"id":7521902,"name":"Tabwakea Village","native_name":"Tabwakea Village","subdivision":null,"population":1881,"latitude":2.01643,"longitude":-157.48773,"timezone":"Pacific/Kiritimati","capital":false},
+  {"id":7576909,"name":"Makin Village","native_name":"Makin Village","subdivision":null,"population":1834,"latitude":3.3644,"longitude":172.98352,"timezone":"Pacific/Tarawa","capital":false},
+  {"id":7521903,"name":"Banana Village","native_name":"Banana Village","subdivision":null,"population":1170,"latitude":1.98329,"longitude":-157.36526,"timezone":"Pacific/Kiritimati","capital":false},
+  {"id":2110131,"name":"Rawannawi Village","native_name":"Rawannawi Village","subdivision":null,"population":1075,"latitude":2.05379,"longitude":173.26354,"timezone":"Pacific/Tarawa","capital":false},
+  {"id":4030926,"name":"Napari Village","native_name":"Napari","translations":{"en":"Napari"},"subdivision":null,"population":194,"latitude":3.90806,"longitude":-159.38832,"timezone":"Pacific/Kiritimati","capital":false}
+]

@@ -1,0 +1,6 @@
+[
+  {"id":4043909,"name":"Dededo Village","native_name":"Dededo Village","subdivision":null,"population":44943,"latitude":13.51777,"longitude":144.8391,"timezone":"Pacific/Guam","capital":false},
+  {"id":4038554,"name":"Santa Rita","native_name":"Santa Rita","subdivision":null,"population":7500,"latitude":13.38608,"longitude":144.67226,"timezone":"Pacific/Guam","capital":false},
+  {"id":4043499,"name":"Inarajan Village","native_name":"Inarajan","translations":{"en":"Inarajan"},"subdivision":null,"population":3052,"latitude":13.27363,"longitude":144.74845,"timezone":"Pacific/Guam","capital":false},
+  {"id":4044012,"name":"Hagåtña","native_name":"Hagåtña","translations":{"ar":"هاغاتنيا","es":"Agaña","ja":"ハガニア","ko":"하갓냐","ru":"Хагатна","th":"ฮากาตญา","uk":"Хагатна","zh":"阿加尼亚"},"subdivision":null,"population":1051,"latitude":13.47567,"longitude":144.74886,"timezone":"Pacific/Guam","capital":true}
+]

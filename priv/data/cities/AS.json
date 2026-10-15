@@ -1,0 +1,6 @@
+[
+  {"id":5881576,"name":"Pago Pago","native_name":"Pago Pago","translations":{"ar":"باغو باغو","ja":"パゴパゴ","ko":"파고파고","ru":"Пагопаго","th":"ปาโกปาโก","uk":"Паго-Паго","zh":"帕果帕果"},"subdivision":null,"population":11500,"latitude":-14.27806,"longitude":-170.7025,"timezone":"Pacific/Pago_Pago","capital":true},
+  {"id":5881165,"name":"Ta`ū","native_name":"Ta'u","translations":{"ar":"تاعو","de":"Ta'u","en":"Ta'u","es":"Ta'u","fr":"Ta'u","hi":"ता'उ","id":"Ta'u","ja":"タウ","pt":"Ta'u","ru":"Та'у","tr":"Ta'u"},"subdivision":null,"population":873,"latitude":-14.23361,"longitude":-169.51444,"timezone":"Pacific/Pago_Pago","capital":false},
+  {"id":5881544,"name":"Ofu","native_name":"Ofu","translations":{"ar":"أوفو","hi":"ओफु","ja":"オフ","ru":"Офу"},"subdivision":null,"population":254,"latitude":-14.17117,"longitude":-169.67851,"timezone":"Pacific/Pago_Pago","capital":false},
+  {"id":5881150,"name":"Taulaga","native_name":"Taulaga","translations":{"ar":"تاولاغا","hi":"तौलागा","ja":"タウラガ","ru":"Таулага"},"subdivision":null,"population":37,"latitude":-11.05528,"longitude":-171.08833,"timezone":"Pacific/Pago_Pago","capital":false}
+]

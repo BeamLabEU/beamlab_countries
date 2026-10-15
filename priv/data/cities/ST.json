@@ -1,0 +1,7 @@
+[
+  {"id":2410763,"name":"São Tomé","native_name":"São Tomé","translations":{"ar":"ساو تومي","es":"Santo Tomé","ja":"サントメ","ko":"상투메","nl":"Sao Tomé","ru":"Сан-Томе","th":"เซาตูเม","uk":"Сан-Томе","zh":"圣多美"},"subdivision":null,"population":53300,"latitude":0.33756,"longitude":6.7299,"timezone":"Africa/Sao_Tome","capital":true},
+  {"id":2410972,"name":"Neves","native_name":"Neves","subdivision":null,"population":8391,"latitude":0.35671,"longitude":6.54897,"timezone":"Africa/Sao_Tome","capital":false},
+  {"id":2411305,"name":"Água Izé","native_name":"Aguã Ize","translations":{"pt":"Aguã Ize"},"subdivision":null,"population":7445,"latitude":0.21953,"longitude":6.72782,"timezone":"Africa/Sao_Tome","capital":false},
+  {"id":2411155,"name":"Dona Eugénia","native_name":"Dona Eugènia","translations":{"pt":"Dona Eugènia"},"subdivision":null,"population":3605,"latitude":0.13982,"longitude":6.61121,"timezone":"Africa/Sao_Tome","capital":false},
+  {"id":2410805,"name":"Santo António","native_name":"Santo Antonio","translations":{"ar":"سانتو أنطونيو","es":"Santo Antonio","hi":"सैंटो एंटोनियो","id":"Santo Antonio","ja":"サント・アントニオ","ko":"산투안토니우","pt":"Santo Antonio","ru":"Санту-Антонью","th":"ซังตูอังตอนีอู","tr":"Santo Antonio","zh":"聖安東尼奧"},"subdivision":null,"population":1156,"latitude":1.63943,"longitude":7.41951,"timezone":"Africa/Sao_Tome","capital":false}
+]

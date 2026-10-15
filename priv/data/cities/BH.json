@@ -1,0 +1,5 @@
+[
+  {"id":290332,"name":"Al Muharraq","native_name":"محرق","translations":{"ar":"محرق","de":"Muharraq","pl":"Al Muharrak","ru":"Аль-Мухаррак"},"subdivision":null,"population":176583,"latitude":26.25722,"longitude":50.61194,"timezone":"Asia/Bahrain","capital":false},
+  {"id":290340,"name":"Manama","native_name":"المنامة","translations":{"ar":"المنامة","cs":"Manáma","et":"Al-Manāmah","id":"Al-Manamah","ja":"マナーマ","ko":"마나마","nl":"Manamah","ru":"Манама","th":"มานามา","uk":"Манама","zh":"麦纳麦"},"subdivision":null,"population":147074,"latitude":26.22787,"longitude":50.58565,"timezone":"Asia/Bahrain","capital":true},
+  {"id":290247,"name":"Madīnat Ḩamad","native_name":"مَدِينَة حَمَد","translations":{"ar":"مَدِينَة حَمَد","en":"Hamad Town","es":"Madinat Hamad","fr":"Hamad Town","it":"Madinat Hamad","ja":"ハマド・タウン","ko":"하마드타운","nl":"Madinat Hamad","pl":"Madinat Hamad","pt":"Madinat Hamad","ro":"Madinat Hamad","ru":"Хамад","tr":"Hamad Town","zh":"哈马德镇"},"subdivision":null,"population":133550,"latitude":26.11528,"longitude":50.50694,"timezone":"Asia/Bahrain","capital":false}
+]

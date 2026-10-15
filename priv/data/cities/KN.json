@@ -1,0 +1,5 @@
+[
+  {"id":3575551,"name":"Basseterre","native_name":"Basseterre","translations":{"ar":"باستير","ja":"バセテール","ko":"바스테르","ru":"Бастер","th":"บาสแตร์","uk":"Бастер","zh":"巴斯特尔"},"subdivision":null,"population":12920,"latitude":17.2955,"longitude":-62.72499,"timezone":"America/St_Kitts","capital":true},
+  {"id":3575156,"name":"Sandy Point Town","native_name":"Sandy Point Town","translations":{"ar":"مدينة ساندي بوينت","hi":"सैंडी पॉइंट टाउन","ja":"サンディポイントタウン","ru":"Сэнди-Пойнт-Таун"},"subdivision":null,"population":3140,"latitude":17.35908,"longitude":-62.84858,"timezone":"America/St_Kitts","capital":false},
+  {"id":3575423,"name":"Fig Tree","native_name":"FigTree","translations":{"ar":"شجرة التين","en":"FigTree","fr":"Figtree","hi":"अंजीर का पेड़","ja":"イチジクの木","ru":"Фиг-Три"},"subdivision":null,"population":2922,"latitude":17.12623,"longitude":-62.60265,"timezone":"America/St_Kitts","capital":false}
+]

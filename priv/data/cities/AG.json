@@ -1,0 +1,5 @@
+[
+  {"id":3576022,"name":"St John's","native_name":"St John's","translations":{"de":"Saint John's","es":"Saint John's","fr":"Saint John's","id":"St. John's","it":"Saint John's","ja":"セントジョンズ","ko":"세인트존스","nl":"Saint John's","pl":"Saint John's","pt":"Saint John's","ru":"Сент-Джонс","sv":"Saint John's","zh":"圣约翰市"},"subdivision":null,"population":51737,"latitude":17.12096,"longitude":-61.84329,"timezone":"America/Antigua","capital":true},
+  {"id":13590582,"name":"St. Paul Parish","native_name":"St. Paul Parish","translations":{"ar":"رعية سانت بول","de":"St. Paul Gemeinde","es":"Parroquia de San Pablo","fr":"Paroisse St. Paul","hi":"सेंट पॉल पेरिश","id":"Paroki St. Paul","ja":"セント・ポール教区","pt":"Paróquia de São Paulo","ru":"Приход Святого Павла","tr":"St. Paul Kilisesi"},"subdivision":null,"population":8128,"latitude":17.0234,"longitude":-61.76928,"timezone":"America/Antigua","capital":false},
+  {"id":13590583,"name":"Barbuda Parish","native_name":"Barbuda Parish","subdivision":null,"population":1634,"latitude":17.62403,"longitude":-61.77651,"timezone":"America/Antigua","capital":false}
+]

@@ -45,6 +45,12 @@ BeamLabCountries is a compile-time data library providing ISO 3166 country infor
 - `BeamLabCountries.Currencies` (lib/currencies.ex) - ISO 4217 lookup: `get/1`, `get!/1`, `name/1`, `symbol/1`, `symbol_native/1`, `decimal_digits/1`, `for_country/1`, `countries_for_currency/1`, `all/0`, `all_codes/0`, `count/0`, `valid?/1`, `format/3`
 - `BeamLabCountries.Currency` (lib/currency.ex) - Struct with 6 fields (code, name, name_plural, symbol, symbol_native, decimal_digits)
 
+**Cities Modules:**
+- `BeamLabCountries.Cities` (lib/cities.ex) - Compile-time data: `all/0`, `count/0`, `get/1` (GeoNames ID), `for_country/2` (default `limit: 10`, `:all` for everything), `for_subdivision/3` (US/CA only), `capital/1`, `get_name/2` (locale with fallback to English)
+- `BeamLabCountries.City` (lib/city.ex) - Struct with 11 fields (id, name, native_name, translations, country, subdivision, population, latitude, longitude, timezone, capital)
+- `BeamLabCountries.CityLoader` (lib/city_loader.ex) - Compile-time JSON loader for city data
+- Data is generated from GeoNames by `dev_docs/cities/build_cities.py` (see `dev_docs/cities/README.md`); city names are strings-keyed by locale
+
 **Unions Modules (International Organizations):**
 - `BeamLabCountries.Unions` (lib/unions.ex) - API: `all/0`, `count/0`, `get/1`, `get!/1`, `for_country/1`, `codes_for_country/1`, `filter_by/2`, `exists?/1`, `member?/2`, `member_countries/1`
 - `BeamLabCountries.Union` (lib/union.ex) - Struct with 8 fields (code, name, type, founded, headquarters, website, wikipedia, members)
@@ -66,6 +72,7 @@ BeamLabCountries is a compile-time data library providing ISO 3166 country infor
 - `priv/data/countries.yaml` - List of country codes to load
 - `priv/data/countries/{CODE}.yaml` - Individual country data files (250 countries)
 - `priv/data/subdivisions/{CODE}.yaml` - Subdivision data (224 countries). File names must be uppercase alpha2 codes; the loader fails the build otherwise
+- `priv/data/cities/{CODE}.json` - Major cities per country (244 countries, GeoNames CC BY 4.0, generated, see above)
 - `priv/data/unions.yaml` / `priv/data/unions/{CODE}.yaml` - Union/organization data files (29 unions: eu, nato, g7, g20, brics, schengen, eurozone, etc.)
 - `priv/data/languages.json` - Language codes and names (184 languages)
 - `priv/data/currencies.json` - ISO 4217 currency data (155 currencies)

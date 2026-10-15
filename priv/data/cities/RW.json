@@ -1,0 +1,12 @@
+[
+  {"id":202061,"name":"Kigali","native_name":"Kigali","translations":{"ar":"كيغالي","ja":"キガリ","ko":"키갈리","ru":"Кигали","th":"คิกาลี","uk":"Кігалі","zh":"吉佳利"},"subdivision":null,"population":1132686,"latitude":-1.94995,"longitude":30.05885,"timezone":"Africa/Kigali","capital":true},
+  {"id":202905,"name":"Gisenyi","native_name":"Gisenyi","translations":{"ar":"جيسايني","ja":"ギセニ","ko":"기세니","ru":"Гисеньи","zh":"吉塞尼"},"subdivision":null,"population":172357,"latitude":-1.70278,"longitude":29.25639,"timezone":"Africa/Kigali","capital":false},
+  {"id":201521,"name":"Musanze","native_name":"Ruhengeri","translations":{"en":"Ruhengeri","es":"Ruhengeri","fr":"Ruhengeri","pl":"Ruhengeri","pt":"Ruhengeri","ru":"Рухенгери"},"subdivision":null,"population":153368,"latitude":-1.49984,"longitude":29.63497,"timezone":"Africa/Kigali","capital":false},
+  {"id":201650,"name":"Nyagatare","native_name":"Nyagatare","translations":{"ru":"Ньягатаре"},"subdivision":null,"population":100000,"latitude":-1.2952,"longitude":30.3226,"timezone":"Africa/Kigali","capital":false},
+  {"id":202217,"name":"Gitarama","native_name":"Gitarama","translations":{"ja":"ギタラマ","ko":"기타라마","ru":"Гитараме","zh":"吉塔拉馬"},"subdivision":null,"population":87613,"latitude":-2.07444,"longitude":29.75667,"timezone":"Africa/Kigali","capital":false},
+  {"id":203112,"name":"Butare","native_name":"Butare","translations":{"cs":"Butaré","ru":"Бутаре"},"subdivision":null,"population":62823,"latitude":-2.59667,"longitude":29.73944,"timezone":"Africa/Kigali","capital":false},
+  {"id":202065,"name":"Kibuye","native_name":"Kibuye","translations":{"ar":"كيبويي","hi":"किबुये","ja":"キブイェ","ru":"Кибуе"},"subdivision":null,"population":48024,"latitude":-2.06028,"longitude":29.34778,"timezone":"Africa/Kigali","capital":false},
+  {"id":201463,"name":"Rwamagana","native_name":"Rwamagana","translations":{"ar":"رواماغانا","hi":"रवामागना","ja":"ルワマガナ","ru":"Рвамагана","zh":"盧瓦馬加納"},"subdivision":null,"population":47203,"latitude":-1.9487,"longitude":30.4347,"timezone":"Africa/Kigali","capital":false},
+  {"id":202068,"name":"Kibungo","native_name":"Kibungo","translations":{"ru":"Кибунго"},"subdivision":null,"population":46240,"latitude":-2.1597,"longitude":30.5427,"timezone":"Africa/Kigali","capital":false},
+  {"id":202326,"name":"Cyangugu","native_name":"Cyangugu","translations":{"ru":"Сиангугу"},"subdivision":null,"population":43866,"latitude":-2.4846,"longitude":28.9075,"timezone":"Africa/Kigali","capital":false}
+]

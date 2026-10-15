@@ -1,0 +1,12 @@
+[
+  {"id":2113779,"name":"Majuro","native_name":"Majuro","translations":{"ko":"마주로","ru":"Маджуро","sv":"Majur","uk":"Маджуро"},"subdivision":null,"population":25400,"latitude":7.08971,"longitude":171.38027,"timezone":"Pacific/Majuro","capital":true},
+  {"id":7304467,"name":"Ebaye","native_name":"Ebaye","translations":{"ar":"إباي","hi":"एबाये","ja":"エバイェ","ru":"Эбайе"},"subdivision":null,"population":15000,"latitude":8.77479,"longitude":167.73919,"timezone":"Pacific/Kwajalein","capital":false},
+  {"id":7306514,"name":"Arno","native_name":"Arno","translations":{"ar":"أرنو","hi":"आर्नो","ja":"アルノ","ru":"Арно"},"subdivision":null,"population":2068,"latitude":7.06691,"longitude":171.55413,"timezone":"Pacific/Majuro","capital":false},
+  {"id":7304298,"name":"Laura","native_name":"Laura","subdivision":null,"population":1547,"latitude":7.14654,"longitude":171.03704,"timezone":"Pacific/Majuro","capital":false},
+  {"id":2080422,"name":"Jabor","native_name":"Jabor","translations":{"ar":"جابور","hi":"जाबोर","ja":"ジャボル","ru":"Джабор"},"subdivision":null,"population":1200,"latitude":5.92098,"longitude":169.64335,"timezone":"Pacific/Majuro","capital":false},
+  {"id":7306528,"name":"Wotje","native_name":"Wotje","translations":{"ar":"وتجي","hi":"वोटजे","ja":"ウォッジェ","ru":"Вотье"},"subdivision":null,"population":880,"latitude":9.45429,"longitude":170.23674,"timezone":"Pacific/Majuro","capital":false},
+  {"id":7306516,"name":"Mili","native_name":"Mili","translations":{"ar":"ميلي","hi":"मिली","ja":"ミリ","ru":"Мили"},"subdivision":null,"population":854,"latitude":6.0815,"longitude":171.73502,"timezone":"Pacific/Majuro","capital":false},
+  {"id":7306522,"name":"Namdrik","native_name":"Namdrik","translations":{"ar":"نامدريك","hi":"नामड्रिक","ja":"ナムドリック","ru":"Намдрик"},"subdivision":null,"population":814,"latitude":5.59944,"longitude":168.10282,"timezone":"Pacific/Majuro","capital":false},
+  {"id":7306512,"name":"Ebon","native_name":"Ebon","translations":{"ar":"إبون","hi":"एबॉन","ja":"エボン","ru":"Эбон"},"subdivision":null,"population":714,"latitude":4.58199,"longitude":168.69636,"timezone":"Pacific/Majuro","capital":false},
+  {"id":7306525,"name":"Kili","native_name":"Kili","translations":{"ar":"كيلي","hi":"किली","ja":"キリ","ru":"Кили"},"subdivision":null,"population":602,"latitude":5.64387,"longitude":169.12109,"timezone":"Pacific/Majuro","capital":false}
+]

@@ -1,0 +1,7 @@
+[
+  {"id":3570675,"name":"Fort-de-France","native_name":"Fort-de-France","translations":{"ar":"فور دو فرانس","ja":"フォール＝ド＝フランス","ko":"포르드프랑스","ru":"Фор-де-Франс","th":"ฟอร์-เดอ-ฟร็องส์","uk":"Фор-де-Франс","zh":"法兰西堡"},"subdivision":null,"population":89995,"latitude":14.60365,"longitude":-61.07418,"timezone":"America/Martinique","capital":true},
+  {"id":3570412,"name":"Le Robert","native_name":"Le Robert","translations":{"uk":"Ле-Робер"},"subdivision":null,"population":23814,"latitude":14.67751,"longitude":-60.94228,"timezone":"America/Martinique","capital":false},
+  {"id":3569926,"name":"Sainte-Marie","native_name":"Sainte-Marie","translations":{"ru":"Сент-Мари"},"subdivision":null,"population":20380,"latitude":14.78352,"longitude":-60.99227,"timezone":"America/Martinique","capital":false},
+  {"id":3569970,"name":"Rivière-Pilote","native_name":"Rivière-Pilote","translations":{"uk":"Ривєр-Пілот"},"subdivision":null,"population":13359,"latitude":14.48738,"longitude":-60.90257,"timezone":"America/Martinique","capital":false},
+  {"id":3570423,"name":"Le Morne-Rouge","native_name":"Le Morne-Rouge","subdivision":null,"population":5469,"latitude":14.7761,"longitude":-61.13564,"timezone":"America/Martinique","capital":false}
+]

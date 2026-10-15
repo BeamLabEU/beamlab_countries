@@ -1,0 +1,12 @@
+[
+  {"id":2139521,"name":"Noumea","native_name":"Nouméa","translations":{"ar":"نوميا","es":"Numea","et":"Nouméa","fr":"Nouméa","ja":"ヌメア","ko":"누메아","nl":"Nouméa","pl":"Numea","pt":"Nouméa","ru":"Нумеа","th":"นูเมอา","uk":"Нумеа","zh":"努美阿"},"subdivision":null,"population":93060,"latitude":-22.27407,"longitude":166.44884,"timezone":"Pacific/Noumea","capital":true},
+  {"id":2140066,"name":"Mont-Dore","native_name":"Mont-Dore","subdivision":null,"population":24680,"latitude":-22.26257,"longitude":166.56621,"timezone":"Pacific/Noumea","capital":false},
+  {"id":2141394,"name":"Dumbéa","native_name":"Dumbéa","subdivision":null,"population":19346,"latitude":-22.15757,"longitude":166.4572,"timezone":"Pacific/Noumea","capital":false},
+  {"id":2137690,"name":"Wé","native_name":"We","translations":{"ar":"وي","de":"We","en":"We","es":"We","fr":"We","hi":"वी","id":"We","ja":"ウェ","pt":"We","ru":"Уэ","tr":"We"},"subdivision":null,"population":10375,"latitude":-20.91687,"longitude":167.26461,"timezone":"Pacific/Noumea","capital":false},
+  {"id":2138285,"name":"Tadine","native_name":"Tadin","translations":{"fr":"Tadin","ru":"Тадин","th":"ทาดีน"},"subdivision":null,"population":7492,"latitude":-21.54751,"longitude":167.88019,"timezone":"Pacific/Noumea","capital":false},
+  {"id":2141714,"name":"Bourail","native_name":"Bourail","subdivision":null,"population":5531,"latitude":-21.5669,"longitude":165.49736,"timezone":"Pacific/Noumea","capital":false},
+  {"id":2138717,"name":"Poindimié","native_name":"Poindimié","subdivision":null,"population":5006,"latitude":-20.93714,"longitude":165.33121,"timezone":"Pacific/Noumea","capital":false},
+  {"id":2140691,"name":"Koné","native_name":"Kone","translations":{"ar":"كون","de":"Kone","en":"Kone","es":"Kone","fr":"Kone","hi":"कोने","id":"Kone","ja":"コネ","pt":"Kone","tr":"Kone"},"subdivision":null,"population":4572,"latitude":-21.05951,"longitude":164.86582,"timezone":"Pacific/Noumea","capital":false},
+  {"id":2141006,"name":"Houaïlou","native_name":"Houaïlou","subdivision":null,"population":4562,"latitude":-21.28333,"longitude":165.61667,"timezone":"Pacific/Noumea","capital":false},
+  {"id":2141658,"name":"Canala","native_name":"Canala","subdivision":null,"population":3538,"latitude":-21.52393,"longitude":165.97097,"timezone":"Pacific/Noumea","capital":false}
+]

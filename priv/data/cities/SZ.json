@@ -1,0 +1,12 @@
+[
+  {"id":934995,"name":"Manzini","native_name":"Manzini","translations":{"ar":"مانزيني","hi":"मंजिनी","ja":"マンジニ","ko":"만지니","ru":"Манзини","uk":"Манзіні","zh":"曼齐尼"},"subdivision":null,"population":110537,"latitude":-26.49884,"longitude":31.38004,"timezone":"Africa/Mbabane","capital":false},
+  {"id":934985,"name":"Mbabane","native_name":"Mbabane","translations":{"ar":"مبابان","ja":"ムババーネ","ko":"음바바네","ru":"Мбабане","th":"อัมบาบาเน","uk":"Мбабане","zh":"墨巴本"},"subdivision":null,"population":76218,"latitude":-26.31667,"longitude":31.13333,"timezone":"Africa/Mbabane","capital":true},
+  {"id":935005,"name":"Malkerns","native_name":"Malkerns","subdivision":null,"population":9724,"latitude":-26.52872,"longitude":31.19193,"timezone":"Africa/Mbabane","capital":false},
+  {"id":934913,"name":"Nhlangano","native_name":"Nhlangano","translations":{"ar":"نهلانجانو","hi":"नहलांगानो","ja":"ンランガーノ"},"subdivision":null,"population":9016,"latitude":-27.11222,"longitude":31.19833,"timezone":"Africa/Mbabane","capital":false},
+  {"id":934966,"name":"Mhlume","native_name":"Mhlume","subdivision":null,"population":8652,"latitude":-26.02607,"longitude":31.81423,"timezone":"Africa/Mbabane","capital":false},
+  {"id":935076,"name":"Hluti","native_name":"Hluti","subdivision":null,"population":6763,"latitude":-27.221,"longitude":31.58685,"timezone":"Africa/Mbabane","capital":false},
+  {"id":13645255,"name":"Big Bend","native_name":"Big Bend","subdivision":null,"population":6433,"latitude":-26.7905,"longitude":31.93736,"timezone":"Africa/Mbabane","capital":false},
+  {"id":934851,"name":"Siteki","native_name":"Siteki","translations":{"ar":"سيتيكي","hi":"सितेकी","ja":"シテキ","ru":"Ситеки"},"subdivision":null,"population":6152,"latitude":-26.4525,"longitude":31.94722,"timezone":"Africa/Mbabane","capital":false},
+  {"id":934881,"name":"Piggs Peak","native_name":"Piggs Peak","translations":{"ar":"بيجز بيك","hi":"पिग्स पीक","ja":"ピッグスピーク","ru":"Пиггс-Пик"},"subdivision":null,"population":5750,"latitude":-25.96082,"longitude":31.24666,"timezone":"Africa/Mbabane","capital":false},
+  {"id":935114,"name":"Bhunya","native_name":"Bhunya","subdivision":null,"population":3046,"latitude":-26.53847,"longitude":31.01176,"timezone":"Africa/Mbabane","capital":false}
+]

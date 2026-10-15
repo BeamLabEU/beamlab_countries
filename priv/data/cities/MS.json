@@ -1,0 +1,4 @@
+[
+  {"id":7266440,"name":"Brades","native_name":"Brades","translations":{"ja":"ブレイズ","ko":"브레이즈","ru":"Брейдс","th":"เบรดส์","uk":"Брейдс","zh":"布莱兹"},"subdivision":null,"population":1000,"latitude":16.79183,"longitude":-62.21058,"timezone":"America/Montserrat","capital":false},
+  {"id":3578069,"name":"Plymouth","native_name":"Plymouth","translations":{"ar":"بليموث","ja":"プリマス","ko":"플리머스","ru":"Плимут","th":"พลิมัท","uk":"Плімут","zh":"普利茅斯"},"subdivision":null,"population":0,"latitude":16.70555,"longitude":-62.21292,"timezone":"America/Montserrat","capital":true}
+]

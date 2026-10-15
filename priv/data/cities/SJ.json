@@ -1,0 +1,4 @@
+[
+  {"id":2729907,"name":"Longyearbyen","native_name":"Longyearbyen","translations":{"ar":"لونقييربين","ja":"ロングイェールビーン","ko":"롱이어비엔","ru":"Лонгйир","th":"ลองเยียร์เบียน","uk":"Лонгїр","zh":"朗伊爾城"},"subdivision":null,"population":2368,"latitude":78.22334,"longitude":15.64689,"timezone":"Arctic/Longyearbyen","capital":true},
+  {"id":7535941,"name":"Olonkinbyen","native_name":"Olonkinbyen","translations":{"ar":"أولونكينبيين","hi":"ओलोनकिनब्येन","ja":"オロンキンビエン","nl":"Olonkinstad","ru":"Олонкинбюэн","zh":"奥伦金拜恩"},"subdivision":null,"population":14,"latitude":70.9221,"longitude":-8.7187,"timezone":"Arctic/Longyearbyen","capital":false}
+]

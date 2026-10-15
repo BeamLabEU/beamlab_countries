@@ -1,0 +1,12 @@
+[
+  {"id":2411989,"name":"Serekunda","native_name":"Serrekunda","translations":{"ar":"سيريكوندا","en":"Serrekunda","ja":"セレクンダ","pl":"Serrekunda","ru":"Серекунда","sv":"Serrekunda"},"subdivision":null,"population":340000,"latitude":13.43833,"longitude":-16.67806,"timezone":"Africa/Banjul","capital":false},
+  {"id":2413753,"name":"Brikama","native_name":"Brikama","translations":{"ja":"ブリカマ","ko":"브리카마","ru":"Брикаме","zh":"布里卡馬"},"subdivision":null,"population":97233,"latitude":13.27136,"longitude":-16.64944,"timezone":"Africa/Banjul","capital":false},
+  {"id":2413876,"name":"Banjul","native_name":"Banjul","translations":{"ar":"بانجول","hi":"बाञ्जुल","ja":"バンジュール","ko":"반줄","pl":"Bandżul","ru":"Банжул","th":"บันจูล","uk":"Банжул","zh":"班竹"},"subdivision":null,"population":37274,"latitude":13.45274,"longitude":-16.57803,"timezone":"Africa/Banjul","capital":true},
+  {"id":2413515,"name":"Farafenni","native_name":"Farafenni","translations":{"ja":"ファラフェニ","ko":"파라페니","zh":"法拉芬尼"},"subdivision":null,"population":32883,"latitude":13.56667,"longitude":-15.6,"timezone":"Africa/Banjul","capital":false},
+  {"id":2412749,"name":"Lamin","native_name":"Lamin","subdivision":null,"population":28500,"latitude":13.35222,"longitude":-16.43389,"timezone":"Africa/Banjul","capital":false},
+  {"id":2411805,"name":"Tanji","native_name":"Tanji","translations":{"ja":"タンジ","ko":"탄지","zh":"滩基"},"subdivision":null,"population":17441,"latitude":13.34972,"longitude":-16.7891,"timezone":"Africa/Banjul","capital":false},
+  {"id":2411905,"name":"Soma","native_name":"Soma","translations":{"ja":"ソマ","ko":"소마","zh":"索馬"},"subdivision":null,"population":15210,"latitude":13.43333,"longitude":-15.53333,"timezone":"Africa/Banjul","capital":false},
+  {"id":2413511,"name":"Farato","native_name":"Farato","subdivision":null,"population":15017,"latitude":13.4,"longitude":-14.21667,"timezone":"Africa/Banjul","capital":false},
+  {"id":2413450,"name":"Gambissar","native_name":"Gambissar","subdivision":null,"population":13371,"latitude":13.31667,"longitude":-13.95,"timezone":"Africa/Banjul","capital":false},
+  {"id":2413866,"name":"Bansang","native_name":"Bansang","translations":{"ar":"بانسانغ","ko":"반상","ru":"Бансанг","zh":"班桑"},"subdivision":null,"population":9528,"latitude":13.43333,"longitude":-14.65,"timezone":"Africa/Banjul","capital":false}
+]

@@ -1,0 +1,11 @@
+[
+  {"id":1820906,"name":"Bandar Seri Begawan","native_name":"Bandar Seri Begawan","translations":{"ar":"بندر سري بكاوان","ja":"バンダルスリブガワン","ko":"반다르스리브가완","ru":"Бандар-Сери-Бегаван","th":"บันดาร์เสรีเบกาวัน","tr":"Bandar Seri Begavan","uk":"Бандар-Сері-Бегаван","zh":"斯里巴加湾市"},"subdivision":null,"population":64409,"latitude":4.89035,"longitude":114.94006,"timezone":"Asia/Brunei","capital":true},
+  {"id":1820635,"name":"Mentiri","native_name":"Kampung Mentiri","subdivision":null,"population":39324,"latitude":4.97058,"longitude":115.02078,"timezone":"Asia/Brunei","capital":false},
+  {"id":1820491,"name":"Kuala Belait","native_name":"Kuala Belait","translations":{"ar":"كوالا بيلايت","hi":"कुआला बेलैट","ja":"クアラブライト","ko":"쿠알라블라잇","ru":"Куала-Белайт","zh":"马来奕"},"subdivision":null,"population":31178,"latitude":4.58361,"longitude":114.2312,"timezone":"Asia/Brunei","capital":false},
+  {"id":1820071,"name":"Tutong","native_name":"Pekan Tutong","translations":{"ar":"توتونج","hi":"तुटोंग","ja":"トゥトン","ru":"Тутонг"},"subdivision":null,"population":19151,"latitude":4.80278,"longitude":114.64917,"timezone":"Asia/Brunei","capital":false},
+  {"id":1820557,"name":"Liang","native_name":"Kampung Sungai Liang","subdivision":null,"population":16813,"latitude":4.67747,"longitude":114.49587,"timezone":"Asia/Brunei","capital":false},
+  {"id":1820610,"name":"Pengkalan Batu","native_name":"Pengkalan Batu","subdivision":null,"population":11560,"latitude":4.78333,"longitude":114.83333,"timezone":"Asia/Brunei","capital":false},
+  {"id":1820604,"name":"Kampung Peninjau","native_name":"Kampung Peninjau","subdivision":null,"population":4240,"latitude":4.93727,"longitude":114.84248,"timezone":"Asia/Brunei","capital":false},
+  {"id":1820903,"name":"Bangar","native_name":"Pekan Bangar","translations":{"ar":"بانجار","hi":"बांगार","ja":"バンガル","ru":"Бангар"},"subdivision":null,"population":3970,"latitude":4.70861,"longitude":115.07167,"timezone":"Asia/Brunei","capital":false},
+  {"id":1820652,"name":"Lamunin","native_name":"Kampung Lamunin","subdivision":null,"population":3641,"latitude":4.6816,"longitude":114.71537,"timezone":"Asia/Brunei","capital":false}
+]

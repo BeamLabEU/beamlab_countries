@@ -1,0 +1,4 @@
+[
+  {"id":3042041,"name":"Schaan","native_name":"Schaan","translations":{"ar":"شاان","hi":"शान","ja":"シャーン","ru":"Шаан"},"subdivision":null,"population":5998,"latitude":47.16498,"longitude":9.50867,"timezone":"Europe/Vaduz","capital":false},
+  {"id":3042030,"name":"Vaduz","native_name":"Vaduz","translations":{"ja":"ファドゥーツ","ko":"파두츠","ru":"Вадуц","zh":"瓦都茲"},"subdivision":null,"population":5197,"latitude":47.14151,"longitude":9.52154,"timezone":"Europe/Vaduz","capital":true}
+]

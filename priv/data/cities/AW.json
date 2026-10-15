@@ -1,0 +1,4 @@
+[
+  {"id":3577154,"name":"Oranjestad","native_name":"Oranjestad","translations":{"ar":"أورنجستاد","ja":"オラニエスタッド","ko":"오라녜스타트","ru":"Ораньестад","th":"โอรันเยสตัด","uk":"Ораньєстад","zh":"奥拉涅斯塔德"},"subdivision":null,"population":29998,"latitude":12.52398,"longitude":-70.02703,"timezone":"America/Aruba","capital":true},
+  {"id":3577256,"name":"Butucu","native_name":"Butucu","subdivision":null,"population":14175,"latitude":12.47246,"longitude":-69.91439,"timezone":"America/Aruba","capital":false}
+]

@@ -1,0 +1,12 @@
+[
+  {"id":921772,"name":"Moroni","native_name":"موروني","translations":{"ar":"موروني","ja":"モロニ","ko":"모로니","ru":"Морони","th":"โมโรนี","uk":"Мороні","zh":"莫洛尼"},"subdivision":null,"population":74749,"latitude":-11.70216,"longitude":43.25506,"timezone":"Indian/Comoro","capital":true},
+  {"id":921753,"name":"Moutsamoudou","native_name":"موتسامودو","translations":{"ar":"موتسامودو","hi":"मुत्समौदौ","ja":"ムツサムドゥ","ru":"Мутсамуду"},"subdivision":null,"population":26313,"latitude":-12.16672,"longitude":44.39944,"timezone":"Indian/Comoro","capital":false},
+  {"id":921889,"name":"Fomboni","native_name":"فومبوني","translations":{"ar":"فومبوني","hi":"फोम्बोनी","ja":"フォンボーニ","ru":"Фомбони"},"subdivision":null,"population":17291,"latitude":-12.28759,"longitude":43.74344,"timezone":"Indian/Comoro","capital":false},
+  {"id":921906,"name":"Domoni","native_name":"دوموني","translations":{"ar":"دوموني","ja":"ドモニ","ru":"Домони","zh":"多摩尼市"},"subdivision":null,"population":12262,"latitude":-12.26067,"longitude":44.52947,"timezone":"Indian/Comoro","capital":false},
+  {"id":1091669,"name":"Nkourani","native_name":"Nkourani Sima","translations":{"fr":"Nkourani Sima"},"subdivision":null,"population":10000,"latitude":-11.38972,"longitude":43.28806,"timezone":"Indian/Comoro","capital":false},
+  {"id":921675,"name":"Sima","native_name":"سيما","translations":{"ar":"سيما","ja":"シマ","ru":"Сима"},"subdivision":null,"population":8737,"latitude":-12.19556,"longitude":44.27667,"timezone":"Indian/Comoro","capital":false},
+  {"id":921806,"name":"Mbéni","native_name":"إمبيني","translations":{"ar":"إمبيني","id":"Mbeni","ja":"ムベニ","pl":"Mbeni"},"subdivision":null,"population":5128,"latitude":-11.50139,"longitude":43.3775,"timezone":"Indian/Comoro","capital":false},
+  {"id":921884,"name":"Foumbouni","native_name":"Foumbouni","subdivision":null,"population":3386,"latitude":-11.86537,"longitude":43.49529,"timezone":"Indian/Comoro","capital":false},
+  {"id":921785,"name":"Mitsoudjé","native_name":"Mitsoudjé","subdivision":null,"population":3129,"latitude":-11.81209,"longitude":43.28043,"timezone":"Indian/Comoro","capital":false},
+  {"id":1091390,"name":"Magnassini-Nindri","native_name":"ماجناسيني نيندري","translations":{"ar":"ماجناسيني نيندري"},"subdivision":null,"population":2213,"latitude":-12.27806,"longitude":44.41583,"timezone":"Indian/Comoro","capital":false}
+]

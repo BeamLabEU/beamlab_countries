@@ -1,0 +1,12 @@
+[
+  {"id":2260535,"name":"Brazzaville","native_name":"Brazzaville","translations":{"ar":"برازافيل","ja":"ブラザヴィル","ko":"브라자빌","ru":"Браззавиль","tr":"Brazavil","uk":"Браззавіль","zh":"布拉柴维尔"},"subdivision":null,"population":1982000,"latitude":-4.26613,"longitude":15.28318,"timezone":"Africa/Brazzaville","capital":true},
+  {"id":2255414,"name":"Pointe-Noire","native_name":"Pointe-Noire","translations":{"ar":"بوانت نوار","hi":"पॉइंट-नोयर","ja":"ポワントノワール","ko":"푸앵트누아르","ru":"Пуэнт-Нуар"},"subdivision":null,"population":1032000,"latitude":-4.77609,"longitude":11.86352,"timezone":"Africa/Brazzaville","capital":false},
+  {"id":2258261,"name":"Dolisie","native_name":"Dolisie","translations":{"ar":"دوليسي","hi":"डोलिसी","ja":"ドリシー","ko":"돌리지","ru":"Долиси","zh":"多利西"},"subdivision":null,"population":121000,"latitude":-4.19834,"longitude":12.66664,"timezone":"Africa/Brazzaville","capital":false},
+  {"id":8521334,"name":"Nkayi","native_name":"Nkayi","translations":{"ru":"Нкай"},"subdivision":null,"population":103000,"latitude":-4.18396,"longitude":13.2859,"timezone":"Africa/Brazzaville","capital":false},
+  {"id":2259655,"name":"Impfondo","native_name":"Impfondo","translations":{"ar":"إمبفوندو","hi":"इम्फोंडो","ja":"インプフォンド","ru":"Импфондо"},"subdivision":null,"population":48939,"latitude":1.61804,"longitude":18.05981,"timezone":"Africa/Brazzaville","capital":false},
+  {"id":2255564,"name":"Ouesso","native_name":"Ouesso","translations":{"ar":"أويسو","en":"Ouésso","hi":"ओयेसो","ja":"ウエッソ","pt":"Ouésso","ru":"Уэссо"},"subdivision":null,"population":40667,"latitude":1.61361,"longitude":16.05167,"timezone":"Africa/Brazzaville","capital":false},
+  {"id":2255542,"name":"Owando","native_name":"Owando","translations":{"ar":"أوواندو","hi":"ओवांडो","ja":"オワンド","ru":"Овандо"},"subdivision":null,"population":35698,"latitude":-0.48193,"longitude":15.89988,"timezone":"Africa/Brazzaville","capital":false},
+  {"id":2255285,"name":"Sibiti","native_name":"Sibiti","translations":{"ar":"سيبيتي","hi":"सिबिती","ja":"シビティ","ru":"Сибити"},"subdivision":null,"population":33122,"latitude":-3.68192,"longitude":13.34985,"timezone":"Africa/Brazzaville","capital":false},
+  {"id":2258080,"name":"Loutété","native_name":"Loutété","subdivision":null,"population":27726,"latitude":-4.29611,"longitude":13.85083,"timezone":"Africa/Brazzaville","capital":false},
+  {"id":2258604,"name":"Bouansa","native_name":"Bouansa","subdivision":null,"population":27512,"latitude":-4.21861,"longitude":13.76167,"timezone":"Africa/Brazzaville","capital":false}
+]

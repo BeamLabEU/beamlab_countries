@@ -1,0 +1,6 @@
+[
+  {"id":921815,"name":"Mamoudzou","native_name":"Mamoudzou","translations":{"it":"Mamoutzou","ko":"마무주","pt":"Mamudzu","ru":"Мамудзу"},"subdivision":null,"population":54831,"latitude":-12.78234,"longitude":45.22878,"timezone":"Indian/Mayotte","capital":true},
+  {"id":1090340,"name":"Sada","native_name":"Sada","translations":{"ar":"سادا","hi":"साडा","ja":"サダ","ru":"Сада"},"subdivision":null,"population":9832,"latitude":-12.85055,"longitude":45.10205,"timezone":"Indian/Mayotte","capital":false},
+  {"id":1090119,"name":"Bandraboua","native_name":"Bandraboua","translations":{"ar":"باندرابوا","hi":"बंद्राबोआ","ja":"バンドラボア","ru":"Бандрабуа"},"subdivision":null,"population":7880,"latitude":-12.7044,"longitude":45.12231,"timezone":"Indian/Mayotte","capital":false},
+  {"id":1090397,"name":"Bandrele","native_name":"Bandrele","translations":{"ar":"باندريل","hi":"बंद्रेले","ja":"バンドレレ","ru":"Бандреле"},"subdivision":null,"population":6350,"latitude":-12.91276,"longitude":45.19256,"timezone":"Indian/Mayotte","capital":false}
+]

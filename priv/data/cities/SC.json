@@ -1,0 +1,5 @@
+[
+  {"id":241131,"name":"Victoria","native_name":"Victoria","translations":{"ar":"فيكتوريا","ja":"ヴィクトリア","ko":"빅토리아","ru":"Виктория","th":"วิกตอเรีย","uk":"Вікторія","zh":"维多利亚"},"subdivision":null,"population":22881,"latitude":-4.62001,"longitude":55.45501,"timezone":"Indian/Mahe","capital":true},
+  {"id":6691843,"name":"Baie Sainte Anne","native_name":"Baie Sainte Anne","subdivision":null,"population":5063,"latitude":-4.31997,"longitude":55.75338,"timezone":"Indian/Mahe","capital":false},
+  {"id":10793745,"name":"Baie Lazare","native_name":"Baie Lazare","subdivision":null,"population":4795,"latitude":-4.74971,"longitude":55.4754,"timezone":"Indian/Mahe","capital":false}
+]

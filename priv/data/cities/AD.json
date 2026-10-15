@@ -1,0 +1,4 @@
+[
+  {"id":3041563,"name":"Andorra la Vella","native_name":"Andorra la Vella","translations":{"ar":"أندورا لا فيلا","fr":"Andorre-la-Vieille","ja":"アンドラ・ラ・ヴェリャ","ko":"안도라라베야","pt":"Andorra-a-Velha","ru":"Андорра-ла-Велья"},"subdivision":null,"population":20430,"latitude":42.50779,"longitude":1.52109,"timezone":"Europe/Andorra","capital":true},
+  {"id":3039604,"name":"Pas de la Casa","native_name":"Pas de la Casa","translations":{"ru":"Пас де ла Каса"},"subdivision":null,"population":2996,"latitude":42.54277,"longitude":1.73361,"timezone":"Europe/Andorra","capital":false}
+]

@@ -1,0 +1,5 @@
+[
+  {"id":3513090,"name":"Willemstad","native_name":"Willemstad","translations":{"ar":"ويلمستاد","ja":"ウィレムスタット","ko":"빌렘스타트","ru":"Виллемстад","th":"วิลเลมสตัด","uk":"Віллемстад","zh":"威廉斯塔德"},"subdivision":null,"population":125000,"latitude":12.12246,"longitude":-68.88641,"timezone":"America/Curacao","capital":true},
+  {"id":13308488,"name":"Bandabou","native_name":"Bandabou","subdivision":null,"population":13125,"latitude":12.27177,"longitude":-69.06533,"timezone":"America/Curacao","capital":false},
+  {"id":6692389,"name":"St. Michiel","native_name":"St. Michiel","translations":{"en":"Boca St. Michiel"},"subdivision":null,"population":5732,"latitude":12.14335,"longitude":-68.99487,"timezone":"America/Curacao","capital":false}
+]

@@ -1,0 +1,4 @@
+[
+  {"id":3424934,"name":"Saint-Pierre","native_name":"Saint-Pierre","translations":{"ko":"생피에르","th":"แซงปีแยร์"},"subdivision":null,"population":6200,"latitude":46.77914,"longitude":-56.1773,"timezone":"America/Miquelon","capital":true},
+  {"id":3424941,"name":"Miquelon","native_name":"Miquelon","translations":{"ar":"ميكيلون","es":"Miquelón","hi":"मिकेलॉन","ja":"ミクロン","pt":"Miquelão","ru":"Микелон"},"subdivision":null,"population":1141,"latitude":47.0975,"longitude":-56.38139,"timezone":"America/Miquelon","capital":false}
+]

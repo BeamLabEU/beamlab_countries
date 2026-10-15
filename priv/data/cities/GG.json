@@ -1,0 +1,4 @@
+[
+  {"id":3042287,"name":"Saint Peter Port","native_name":"St Peter Port","translations":{"ar":"سان بيتر بورت","en":"St Peter Port","fr":"Saint-Pierre-Port","ja":"セント・ピーター・ポート","ko":"세인트피터포트","pt":"St Peter Port","ru":"Сент-Питер-Порт","sv":"St. Peter Port","th":"เซนต์ปีเตอร์พอร์ต","uk":"Сент-Пітер-Порт","zh":"圣彼得港"},"subdivision":null,"population":16488,"latitude":49.45981,"longitude":-2.53527,"timezone":"Europe/Guernsey","capital":true},
+  {"id":3042289,"name":"St Anne","native_name":"St. Anne","translations":{"en":"St. Anne"},"subdivision":null,"population":0,"latitude":49.71549,"longitude":-2.20757,"timezone":"Europe/Guernsey","capital":false}
+]

@@ -1,0 +1,5 @@
+[
+  {"id":11703857,"name":"Providenciales","native_name":"Providenciales","subdivision":null,"population":23769,"latitude":21.78254,"longitude":-72.25206,"timezone":"America/Grand_Turk","capital":false},
+  {"id":3576994,"name":"Cockburn Town","native_name":"Cockburn Town","translations":{"ja":"コックバーンタウン","ko":"코번타운","ru":"Коберн-Таун","th":"ค็อกเบิร์นทาวน์","uk":"Коберн-Таун","zh":"科伯恩城"},"subdivision":null,"population":3720,"latitude":21.46122,"longitude":-71.14188,"timezone":"America/Grand_Turk","capital":true},
+  {"id":3576979,"name":"Kew","native_name":"Kew","subdivision":null,"population":1477,"latitude":21.9134,"longitude":-71.99265,"timezone":"America/Grand_Turk","capital":false}
+]

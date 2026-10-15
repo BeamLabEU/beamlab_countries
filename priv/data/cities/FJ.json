@@ -1,0 +1,12 @@
+[
+  {"id":2198148,"name":"Suva","native_name":"Suva","translations":{"ar":"سوفا","hi":"सुवा","ja":"スバ","ko":"수바","pl":"Suwa","ru":"Сува","th":"ซูวา","uk":"Сува","zh":"蘇瓦"},"subdivision":null,"population":77366,"latitude":-18.13683,"longitude":178.42531,"timezone":"Pacific/Fiji","capital":true},
+  {"id":2204506,"name":"Lautoka","native_name":"लौतोका","translations":{"ar":"لاوتوكا","hi":"लौतोका","ja":"ラウトカ","ko":"라우토카","ru":"Лаутока","zh":"劳托卡"},"subdivision":null,"population":52500,"latitude":-17.61686,"longitude":177.45049,"timezone":"Pacific/Fiji","capital":false},
+  {"id":2202064,"name":"Nadi","native_name":"Nadi","translations":{"ar":"نادي","ja":"ナンディ","ko":"나디","ru":"Нанди","zh":"楠迪"},"subdivision":null,"population":42284,"latitude":-17.80309,"longitude":177.41617,"timezone":"Pacific/Fiji","capital":false},
+  {"id":2204582,"name":"Labasa","native_name":"Labasa","subdivision":null,"population":27949,"latitude":-16.4332,"longitude":179.36451,"timezone":"Pacific/Fiji","capital":false},
+  {"id":2198365,"name":"Sigatoka","native_name":"Sigatoka","subdivision":null,"population":17622,"latitude":-18.14307,"longitude":177.50691,"timezone":"Pacific/Fiji","capital":false},
+  {"id":8335413,"name":"Ba","native_name":"Ba","translations":{"ar":"با","ru":"Мба"},"subdivision":null,"population":14596,"latitude":-17.5343,"longitude":177.67407,"timezone":"Pacific/Fiji","capital":false},
+  {"id":2197895,"name":"Tavua","native_name":"Tavua","subdivision":null,"population":8810,"latitude":-17.44221,"longitude":177.86221,"timezone":"Pacific/Fiji","capital":false},
+  {"id":2204417,"name":"Levuka","native_name":"Levuka","subdivision":null,"population":8360,"latitude":-18.06667,"longitude":179.31667,"timezone":"Pacific/Fiji","capital":false},
+  {"id":2198520,"name":"Savusavu","native_name":"Savusavu","subdivision":null,"population":6833,"latitude":-16.77942,"longitude":179.33564,"timezone":"Pacific/Fiji","capital":false},
+  {"id":2197277,"name":"Vaileka","native_name":"Vaileka","subdivision":null,"population":5964,"latitude":-17.37894,"longitude":178.15329,"timezone":"Pacific/Fiji","capital":false}
+]

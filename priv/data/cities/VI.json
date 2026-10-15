@@ -1,0 +1,5 @@
+[
+  {"id":4796512,"name":"St Croix","native_name":"St Croix","translations":{"ar":"سانت كروا","de":"Saint Croix","es":"Santa Cruz","fr":"Sainte-Croix","hi":"सेंट क्रॉइक्स","id":"Saint Croix","ja":"セント・クロイ","pt":"Santa Cruz","ru":"Сент-Крой","tr":"Saint Croix"},"subdivision":null,"population":50601,"latitude":17.72751,"longitude":-64.74698,"timezone":"America/St_Thomas","capital":false},
+  {"id":4795467,"name":"Charlotte Amalie","native_name":"Charlotte Amalie","translations":{"ar":"شارلوت أمالي","es":"Carlota Amalia","ja":"シャーロット・アマリー","ko":"샬럿아말리에","ru":"Шарлота Амалия","th":"ชาร์ลอตต์อะมาลี","uk":"Шарлотта-Амалія","zh":"夏洛特阿马利亚"},"subdivision":null,"population":20000,"latitude":18.3419,"longitude":-64.9307,"timezone":"America/St_Thomas","capital":true},
+  {"id":4795577,"name":"Cruz Bay","native_name":"Cruz Bay","translations":{"ar":"كروز باي","hi":"क्रूज़ बे","ja":"クルーズベイ","ru":"Круз-Бей"},"subdivision":null,"population":2743,"latitude":18.33134,"longitude":-64.79375,"timezone":"America/St_Thomas","capital":false}
+]

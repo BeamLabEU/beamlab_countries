@@ -1,0 +1,12 @@
+[
+  {"id":3378644,"name":"Georgetown","native_name":"Georgetown","translations":{"ar":"جورج توغن","hi":"जॉर्जटाउन","ja":"ジョージタウン","ko":"조지타운","ru":"Джорджтаун","th":"จอร์จทาวน์","uk":"Джорджтаун","zh":"乔治敦"},"subdivision":null,"population":235017,"latitude":6.80448,"longitude":-58.15527,"timezone":"America/Guyana","capital":true},
+  {"id":3377408,"name":"Linden","native_name":"Linden","translations":{"ru":"Линден"},"subdivision":null,"population":44690,"latitude":6.00815,"longitude":-58.30724,"timezone":"America/Guyana","capital":false},
+  {"id":3376762,"name":"New Amsterdam","native_name":"New Amsterdam","translations":{"es":"Nueva Ámsterdam","ko":"뉴암스테르담","ru":"Нью-Амстэрдам","zh":"新阿姆斯特丹"},"subdivision":null,"population":35039,"latitude":6.24924,"longitude":-57.51578,"timezone":"America/Guyana","capital":false},
+  {"id":7303406,"name":"Anna Regina","native_name":"Anna Regina","subdivision":null,"population":12448,"latitude":7.26555,"longitude":-58.48265,"timezone":"America/Guyana","capital":false},
+  {"id":13589438,"name":"Corriverton","native_name":"Corriverton","translations":{"ja":"コリバートン","ru":"Корривертон","uk":"Корривертон"},"subdivision":null,"population":11488,"latitude":5.933,"longitude":-57.14939,"timezone":"America/Guyana","capital":false},
+  {"id":3379507,"name":"Bartica","native_name":"Bartica","subdivision":null,"population":11486,"latitude":6.40539,"longitude":-58.62334,"timezone":"America/Guyana","capital":false},
+  {"id":3375522,"name":"Tuschen","native_name":"Tuschen","subdivision":null,"population":8286,"latitude":6.8766,"longitude":-58.34259,"timezone":"America/Guyana","capital":false},
+  {"id":3376227,"name":"Rose Hall","native_name":"Rose Hall","subdivision":null,"population":8000,"latitude":6.25577,"longitude":-57.35502,"timezone":"America/Guyana","capital":false},
+  {"id":3377301,"name":"Mabaruma","native_name":"Mabaruma","subdivision":null,"population":6366,"latitude":8.20377,"longitude":-59.78117,"timezone":"America/Guyana","capital":false},
+  {"id":3377267,"name":"Mahaica Village","native_name":"Mahaica Village","translations":{"de":"Mahaica","fr":"Mahaica"},"subdivision":null,"population":4867,"latitude":6.6817,"longitude":-57.92181,"timezone":"America/Guyana","capital":false}
+]

@@ -1,0 +1,4 @@
+[
+  {"id":3166645,"name":"Serravalle","native_name":"Serravalle","translations":{"ar":"سيرافاللي","hi":"सेराविले","ja":"セラヴァッレ","ko":"세라발레","ru":"Серравалле","uk":"Серравалле","zh":"塞拉瓦莱"},"subdivision":null,"population":9258,"latitude":43.96897,"longitude":12.48167,"timezone":"Europe/San_Marino","capital":false},
+  {"id":3168070,"name":"San Marino","native_name":"San Marino","translations":{"ar":"سان مارينو المدينة","fr":"Ville de Saint-Marin","ja":"サンマリノ","ko":"산마리노","ro":"Orașul San Marino","ru":"Сан-Марино","th":"ซานมารีโน","tr":"San Marino şehri","uk":"Сан-Марино","vi":"Thành phố San Marino","zh":"聖馬力諾"},"subdivision":null,"population":4500,"latitude":43.93667,"longitude":12.44639,"timezone":"Europe/San_Marino","capital":true}
+]

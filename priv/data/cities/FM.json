@@ -1,0 +1,12 @@
+[
+  {"id":2081114,"name":"Weno","native_name":"Weno","translations":{"ja":"ウェノ","ko":"웨노","ru":"Вено","th":"เวโน","zh":"維諾"},"subdivision":null,"population":13856,"latitude":7.44648,"longitude":151.84135,"timezone":"Pacific/Chuuk","capital":false},
+  {"id":2081342,"name":"Tofol","native_name":"Tofol","subdivision":null,"population":9686,"latitude":5.32479,"longitude":163.00781,"timezone":"Pacific/Kosrae","capital":false},
+  {"id":7648112,"name":"Colonia","native_name":"Colonia","subdivision":null,"population":7371,"latitude":9.51638,"longitude":138.12167,"timezone":"Pacific/Chuuk","capital":false},
+  {"id":2081986,"name":"Palikir","native_name":"Palikir","translations":{"ja":"パリキール","ko":"팔리키르","ru":"Паликир","th":"ปาลีกีร์","zh":"帕利基尔"},"subdivision":null,"population":6942,"latitude":6.92477,"longitude":158.16109,"timezone":"Pacific/Pohnpei","capital":true},
+  {"id":7645215,"name":"Nema","native_name":"Nema","subdivision":null,"population":995,"latitude":6.98922,"longitude":152.57377,"timezone":"Pacific/Chuuk","capital":false},
+  {"id":7627088,"name":"Ngatik","native_name":"Ngatik","subdivision":null,"population":640,"latitude":5.78849,"longitude":157.15954,"timezone":"Pacific/Pohnpei","capital":false},
+  {"id":7645191,"name":"Murilo","native_name":"Murilo","subdivision":null,"population":607,"latitude":8.69242,"longitude":152.33934,"timezone":"Pacific/Chuuk","capital":false},
+  {"id":7645769,"name":"Fais","native_name":"Fais","subdivision":null,"population":215,"latitude":9.766,"longitude":140.52,"timezone":"Pacific/Chuuk","capital":false},
+  {"id":13697223,"name":"Eauripik Village","native_name":"Eauripik Village","subdivision":null,"population":92,"latitude":6.68355,"longitude":143.07761,"timezone":"Pacific/Chuuk","capital":false},
+  {"id":7645731,"name":"Elato","native_name":"Elato","subdivision":null,"population":0,"latitude":7.502,"longitude":146.166,"timezone":"Pacific/Chuuk","capital":false}
+]

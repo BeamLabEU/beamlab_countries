@@ -1,0 +1,6 @@
+[
+  {"id":3577887,"name":"Kingstown","native_name":"Kingstown","translations":{"ar":"كينغستاون","ja":"キングスタウン","ko":"킹스타운","ru":"Кингстаун","th":"คิงส์ทาวน์","uk":"Кінгстаун","zh":"金斯敦"},"subdivision":null,"population":24518,"latitude":13.15527,"longitude":-61.22742,"timezone":"America/St_Vincent","capital":true},
+  {"id":3577900,"name":"Georgetown","native_name":"Georgetown","translations":{"ar":"جورجتاون","hi":"जॉर्जटाउन","ja":"ジョージタウン","ru":"Джорджтаун"},"subdivision":null,"population":1680,"latitude":13.28054,"longitude":-61.1185,"timezone":"America/St_Vincent","capital":false},
+  {"id":12535728,"name":"Petit Bordel","native_name":"Petit Bordel","subdivision":null,"population":1084,"latitude":13.28711,"longitude":-61.24458,"timezone":"America/St_Vincent","capital":false},
+  {"id":3577844,"name":"Port Elizabeth","native_name":"Port Elizabeth","translations":{"ar":"بورت إليزابيث","hi":"पोर्ट एलिजाबेथ","ja":"ポート・エリザベス","ru":"Порт-Элизабет"},"subdivision":null,"population":839,"latitude":13.01102,"longitude":-61.23548,"timezone":"America/St_Vincent","capital":false}
+]

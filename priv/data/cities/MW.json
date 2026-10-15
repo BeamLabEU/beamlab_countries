@@ -1,0 +1,12 @@
+[
+  {"id":927967,"name":"Lilongwe","native_name":"Lilongwe","translations":{"ar":"ليلونغوي","ja":"リロングウェ","ko":"릴롱궤","ru":"Лилонгве","th":"ลิลองเว","uk":"Лілонгве","zh":"利隆圭"},"subdivision":null,"population":1115815,"latitude":-13.96692,"longitude":33.78725,"timezone":"Africa/Blantyre","capital":true},
+  {"id":931755,"name":"Blantyre","native_name":"Blantyre","translations":{"ar":"بلانتاير","hi":"ब्लांटायर","ja":"ブランタイヤ","ko":"블랜타이어","ru":"Блантайр","uk":"Блантайр","zh":"布兰太尔"},"subdivision":null,"population":902588,"latitude":-15.78499,"longitude":35.00854,"timezone":"Africa/Blantyre","capital":false},
+  {"id":925475,"name":"Mzuzu","native_name":"Mzuzu","translations":{"ar":"مزوزو","hi":"म्जुजु","ja":"ムズズ","ko":"음주주","ru":"Мзузу","uk":"Мзузу","zh":"姆祖祖"},"subdivision":null,"population":249564,"latitude":-11.46556,"longitude":34.02071,"timezone":"Africa/Blantyre","capital":false},
+  {"id":923295,"name":"Zomba","native_name":"Zomba","translations":{"ja":"ゾンバ","ko":"좀바","ru":"Зомба","uk":"Зомба","zh":"松巴"},"subdivision":null,"population":118440,"latitude":-15.38596,"longitude":35.3188,"timezone":"Africa/Blantyre","capital":false},
+  {"id":235715,"name":"Karonga","native_name":"Karonga","translations":{"ru":"Каронга"},"subdivision":null,"population":69486,"latitude":-9.93333,"longitude":33.93333,"timezone":"Africa/Blantyre","capital":false},
+  {"id":928534,"name":"Kasungu","native_name":"Kasungu","translations":{"ru":"Касунгу"},"subdivision":null,"population":66152,"latitude":-13.03333,"longitude":33.48333,"timezone":"Africa/Blantyre","capital":false},
+  {"id":927246,"name":"Mangochi","native_name":"Mangochi","translations":{"ru":"Мангочи"},"subdivision":null,"population":60338,"latitude":-14.47815,"longitude":35.26448,"timezone":"Africa/Blantyre","capital":false},
+  {"id":924055,"name":"Salima","native_name":"Salima","translations":{"ru":"Салима"},"subdivision":null,"population":41492,"latitude":-13.7804,"longitude":34.4587,"timezone":"Africa/Blantyre","capital":false},
+  {"id":927834,"name":"Liwonde","native_name":"Liwonde","translations":{"ja":"リウォンデ","ko":"리원데","zh":"利翁代"},"subdivision":null,"population":41077,"latitude":-15.06665,"longitude":35.22543,"timezone":"Africa/Blantyre","capital":false},
+  {"id":931865,"name":"Balaka","native_name":"Balaka","translations":{"ru":"Балака"},"subdivision":null,"population":40950,"latitude":-14.97928,"longitude":34.95575,"timezone":"Africa/Blantyre","capital":false}
+]

@@ -1,0 +1,12 @@
+[
+  {"id":2611396,"name":"Tórshavn","native_name":"Tórshavn","translations":{"ar":"توشهافن","id":"Torshavn","ja":"トースハウン","ko":"토르스하운","ru":"Торсхавн","sv":"Torshamn","th":"ทอร์สเฮาน์","uk":"Торсгавн","zh":"托爾斯港"},"subdivision":null,"population":13200,"latitude":62.00973,"longitude":-6.77164,"timezone":"Atlantic/Faroe","capital":true},
+  {"id":2618795,"name":"Klaksvík","native_name":"Klaksvík","translations":{"ar":"كلاكسويك","ja":"クラクスヴィーク","ro":"Klaksvik","ru":"Клаксвуйк","uk":"Клаксвік","zh":"克拉克斯维克"},"subdivision":null,"population":5013,"latitude":62.22655,"longitude":-6.58901,"timezone":"Atlantic/Faroe","capital":false},
+  {"id":2610806,"name":"Vágur","native_name":"Vágur","translations":{"ru":"Вагур"},"subdivision":null,"population":1333,"latitude":61.47324,"longitude":-6.81185,"timezone":"Atlantic/Faroe","capital":false},
+  {"id":2610343,"name":"Vestmanna","native_name":"Vestmanna","translations":{"ru":"Вестманна","zh":"韦斯特曼纳"},"subdivision":null,"population":1260,"latitude":62.15354,"longitude":-7.17291,"timezone":"Atlantic/Faroe","capital":false},
+  {"id":2610294,"name":"Við Sjógv","native_name":"Við Sjógv","subdivision":null,"population":1158,"latitude":62.11967,"longitude":-6.75005,"timezone":"Atlantic/Faroe","capital":false},
+  {"id":2619596,"name":"Hvalba","native_name":"Hvalba","subdivision":null,"population":673,"latitude":61.60237,"longitude":-6.96063,"timezone":"Atlantic/Faroe","capital":false},
+  {"id":2622676,"name":"Eiði","native_name":"Eiðis Bygdasavn","translations":{"ru":"Айи"},"subdivision":null,"population":634,"latitude":62.2993,"longitude":-7.09245,"timezone":"Atlantic/Faroe","capital":false},
+  {"id":2614212,"name":"Sandur","native_name":"Sandur","translations":{"ru":"Сандур"},"subdivision":null,"population":608,"latitude":61.8425,"longitude":-6.80778,"timezone":"Atlantic/Faroe","capital":false},
+  {"id":2618855,"name":"Kirkja","native_name":"Kirkja","subdivision":null,"population":31,"latitude":62.31851,"longitude":-6.31646,"timezone":"Atlantic/Faroe","capital":false},
+  {"id":2610302,"name":"Viðareiði","native_name":"Viðareiði","subdivision":null,"population":0,"latitude":62.35999,"longitude":-6.5313,"timezone":"Atlantic/Faroe","capital":false}
+]

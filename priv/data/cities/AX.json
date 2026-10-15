@@ -1,0 +1,11 @@
+[
+  {"id":3041732,"name":"Mariehamn","native_name":"Mariehamn","translations":{"ja":"マリエハムン","ko":"마리에함","pl":"Maarianhamina","ru":"Мариехамн"},"subdivision":null,"population":10682,"latitude":60.09726,"longitude":19.93481,"timezone":"Europe/Mariehamn","capital":true},
+  {"id":3041666,"name":"Tjudö","native_name":"Tjudö","subdivision":null,"population":2630,"latitude":60.33333,"longitude":19.95,"timezone":"Europe/Mariehamn","capital":false},
+  {"id":3041776,"name":"Hammarland","native_name":"Hammarland","subdivision":null,"population":1395,"latitude":60.21667,"longitude":19.75,"timezone":"Europe/Mariehamn","capital":false},
+  {"id":660567,"name":"Bomarsund","native_name":"Bomarsund","subdivision":null,"population":1016,"latitude":60.21234,"longitude":20.24023,"timezone":"Europe/Mariehamn","capital":false},
+  {"id":659949,"name":"Föglö","native_name":"Föglö","translations":{"ar":"فوجلو","es":"Foegloe","hi":"फोग्लो","id":"Foegloe","ja":"フォグロー","pt":"Foegloe","ru":"Фёгло","tr":"Foegloe"},"subdivision":null,"population":632,"latitude":60.01392,"longitude":20.41377,"timezone":"Europe/Mariehamn","capital":false},
+  {"id":660521,"name":"Brändö","native_name":"Brändö","translations":{"ar":"براندو","fr":"Braendoe","hi":"ब्रांडो","id":"Braendoe","ja":"ブレンドゥ","pt":"Braendoe","ru":"Брэндё"},"subdivision":null,"population":515,"latitude":60.41165,"longitude":21.04534,"timezone":"Europe/Mariehamn","capital":false},
+  {"id":650395,"name":"Kumlinge","native_name":"Kumlinge","translations":{"ar":"كوملينجي","hi":"कुमलिंगे","ja":"クムリンゲ","ru":"Кумлинге"},"subdivision":null,"population":384,"latitude":60.26013,"longitude":20.77892,"timezone":"Europe/Mariehamn","capital":false},
+  {"id":651986,"name":"Kökar","native_name":"Kökar","translations":{"ar":"كوكار","es":"Koekar","hi":"कोएकार","id":"Koekar","ja":"コエカル","pt":"Koekar","ru":"Кёкар"},"subdivision":null,"population":355,"latitude":59.92051,"longitude":20.90883,"timezone":"Europe/Mariehamn","capital":false},
+  {"id":636158,"name":"Sottunga","native_name":"Sottunga","translations":{"ar":"سوتونغا","hi":"सोत्तुंगा","ja":"ソットゥンガ","ru":"Суттунга"},"subdivision":null,"population":144,"latitude":60.13023,"longitude":20.66683,"timezone":"Europe/Mariehamn","capital":false}
+]

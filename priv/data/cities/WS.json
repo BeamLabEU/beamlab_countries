@@ -1,0 +1,12 @@
+[
+  {"id":4035413,"name":"Apia","native_name":"Apia","translations":{"ar":"أبيا","ja":"アピア","ko":"아피아","ru":"Апиа","th":"อาปีอา","uk":"Апіа","zh":"阿皮亚"},"subdivision":null,"population":40407,"latitude":-13.83333,"longitude":-171.76666,"timezone":"Pacific/Apia","capital":true},
+  {"id":4035153,"name":"Palauli","native_name":"Palauli","subdivision":null,"population":9300,"latitude":-13.75859,"longitude":-172.29858,"timezone":"Pacific/Apia","capital":false},
+  {"id":7106456,"name":"Asau","native_name":"Asau","translations":{"ar":"أساو","hi":"असाउ","ja":"アサウ","ru":"Асау"},"subdivision":null,"population":6643,"latitude":-13.51963,"longitude":-172.63784,"timezone":"Pacific/Apia","capital":false},
+  {"id":4035196,"name":"Mulifanua","native_name":"Mulifanua","translations":{"ar":"موليفانوا","hi":"मुलीफानुआ","ja":"ムリファヌア","ru":"Мулифануа"},"subdivision":null,"population":4508,"latitude":-13.83183,"longitude":-172.03602,"timezone":"Pacific/Apia","capital":false},
+  {"id":4035095,"name":"Sale’imoa","native_name":"Sale’imoa","subdivision":null,"population":3816,"latitude":-13.80314,"longitude":-171.89098,"timezone":"Pacific/Apia","capital":false},
+  {"id":4035013,"name":"Solosolo","native_name":"Solosolo","subdivision":null,"population":1851,"latitude":-13.87504,"longitude":-171.64181,"timezone":"Pacific/Apia","capital":false},
+  {"id":4035209,"name":"Matavai","native_name":"Matavai","subdivision":null,"population":1308,"latitude":-14.03208,"longitude":-171.64768,"timezone":"Pacific/Apia","capital":false},
+  {"id":4035118,"name":"Safotu","native_name":"Safotu","translations":{"ar":"سافوتو","hi":"सफोतु","ja":"サフォトゥ","ru":"Сафоту"},"subdivision":null,"population":1207,"latitude":-13.45132,"longitude":-172.40177,"timezone":"Pacific/Apia","capital":false},
+  {"id":4035023,"name":"Si’umu","native_name":"Siumu Village","translations":{"en":"Siumu Village"},"subdivision":null,"population":1183,"latitude":-14.00943,"longitude":-171.77682,"timezone":"Pacific/Apia","capital":false},
+  {"id":4035078,"name":"Samamea","native_name":"Samamea","translations":{"ar":"ساماميا","hi":"समामिया","ja":"サママイア","ru":"Саматеа"},"subdivision":null,"population":89,"latitude":-13.93375,"longitude":-171.53122,"timezone":"Pacific/Apia","capital":false}
+]

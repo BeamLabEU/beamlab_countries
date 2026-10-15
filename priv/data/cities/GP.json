@@ -1,0 +1,12 @@
+[
+  {"id":3578959,"name":"Les Abymes","native_name":"Les Abymes","translations":{"ar":"لزابيم","ja":"レザビーム","uk":"Лез-Абім","zh":"薩萊比梅"},"subdivision":null,"population":53514,"latitude":16.273,"longitude":-61.50507,"timezone":"America/Guadeloupe","capital":false},
+  {"id":3578682,"name":"Petit-Bourg","native_name":"Petit-Bourg","translations":{"ar":"بيتي-بور","ru":"Пти-Бург","uk":"Петі-Бур"},"subdivision":null,"population":24994,"latitude":16.19163,"longitude":-61.5914,"timezone":"America/Guadeloupe","capital":false},
+  {"id":3578466,"name":"Sainte-Anne","native_name":"Sainte-Anne","subdivision":null,"population":22859,"latitude":16.22564,"longitude":-61.38098,"timezone":"America/Guadeloupe","capital":false},
+  {"id":3578967,"name":"Le Moule","native_name":"Le Moule","translations":{"ar":"لو مول","uk":"Ле-Муль"},"subdivision":null,"population":22692,"latitude":16.33164,"longitude":-61.34656,"timezone":"America/Guadeloupe","capital":false},
+  {"id":3578447,"name":"Sainte-Rose","native_name":"Sainte-Rose","translations":{"ru":"Сент-Роз"},"subdivision":null,"population":20192,"latitude":16.33264,"longitude":-61.6969,"timezone":"America/Guadeloupe","capital":false},
+  {"id":3579585,"name":"Capesterre-Belle-Eau","native_name":"Capesterre-Belle-Eau","translations":{"ar":"كابستر-بيل-أو","uk":"Капестерр-Бель-О"},"subdivision":null,"population":19821,"latitude":16.04495,"longitude":-61.56425,"timezone":"America/Guadeloupe","capital":false},
+  {"id":3579732,"name":"Basse-Terre","native_name":"Basse-Terre","translations":{"ar":"باس-تير","ja":"バステール","ko":"바스테르","ru":"Бас-Тер","th":"บัส-แตร์","uk":"Бас-Тер","zh":"巴斯特尔"},"subdivision":null,"population":11472,"latitude":15.99714,"longitude":-61.73214,"timezone":"America/Guadeloupe","capital":true},
+  {"id":3578594,"name":"Pointe-Noire","native_name":"Pointe-Noire","subdivision":null,"population":7749,"latitude":16.23218,"longitude":-61.78917,"timezone":"America/Guadeloupe","capital":false},
+  {"id":3579250,"name":"Grand-Bourg","native_name":"Grand-Bourg","translations":{"ar":"غران-بور","ja":"グラン＝ブール","ru":"Гран-Бур","uk":"Гран-Бур"},"subdivision":null,"population":5867,"latitude":15.88402,"longitude":-61.3148,"timezone":"America/Guadeloupe","capital":false},
+  {"id":3578575,"name":"Port-Louis","native_name":"Port-Louis","subdivision":null,"population":5515,"latitude":16.41749,"longitude":-61.53045,"timezone":"America/Guadeloupe","capital":false}
+]

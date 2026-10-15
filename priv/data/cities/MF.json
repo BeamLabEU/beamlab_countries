@@ -1,0 +1,4 @@
+[
+  {"id":6984577,"name":"Concordia","native_name":"Concordia","subdivision":null,"population":6102,"latitude":18.06489,"longitude":-63.07794,"timezone":"America/Marigot","capital":false},
+  {"id":3578851,"name":"Marigot","native_name":"Marigot","translations":{"ja":"マリゴ","ko":"마리고","ru":"Мариго","th":"มารีโก","uk":"Маріго","zh":"马里戈"},"subdivision":null,"population":5700,"latitude":18.06819,"longitude":-63.08302,"timezone":"America/Marigot","capital":true}
+]

@@ -1,0 +1,5 @@
+[
+  {"id":3374036,"name":"Bridgetown","native_name":"Bridgetown","translations":{"ar":"بريدج تاون","ja":"ブリッジタウン","ko":"브리지타운","ru":"Бриджтаун","zh":"布里奇敦"},"subdivision":null,"population":98511,"latitude":13.10732,"longitude":-59.62021,"timezone":"America/Barbados","capital":true},
+  {"id":3373419,"name":"White Hill","native_name":"White Hill","subdivision":null,"population":5139,"latitude":13.21373,"longitude":-59.58111,"timezone":"America/Barbados","capital":false},
+  {"id":3373515,"name":"Six Cross Roads","native_name":"Six Cross Roads","subdivision":null,"population":1005,"latitude":13.11772,"longitude":-59.477,"timezone":"America/Barbados","capital":false}
+]

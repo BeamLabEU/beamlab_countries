@@ -1,0 +1,12 @@
+[
+  {"id":2462881,"name":"Laayoune","native_name":"El Aaiún","translations":{"ar":"العيون","de":"El Aaiún","es":"El Aaiún","fr":"Laâyoune","it":"El Ayun","ja":"アイウン","ko":"엘아이운","nl":"Al-Ajoen","pl":"Al-Ujun","pt":"El Aaiún","ru":"Эль-Аюн","sv":"Al-Ayun","zh":"阿尤恩"},"subdivision":null,"population":196331,"latitude":27.1418,"longitude":-13.18797,"timezone":"Africa/El_Aaiun","capital":false},
+  {"id":2463447,"name":"Dakhla","native_name":"Dajla","translations":{"ar":"الداخلة","es":"Dajla","ru":"Дахла"},"subdivision":null,"population":106277,"latitude":23.68477,"longitude":-15.95798,"timezone":"Africa/El_Aaiun","capital":false},
+  {"id":2463029,"name":"Boujdour","native_name":"Cabo Bojador","translations":{"ar":"بوجدور","es":"Cabo Bojador"},"subdivision":null,"population":42651,"latitude":26.13073,"longitude":-14.48513,"timezone":"Africa/El_Aaiun","capital":false},
+  {"id":2461993,"name":"El Marsa","native_name":"Playa de Aaiún","translations":{"ar":"المرسى","es":"Playa de Aaiún"},"subdivision":null,"population":28848,"latitude":27.09611,"longitude":-13.41583,"timezone":"Africa/El_Aaiun","capital":false},
+  {"id":13608369,"name":"Meharrize","native_name":"Mehaires","translations":{"ar":"محيرس","fr":"Mehaires"},"subdivision":null,"population":12000,"latitude":26.14763,"longitude":-11.0693,"timezone":"Africa/El_Aaiun","capital":false},
+  {"id":2461677,"name":"Tichla","native_name":"Tichla","subdivision":null,"population":6036,"latitude":21.5837,"longitude":-14.97222,"timezone":"Africa/El_Aaiun","capital":false},
+  {"id":2462879,"name":"El Aargub","native_name":"El Aargub","subdivision":null,"population":5020,"latitude":23.60882,"longitude":-15.86726,"timezone":"Africa/El_Aaiun","capital":false},
+  {"id":2463112,"name":"Bir Ganduz","native_name":"Bir Gandouz","translations":{"ar":"بئر كندوز","fr":"Bir Gandouz"},"subdivision":null,"population":4625,"latitude":21.60336,"longitude":-16.45018,"timezone":"Africa/El_Aaiun","capital":false},
+  {"id":13645465,"name":"Bir Ghandouz","native_name":"Bir Ghandouz","subdivision":null,"population":4625,"latitude":22.05318,"longitude":-16.74836,"timezone":"Africa/El_Aaiun","capital":false},
+  {"id":13608327,"name":"Amgala","native_name":"Amgala","translations":{"ar":"أمگالة"},"subdivision":null,"population":4398,"latitude":26.28729,"longitude":-11.13547,"timezone":"Africa/El_Aaiun","capital":false}
+]

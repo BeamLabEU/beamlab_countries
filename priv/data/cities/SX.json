@@ -1,0 +1,4 @@
+[
+  {"id":3513522,"name":"Lower Prince’s Quarter","native_name":"Lower Prince’s Quarter","translations":{"ru":"Лоуэр-Принс-Куотер","zh":"下王子区"},"subdivision":null,"population":8000,"latitude":18.04987,"longitude":-63.03789,"timezone":"America/Lower_Princes","capital":false},
+  {"id":3513392,"name":"Philipsburg","native_name":"Philipsburg","translations":{"ar":"فيليبسبورج","ja":"フィリップスブルフ","ko":"필립스뷔르흐","ru":"Филипсбург","th":"ฟิลิปส์บืร์ค","uk":"Філіпсбург","zh":"菲利普斯堡"},"subdivision":null,"population":1400,"latitude":18.026,"longitude":-63.04582,"timezone":"America/Lower_Princes","capital":true}
+]

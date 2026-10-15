@@ -1,0 +1,7 @@
+[
+  {"id":3575635,"name":"Roseau","native_name":"Roseau","translations":{"ar":"روسو","ja":"ロゾー","ko":"로조","ru":"Розо","th":"โรโซ","uk":"Розо","zh":"羅索"},"subdivision":null,"population":16571,"latitude":15.30174,"longitude":-61.38808,"timezone":"America/Dominica","capital":true},
+  {"id":3575654,"name":"Portsmouth","native_name":"Portsmouth","translations":{"ar":"بورتسموث","hi":"पोर्ट्समाउथ","ja":"ポーツマス","ru":"Портсмут"},"subdivision":null,"population":3633,"latitude":15.58288,"longitude":-61.45592,"timezone":"America/Dominica","capital":false},
+  {"id":3575721,"name":"Marigot","native_name":"Marigot","subdivision":null,"population":2669,"latitude":15.53743,"longitude":-61.282,"timezone":"America/Dominica","capital":false},
+  {"id":3575624,"name":"Saint Joseph","native_name":"Saint Joseph","translations":{"ar":"سانت جوزيف","fr":"Saint-Joseph","hi":"सेंट जोसेफ","ja":"セント・ジョセフ","pt":"São José","ru":"Сент-Джозеф"},"subdivision":null,"population":2184,"latitude":15.4061,"longitude":-61.42374,"timezone":"America/Dominica","capital":false},
+  {"id":3575755,"name":"La Plaine","native_name":"La Plaine","subdivision":null,"population":1332,"latitude":15.32768,"longitude":-61.24753,"timezone":"America/Dominica","capital":false}
+]

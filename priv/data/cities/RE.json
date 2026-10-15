@@ -1,0 +1,12 @@
+[
+  {"id":935264,"name":"Saint-Denis","native_name":"Saint-Denis","translations":{"ja":"サン・ドゥニ","ko":"생드니","ru":"Сен-Дени"},"subdivision":null,"population":154765,"latitude":-20.88231,"longitude":55.4504,"timezone":"Indian/Reunion","capital":true},
+  {"id":935221,"name":"Saint-Paul","native_name":"Saint-Paul","translations":{"ru":"Сен-Поль"},"subdivision":null,"population":105240,"latitude":-21.00961,"longitude":55.27134,"timezone":"Indian/Reunion","capital":false},
+  {"id":935214,"name":"Saint-Pierre","native_name":"Saint-Pierre","translations":{"ru":"Сент-Пьер"},"subdivision":null,"population":84077,"latitude":-21.3393,"longitude":55.47811,"timezone":"Indian/Reunion","capital":false},
+  {"id":935227,"name":"Saint-Joseph","native_name":"Saint-Joseph","translations":{"ru":"Сент-Джозеф"},"subdivision":null,"population":38807,"latitude":-21.3777,"longitude":55.61691,"timezone":"Indian/Reunion","capital":false},
+  {"id":935267,"name":"Saint-Benoît","native_name":"Saint-Benoît","translations":{"ru":"Санкт-Бенуа"},"subdivision":null,"population":37023,"latitude":-21.03795,"longitude":55.71546,"timezone":"Indian/Reunion","capital":false},
+  {"id":935225,"name":"Saint-Leu","native_name":"Saint-Leu","translations":{"ko":"생뢰","ru":"Санкт-Леу"},"subdivision":null,"population":34893,"latitude":-21.17059,"longitude":55.28824,"timezone":"Indian/Reunion","capital":false},
+  {"id":935248,"name":"Sainte-Suzanne","native_name":"Sainte-Suzanne","subdivision":null,"population":24293,"latitude":-20.90616,"longitude":55.60788,"timezone":"Indian/Reunion","capital":false},
+  {"id":935902,"name":"L'Étang-Salé","native_name":"L'Étang-Salé","subdivision":null,"population":13836,"latitude":-21.25,"longitude":55.38333,"timezone":"Indian/Reunion","capital":false},
+  {"id":935210,"name":"Salazie","native_name":"Salazie","translations":{"uk":"Салазі"},"subdivision":null,"population":7696,"latitude":-21.0271,"longitude":55.5395,"timezone":"Indian/Reunion","capital":false},
+  {"id":935251,"name":"Sainte-Rose","native_name":"Sainte-Rose","subdivision":null,"population":7035,"latitude":-21.12858,"longitude":55.79616,"timezone":"Indian/Reunion","capital":false}
+]

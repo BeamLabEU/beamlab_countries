@@ -1,0 +1,12 @@
+[
+  {"id":2374775,"name":"Bissau","native_name":"Bissau","translations":{"ar":"بيساو","hi":"बिसाउ","ja":"ビサウ","ko":"비사우","ru":"Бисау","th":"บิสเซา","uk":"Бісау","zh":"比绍"},"subdivision":null,"population":439704,"latitude":11.86357,"longitude":-15.59767,"timezone":"Africa/Bissau","capital":true},
+  {"id":2372532,"name":"Gabú","native_name":"Gabu","translations":{"pt":"Gabu"},"subdivision":null,"population":49371,"latitude":12.28,"longitude":-14.22222,"timezone":"Africa/Bissau","capital":false},
+  {"id":2368657,"name":"Xitole","native_name":"Xitole","subdivision":null,"population":19424,"latitude":11.73333,"longitude":-14.81667,"timezone":"Africa/Bissau","capital":false},
+  {"id":2373950,"name":"Canchungo","native_name":"Canchungo","subdivision":null,"population":13652,"latitude":12.43333,"longitude":-16.08333,"timezone":"Africa/Bissau","capital":false},
+  {"id":2374759,"name":"Bissorã","native_name":"Bissorã","subdivision":null,"population":12688,"latitude":12.22306,"longitude":-15.4475,"timezone":"Africa/Bissau","capital":false},
+  {"id":2372015,"name":"Jabicunda","native_name":"Jabicunda","subdivision":null,"population":12395,"latitude":12.31667,"longitude":-14.55,"timezone":"Africa/Bissau","capital":false},
+  {"id":2374760,"name":"Bissorã","native_name":"Bissorã","subdivision":null,"population":11964,"latitude":12.04,"longitude":-15.42806,"timezone":"Africa/Bissau","capital":false},
+  {"id":2371663,"name":"Madina do Boé","native_name":"Madina do Boé","subdivision":null,"population":11750,"latitude":11.74765,"longitude":-14.2113,"timezone":"Africa/Bissau","capital":false},
+  {"id":2374688,"name":"Bolama","native_name":"Bolama","subdivision":null,"population":10769,"latitude":11.57694,"longitude":-15.47611,"timezone":"Africa/Bissau","capital":false},
+  {"id":2374311,"name":"Cacheu","native_name":"Cacheu","subdivision":null,"population":10490,"latitude":12.27444,"longitude":-16.16528,"timezone":"Africa/Bissau","capital":false}
+]

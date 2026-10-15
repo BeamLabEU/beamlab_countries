@@ -1,0 +1,6 @@
+[
+  {"id":3579925,"name":"Saint George's","native_name":"Saint George's","translations":{"de":"St. George's","fr":"Saint-Georges","id":"St. George's","it":"St. George's","ja":"セントジョージズ","ko":"세인트조지스","pt":"Saint George.s","ru":"Сент-Джоржес"},"subdivision":null,"population":7500,"latitude":12.05288,"longitude":-61.75226,"timezone":"America/Grenada","capital":true},
+  {"id":3580279,"name":"Gouyave","native_name":"Gouyave","subdivision":null,"population":3378,"latitude":12.16462,"longitude":-61.72965,"timezone":"America/Grenada","capital":false},
+  {"id":3580236,"name":"Grenville","native_name":"Grenville","subdivision":null,"population":2476,"latitude":12.12278,"longitude":-61.62498,"timezone":"America/Grenada","capital":false},
+  {"id":3580215,"name":"Hillsborough","native_name":"Hillsborough","subdivision":null,"population":1000,"latitude":12.48292,"longitude":-61.45597,"timezone":"America/Grenada","capital":false}
+]

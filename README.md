@@ -25,6 +25,7 @@ Full documentation is available at [HexDocs](https://beamlab-countries.hexdocs.p
 - [BeamLabCountries.Languages](https://beamlab-countries.hexdocs.pm/BeamLabCountries.Languages.html) - Languages and locales
 - [BeamLabCountries.Translations](https://beamlab-countries.hexdocs.pm/BeamLabCountries.Translations.html) - Country name translations
 - [BeamLabCountries.Subdivisions](https://beamlab-countries.hexdocs.pm/BeamLabCountries.Subdivisions.html) - States/provinces
+- [BeamLabCountries.Cities](https://beamlab-countries.hexdocs.pm/BeamLabCountries.Cities.html) - Major cities
 
 ## Usage
 
@@ -121,6 +122,49 @@ Enum.count(subdivisions)
 hd(subdivisions)
 # %BeamLabCountries.Subdivision{id: "AC", name: "Acre", ...}
 ```
+
+### Cities
+
+The ten largest cities of every country (by population of the city proper) plus the capital,
+with coordinates, time zones and names in 23 languages. For the United States and Canada the
+largest cities of each state or province are included too.
+
+```elixir
+alias BeamLabCountries.Cities
+
+Cities.capital("AT").name
+# "Vienna"
+
+Cities.for_country("DE") |> Enum.map(& &1.name) |> Enum.take(4)
+# ["Berlin", "Hamburg", "Munich", "Cologne"]
+
+Cities.for_country("US", limit: :all) |> length()
+# 255 (top 10 by default, :all adds the largest cities of every state)
+
+Cities.for_subdivision("US", "CA") |> Enum.map(& &1.name)
+# ["Los Angeles", "San Diego", "San Jose", "San Francisco", "Fresno"]
+
+Cities.for_subdivision("CA", "ON", limit: 2) |> Enum.map(& &1.name)
+# ["Toronto", "Ottawa"]
+
+# Names differ by language: English, native and translated
+vienna = Cities.capital("AT")
+{vienna.name, vienna.native_name}
+# {"Vienna", "Wien"}
+
+Cities.get_name(vienna, "fr")
+# "Vienne"
+
+Cities.get_name(Cities.capital("CZ"), "de")
+# "Prag"
+
+# GeoNames ID lookup
+Cities.get(2761369).population
+# 1691468
+```
+
+City data comes from [GeoNames](https://www.geonames.org), licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ### International Organizations (Unions)
 

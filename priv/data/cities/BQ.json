@@ -1,0 +1,5 @@
+[
+  {"id":3513563,"name":"Kralendijk","native_name":"Kralendijk","translations":{"ar":"كراليندايك","ja":"クラレンダイク","ko":"크랄렌데이크","ru":"Кралендейк","zh":"克拉伦代克"},"subdivision":null,"population":10620,"latitude":12.15,"longitude":-68.26667,"timezone":"America/Kralendijk","capital":true},
+  {"id":3513146,"name":"Upper Hell's Gate","native_name":"Upper Hell's Gate","subdivision":null,"population":2810,"latitude":17.643,"longitude":-63.22649,"timezone":"America/Kralendijk","capital":false},
+  {"id":3513426,"name":"Oranjestad","native_name":"Oranjestad","translations":{"ar":"أورانياستاد","hi":"ओरांजेस्टाड","ja":"オラニエスタッド","ko":"오라녜스타트","ru":"Ораньестад","zh":"奥拉涅斯塔德"},"subdivision":null,"population":1097,"latitude":17.48303,"longitude":-62.9864,"timezone":"America/Kralendijk","capital":false}
+]

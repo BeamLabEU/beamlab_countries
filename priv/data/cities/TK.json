@@ -1,0 +1,5 @@
+[
+  {"id":7522181,"name":"Nukunonu","native_name":"Nukunonu","translations":{"ar":"نوكونونو","hi":"नुकुनोनु","ja":"ヌクノヌ","ru":"Нукуному"},"subdivision":null,"population":531,"latitude":-9.20045,"longitude":-171.84804,"timezone":"Pacific/Fakaofo","capital":false},
+  {"id":7522183,"name":"Atafu Village","native_name":"Atafu Village","translations":{"ar":"قرية أتافو","de":"Dorf Atafu","es":"Pueblo de Atafu","fr":"Village d'Atafu","hi":"अटाफु गाँव","id":"Desa Atafu","ja":"アタフ村","pt":"Aldeia de Atafu","ru":"Деревня Атафу","tr":"Atafu Köyü"},"subdivision":null,"population":524,"latitude":-8.54212,"longitude":-172.51591,"timezone":"Pacific/Fakaofo","capital":false},
+  {"id":4031110,"name":"Fale old settlement","native_name":"Fale old settlement","translations":{"ar":"مستوطنة فالي القديمة","de":"Alte Siedlung Fale","es":"Antiguo asentamiento de Fale","fr":"Ancien établissement de Fale","hi":"फाले पुरानी बस्ती","id":"Pemukiman lama Fale","ja":"ファレ旧集落","pt":"Antigo assentamento de Fale","ru":"Старое поселение Фале","tr":"Fale eski yerleşimi"},"subdivision":null,"population":120,"latitude":-9.38516,"longitude":-171.24675,"timezone":"Pacific/Fakaofo","capital":false}
+]

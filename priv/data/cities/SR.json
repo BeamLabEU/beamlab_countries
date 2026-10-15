@@ -1,0 +1,12 @@
+[
+  {"id":3383330,"name":"Paramaribo","native_name":"Paramaribo","translations":{"ar":"باراماريبو","hi":"पारामरिबो","ja":"パラマリボ","ko":"파라마리보","ru":"Парамарибо","th":"ปารามารีโบ","uk":"Парамарібо","zh":"帕拉马里博"},"subdivision":null,"population":223757,"latitude":5.86638,"longitude":-55.16682,"timezone":"America/Paramaribo","capital":true},
+  {"id":3383714,"name":"Lelydorp","native_name":"Lelydorp","translations":{"ar":"ليليدورب","hi":"लेलीडॉर्प","ja":"レリドルプ","ru":"Лелидорп"},"subdivision":null,"population":18223,"latitude":5.7,"longitude":-55.23333,"timezone":"America/Paramaribo","capital":false},
+  {"id":3384482,"name":"Brokopondo","native_name":"Brokopondo","translations":{"ar":"بروكوبوندو","hi":"ब्रोकोपोंडो","ja":"ブロコポンド","ru":"Брокопондо"},"subdivision":null,"population":14662,"latitude":5.05594,"longitude":-54.98043,"timezone":"America/Paramaribo","capital":false},
+  {"id":3383427,"name":"Nieuw Nickerie","native_name":"Nieuw Nickerie","translations":{"ar":"نيو نيكيري","de":"Neu-Nickerie","es":"Nueva Nicaría","hi":"न्यू निकेरी","ja":"ニューニッケリー","pt":"Nova Nickerie","ru":"Нивю-Никкерия","tr":"Yeni Nickerie"},"subdivision":null,"population":12818,"latitude":5.92606,"longitude":-56.97297,"timezone":"America/Paramaribo","capital":false},
+  {"id":3383494,"name":"Moengo","native_name":"Moengo","subdivision":null,"population":10834,"latitude":5.61411,"longitude":-54.40121,"timezone":"America/Paramaribo","capital":false},
+  {"id":3382978,"name":"Tamanredjo","native_name":"Tamanredjo","subdivision":null,"population":6601,"latitude":5.78621,"longitude":-55.02482,"timezone":"America/Paramaribo","capital":false},
+  {"id":13607834,"name":"Jarikaba","native_name":"Jarikaba","subdivision":null,"population":5963,"latitude":5.80784,"longitude":-55.32703,"timezone":"America/Paramaribo","capital":false},
+  {"id":3384475,"name":"Brownsweg","native_name":"Brownsweg","subdivision":null,"population":4793,"latitude":5.00435,"longitude":-55.15333,"timezone":"America/Paramaribo","capital":false},
+  {"id":3384792,"name":"Albina","native_name":"Albina","translations":{"ar":"ألبينا","hi":"अलबीना","ja":"アルビナ","ru":"Албина"},"subdivision":null,"population":3985,"latitude":5.49788,"longitude":-54.05522,"timezone":"America/Paramaribo","capital":false},
+  {"id":3384125,"name":"Groningen","native_name":"Groningen","translations":{"ar":"غرونينغن","es":"Groninga","hi":"ग्रोनिंगन","ja":"フローニンゲン","ru":"Гронинген"},"subdivision":null,"population":3216,"latitude":5.8,"longitude":-55.46667,"timezone":"America/Paramaribo","capital":false}
+]

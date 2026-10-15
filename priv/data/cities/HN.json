@@ -1,0 +1,12 @@
+[
+  {"id":3600949,"name":"Tegucigalpa","native_name":"Tegucigalpa","translations":{"ar":"تيغوسيغالبا","ja":"テグシガルパ","ko":"테구시갈파","ru":"Тегусигальпа","th":"เตกูซิกัลปา","uk":"Тегусігальпа","zh":"德古斯加巴"},"subdivision":null,"population":850848,"latitude":14.0818,"longitude":-87.20681,"timezone":"America/Tegucigalpa","capital":true},
+  {"id":3601782,"name":"San Pedro Sula","native_name":"San Pedro Sula","translations":{"ar":"سان بيدرو سولا","ja":"サン・ペドロ・スーラ","ko":"산페드로술라","ru":"Сан-Педро-Сула","th":"ซานเปโดรซูลา","zh":"圣佩德罗苏拉"},"subdivision":null,"population":801259,"latitude":15.50585,"longitude":-88.02588,"timezone":"America/Tegucigalpa","capital":false},
+  {"id":3612907,"name":"Danlí","native_name":"Danlí","translations":{"ru":"Данли"},"subdivision":null,"population":233789,"latitude":14.03333,"longitude":-86.58333,"timezone":"America/Tegucigalpa","capital":false},
+  {"id":3608248,"name":"La Ceiba","native_name":"La Ceiba","translations":{"ja":"ラ・セイバ","ru":"Ла-Сейба","zh":"拉塞瓦"},"subdivision":null,"population":222055,"latitude":15.75971,"longitude":-86.78221,"timezone":"America/Tegucigalpa","capital":false},
+  {"id":3600026,"name":"Puerto Cortez","native_name":"Puerto Cortés","translations":{"es":"Puerto Cortés","ru":"Пуэрто-Кортес"},"subdivision":null,"population":142311,"latitude":15.82562,"longitude":-87.92968,"timezone":"America/Tegucigalpa","capital":false},
+  {"id":3613974,"name":"Catacamas","native_name":"Catacamas","translations":{"ru":"Катакамас"},"subdivision":null,"population":140548,"latitude":14.85114,"longitude":-85.89412,"timezone":"America/Tegucigalpa","capital":false},
+  {"id":3601311,"name":"Siguatepeque","native_name":"Siguatepeque","translations":{"ru":"Сигуатепеке"},"subdivision":null,"population":127468,"latitude":14.59691,"longitude":-87.83102,"timezone":"America/Tegucigalpa","capital":false},
+  {"id":3604251,"name":"Olanchito","native_name":"Olanchito","translations":{"ru":"Оланчито"},"subdivision":null,"population":124286,"latitude":15.48131,"longitude":-86.57415,"timezone":"America/Tegucigalpa","capital":false},
+  {"id":3600704,"name":"Tocoa","native_name":"Tocoa","translations":{"ru":"Токоа"},"subdivision":null,"population":111972,"latitude":15.68333,"longitude":-86.0,"timezone":"America/Tegucigalpa","capital":false},
+  {"id":3610613,"name":"El Progreso","native_name":"El Progreso","translations":{"ru":"Эль-Прогресо"},"subdivision":null,"population":100810,"latitude":15.4,"longitude":-87.8,"timezone":"America/Tegucigalpa","capital":false}
+]

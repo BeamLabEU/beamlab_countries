@@ -1,0 +1,6 @@
+[
+  {"id":3042237,"name":"Douglas","native_name":"Douglas","translations":{"ar":"دوغلاس","ja":"ダグラス","ko":"더글러스","ru":"Дуглас","th":"ดักลาส","uk":"Дуглас","zh":"道格拉斯"},"subdivision":null,"population":26218,"latitude":54.15,"longitude":-4.48333,"timezone":"Europe/Isle_of_Man","capital":true},
+  {"id":3042192,"name":"Ramsey","native_name":"Rhumsaa","translations":{"ru":"Рамси"},"subdivision":null,"population":7845,"latitude":54.32273,"longitude":-4.38526,"timezone":"Europe/Isle_of_Man","capital":false},
+  {"id":3042198,"name":"Peel","native_name":"Purt ny h-Inshey","translations":{"ru":"Пил","zh":"皮爾"},"subdivision":null,"population":5374,"latitude":54.22209,"longitude":-4.69099,"timezone":"Europe/Isle_of_Man","capital":false},
+  {"id":3042196,"name":"Port Erin","native_name":"Port Erin","translations":{"ru":"Порт-Эрин"},"subdivision":null,"population":3530,"latitude":54.08487,"longitude":-4.75099,"timezone":"Europe/Isle_of_Man","capital":false}
+]

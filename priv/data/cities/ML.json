@@ -1,0 +1,12 @@
+[
+  {"id":2460596,"name":"Bamako","native_name":"Bamako","translations":{"ar":"باماكو","ja":"バマコ","ko":"바마코","ru":"Бамако","uk":"Бамако"},"subdivision":null,"population":4227569,"latitude":12.60915,"longitude":-7.97522,"timezone":"Africa/Bamako","capital":true},
+  {"id":2451185,"name":"Sikasso","native_name":"Sikasso","translations":{"ar":"سيكاسو","hi":"सिकासो","ja":"シカソ","ko":"시카소","ru":"Сикасо","uk":"Сікасо","zh":"錫卡索"},"subdivision":null,"population":349324,"latitude":11.31755,"longitude":-5.66654,"timezone":"Africa/Bamako","capital":false},
+  {"id":2454268,"name":"Koutiala","native_name":"Koutiala","translations":{"ru":"Кутиала","zh":"庫佳拉"},"subdivision":null,"population":218031,"latitude":12.38723,"longitude":-5.46507,"timezone":"Africa/Bamako","capital":false},
+  {"id":2451478,"name":"Ségou","native_name":"Ségou","translations":{"ar":"سيغو","es":"Segú","hi":"सेगू","id":"Segou","ja":"セグー","ko":"세구","pt":"Segou","ru":"Сеги","tr":"Segou","zh":"塞古"},"subdivision":null,"population":205787,"latitude":13.44032,"longitude":-6.25947,"timezone":"Africa/Bamako","capital":false},
+  {"id":2455518,"name":"Kayes","native_name":"Kayes","translations":{"ar":"كايس","hi":"कायेस","ja":"カイ","ko":"케스","ru":"Каес","uk":"Каєс","zh":"卡伊"},"subdivision":null,"population":194716,"latitude":14.44776,"longitude":-11.44393,"timezone":"Africa/Bamako","capital":false},
+  {"id":2453348,"name":"Mopti","native_name":"Mopti","translations":{"ar":"موبتي","hi":"मोप्टी","ja":"モプティ","ko":"몹티","ru":"Мопти","uk":"Мопті","zh":"莫普提"},"subdivision":null,"population":186187,"latitude":14.4843,"longitude":-4.18296,"timezone":"Africa/Bamako","capital":false},
+  {"id":2457163,"name":"Gao","native_name":"Gao","translations":{"ar":"جاو","hi":"गाओ","ja":"ガオ","ko":"가오","ru":"Гао","th":"กาโอ","uk":"Ґао","zh":"加奥"},"subdivision":null,"population":133110,"latitude":16.27167,"longitude":-0.04472,"timezone":"Africa/Bamako","capital":false},
+  {"id":2455558,"name":"Kati","native_name":"Kati","translations":{"ar":"كاتي","ru":"Кати","zh":"卡蒂"},"subdivision":null,"population":130254,"latitude":12.74409,"longitude":-8.07257,"timezone":"Africa/Bamako","capital":false},
+  {"id":2451778,"name":"San","native_name":"San","translations":{"ru":"Сан"},"subdivision":null,"population":103227,"latitude":13.29701,"longitude":-4.89627,"timezone":"Africa/Bamako","capital":false},
+  {"id":2459775,"name":"Bougouni","native_name":"Bougouni","subdivision":null,"population":90234,"latitude":11.41769,"longitude":-7.48323,"timezone":"Africa/Bamako","capital":false}
+]
