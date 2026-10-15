@@ -66,9 +66,8 @@ defmodule BeamLabCountries.MixProject do
   defp package do
     [
       description:
-        "BeamLabCountries is a collection of all sorts of useful information for every country " <>
-          "in the [ISO 3166](https://wikipedia.org/wiki/ISO_3166) standard. It includes country data, " <>
-          "subdivisions (states/provinces), major cities, international organizations, language information, and country name translations.",
+        "ISO 3166 country data for Elixir: subdivisions, major cities, currencies, languages, " <>
+          "international unions, time zones and country name translations in 23 locales.",
       maintainers: ["BeamLab"],
       licenses: ["MIT"],
       # Hex packages files from disk, not git, so the local dialyzer PLT
