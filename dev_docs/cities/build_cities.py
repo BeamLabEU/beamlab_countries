@@ -34,8 +34,11 @@ KEEP = {"PPL", "PPLA", "PPLA2", "PPLA3", "PPLA4", "PPLA5", "PPLC", "PPLG"}
 EXCLUDE = {5110302, 5133273, 5125771, 5110266, 5139568, 2780180,
            5919015,  # Central Business District, SK
            5143620, 4839745, 4833505}  # West Albany, North Stamford, East Norwalk: the parent city's population
-# Keep previously shipped places when newly included communities move them out of the top ten.
-INCLUDE = {5927708}  # Coral Harbour, Nunavut
+# Places kept outside the top ten, whether shipped earlier or requested by users.
+INCLUDE = {
+    5927708,  # Coral Harbour, Nunavut: shipped in 2.0.0 before Canada's lists were extended
+    757718,   # Suwałki, Poland
+}
 # Hand-picked translations that win over GeoNames: {geonames_id: {locale: name}}
 NAME_OVERRIDES = {
     588409: {"ru": "Таллинн"},  # Tallinn: the spelling Estonia uses, rather than the Russian-norm "Таллин"
