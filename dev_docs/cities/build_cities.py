@@ -31,13 +31,16 @@ TAGS["pt"] = ["pt", "pt-PT"]
 CA = {"01":"AB","02":"BC","03":"MB","04":"NB","05":"NL","07":"NS","08":"ON","09":"PE","10":"QC","11":"SK","12":"YT","13":"NT","14":"NU"}
 KEEP = {"PPL", "PPLA", "PPLA2", "PPLA3", "PPLA4", "PPLA5", "PPLC", "PPLG"}
 # GeoNames files these as ordinary places, or has a bogus population for them
-EXCLUDE = {5110302, 5133273, 5125771, 5110266, 5139568, 2780180}
+EXCLUDE = {5110302, 5133273, 5125771, 5110266, 5139568, 2780180,
+           5919015,  # Central Business District, SK
+           5143620, 4839745, 4833505}  # West Albany, North Stamford, East Norwalk: the parent city's population
 # Keep previously shipped places when newly included communities move them out of the top ten.
 INCLUDE = {5927708}  # Coral Harbour, Nunavut
 # Hand-picked translations that win over GeoNames: {geonames_id: {locale: name}}
 NAME_OVERRIDES = {
     588409: {"ru": "Таллинн"},  # Tallinn: the spelling Estonia uses, rather than the Russian-norm "Таллин"
     2990969: {"uk": "Нант"},  # Nantes: missing from the GeoNames Ukrainian names
+    2761369: {"ko": "빈"},  # Vienna: the standard Korean name, GeoNames prefers the colloquial "비엔나"
 }
 MIN_SIGNAL = 4     # alternate-name rows; suburbs/neighbourhoods and bogus entries have few
 MIN_POP_FOR_SIGNAL = 30000
