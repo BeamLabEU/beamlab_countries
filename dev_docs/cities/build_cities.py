@@ -12,8 +12,9 @@ Usage: python3 -I build_cities.py <geonames_dir> <out_dir>
 (langs/us_ids/zones are produced with `mix run -e` from BeamLabCountries, see README.md here.)
 
 Selection: top 10 populated places per country by population (places within 12 km of a larger
-one are skipped, the capital is always included); also the top 10 per US state and
-at least 10 populated places per Canadian province/territory.
+one are skipped, the capital is always included); also the top 10 per US state
+(not the District of Columbia or US territories) and at least 10 populated places
+per Canadian province/territory.
 """
 import collections
 import csv
@@ -42,6 +43,9 @@ MIN_SIGNAL = 4     # alternate-name rows; suburbs/neighbourhoods and bogus entri
 MIN_POP_FOR_SIGNAL = 30000
 COLLAPSE_KM = 12    # drop non-capital places this close to a larger one: suburbs, communes, districts
 SUBDIVISION_LIMITS = {"US": 10, "CA": 10}
+# Padding these to ten cities pulls in neighbourhoods. Cities that qualify for
+# another reason (national top 10, capital) still keep their subdivision link.
+US_NON_STATES = {"AA", "AE", "AP", "AS", "DC", "GU", "MP", "PR", "UM", "VI"}
 
 def load_places(archive_path, member, country_codes, places, country=None):
     with zipfile.ZipFile(archive_path) as archive:
@@ -174,7 +178,8 @@ def build(geonames_dir, out_dir):
                 shortages = {s: len(by_sub[s]) for s in CA.values() if len(by_sub[s]) < SUBDIVISION_LIMITS[cc]}
                 if shortages:
                     raise ValueError(f"Canada needs at least 10 populated places per subdivision; found {shortages}")
-            for sl in by_sub.values():
+            for sub, sl in by_sub.items():
+                if cc == "US" and sub in US_NON_STATES: continue
                 for c in sl[:SUBDIVISION_LIMITS[cc]]:
                     if c not in pick: pick.append(c)
 

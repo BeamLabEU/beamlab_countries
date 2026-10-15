@@ -35,9 +35,11 @@ Downloaded files are untrusted input: keep them outside the repo, as above.
   metro areas rather than 10 neighbourhoods of one city). The capital is exempt.
 - US and CA: additionally the 10 largest places per state/province/territory (no 12 km rule), with the
   `subdivision` mapped to our IDs (GeoNames CA admin1 codes are numeric, see `CA` in the script).
-  Generation fails if a Canadian province or territory has fewer than ten eligible places;
-  tests also enforce ten entries in every US state. `INCLUDE` preserves previously shipped
-  Coral Harbour alongside Nunavut's new top ten. Current coverage: 510 US places and 131 Canadian places.
+  The District of Columbia and US territories are not padded; a place there is included only when
+  it is already in the national top 10 or is the capital. Generation fails if a Canadian province
+  or territory has fewer than ten eligible places; tests also enforce ten entries in every US state.
+  `INCLUDE` preserves previously shipped Coral Harbour alongside Nunavut's new top ten.
+  Current coverage: 501 US places and 131 Canadian places.
 - Places with at least 30,000 inhabitants but fewer than 4 alternate-name rows are dropped:
   GeoNames has bogus populations for obscure villages and neighbourhoods.
 - A few places are excluded by ID (`EXCLUDE`): NYC boroughs and one village with a bogus population.

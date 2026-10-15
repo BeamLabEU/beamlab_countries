@@ -5,10 +5,11 @@ defmodule BeamLabCountries.Cities do
 
   For each covered country the data holds up to ten largest populated places (using
   GeoNames populations) plus the capital when GeoNames identifies one. Places near a larger
-  place in the same country (closer than 12 km) are left out. For the United States and
-  Canada at least ten places per state, province or territory are included as well,
-  including smaller towns and villages where needed. Each city carries its `subdivision`
-  ID, see `BeamLabCountries.Subdivisions`.
+  place in the same country (closer than 12 km) are left out. The United States adds at
+  least ten places per state, and Canada adds at least ten per province or territory,
+  including smaller towns and villages where needed. Each of those cities carries its
+  `subdivision` ID, see `BeamLabCountries.Subdivisions`. Washington D.C. is included as
+  the US capital and is not padded out with District neighbourhoods.
 
   Quality is best for large countries; for very small territories GeoNames only knows
   villages and parishes, which is what you get.
@@ -93,9 +94,11 @@ defmodule BeamLabCountries.Cities do
 
   ## Options
 
-    * `:limit` - maximum number of cities, or `:all` for everything in the data
-      (default: `#{@default_country_limit}`). The default matters for the United States
+    * `:limit` - maximum number of cities, or `:all` for everything in the data.
+      When omitted, the result is the `#{@default_country_limit}` largest cities, plus the
+      capital when it ranks lower than that. The default matters for the United States
       and Canada, which also contain the largest cities of each state or province.
+      An explicit limit is a hard cap and can leave the capital out.
       Raises `ArgumentError` unless the limit is a non-negative integer or `:all`.
 
   ## Examples
@@ -105,6 +108,9 @@ defmodule BeamLabCountries.Cities do
 
       iex> BeamLabCountries.Cities.for_country("us", limit: 3) |> Enum.map(& &1.name)
       ["New York", "Los Angeles", "Chicago"]
+
+      iex> BeamLabCountries.Cities.capital("IN") in BeamLabCountries.Cities.for_country("IN")
+      true
 
       iex> BeamLabCountries.Cities.for_country("XX")
       []
@@ -116,9 +122,12 @@ defmodule BeamLabCountries.Cities do
   def for_country(%Country{alpha2: alpha2}, opts), do: for_country(alpha2, opts)
 
   def for_country(country_code, opts) when is_binary(country_code) do
-    @cities_by_country
-    |> Map.get(String.upcase(country_code), [])
-    |> limit(Keyword.get(opts, :limit, @default_country_limit))
+    cities = Map.get(@cities_by_country, String.upcase(country_code), [])
+
+    case Keyword.fetch(opts, :limit) do
+      :error -> with_capital(cities, @default_country_limit)
+      {:ok, limit} -> limit(cities, limit)
+    end
   end
 
   def for_country(_country_code, _opts), do: []
@@ -219,5 +228,19 @@ defmodule BeamLabCountries.Cities do
 
   defp limit(_cities, value) do
     raise ArgumentError, ":limit must be a non-negative integer or :all, got: #{inspect(value)}"
+  end
+
+  # The stored list is largest-first, so the capital sits at the end when it
+  # was kept only because it missed the top `count`.
+  defp with_capital(cities, count) do
+    top = Enum.take(cities, count)
+
+    case Enum.find(cities, & &1.capital) do
+      %City{} = capital ->
+        if capital in top, do: top, else: top ++ [capital]
+
+      nil ->
+        top
+    end
   end
 end

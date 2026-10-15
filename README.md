@@ -126,9 +126,10 @@ hd(subdivisions)
 ### Cities
 
 Up to ten major cities for each of 244 countries and territories, plus the capital when
-identified by GeoNames, with coordinates, time zones and names in 23 languages. All 50 US
-states and all 13 Canadian provinces and territories have at least ten populated places,
-including smaller towns and villages where needed.
+identified by GeoNames, with coordinates, time zones and names in 23 languages.
+`for_country/2` returns those ten largest places and still includes the capital when it
+ranks lower. All 50 US states and all 13 Canadian provinces and territories have at least
+ten populated places, including smaller towns and villages where needed.
 
 Populations and translations follow GeoNames and can be incomplete or outdated.
 `name` uses the preferred English name when available, otherwise the primary GeoNames name.
@@ -143,8 +144,11 @@ Cities.capital("AT").name
 Cities.for_country("DE") |> Enum.map(& &1.name) |> Enum.take(4)
 # ["Berlin", "Hamburg", "Munich", "Cologne"]
 
+Cities.for_country("US") |> length()
+# 11 (the 10 largest cities, plus Washington D.C.)
+
 Cities.for_country("US", limit: :all) |> length()
-# 510 (top 10 by default, :all includes every state and Washington, D.C.)
+# 501 (every state, plus Washington D.C.)
 
 Cities.for_subdivision("US", "CA", limit: 5) |> Enum.map(& &1.name)
 # ["Los Angeles", "San Diego", "San Jose", "San Francisco", "Fresno"]

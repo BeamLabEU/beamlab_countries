@@ -91,11 +91,25 @@ defmodule BeamLabCountries.CitiesTest do
         assert length(Cities.for_subdivision("US", state.id, limit: 10)) == 10
       end
     end
+
+    test "the District of Columbia is the capital, not a list of neighbourhoods" do
+      assert [%City{name: "Washington D.C.", capital: true}] =
+               Cities.for_subdivision("US", "DC")
+    end
   end
 
   describe "for_country/2" do
-    test "defaults to ten cities, :limit changes that" do
-      assert length(Cities.for_country("US")) == 10
+    test "defaults to the ten largest cities and keeps a capital outside that window" do
+      us = Cities.for_country("US")
+      assert length(us) == 11
+      assert List.last(us).name == "Washington D.C."
+      assert Cities.capital("US") in us
+      refute Cities.capital("US") in Cities.for_country("US", limit: 10)
+
+      for code <- ["GQ", "IN", "PK"] do
+        assert Cities.capital(code) in Cities.for_country(code)
+      end
+
       assert length(Cities.for_country("US", limit: :all)) > 100
       assert length(Cities.for_country("DE", limit: 3)) == 3
       assert Cities.for_country("DE", limit: 0) == []

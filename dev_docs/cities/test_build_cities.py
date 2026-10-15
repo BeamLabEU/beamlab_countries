@@ -133,6 +133,30 @@ class BuildTests(unittest.TestCase):
         cities = json.loads((self.output / "US.json").read_text(encoding="utf-8"))
         self.assertEqual([c["id"] for c in cities], list(range(1000, 1010)))
 
+    def test_us_non_states_are_not_padded_with_neighbourhoods(self):
+        (self.source / "us_ids.json").write_text(json.dumps(["NY", "DC"]), encoding="utf-8")
+        rows = []
+        for rank in range(12):
+            # Spread places so the 12 km collapse does not empty the national top 10.
+            lat = f"{40.0 + rank:g}"
+            rows.append([str(1000 + rank), f"NY {rank:02d}", "", "", lat, "-74.0", "P", "PPL",
+                         "US", "", "NY", "", "", "", str(20000 - rank * 1000), "", "",
+                         "America/New_York", "2026-01-01"])
+            rows.append([str(2000 + rank), f"DC {rank:02d}", "", "", lat, "-77.0", "P", "PPL",
+                         "US", "", "DC", "", "", "", str(500 - rank), "", "",
+                         "America/New_York", "2026-01-01"])
+        with zipfile.ZipFile(self.source / "cities1000.zip", "w") as archive:
+            archive.writestr("cities1000.txt", "\n".join("\t".join(r) for r in rows))
+        with zipfile.ZipFile(self.source / "alt" / "US.zip", "w") as archive:
+            archive.writestr("US.txt", "")
+
+        with contextlib.redirect_stdout(io.StringIO()):
+            generator.build(self.source, self.output)
+
+        cities = json.loads((self.output / "US.json").read_text(encoding="utf-8"))
+        self.assertEqual([c["id"] for c in cities], list(range(1000, 1010)))
+        self.assertTrue(all(c["subdivision"] == "NY" for c in cities))
+
 
 if __name__ == "__main__":
     unittest.main()
