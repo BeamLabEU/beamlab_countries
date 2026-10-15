@@ -1,20 +1,22 @@
 defmodule BeamLabCountries.Cities do
   @moduledoc """
-  Major cities of every country, with populations, coordinates, time zones and
+  Major cities by country, with populations, coordinates, time zones and
   translated names.
 
-  For each country the data holds its ten largest populated places (by population of the
-  city proper, not the metro area) plus the capital. Places that are suburbs of a larger
+  For each covered country the data holds up to ten largest populated places (using
+  GeoNames populations) plus the capital when GeoNames identifies one. Places near a larger
   place in the same country (closer than 12 km) are left out. For the United States and
-  Canada the five largest places of every state and province are included as well, and
-  each city carries its `subdivision` ID, see `BeamLabCountries.Subdivisions`.
+  Canada at least ten places per state, province or territory are included as well,
+  including smaller towns and villages where needed. Each city carries its `subdivision`
+  ID, see `BeamLabCountries.Subdivisions`.
 
   Quality is best for large countries; for very small territories GeoNames only knows
   villages and parishes, which is what you get.
 
   ## Names
 
-  `name` is English, `native_name` is the name in the country's official language, and
+  `name` is the preferred English name, falling back to GeoNames' primary name;
+  `native_name` is the name in the first official language with usable data, and
   `translations` holds the other locales supported by `BeamLabCountries.Translations`:
 
       iex> vienna = BeamLabCountries.Cities.capital("AT")
@@ -94,6 +96,7 @@ defmodule BeamLabCountries.Cities do
     * `:limit` - maximum number of cities, or `:all` for everything in the data
       (default: `#{@default_country_limit}`). The default matters for the United States
       and Canada, which also contain the largest cities of each state or province.
+      Raises `ArgumentError` unless the limit is a non-negative integer or `:all`.
 
   ## Examples
 
@@ -126,7 +129,8 @@ defmodule BeamLabCountries.Cities do
   Only the United States and Canada have subdivision data. Accepts a
   `BeamLabCountries.Country` struct or an alpha2 code; both the country code and the
   subdivision ID are case-insensitive. Takes the same `:limit` option as `for_country/2`
-  (default: `:all`).
+  (default: `:all`). All 50 US states and all 13 Canadian provinces and territories have
+  at least ten entries. Use `limit: 10` to get their ten largest places.
 
   ## Examples
 
@@ -135,6 +139,9 @@ defmodule BeamLabCountries.Cities do
 
       iex> BeamLabCountries.Cities.for_subdivision("ca", "on", limit: 1) |> Enum.map(& &1.name)
       ["Toronto"]
+
+      iex> length(BeamLabCountries.Cities.for_subdivision("CA", "PE", limit: 10))
+      10
 
       iex> BeamLabCountries.Cities.for_subdivision("DE", "BY")
       []
@@ -156,7 +163,7 @@ defmodule BeamLabCountries.Cities do
   def for_subdivision(_country_code, _subdivision_id, _opts), do: []
 
   @doc """
-  Returns the capital of a country, or `nil` if unknown.
+  Returns the capital recorded by GeoNames, or `nil` if none is identified.
 
   Accepts a `BeamLabCountries.Country` struct or an alpha2 code.
 
@@ -184,6 +191,7 @@ defmodule BeamLabCountries.Cities do
   case-insensitive and regional codes are reduced to their language (`"de-AT"` becomes
   `"de"`). Falls back to the English `name` when there is no translation, which also
   means the locale's name is the same as the English one.
+  English locales always use the canonical `name` from the generated data.
 
   ## Examples
 
@@ -208,4 +216,8 @@ defmodule BeamLabCountries.Cities do
 
   defp limit(cities, :all), do: cities
   defp limit(cities, n) when is_integer(n) and n >= 0, do: Enum.take(cities, n)
+
+  defp limit(_cities, value) do
+    raise ArgumentError, ":limit must be a non-negative integer or :all, got: #{inspect(value)}"
+  end
 end

@@ -141,7 +141,7 @@ defmodule BeamLabCountries do
 
       iex> countries = BeamLabCountries.filter_by(region: "Europe", eea_member: true)
       iex> length(countries)
-      30
+      29
 
   """
   @spec filter_by(atom(), term()) :: [Country.t()]

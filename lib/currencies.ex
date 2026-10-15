@@ -3,7 +3,7 @@ defmodule BeamLabCountries.Currencies do
   Module for looking up currency information from ISO 4217 codes.
 
   This module provides currency data including names, symbols, and decimal precision
-  for 155 world currencies. Data is loaded at compile time for fast lookups.
+  for 157 world currencies. Data is loaded at compile time for fast lookups.
 
   ## Examples
 
@@ -250,7 +250,7 @@ defmodule BeamLabCountries.Currencies do
   ## Examples
 
       iex> BeamLabCountries.Currencies.count()
-      155
+      157
 
   """
   @spec count() :: non_neg_integer()
@@ -351,7 +351,8 @@ defmodule BeamLabCountries.Currencies do
   rounds to zero. Raises `ArgumentError` for a `:symbol_position` other than `:before`
   or `:after`.
 
-  Intended for display purposes only; uses float arithmetic.
+  Intended for display purposes only; float amounts use float arithmetic.
+  Integer amounts retain their full precision.
 
   """
   @spec format(number(), String.t(), keyword()) :: String.t() | nil
@@ -398,25 +399,12 @@ defmodule BeamLabCountries.Currencies do
   # Formats the absolute value with thousand separators and decimal places,
   # returning the sign separately so callers can place it before the symbol.
   defp format_number(amount, decimal_digits) do
-    rounded = Float.round(abs(amount) / 1, decimal_digits)
-    sign = if amount < 0 and rounded != 0, do: "-", else: ""
-
-    integer = trunc(rounded)
-
-    decimal_part =
-      if decimal_digits == 0 do
-        ""
-      else
-        # Drop the leading "0" of "0.56", keeping the separator
-        "." <>
-          ((rounded - integer)
-           |> :erlang.float_to_binary(decimals: decimal_digits)
-           |> String.slice(2..-1//1))
-      end
+    {sign, digits} = number_digits(amount, decimal_digits)
+    [integer | fractional] = String.split(digits, ".", parts: 2)
+    decimal_part = if fractional == [], do: "", else: "." <> hd(fractional)
 
     formatted_integer =
       integer
-      |> Integer.to_string()
       |> String.graphemes()
       |> Enum.reverse()
       |> Enum.chunk_every(3)
@@ -424,5 +412,17 @@ defmodule BeamLabCountries.Currencies do
       |> String.reverse()
 
     {sign, formatted_integer <> decimal_part}
+  end
+
+  defp number_digits(amount, decimal_digits) when is_integer(amount) do
+    sign = if amount < 0, do: "-", else: ""
+    fraction = if decimal_digits == 0, do: "", else: "." <> String.duplicate("0", decimal_digits)
+    {sign, Integer.to_string(abs(amount)) <> fraction}
+  end
+
+  defp number_digits(amount, decimal_digits) do
+    rounded = Float.round(abs(amount), decimal_digits)
+    sign = if amount < 0 and rounded != 0, do: "-", else: ""
+    {sign, :erlang.float_to_binary(rounded, decimals: decimal_digits)}
   end
 end

@@ -1,4 +1,4 @@
 [
   {"id":7626485,"name":"Arijejen","native_name":"Arijejen","subdivision":null,"population":2381,"latitude":-0.52545,"longitude":166.91247,"timezone":"Pacific/Nauru","capital":false},
-  {"id":7626461,"name":"Yaren","native_name":"Yaren District","translations":{"ar":"ضاحية يارين","en":"Yaren District","et":"Yareni ringkond","ja":"ヤレン地区","ko":"야렌 구","ru":"Ярен","th":"ยาเรน","uk":"Ярен","zh":"亞倫區"},"subdivision":null,"population":1100,"latitude":-0.55085,"longitude":166.9252,"timezone":"Pacific/Nauru","capital":true}
+  {"id":7626461,"name":"Yaren","native_name":"Yaren","translations":{"ar":"ضاحية يارين","et":"Yareni ringkond","ja":"ヤレン地区","ko":"야렌 구","ru":"Ярен","th":"ยาเรน","uk":"Ярен","zh":"亞倫區"},"subdivision":null,"population":1100,"latitude":-0.55085,"longitude":166.9252,"timezone":"Pacific/Nauru","capital":true}
 ]

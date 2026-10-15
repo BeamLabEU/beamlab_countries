@@ -7,6 +7,6 @@
   {"id":3380994,"name":"Maripasoula","native_name":"Maripasoula","translations":{"ar":"ماريباسولا","ru":"Марипасула","uk":"Марипасула"},"subdivision":null,"population":8423,"latitude":3.64155,"longitude":-54.03167,"timezone":"America/Cayenne","capital":false},
   {"id":3381041,"name":"Mana","native_name":"Mana","subdivision":null,"population":5885,"latitude":5.66906,"longitude":-53.77897,"timezone":"America/Cayenne","capital":false},
   {"id":3380290,"name":"Sinnamary","native_name":"Sinnamary","subdivision":null,"population":3180,"latitude":5.37676,"longitude":-52.95679,"timezone":"America/Cayenne","capital":false},
-  {"id":3380402,"name":"Saint-Georges","native_name":"Saint-Georges-de-l'Oyapock","translations":{"en":"Saint-Georges-de-l'Oyapock","es":"San Jorge de Oyapoque","fr":"Saint-Georges-de-l'Oyapock","ko":"생조르주","ru":"Сен-Жорж-де-Луапок"},"subdivision":null,"population":2742,"latitude":3.88857,"longitude":-51.80243,"timezone":"America/Cayenne","capital":false},
+  {"id":3380402,"name":"Saint-Georges","native_name":"Saint-Georges-de-l'Oyapock","translations":{"es":"San Jorge de Oyapoque","fr":"Saint-Georges-de-l'Oyapock","ko":"생조르주","ru":"Сен-Жорж-де-Луапок"},"subdivision":null,"population":2742,"latitude":3.88857,"longitude":-51.80243,"timezone":"America/Cayenne","capital":false},
   {"id":3380450,"name":"Roura","native_name":"Roura","subdivision":null,"population":2229,"latitude":4.72874,"longitude":-52.32495,"timezone":"America/Cayenne","capital":false}
 ]

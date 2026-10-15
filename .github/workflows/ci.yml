@@ -27,5 +27,6 @@ jobs:
           restore-keys: ${{ runner.os }}-mix-
 
       - run: mix deps.get
+      - run: python3 -I dev_docs/cities/test_build_cities.py
       - run: mix test
       - run: mix precommit

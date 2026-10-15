@@ -39,6 +39,7 @@ defmodule BeamLabCountries.CitiesTest do
 
       for city <- Cities.all(), {locale, translated} <- city.translations do
         assert locale in locales, "#{city.name}: unknown locale #{locale}"
+        refute locale == "en", "#{city.name}: English must use the canonical name"
         assert is_binary(translated) and translated != city.name
       end
     end
@@ -70,13 +71,25 @@ defmodule BeamLabCountries.CitiesTest do
       end
     end
 
-    test "every US state and Canadian province has cities" do
-      for code <- ["CA"], subdivision <- Subdivisions.all(code) do
-        assert [_ | _] = Cities.for_subdivision(code, subdivision.id), subdivision.id
+    test "every Canadian province and territory has at least ten cities" do
+      for subdivision <- Subdivisions.all("CA") do
+        cities = Cities.for_subdivision("CA", subdivision.id)
+        assert length(cities) >= 10, "#{subdivision.id} has only #{length(cities)} cities"
+        assert length(Enum.uniq_by(cities, & &1.id)) == length(cities)
+        assert length(Cities.for_subdivision("CA", subdivision.id, limit: 10)) == 10
       end
+    end
 
-      states = for s <- Subdivisions.all("US"), Cities.for_subdivision("US", s.id) != [], do: s.id
-      assert length(states) >= 50
+    test "every US state has at least ten cities" do
+      non_states = ~w(AA AE AP AS DC GU MP PR UM VI)
+      states = Enum.reject(Subdivisions.all("US"), &(&1.id in non_states))
+      assert length(states) == 50
+
+      for state <- states do
+        cities = Cities.for_subdivision("US", state.id)
+        assert length(cities) >= 10, "#{state.id} has only #{length(cities)} cities"
+        assert length(Cities.for_subdivision("US", state.id, limit: 10)) == 10
+      end
     end
   end
 
@@ -90,6 +103,18 @@ defmodule BeamLabCountries.CitiesTest do
 
     test "accepts a country struct and is case-insensitive" do
       assert Cities.for_country(BeamLabCountries.get("FR")) == Cities.for_country("fr")
+    end
+
+    test "invalid limits raise a useful error for country and subdivision lookups" do
+      for limit <- [-1, 1.5, nil, "10", :invalid] do
+        assert_raise ArgumentError, ~r/:limit must be/, fn ->
+          Cities.for_country("DE", limit: limit)
+        end
+
+        assert_raise ArgumentError, ~r/:limit must be/, fn ->
+          Cities.for_subdivision("US", "CA", limit: limit)
+        end
+      end
     end
 
     test "includes the capital even when it is not among the largest" do
@@ -134,6 +159,15 @@ defmodule BeamLabCountries.CitiesTest do
     test "names differ by language across Europe" do
       names = for l <- ~w(en de fr es), do: Cities.get_name(Cities.capital("CZ"), l)
       assert names == ["Prague", "Prag", "Prague", "Praga"]
+    end
+
+    test "English names are canonical and preferred short names beat unpreferred alternatives" do
+      for city <- Cities.all() do
+        assert Cities.get_name(city, "en-US") == city.name
+      end
+
+      assert Cities.get(5_454_711).native_name == "Albuquerque"
+      assert Cities.get_name(Cities.get(5_128_581), "en") == "New York"
     end
   end
 end

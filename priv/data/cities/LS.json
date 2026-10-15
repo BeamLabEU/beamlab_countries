@@ -7,6 +7,6 @@
   {"id":932886,"name":"Butha-Buthe","native_name":"Butha-Buthe","translations":{"ar":"بوثا بوثي","hi":"बुथा-बुथे","ja":"ブタ・ブテ","ru":"Бута-Бутэ"},"subdivision":null,"population":40599,"latitude":-28.76659,"longitude":28.24937,"timezone":"Africa/Maseru","capital":false},
   {"id":932183,"name":"Quthing","native_name":"Quthing","translations":{"ar":"قوتينج","hi":"कुथिंग","ja":"クシング","ru":"Цгутинг"},"subdivision":null,"population":33910,"latitude":-30.40001,"longitude":27.70027,"timezone":"Africa/Maseru","capital":false},
   {"id":932035,"name":"Teyateyaneng","native_name":"Teyateyaneng","translations":{"ja":"テヤテヤネング"},"subdivision":null,"population":27272,"latitude":-29.14719,"longitude":27.74895,"timezone":"Africa/Maseru","capital":false},
-  {"id":932218,"name":"Qacha’s Nek","native_name":"Qacha's Nek","translations":{"en":"Qacha's Nek","pt":"Qacha's Nek"},"subdivision":null,"population":25573,"latitude":-30.11537,"longitude":28.68936,"timezone":"Africa/Maseru","capital":false},
+  {"id":932218,"name":"Qacha’s Nek","native_name":"Qacha’s Nek","translations":{"pt":"Qacha's Nek"},"subdivision":null,"population":25573,"latitude":-30.11537,"longitude":28.68936,"timezone":"Africa/Maseru","capital":false},
   {"id":1106835,"name":"Thaba-Tseka","native_name":"Thaba-Tseka","translations":{"ar":"ثابا تسيكا","hi":"थाबा-त्सेका","ja":"ターバ・ツェカ","ru":"Таба-Цека"},"subdivision":null,"population":16765,"latitude":-29.52204,"longitude":28.6084,"timezone":"Africa/Maseru","capital":false}
 ]

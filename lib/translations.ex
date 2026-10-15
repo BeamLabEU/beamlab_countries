@@ -91,8 +91,8 @@ defmodule BeamLabCountries.Translations do
 
   def get_name(_country_code, _locale, _opts), do: nil
 
-  defp fallback(_country_code, nil), do: nil
-  defp fallback(country_code, locale), do: lookup(country_code, locale)
+  defp fallback(country_code, locale) when is_binary(locale), do: lookup(country_code, locale)
+  defp fallback(_country_code, _locale), do: nil
 
   defp lookup(country_code, locale) do
     code = String.upcase(country_code)

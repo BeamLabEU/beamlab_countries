@@ -72,9 +72,9 @@ BeamLabCountries is a compile-time data library providing ISO 3166 country infor
 - `priv/data/countries.yaml` - List of country codes to load
 - `priv/data/countries/{CODE}.yaml` - Individual country data files (250 countries)
 - `priv/data/subdivisions/{CODE}.yaml` - Subdivision data (224 countries). File names must be uppercase alpha2 codes; the loader fails the build otherwise
-- `priv/data/cities/{CODE}.json` - Major cities per country (244 countries, GeoNames CC BY 4.0, generated, see above)
+- `priv/data/cities/{CODE}.json` - Major cities per country (244 countries, 2,630 places; at least 10 per US state and Canadian province/territory; GeoNames CC BY 4.0, generated, see above)
 - `priv/data/unions.yaml` / `priv/data/unions/{CODE}.yaml` - Union/organization data files (29 unions: eu, nato, g7, g20, brics, schengen, eurozone, etc.)
 - `priv/data/languages.json` - Language codes and names (184 languages)
-- `priv/data/currencies.json` - ISO 4217 currency data (155 currencies)
+- `priv/data/currencies.json` - ISO 4217 currency data (157 currencies)
 - `priv/data/locales.json` - Regional locale data (140 locales: en-US, es-ES, pt-BR, etc.)
 - `priv/data/locales/{LOCALE}.json` - Country name translations (23 locales: ar, cs, de, en, es, et, fr, hi, id, it, ja, ko, nl, pl, pt, ro, ru, sv, th, tr, uk, vi, zh)

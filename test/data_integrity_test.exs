@@ -56,6 +56,29 @@ defmodule BeamLabCountries.DataIntegrityTest do
       assert length(BeamLabCountries.filter_by(:eu_member, false)) == 223
     end
 
+    test "membership flags agree with the corresponding unions" do
+      for country <- BeamLabCountries.all() do
+        assert country.eu_member == Unions.member?(country.alpha2, "eu"), country.alpha2
+        assert country.eea_member == Unions.member?(country.alpha2, "eea"), country.alpha2
+      end
+    end
+
+    test "every euro area member uses EUR" do
+      for country <- Unions.member_countries("eurozone") do
+        assert country.currency_code == "EUR", country.alpha2
+        assert BeamLabCountries.Currencies.for_country(country.alpha2).code == "EUR"
+      end
+    end
+
+    test "Caribbean guilder resolves for Curacao and Sint Maarten" do
+      for code <- ["CW", "SX"] do
+        assert BeamLabCountries.get(code).currency_code == "XCG"
+        assert BeamLabCountries.Currencies.for_country(code).code == "XCG"
+      end
+
+      assert BeamLabCountries.Currencies.for_country("AN").code == "ANG"
+    end
+
     test "prefixes are never the literal string \"None\"" do
       for country <- BeamLabCountries.all() do
         refute country.national_prefix == "None"

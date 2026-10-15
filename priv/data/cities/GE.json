@@ -7,6 +7,6 @@
   {"id":614455,"name":"Gori","native_name":"გორი","translations":{"ja":"ゴリ","ko":"고리","ru":"Гори","zh":"哥里"},"subdivision":null,"population":41933,"latitude":41.98532,"longitude":44.1129,"timezone":"Asia/Tbilisi","capital":false},
   {"id":612366,"name":"Poti","native_name":"ფოთი","translations":{"ru":"Поти"},"subdivision":null,"population":41175,"latitude":42.14272,"longitude":41.67384,"timezone":"Asia/Tbilisi","capital":false},
   {"id":610824,"name":"Zugdidi","native_name":"Zugdidi","translations":{"de":"Sugdidi","ru":"Зугдиди"},"subdivision":null,"population":40067,"latitude":42.5084,"longitude":41.86796,"timezone":"Asia/Tbilisi","capital":false},
-  {"id":611403,"name":"Ts’khinvali","native_name":"ცხინვალი","translations":{"en":"Ts'khinvali","ru":"Цхинвал"},"subdivision":null,"population":32180,"latitude":42.22764,"longitude":43.96861,"timezone":"Asia/Tbilisi","capital":false},
+  {"id":611403,"name":"Ts’khinvali","native_name":"ცხინვალი","translations":{"ru":"Цхинвал"},"subdivision":null,"population":32180,"latitude":42.22764,"longitude":43.96861,"timezone":"Asia/Tbilisi","capital":false},
   {"id":615912,"name":"Stantsiya Novyy Afon","native_name":"Stantsiya Novyy Afon","translations":{"ru":"Новый Афон"},"subdivision":null,"population":26636,"latitude":43.08056,"longitude":40.83833,"timezone":"Asia/Tbilisi","capital":false}
 ]

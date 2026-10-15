@@ -1191,6 +1191,14 @@
     "symbol_native": "$",
     "decimal_digits": 2
   },
+  "XCG": {
+    "code": "XCG",
+    "name": "Caribbean Guilder",
+    "name_plural": "Caribbean guilders",
+    "symbol": "Cg",
+    "symbol_native": "Cg",
+    "decimal_digits": 2
+  },
   "XOF": {
     "code": "XOF",
     "name": "West African CFA Franc",
@@ -1229,6 +1237,14 @@
     "name_plural": "Zambian kwachas",
     "symbol": "ZK",
     "symbol_native": "ZK",
+    "decimal_digits": 2
+  },
+  "ZWG": {
+    "code": "ZWG",
+    "name": "Zimbabwe Gold",
+    "name_plural": "Zimbabwe Gold",
+    "symbol": "ZiG",
+    "symbol_native": "ZiG",
     "decimal_digits": 2
   },
   "ZWL": {

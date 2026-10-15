@@ -125,9 +125,14 @@ hd(subdivisions)
 
 ### Cities
 
-The ten largest cities of every country (by population of the city proper) plus the capital,
-with coordinates, time zones and names in 23 languages. For the United States and Canada the
-largest cities of each state or province are included too.
+Up to ten major cities for each of 244 countries and territories, plus the capital when
+identified by GeoNames, with coordinates, time zones and names in 23 languages. All 50 US
+states and all 13 Canadian provinces and territories have at least ten populated places,
+including smaller towns and villages where needed.
+
+Populations and translations follow GeoNames and can be incomplete or outdated.
+`name` uses the preferred English name when available, otherwise the primary GeoNames name.
+`get_name/2` falls back to `name`; English locales always return `name`.
 
 ```elixir
 alias BeamLabCountries.Cities
@@ -139,13 +144,16 @@ Cities.for_country("DE") |> Enum.map(& &1.name) |> Enum.take(4)
 # ["Berlin", "Hamburg", "Munich", "Cologne"]
 
 Cities.for_country("US", limit: :all) |> length()
-# 255 (top 10 by default, :all adds the largest cities of every state)
+# 510 (top 10 by default, :all includes every state and Washington, D.C.)
 
-Cities.for_subdivision("US", "CA") |> Enum.map(& &1.name)
+Cities.for_subdivision("US", "CA", limit: 5) |> Enum.map(& &1.name)
 # ["Los Angeles", "San Diego", "San Jose", "San Francisco", "Fresno"]
 
 Cities.for_subdivision("CA", "ON", limit: 2) |> Enum.map(& &1.name)
 # ["Toronto", "Ottawa"]
+
+Cities.for_subdivision("CA", "PE", limit: 10) |> length()
+# 10 (every Canadian province and territory has at least ten entries)
 
 # Names differ by language: English, native and translated
 vienna = Cities.capital("AT")

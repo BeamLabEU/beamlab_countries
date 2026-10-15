@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased
+
+### Fixed
+- Added Nantes' Ukrainian name (`Нант`) to the city data and generator overrides so it survives regeneration
+- City name selection now honors preferred short names before unpreferred alternatives, validates preferred names and native-name scripts, and tries fallback language tags when an earlier tag contains only unusable names. Regenerated the same GeoNames snapshot; Albuquerque's native name is no longer an unpreferred nickname, and English lookups consistently return `name`
+- City generation fails before writing output when alternate-name archives are missing, and writes its report inside the output directory. Added offline generator regressions to CI
+- Invalid city `:limit` values raise a descriptive `ArgumentError`; non-string country-name fallback locales return `nil` consistently with other lookup inputs
+- Currency formatting retains exact integer amounts beyond float precision and formats float fractions without subtracting the integer part
+- Switzerland's country-level EEA flag now agrees with the union data ([Swiss government](https://www.seco.admin.ch/en/european-union-eu)). Added checks that country flags agree with EU/EEA union membership
+- Bulgaria and Croatia use `EUR`, matching their euro area membership ([ECB: Bulgaria](https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260101~c830245e42.en.html), [ECB: Croatia](https://www.ecb.europa.eu/press/pr/date/2022/html/ecb.pr220712~b97dd38de3.en.html)). Curaçao and Sint Maarten use `XCG` ([CBCS](https://www.centralbank.cw/functions/banknotes-coins/caribbean-guilder/frequently-asked-questions))
+
+### Added
+- At least ten populated places per US state and Canadian province/territory: 510 US entries and 131 Canadian entries, bringing the city catalog to 2,630. Canada uses the full GeoNames country dump, including small populated localities. Previously shipped city IDs are retained; coverage checks and generator regressions enforce the expanded lists
+- Currency records for Caribbean guilder (`XCG`) and Zimbabwe Gold (`ZWG`), bringing the catalog to 157 entries. Historical currencies remain available ([CBCS](https://www.centralbank.cw/functions/banknotes-coins/caribbean-guilder), [Reserve Bank of Zimbabwe](https://www.rbz.co.zw/documents/press/2024/July/PRESS_STATEMENT_ON_ZiG_CURRENCY_CODE.pdf))
+
 ## 2.0.0 - 2026-10-14
 
 Contains several behaviour changes (marked **Breaking**).

@@ -7,6 +7,6 @@
   {"id":4035013,"name":"Solosolo","native_name":"Solosolo","subdivision":null,"population":1851,"latitude":-13.87504,"longitude":-171.64181,"timezone":"Pacific/Apia","capital":false},
   {"id":4035209,"name":"Matavai","native_name":"Matavai","subdivision":null,"population":1308,"latitude":-14.03208,"longitude":-171.64768,"timezone":"Pacific/Apia","capital":false},
   {"id":4035118,"name":"Safotu","native_name":"Safotu","translations":{"ar":"سافوتو","hi":"सफोतु","ja":"サフォトゥ","ru":"Сафоту"},"subdivision":null,"population":1207,"latitude":-13.45132,"longitude":-172.40177,"timezone":"Pacific/Apia","capital":false},
-  {"id":4035023,"name":"Si’umu","native_name":"Siumu Village","translations":{"en":"Siumu Village"},"subdivision":null,"population":1183,"latitude":-14.00943,"longitude":-171.77682,"timezone":"Pacific/Apia","capital":false},
+  {"id":4035023,"name":"Si’umu","native_name":"Si’umu","subdivision":null,"population":1183,"latitude":-14.00943,"longitude":-171.77682,"timezone":"Pacific/Apia","capital":false},
   {"id":4035078,"name":"Samamea","native_name":"Samamea","translations":{"ar":"ساماميا","hi":"समामिया","ja":"サママイア","ru":"Саматеа"},"subdivision":null,"population":89,"latitude":-13.93375,"longitude":-171.53122,"timezone":"Pacific/Apia","capital":false}
 ]

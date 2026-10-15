@@ -7,6 +7,6 @@
   {"id":146412,"name":"Kyrenia","native_name":"Kerýneia","translations":{"ar":"غرنة","hi":"किरेनिया","ja":"キレニア","ko":"키레니아","pl":"Kirenia","pt":"Cirénia","ru":"Кирения","tr":"Girne","uk":"Кіренія","zh":"凯里尼亚"},"subdivision":null,"population":26701,"latitude":35.33634,"longitude":33.31729,"timezone":"Asia/Famagusta","capital":false},
   {"id":146286,"name":"Mórfou","native_name":"Mórfou","subdivision":null,"population":24070,"latitude":35.19869,"longitude":32.99338,"timezone":"Asia/Nicosia","capital":false},
   {"id":18918,"name":"Protaras","native_name":"Πρωταράς","translations":{"ja":"プロタラス","ru":"Протарас","uk":"Протарас","zh":"普罗塔拉斯"},"subdivision":null,"population":20230,"latitude":35.0125,"longitude":34.05833,"timezone":"Asia/Famagusta","capital":false},
-  {"id":146189,"name":"Pérgamos","native_name":"Pérgamos","translations":{"en":"Pergamos","ru":"Пергамос"},"subdivision":null,"population":15000,"latitude":35.04167,"longitude":33.70833,"timezone":"Asia/Nicosia","capital":false},
+  {"id":146189,"name":"Pérgamos","native_name":"Pérgamos","translations":{"ru":"Пергамос"},"subdivision":null,"population":15000,"latitude":35.04167,"longitude":33.70833,"timezone":"Asia/Nicosia","capital":false},
   {"id":146666,"name":"Dáli","native_name":"Dáli","translations":{"tr":"Dalı"},"subdivision":null,"population":12350,"latitude":35.02294,"longitude":33.42195,"timezone":"Asia/Nicosia","capital":false}
 ]

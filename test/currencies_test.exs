@@ -1,5 +1,6 @@
 defmodule BeamLabCountries.CurrenciesTest do
   use ExUnit.Case, async: true
+
   doctest BeamLabCountries.Currencies
 
   alias BeamLabCountries.Currencies
@@ -186,7 +187,7 @@ defmodule BeamLabCountries.CurrenciesTest do
 
   describe "count/0" do
     test "returns count of currencies" do
-      assert Currencies.count() == 155
+      assert Currencies.count() == 157
     end
   end
 
@@ -242,6 +243,17 @@ defmodule BeamLabCountries.CurrenciesTest do
   end
 
   describe "format/3" do
+    test "format preserves integer precision beyond the float range" do
+      assert Currencies.format(9_007_199_254_740_993, "USD") ==
+               "$9,007,199,254,740,993.00"
+
+      assert Currencies.format(-9_007_199_254_740_993, "JPY") ==
+               "-¥9,007,199,254,740,993"
+
+      assert Currencies.format(123_456_789_012_345_678_901, "KWD") ==
+               "KD123,456,789,012,345,678,901.000"
+    end
+
     test "formats amount with currency symbol" do
       assert Currencies.format(1234.56, "USD") == "$1,234.56"
       assert Currencies.format(1234, "JPY") == "¥1,234"

@@ -5,7 +5,7 @@ defmodule BeamLabCountries.City do
   ## Fields
 
   - `id` - GeoNames ID (integer), stable across releases
-  - `name` - English name (e.g. `"Vienna"`)
+  - `name` - preferred English name (e.g. `"Vienna"`), otherwise GeoNames' primary name
   - `native_name` - name in the country's official language (e.g. `"Wien"`); equals `name`
     when no native name is known
   - `translations` - names in other languages, keyed by locale string (e.g. `%{"fr" => "Vienne"}`).
@@ -14,7 +14,7 @@ defmodule BeamLabCountries.City do
   - `country` - alpha2 code of the country
   - `subdivision` - subdivision ID (see `BeamLabCountries.Subdivisions`), only set for the
     United States and Canada
-  - `population` - population of the city proper (not the metro area), as recorded by GeoNames
+  - `population` - population as recorded by GeoNames; geographic boundaries and dates vary
   - `latitude`, `longitude` - coordinates
   - `timezone` - IANA time zone identifier
   - `capital` - `true` for the capital of the country

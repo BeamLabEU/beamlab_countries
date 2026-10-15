@@ -66,6 +66,9 @@ defmodule BeamLabCountries.TranslationsTest do
       assert Translations.get_name(nil, "en") == nil
       assert Translations.get_name("PL", nil) == nil
       refute Translations.locale_supported?(nil)
+      assert Translations.get_name("PL", "xx", fallback: false) == nil
+      assert Translations.get_name("PL", "xx", fallback: 123) == nil
+      assert Translations.get_name("PL", "xx", fallback: "EN_us") == "Poland"
     end
   end
 

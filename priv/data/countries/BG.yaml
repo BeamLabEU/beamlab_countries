@@ -73,7 +73,7 @@ BG:
       southwest:
         lat: 41.2354469
         lng: 22.3573446
-  currency_code: BGN
+  currency_code: EUR
   start_of_week: monday
   subdivision_type: Province
   timezones:
