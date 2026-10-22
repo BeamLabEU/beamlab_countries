@@ -13,13 +13,15 @@ mix run -e 'File.write!("'$G'/langs.json", JSON.encode!(Map.new(BeamLabCountries
 python3 -I dev_docs/formats/build_formats.py $G/cldr priv/data/countries $G/langs.json
 ```
 
-(`mkdir $G/cldr` first.) The script prints the countries that fell back to `en-001`.
+The script creates the cache directory and prints the countries that fell back to `en-001`.
+It resolves and validates all source data before rewriting any country files.
+Run its offline regression tests with `python3 -I dev_docs/formats/test_build_formats.py`.
 
 ## Rules
 
-- CLDR is organised by locale, not country. A country uses the locale of its first official language:
-  `<lang>-<CC>` if CLDR has it (`de-CH`, `nl-BE`), else the bare `<lang>` locale (`de` for Germany,
-  which is CLDR's `de-DE`), else `en-001` (Antarctica, Bouvet Island, Maldives: no official language CLDR covers).
+- CLDR is organised by locale, not country. First try `<lang>-<CC>` for each official language
+  in order (`de-CH`, `nl-BE`). If none exists, try each bare `<lang>` in order (`de` for Germany).
+  Otherwise use `en-001` (Antarctica, Bouvet Island, Maldives: no official language CLDR covers).
 - Countries with several languages get one format; the Belgian French or Swiss Italian conventions differ.
 - Separators and the currency pattern use CLDR's `latn` number system, so `0-9` digits, also for Arabic locales.
 - `date_format` is the CLDR *short* Gregorian pattern: `d`/`dd` -> `D`/`DD`, `M`/`MM` -> `M`/`MM`,

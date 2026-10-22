@@ -46,13 +46,20 @@ def short_date(cache, loc):
 
 def date_pattern(cldr):
     """CLDR short date pattern -> DD/MM/YYYY style tokens. Years always have four digits."""
-    out, i = [], 0
+    out, i, quoted = [], 0, False
     while i < len(cldr):
         c = cldr[i]
         if c == "'":
-            end = cldr.index("'", i + 1)
-            out.append(cldr[i + 1:end])
-            i = end + 1
+            if cldr[i:i + 2] == "''":
+                out.append("'")
+                i += 2
+            else:
+                quoted = not quoted
+                i += 1
+            continue
+        if quoted:
+            out.append(c)
+            i += 1
             continue
         run = len(re.match(re.escape(c) + "+", cldr[i:]).group())
         if c == "y":
@@ -68,6 +75,8 @@ def date_pattern(cldr):
         else:
             out.append(c * run)
         i += run
+    if quoted:
+        raise ValueError(f"unterminated date pattern literal in {cldr!r}")
     return "".join(out).strip()
 
 
@@ -96,9 +105,11 @@ def q(value):
 
 def main(cldr_dir, countries_dir, langs_file):
     cache = Path(cldr_dir)
+    cache.mkdir(parents=True, exist_ok=True)
     langs = json.loads(Path(langs_file).read_text())
     available = set(fetch(cache, "cldr-core/availableLocales.json")["availableLocales"]["full"])
     fallbacks = []
+    updates = []
     for path in sorted(Path(countries_dir).glob("*.yaml")):
         cc = path.stem
         loc = pick_locale(cc, langs.get(cc) or [], available)
@@ -115,7 +126,10 @@ def main(cldr_dir, countries_dir, langs_file):
         lines = [l for l in path.read_text(encoding="utf-8").splitlines()
                  if not any(l.startswith(f"  {k}:") for k in KEYS)]
         lines += [f"  {k}: {q(v)}" for k, v in block.items()]
-        path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        updates.append((path, "\n".join(lines) + "\n"))
+    # Resolve and validate all source data before changing any country files.
+    for path, content in updates:
+        path.write_text(content, encoding="utf-8")
     print(f"CLDR {CLDR}; fell back to {FALLBACK} for: {' '.join(fallbacks)}")
 
 

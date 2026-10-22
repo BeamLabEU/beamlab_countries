@@ -437,4 +437,6 @@ Copyright (c) 2025 Dmitri Don / BeamLab
 
 Copyright (c) 2015-2025 Sebastian Szturo
 
-This software is licensed under [the MIT license](./LICENSE.md).
+This software is licensed under the [MIT license](./LICENSE.md). CLDR-derived data is
+covered by the Unicode License V3 (notice included in the same file), and city data by
+[GeoNames CC BY 4.0](https://www.geonames.org/about.html).

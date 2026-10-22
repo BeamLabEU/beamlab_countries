@@ -36,13 +36,29 @@ defmodule BeamLabCountries.FormatsTest do
     end
 
     test "rejects invalid :decimals" do
-      assert_raise ArgumentError, ~r/:decimals/, fn ->
-        Formats.format_number("DE", 1, decimals: -1)
+      for amount <- [1, 1.0], decimals <- [-1, 1.5, 16, nil, "2"] do
+        assert_raise ArgumentError, ~r/:decimals.*0\.\.15/, fn ->
+          Formats.format_number("DE", amount, decimals: decimals)
+        end
       end
+    end
 
-      assert_raise ArgumentError, ~r/:decimals/, fn ->
-        Formats.format_number("DE", 1, decimals: 1.5)
-      end
+    test "accepts the maximum precision for integers and floats" do
+      assert Formats.format_number("DE", 1, decimals: 15) == "1,000000000000000"
+      assert Formats.format_number("DE", 1.25, decimals: 15) == "1,250000000000000"
+    end
+
+    test "keeps large integer inputs exact" do
+      assert Formats.format_number("US", 123_456_789_012_345_678_901, decimals: 2) ==
+               "123,456,789,012,345,678,901.00"
+    end
+
+    test "formats very large floats without the VM fixed-output size limit" do
+      amount = Float.max_finite()
+      expected = Formats.format_number("US", trunc(amount), decimals: 2)
+
+      assert Formats.format_number("US", amount) == expected
+      assert Formats.format_number("US", -amount) == "-" <> expected
     end
 
     test "every country formats a number with its own separators" do
@@ -63,6 +79,8 @@ defmodule BeamLabCountries.FormatsTest do
 
     test "pads short years to four digits" do
       assert Formats.format_date("DE", ~D[0099-01-02]) == "02.01.0099"
+      assert Formats.format_date("DE", ~D[0000-01-02]) == "02.01.0000"
+      assert Formats.format_date("DE", ~D[-0001-01-02]) == "02.01.-0001"
     end
 
     test "works with DateTime and plain maps" do
@@ -72,6 +90,11 @@ defmodule BeamLabCountries.FormatsTest do
 
     test "keeps literal text in the pattern" do
       assert Formats.format_date("BG", ~D[2026-03-07]) == "7.03.2026\u202Fг."
+    end
+
+    test "returns nil for unknown or non-string countries" do
+      assert Formats.format_date("XX", ~D[2026-03-07]) == nil
+      assert Formats.format_date(nil, ~D[2026-03-07]) == nil
     end
 
     test "every country produces a date without leftover tokens" do
@@ -101,12 +124,29 @@ defmodule BeamLabCountries.FormatsTest do
     test "returns nil for unknown country or currency" do
       assert Formats.format_currency("XX", 1) == nil
       assert Formats.format_currency("DE", 1, currency: "NOPE") == nil
+      assert Formats.format_currency(nil, 1) == nil
+      assert Formats.format_currency("DE", 1, currency: nil) == nil
+    end
+
+    test "formats very large floats through the shared currency helper" do
+      amount = Float.max_finite()
+      expected = Formats.format_number("US", trunc(amount), decimals: 2)
+
+      assert Formats.format_currency("US", amount) == "$" <> expected
+      assert BeamLabCountries.Currencies.format(-amount, "USD") == "-$" <> expected
+    end
+
+    test "places the sign before the pattern and drops it when rounding to zero" do
+      assert Formats.format_currency("DE", -1234.56) == "-1.234,56\u00A0€"
+      assert Formats.format_currency("US", -0.001) == "$0.00"
+      assert Formats.format_currency("US", -0.5) == "-$0.50"
+      assert Formats.format_currency("JP", -0.4) == "¥0"
     end
 
     test "returns nil when the country has no currency" do
-      assert BeamLabCountries.all()
-             |> Enum.filter(&is_nil(&1.currency_code))
-             |> Enum.all?(&is_nil(Formats.format_currency(&1, 1)))
+      country = %{BeamLabCountries.get("DE") | currency_code: nil}
+      assert Formats.format_currency(country, 1) == nil
+      assert Formats.format_currency(country, 1, currency: "EUR") == "1,00\u00A0€"
     end
   end
 end

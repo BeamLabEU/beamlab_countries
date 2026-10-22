@@ -70,7 +70,7 @@ defmodule BeamLabCountries.MixProject do
           "international unions, time zones, number/date/currency formats and country name " <>
           "translations in 23 locales.",
       maintainers: ["BeamLab"],
-      licenses: ["MIT"],
+      licenses: ["MIT", "Unicode-3.0", "CC-BY-4.0"],
       # Hex packages files from disk, not git, so the local dialyzer PLT
       # (priv/plts, ~3 MB) would otherwise ship with every release.
       exclude_patterns: [~r"^priv/plts"],

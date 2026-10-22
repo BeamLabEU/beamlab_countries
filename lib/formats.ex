@@ -24,7 +24,8 @@ defmodule BeamLabCountries.Formats do
 
   ## Options
 
-    * `:decimals` - digits after the decimal separator. Default: `0` for integers, `2` for floats.
+    * `:decimals` - digits after the decimal separator, from `0` to `15`.
+      Default: `0` for integers, `2` for floats.
       Floats are rounded, integers are padded with zeros.
 
   ## Examples
@@ -44,7 +45,8 @@ defmodule BeamLabCountries.Formats do
       iex> BeamLabCountries.Formats.format_number("XX", 1)
       nil
 
-  Raises `ArgumentError` for a `:decimals` that is not a non-negative integer.
+  Raises `ArgumentError` for a `:decimals` outside `0..15`.
+  Integer inputs retain their full precision; floats use binary floating-point rounding.
   """
   @spec format_number(country(), number(), keyword()) :: String.t() | nil
   def format_number(country, number, opts \\ []) when is_number(number) do
@@ -87,7 +89,7 @@ defmodule BeamLabCountries.Formats do
 
       %Country{date_format: pattern} ->
         Regex.replace(@date_tokens, pattern, fn
-          "YYYY" -> year |> Integer.to_string() |> String.pad_leading(4, "0")
+          "YYYY" -> format_year(year)
           "MM" -> pad2(month)
           "M" -> Integer.to_string(month)
           "DD" -> pad2(day)
@@ -150,14 +152,26 @@ defmodule BeamLabCountries.Formats do
   @spec digits(number(), non_neg_integer()) :: {String.t(), String.t()}
   def digits(amount, decimals) when is_integer(amount) do
     sign = if amount < 0, do: "-", else: ""
-    fraction = if decimals == 0, do: "", else: "." <> String.duplicate("0", decimals)
-    {sign, Integer.to_string(abs(amount)) <> fraction}
+    {sign, integer_digits(abs(amount), decimals)}
   end
 
   def digits(amount, decimals) do
     rounded = Float.round(abs(amount), decimals)
     sign = if amount < 0 and rounded != 0, do: "-", else: ""
-    {sign, :erlang.float_to_binary(rounded, decimals: decimals)}
+
+    # Fixed float output has a size limit in the VM. Large floats are whole numbers,
+    # so convert them to integers to preserve their digits without that limit.
+    digits =
+      if rounded == trunc(rounded),
+        do: integer_digits(trunc(rounded), decimals),
+        else: :erlang.float_to_binary(rounded, decimals: decimals)
+
+    {sign, digits}
+  end
+
+  defp integer_digits(integer, decimals) do
+    fraction = if decimals == 0, do: "", else: "." <> String.duplicate("0", decimals)
+    Integer.to_string(integer) <> fraction
   end
 
   # Groups the integer part by thousands with `separator` and joins the fraction with `decimal`.
@@ -185,13 +199,18 @@ defmodule BeamLabCountries.Formats do
 
   defp pad2(n), do: n |> Integer.to_string() |> String.pad_leading(2, "0")
 
+  defp format_year(year) do
+    sign = if year < 0, do: "-", else: ""
+    sign <> (year |> abs() |> Integer.to_string() |> String.pad_leading(4, "0"))
+  end
+
   defp decimals!(opts, default) do
     case Keyword.get(opts, :decimals, default) do
-      n when is_integer(n) and n >= 0 ->
+      n when is_integer(n) and n in 0..15 ->
         n
 
       other ->
-        raise ArgumentError, ":decimals must be a non-negative integer, got: #{inspect(other)}"
+        raise ArgumentError, ":decimals must be an integer in 0..15, got: #{inspect(other)}"
     end
   end
 

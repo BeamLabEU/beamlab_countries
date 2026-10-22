@@ -28,5 +28,6 @@ jobs:
 
       - run: mix deps.get
       - run: python3 -I dev_docs/cities/test_build_cities.py
+      - run: python3 -I dev_docs/formats/test_build_formats.py
       - run: mix test
       - run: mix precommit
