@@ -63,3 +63,8 @@ RS:
   subdivision_type: District
   timezones:
   - Europe/Belgrade
+  number_format_locale: "sr"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "D. M. YYYY."
+  currency_format: "{{amount}}\u00a0{{symbol}}"

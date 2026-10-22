@@ -19,6 +19,7 @@ defmodule BeamLabCountries.Currencies do
   """
 
   alias BeamLabCountries.Currency
+  alias BeamLabCountries.Formats
 
   # Load currencies from JSON at compile time
   @currencies_path Path.join([:code.priv_dir(:beamlab_countries), "data", "currencies.json"])
@@ -351,6 +352,9 @@ defmodule BeamLabCountries.Currencies do
   rounds to zero. Raises `ArgumentError` for a `:symbol_position` other than `:before`
   or `:after`.
 
+  The output always uses US-style separators. For a country's own conventions
+  (`1.234,56 €` in Germany) see `BeamLabCountries.Formats.format_currency/3`.
+
   Intended for display purposes only; float amounts use float arithmetic.
   Integer amounts retain their full precision.
 
@@ -399,30 +403,7 @@ defmodule BeamLabCountries.Currencies do
   # Formats the absolute value with thousand separators and decimal places,
   # returning the sign separately so callers can place it before the symbol.
   defp format_number(amount, decimal_digits) do
-    {sign, digits} = number_digits(amount, decimal_digits)
-    [integer | fractional] = String.split(digits, ".", parts: 2)
-    decimal_part = if fractional == [], do: "", else: "." <> hd(fractional)
-
-    formatted_integer =
-      integer
-      |> String.graphemes()
-      |> Enum.reverse()
-      |> Enum.chunk_every(3)
-      |> Enum.join(",")
-      |> String.reverse()
-
-    {sign, formatted_integer <> decimal_part}
-  end
-
-  defp number_digits(amount, decimal_digits) when is_integer(amount) do
-    sign = if amount < 0, do: "-", else: ""
-    fraction = if decimal_digits == 0, do: "", else: "." <> String.duplicate("0", decimal_digits)
-    {sign, Integer.to_string(abs(amount)) <> fraction}
-  end
-
-  defp number_digits(amount, decimal_digits) do
-    rounded = Float.round(abs(amount), decimal_digits)
-    sign = if amount < 0 and rounded != 0, do: "-", else: ""
-    {sign, :erlang.float_to_binary(rounded, decimals: decimal_digits)}
+    {sign, digits} = Formats.digits(amount, decimal_digits)
+    {sign, Formats.group(digits, ",", ".")}
   end
 end

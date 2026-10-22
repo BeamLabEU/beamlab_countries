@@ -55,3 +55,8 @@ MV:
   subdivision_type: Region
   timezones:
   - Indian/Maldives
+  number_format_locale: "en-001"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

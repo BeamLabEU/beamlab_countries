@@ -55,3 +55,8 @@ PR:
   subdivision_type: Municipality
   timezones:
   - America/Puerto_Rico
+  number_format_locale: "es-PR"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "MM/DD/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

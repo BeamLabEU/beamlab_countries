@@ -75,3 +75,8 @@ PL:
   subdivision_type: Voivodeship
   timezones:
   - Europe/Warsaw
+  number_format_locale: "pl"
+  decimal_separator: ","
+  thousands_separator: "\u00a0"
+  date_format: "D.MM.YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

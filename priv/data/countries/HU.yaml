@@ -77,3 +77,8 @@ HU:
   subdivision_type: County
   timezones:
   - Europe/Budapest
+  number_format_locale: "hu"
+  decimal_separator: ","
+  thousands_separator: "\u00a0"
+  date_format: "YYYY. MM. DD."
+  currency_format: "{{amount}}\u00a0{{symbol}}"

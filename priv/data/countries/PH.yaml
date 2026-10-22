@@ -71,3 +71,8 @@ PH:
   subdivision_type: Province
   timezones:
   - Asia/Manila
+  number_format_locale: "en-PH"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "M/D/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

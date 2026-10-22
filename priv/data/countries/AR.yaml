@@ -78,3 +78,8 @@ AR:
   - America/Argentina/San_Luis
   - America/Argentina/Rio_Gallegos
   - America/Argentina/Ushuaia
+  number_format_locale: "es-AR"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "D/M/YYYY"
+  currency_format: "{{symbol}}\u00a0{{amount}}"

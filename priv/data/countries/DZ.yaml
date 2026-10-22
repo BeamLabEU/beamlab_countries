@@ -57,3 +57,8 @@ DZ:
   subdivision_type: Province
   timezones:
   - Africa/Algiers
+  number_format_locale: "ar-DZ"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "D/M/YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

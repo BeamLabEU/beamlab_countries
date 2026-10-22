@@ -56,3 +56,8 @@ DO:
   subdivision_type: Province
   timezones:
   - America/Santo_Domingo
+  number_format_locale: "es-DO"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "D/M/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

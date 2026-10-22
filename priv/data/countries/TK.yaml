@@ -54,3 +54,8 @@ TK:
   subdivision_type: Region
   timezones:
   - Pacific/Fakaofo
+  number_format_locale: "en-TK"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

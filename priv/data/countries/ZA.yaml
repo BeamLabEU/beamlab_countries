@@ -90,3 +90,8 @@ ZA:
   subdivision_type: Province
   timezones:
   - Africa/Johannesburg
+  number_format_locale: "en-ZA"
+  decimal_separator: ","
+  thousands_separator: "\u00a0"
+  date_format: "YYYY/MM/DD"
+  currency_format: "{{symbol}}{{amount}}"

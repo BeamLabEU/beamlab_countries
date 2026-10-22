@@ -77,3 +77,8 @@ FR:
   subdivision_type: Region
   timezones:
   - Europe/Paris
+  number_format_locale: "fr"
+  decimal_separator: ","
+  thousands_separator: "\u202f"
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

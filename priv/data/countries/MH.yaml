@@ -60,3 +60,8 @@ MH:
   timezones:
   - Pacific/Majuro
   - Pacific/Kwajalein
+  number_format_locale: "en-MH"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "M/D/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

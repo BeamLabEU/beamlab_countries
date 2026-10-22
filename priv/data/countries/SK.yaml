@@ -77,3 +77,8 @@ SK:
   subdivision_type: Region
   timezones:
   - Europe/Bratislava
+  number_format_locale: "sk"
+  decimal_separator: ","
+  thousands_separator: "\u00a0"
+  date_format: "D. M. YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

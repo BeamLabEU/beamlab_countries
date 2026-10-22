@@ -55,3 +55,8 @@ BW:
   subdivision_type: Region
   timezones:
   - Africa/Gaborone
+  number_format_locale: "en-BW"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

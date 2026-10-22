@@ -71,3 +71,8 @@ IN:
   subdivision_type: State
   timezones:
   - Asia/Kolkata
+  number_format_locale: "en-IN"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

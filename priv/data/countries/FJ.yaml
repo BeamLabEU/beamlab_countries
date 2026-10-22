@@ -63,3 +63,8 @@ FJ:
   subdivision_type: Region
   timezones:
   - Pacific/Fiji
+  number_format_locale: "en-FJ"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

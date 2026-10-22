@@ -56,3 +56,8 @@ KE:
   subdivision_type: County
   timezones:
   - Africa/Nairobi
+  number_format_locale: "en-KE"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

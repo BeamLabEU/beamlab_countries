@@ -59,3 +59,8 @@ KP:
   subdivision_type: Province
   timezones:
   - Asia/Pyongyang
+  number_format_locale: "ko-KP"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "YYYY. M. D."
+  currency_format: "{{symbol}}{{amount}}"

@@ -52,3 +52,8 @@ AX:
   subdivision_type: Region
   timezones:
   - Europe/Mariehamn
+  number_format_locale: "sv-AX"
+  decimal_separator: ","
+  thousands_separator: "\u00a0"
+  date_format: "D.M.YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

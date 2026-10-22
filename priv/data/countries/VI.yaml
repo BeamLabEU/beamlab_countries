@@ -58,3 +58,8 @@ VI:
   subdivision_type: Region
   timezones:
   - America/St_Thomas
+  number_format_locale: "en-VI"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "M/D/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

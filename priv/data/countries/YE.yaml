@@ -62,3 +62,8 @@ YE:
   subdivision_type: Governorate
   timezones:
   - Asia/Aden
+  number_format_locale: "ar-YE"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "D/M/YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

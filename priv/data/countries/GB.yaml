@@ -81,3 +81,8 @@ GB:
   subdivision_type: County
   timezones:
   - Europe/London
+  number_format_locale: "en-GB"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

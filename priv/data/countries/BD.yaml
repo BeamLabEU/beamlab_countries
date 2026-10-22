@@ -55,3 +55,8 @@ BD:
   subdivision_type: Division
   timezones:
   - Asia/Dhaka
+  number_format_locale: "bn"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "D/M/YYYY"
+  currency_format: "{{amount}}{{symbol}}"

@@ -74,3 +74,8 @@ PT:
   - Europe/Lisbon
   - Atlantic/Madeira
   - Atlantic/Azores
+  number_format_locale: "pt-PT"
+  decimal_separator: ","
+  thousands_separator: "\u00a0"
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

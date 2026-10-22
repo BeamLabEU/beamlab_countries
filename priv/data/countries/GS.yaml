@@ -53,3 +53,8 @@ GS:
   subdivision_type: Region
   timezones:
   - Atlantic/South_Georgia
+  number_format_locale: "en-GS"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

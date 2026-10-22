@@ -59,3 +59,8 @@ CL:
   - America/Coyhaique
   - America/Punta_Arenas
   - Pacific/Easter
+  number_format_locale: "es-CL"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "DD-MM-YYYY"
+  currency_format: "{{symbol}}{{amount}}"

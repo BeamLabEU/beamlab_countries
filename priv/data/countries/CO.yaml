@@ -57,3 +57,8 @@ CO:
   subdivision_type: Department
   timezones:
   - America/Bogota
+  number_format_locale: "es-CO"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "D/MM/YYYY"
+  currency_format: "{{symbol}}\u00a0{{amount}}"

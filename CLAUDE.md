@@ -32,8 +32,9 @@ BeamLabCountries is a compile-time data library providing ISO 3166 country infor
 
 **Country Modules:**
 - `BeamLabCountries` (lib/countries.ex) - Main API: `all/0`, `count/0`, `get/1`, `get!/1`, `get_by/2`, `get_by_alpha3/1`, `filter_by/2`, `exists?/2`
-- `BeamLabCountries.Country` (lib/country.ex) - Struct with 37 fields (alpha2, alpha3, name, short_name, phone_prefix, region, currency, eu_member, eea_member, languages_official, timezones, etc.)
+- `BeamLabCountries.Country` (lib/country.ex) - Struct with 42 fields (alpha2, alpha3, name, short_name, phone_prefix, region, currency, eu_member, eea_member, languages_official, timezones, decimal_separator, thousands_separator, date_format, currency_format, etc.)
 - `BeamLabCountries.Loader` (lib/loader.ex) - Compile-time YAML parser for country data
+- `BeamLabCountries.Formats` (lib/formats.ex) - `format_number/3`, `format_date/2`, `format_currency/3`: apply a country's separators, date pattern and currency pattern (country struct or alpha2)
 - `BeamLabCountries.Random` (lib/random.ex) - `country/0`, `flag/0`
 
 **Subdivisions Modules:**
@@ -71,6 +72,7 @@ BeamLabCountries is a compile-time data library providing ISO 3166 country infor
 
 - `priv/data/countries.yaml` - List of country codes to load
 - `priv/data/countries/{CODE}.yaml` - Individual country data files (250 countries)
+- `priv/data/countries/{CODE}.yaml` also holds `number_format_locale`, `decimal_separator`, `thousands_separator`, `date_format`, `currency_format`: generated from Unicode CLDR by `dev_docs/formats/build_formats.py` (see `dev_docs/formats/README.md`); do not edit by hand
 - `priv/data/subdivisions/{CODE}.yaml` - Subdivision data (224 countries). File names must be uppercase alpha2 codes; the loader fails the build otherwise
 - `priv/data/cities/{CODE}.json` - Major cities per country (244 countries, 2,622 places; at least 10 per US state and Canadian province/territory; GeoNames CC BY 4.0, generated, see above)
 - `priv/data/unions.yaml` / `priv/data/unions/{CODE}.yaml` - Union/organization data files (29 unions: eu, nato, g7, g20, brics, schengen, eurozone, etc.)

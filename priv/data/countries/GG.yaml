@@ -59,3 +59,8 @@ GG:
   subdivision_type: Region
   timezones:
   - Europe/Guernsey
+  number_format_locale: "en-GG"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

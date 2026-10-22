@@ -59,3 +59,8 @@ MN:
   timezones:
   - Asia/Ulaanbaatar
   - Asia/Hovd
+  number_format_locale: "mn"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "YYYY.MM.DD"
+  currency_format: "{{symbol}}\u00a0{{amount}}"

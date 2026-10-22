@@ -57,3 +57,8 @@ SH:
   subdivision_type: Region
   timezones:
   - Atlantic/St_Helena
+  number_format_locale: "en-SH"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

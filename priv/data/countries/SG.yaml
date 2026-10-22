@@ -68,3 +68,8 @@ SG:
   subdivision_type: District
   timezones:
   - Asia/Singapore
+  number_format_locale: "en-SG"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "D/M/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

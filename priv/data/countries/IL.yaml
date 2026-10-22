@@ -67,3 +67,8 @@ IL:
   subdivision_type: District
   timezones:
   - Asia/Jerusalem
+  number_format_locale: "ar-IL"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "D/M/YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

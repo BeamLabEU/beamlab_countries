@@ -72,3 +72,8 @@
   subdivision_type: County
   timezones:
   - Europe/Oslo
+  number_format_locale: "nb"
+  decimal_separator: ","
+  thousands_separator: "\u00a0"
+  date_format: "DD.MM.YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

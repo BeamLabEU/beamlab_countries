@@ -57,3 +57,8 @@ LK:
   subdivision_type: Province
   timezones:
   - Asia/Colombo
+  number_format_locale: "ta-LK"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "D/M/YYYY"
+  currency_format: "{{symbol}}\u00a0{{amount}}"

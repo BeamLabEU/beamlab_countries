@@ -58,3 +58,8 @@ PF:
   - Pacific/Tahiti
   - Pacific/Marquesas
   - Pacific/Gambier
+  number_format_locale: "fr-PF"
+  decimal_separator: ","
+  thousands_separator: "\u202f"
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

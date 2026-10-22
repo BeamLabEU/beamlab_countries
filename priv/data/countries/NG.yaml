@@ -66,3 +66,8 @@ NG:
   subdivision_type: State
   timezones:
   - Africa/Lagos
+  number_format_locale: "en-NG"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

@@ -73,3 +73,8 @@ LT:
   subdivision_type: Region
   timezones:
   - Europe/Vilnius
+  number_format_locale: "lt"
+  decimal_separator: ","
+  thousands_separator: "\u00a0"
+  date_format: "YYYY-MM-DD"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

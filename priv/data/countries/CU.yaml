@@ -53,3 +53,8 @@ CU:
   subdivision_type: Province
   timezones:
   - America/Havana
+  number_format_locale: "es-CU"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "D/M/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

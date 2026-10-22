@@ -60,3 +60,8 @@ AS:
   subdivision_type: Region
   timezones:
   - Pacific/Pago_Pago
+  number_format_locale: "en-AS"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "M/D/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

@@ -69,3 +69,8 @@ KR:
   subdivision_type: Province
   timezones:
   - Asia/Seoul
+  number_format_locale: "ko"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "YYYY. M. D."
+  currency_format: "{{symbol}}{{amount}}"

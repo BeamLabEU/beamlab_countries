@@ -53,3 +53,8 @@ HN:
   subdivision_type: Department
   timezones:
   - America/Tegucigalpa
+  number_format_locale: "es-HN"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "D/M/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

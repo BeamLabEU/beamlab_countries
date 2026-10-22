@@ -57,3 +57,8 @@ TM:
   subdivision_type: Region
   timezones:
   - Asia/Ashgabat
+  number_format_locale: "tk"
+  decimal_separator: ","
+  thousands_separator: "\u00a0"
+  date_format: "DD.MM.YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

@@ -59,3 +59,8 @@ TD:
   subdivision_type: Region
   timezones:
   - Africa/Ndjamena
+  number_format_locale: "ar-TD"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "D/M/YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

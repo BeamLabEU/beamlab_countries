@@ -52,3 +52,8 @@ GM:
   subdivision_type: Region
   timezones:
   - Africa/Banjul
+  number_format_locale: "en-GM"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

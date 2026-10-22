@@ -101,6 +101,38 @@ defmodule BeamLabCountries.DataIntegrityTest do
       assert %{alpha2: "EE"} = BeamLabCountries.get_by(:timezones, "europe/tallinn")
     end
 
+    test "every country has number, date and currency formats" do
+      for country <- BeamLabCountries.all() do
+        assert country.number_format_locale =~ ~r/\A[a-z]{2,3}(-[A-Z0-9]{2,3})?\z/, country.alpha2
+        assert String.length(country.decimal_separator) == 1, country.alpha2
+        assert String.length(country.thousands_separator) == 1, country.alpha2
+        refute country.decimal_separator == country.thousands_separator, country.alpha2
+        assert country.date_format =~ ~r/YYYY/, country.alpha2
+        assert country.date_format =~ ~r/D/ and country.date_format =~ ~r/M/, country.alpha2
+        assert country.currency_format in valid_currency_formats(), country.alpha2
+      end
+    end
+
+    test "formats follow CLDR" do
+      assert %{decimal_separator: ",", thousands_separator: ".", date_format: "DD.MM.YYYY"} =
+               BeamLabCountries.get("DE")
+
+      assert %{decimal_separator: ",", thousands_separator: "\u00A0", date_format: "DD.MM.YYYY"} =
+               BeamLabCountries.get("EE")
+
+      assert %{decimal_separator: ".", thousands_separator: ",", date_format: "DD/MM/YYYY"} =
+               BeamLabCountries.get("GB")
+
+      assert %{decimal_separator: ".", thousands_separator: "'", date_format: "DD.MM.YYYY"} =
+               BeamLabCountries.get("CH")
+
+      assert %{date_format: "M/D/YYYY", currency_format: "{{symbol}}{{amount}}"} =
+               BeamLabCountries.get("US")
+
+      assert BeamLabCountries.get("DE").currency_format == "{{amount}}\u00A0{{symbol}}"
+      assert BeamLabCountries.get("CH").currency_format == "{{symbol}}\u00A0{{amount}}"
+    end
+
     test "Netherlands Antilles is complete" do
       an = BeamLabCountries.get("AN")
       assert an.languages_official == ["nl"]
@@ -192,6 +224,13 @@ defmodule BeamLabCountries.DataIntegrityTest do
       assert Currencies.format(0, "USD") == "$0.00"
 
       assert_raise ArgumentError, fn -> Currencies.format(1, "USD", symbol_position: :middle) end
+    end
+  end
+
+  defp valid_currency_formats do
+    for sep <- ["", "\u00A0"],
+        order <- [["{{amount}}", "{{symbol}}"], ["{{symbol}}", "{{amount}}"]] do
+      Enum.join(order, sep)
     end
   end
 end

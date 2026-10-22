@@ -54,3 +54,8 @@ ZM:
   subdivision_type: Region
   timezones:
   - Africa/Lusaka
+  number_format_locale: "en-ZM"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

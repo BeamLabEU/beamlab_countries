@@ -60,3 +60,8 @@ KH:
   subdivision_type: Province
   timezones:
   - Asia/Phnom_Penh
+  number_format_locale: "km"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "D/M/YYYY"
+  currency_format: "{{amount}}{{symbol}}"

@@ -60,3 +60,8 @@ AZ:
   subdivision_type: District
   timezones:
   - Asia/Baku
+  number_format_locale: "az"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "DD.MM.YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

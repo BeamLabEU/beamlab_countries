@@ -53,3 +53,8 @@ SV:
   subdivision_type: Department
   timezones:
   - America/El_Salvador
+  number_format_locale: "es-SV"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "D/M/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

@@ -84,3 +84,8 @@ DE:
   timezones:
   - Europe/Berlin
   - Europe/Busingen
+  number_format_locale: "de"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "DD.MM.YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

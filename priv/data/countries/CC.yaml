@@ -54,3 +54,8 @@ CC:
   subdivision_type: Region
   timezones:
   - Indian/Cocos
+  number_format_locale: "en-CC"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

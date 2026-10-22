@@ -55,3 +55,8 @@ LI:
   subdivision_type: Region
   timezones:
   - Europe/Vaduz
+  number_format_locale: "de-LI"
+  decimal_separator: "."
+  thousands_separator: "'"
+  date_format: "DD.MM.YYYY"
+  currency_format: "{{symbol}}\u00a0{{amount}}"

@@ -82,3 +82,8 @@ AT:
   subdivision_type: State
   timezones:
   - Europe/Vienna
+  number_format_locale: "de-AT"
+  decimal_separator: ","
+  thousands_separator: "\u00a0"
+  date_format: "DD.MM.YYYY"
+  currency_format: "{{symbol}}\u00a0{{amount}}"

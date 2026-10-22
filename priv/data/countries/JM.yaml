@@ -55,3 +55,8 @@ JM:
   subdivision_type: Parish
   timezones:
   - America/Jamaica
+  number_format_locale: "en-JM"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

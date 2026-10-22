@@ -59,3 +59,8 @@ KN:
   subdivision_type: Region
   timezones:
   - America/St_Kitts
+  number_format_locale: "en-KN"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

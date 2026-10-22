@@ -53,3 +53,8 @@ UY:
   subdivision_type: Department
   timezones:
   - America/Montevideo
+  number_format_locale: "es-UY"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "D/M/YYYY"
+  currency_format: "{{symbol}}\u00a0{{amount}}"

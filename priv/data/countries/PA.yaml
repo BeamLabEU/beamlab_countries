@@ -54,3 +54,8 @@ PA:
   subdivision_type: Province
   timezones:
   - America/Panama
+  number_format_locale: "es-PA"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "MM/DD/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

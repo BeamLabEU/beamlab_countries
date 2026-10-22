@@ -53,3 +53,8 @@ GD:
   subdivision_type: Region
   timezones:
   - America/Grenada
+  number_format_locale: "en-GD"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

@@ -64,3 +64,8 @@ MY:
   timezones:
   - Asia/Kuala_Lumpur
   - Asia/Kuching
+  number_format_locale: "en-MY"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

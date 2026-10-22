@@ -59,3 +59,8 @@ GQ:
   subdivision_type: Region
   timezones:
   - Africa/Malabo
+  number_format_locale: "es-GQ"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "D/M/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

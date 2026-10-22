@@ -58,3 +58,8 @@ TZ:
   subdivision_type: Region
   timezones:
   - Africa/Dar_es_Salaam
+  number_format_locale: "en-TZ"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

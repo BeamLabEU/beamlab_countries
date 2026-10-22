@@ -58,3 +58,8 @@ AQ:
   - Antarctica/Syowa
   - Antarctica/Troll
   - Antarctica/Vostok
+  number_format_locale: "en-001"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

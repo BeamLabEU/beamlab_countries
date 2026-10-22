@@ -75,3 +75,8 @@ CY:
   timezones:
   - Asia/Nicosia
   - Asia/Famagusta
+  number_format_locale: "el-CY"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "D/M/YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

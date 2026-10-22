@@ -53,3 +53,8 @@ GY:
   subdivision_type: Region
   timezones:
   - America/Guyana
+  number_format_locale: "en-GY"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

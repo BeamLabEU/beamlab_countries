@@ -56,3 +56,8 @@ ET:
   subdivision_type: Region
   timezones:
   - Africa/Addis_Ababa
+  number_format_locale: "am"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

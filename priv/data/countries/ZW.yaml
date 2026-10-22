@@ -63,3 +63,8 @@ ZW:
   subdivision_type: Region
   timezones:
   - Africa/Harare
+  number_format_locale: "en-ZW"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "D/M/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

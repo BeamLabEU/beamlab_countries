@@ -76,3 +76,8 @@ GR:
   subdivision_type: Region
   timezones:
   - Europe/Athens
+  number_format_locale: "el"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "D/M/YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

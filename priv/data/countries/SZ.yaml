@@ -57,3 +57,8 @@ SZ:
   subdivision_type: Region
   timezones:
   - Africa/Mbabane
+  number_format_locale: "en-SZ"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

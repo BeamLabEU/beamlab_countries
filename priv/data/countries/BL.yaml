@@ -51,3 +51,8 @@ BL:
   subdivision_type: Region
   timezones:
   - America/St_Barthelemy
+  number_format_locale: "fr-BL"
+  decimal_separator: ","
+  thousands_separator: "\u202f"
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

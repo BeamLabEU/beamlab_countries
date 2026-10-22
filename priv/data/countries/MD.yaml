@@ -63,3 +63,8 @@ MD:
   subdivision_type: District
   timezones:
   - Europe/Chisinau
+  number_format_locale: "ro-MD"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "DD.MM.YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

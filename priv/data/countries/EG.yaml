@@ -66,3 +66,8 @@ EG:
   subdivision_type: Governorate
   timezones:
   - Africa/Cairo
+  number_format_locale: "ar-EG"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "D/M/YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

@@ -88,3 +88,8 @@ CA:
   - America/Fort_Nelson
   - America/Whitehorse
   - America/Dawson
+  number_format_locale: "en-CA"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "YYYY-MM-DD"
+  currency_format: "{{symbol}}{{amount}}"

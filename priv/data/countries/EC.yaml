@@ -55,3 +55,8 @@ EC:
   timezones:
   - America/Guayaquil
   - Pacific/Galapagos
+  number_format_locale: "es-EC"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "D/M/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

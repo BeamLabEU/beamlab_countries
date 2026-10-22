@@ -72,3 +72,8 @@ MK:
   subdivision_type: Municipality
   timezones:
   - Europe/Skopje
+  number_format_locale: "mk"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "D.M.YYYY\u202f\u0433."
+  currency_format: "{{amount}}\u00a0{{symbol}}"

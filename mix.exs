@@ -2,7 +2,7 @@ defmodule BeamLabCountries.MixProject do
   use Mix.Project
 
   @source_url "https://github.com/BeamLabEU/beamlab_countries"
-  @version "2.0.1"
+  @version "2.1.0"
 
   def project do
     [
@@ -67,7 +67,8 @@ defmodule BeamLabCountries.MixProject do
     [
       description:
         "ISO 3166 country data for Elixir: subdivisions, major cities, currencies, languages, " <>
-          "international unions, time zones and country name translations in 23 locales.",
+          "international unions, time zones, number/date/currency formats and country name " <>
+          "translations in 23 locales.",
       maintainers: ["BeamLab"],
       licenses: ["MIT"],
       # Hex packages files from disk, not git, so the local dialyzer PLT

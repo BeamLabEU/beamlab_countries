@@ -60,3 +60,8 @@ AF:
   subdivision_type: Province
   timezones:
   - Asia/Kabul
+  number_format_locale: "ps"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "YYYY/M/D"
+  currency_format: "{{symbol}}\u00a0{{amount}}"

@@ -72,3 +72,8 @@ BA:
   subdivision_type: Canton
   timezones:
   - Europe/Sarajevo
+  number_format_locale: "hr-BA"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "D. M. YYYY."
+  currency_format: "{{amount}}\u00a0{{symbol}}"

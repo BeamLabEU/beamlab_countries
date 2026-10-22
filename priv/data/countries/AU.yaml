@@ -82,3 +82,8 @@ AU:
   - Australia/Darwin
   - Australia/Perth
   - Australia/Eucla
+  number_format_locale: "en-AU"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "D/M/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

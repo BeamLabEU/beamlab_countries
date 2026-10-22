@@ -58,3 +58,8 @@ AM:
   subdivision_type: Province
   timezones:
   - Asia/Yerevan
+  number_format_locale: "hy"
+  decimal_separator: ","
+  thousands_separator: "\u00a0"
+  date_format: "DD.MM.YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

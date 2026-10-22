@@ -60,3 +60,8 @@ TJ:
   subdivision_type: Region
   timezones:
   - Asia/Dushanbe
+  number_format_locale: "tg"
+  decimal_separator: ","
+  thousands_separator: "\u00a0"
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

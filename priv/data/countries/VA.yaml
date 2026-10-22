@@ -66,3 +66,8 @@ VA:
   subdivision_type: Region
   timezones:
   - Europe/Vatican
+  number_format_locale: "it-VA"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

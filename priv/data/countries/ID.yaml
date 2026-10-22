@@ -71,3 +71,8 @@ ID:
   - Asia/Pontianak
   - Asia/Makassar
   - Asia/Jayapura
+  number_format_locale: "id"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "D/M/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

@@ -66,7 +66,12 @@ defmodule BeamLabCountries.Loader do
       currency_code: data["currency_code"],
       start_of_week: data["start_of_week"],
       subdivision_type: data["subdivision_type"],
-      timezones: data["timezones"] || []
+      timezones: data["timezones"] || [],
+      number_format_locale: data["number_format_locale"],
+      decimal_separator: data["decimal_separator"],
+      thousands_separator: data["thousands_separator"],
+      date_format: data["date_format"],
+      currency_format: data["currency_format"]
     }
   end
 

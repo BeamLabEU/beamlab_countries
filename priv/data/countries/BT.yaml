@@ -55,3 +55,8 @@ BT:
   subdivision_type: Region
   timezones:
   - Asia/Thimphu
+  number_format_locale: "dz"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "YYYY-MM-DD"
+  currency_format: "{{symbol}}{{amount}}"

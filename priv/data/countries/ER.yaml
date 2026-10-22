@@ -60,3 +60,8 @@ ER:
   subdivision_type: Region
   timezones:
   - Africa/Asmara
+  number_format_locale: "en-ER"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

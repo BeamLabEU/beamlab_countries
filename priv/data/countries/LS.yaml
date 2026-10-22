@@ -56,3 +56,8 @@ LS:
   subdivision_type: Region
   timezones:
   - Africa/Maseru
+  number_format_locale: "en-LS"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

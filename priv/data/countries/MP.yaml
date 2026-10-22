@@ -59,3 +59,8 @@ MP:
   subdivision_type: Region
   timezones:
   - Pacific/Saipan
+  number_format_locale: "en-MP"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "M/D/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

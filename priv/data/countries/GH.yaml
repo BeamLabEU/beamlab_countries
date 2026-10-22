@@ -55,3 +55,8 @@ GH:
   subdivision_type: Region
   timezones:
   - Africa/Accra
+  number_format_locale: "en-GH"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

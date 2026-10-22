@@ -57,3 +57,8 @@ LA:
   subdivision_type: Province
   timezones:
   - Asia/Vientiane
+  number_format_locale: "lo"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "D/M/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

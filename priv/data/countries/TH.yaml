@@ -64,3 +64,8 @@ TH:
   subdivision_type: Province
   timezones:
   - Asia/Bangkok
+  number_format_locale: "th"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "D/M/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

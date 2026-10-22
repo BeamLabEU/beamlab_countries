@@ -67,3 +67,8 @@ NP:
   subdivision_type: Province
   timezones:
   - Asia/Kathmandu
+  number_format_locale: "ne"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "YYYY/M/D"
+  currency_format: "{{symbol}}\u00a0{{amount}}"

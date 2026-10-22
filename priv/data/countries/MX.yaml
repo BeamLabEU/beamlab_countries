@@ -80,3 +80,8 @@ MX:
   - America/Bahia_Banderas
   - America/Hermosillo
   - America/Tijuana
+  number_format_locale: "es-MX"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

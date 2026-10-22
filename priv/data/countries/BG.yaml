@@ -78,3 +78,8 @@ BG:
   subdivision_type: Province
   timezones:
   - Europe/Sofia
+  number_format_locale: "bg"
+  decimal_separator: ","
+  thousands_separator: "\u00a0"
+  date_format: "D.MM.YYYY\u202f\u0433."
+  currency_format: "{{amount}}\u00a0{{symbol}}"

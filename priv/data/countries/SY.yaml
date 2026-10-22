@@ -64,3 +64,8 @@ SY:
   subdivision_type: Governorate
   timezones:
   - Asia/Damascus
+  number_format_locale: "ar-SY"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "D/M/YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

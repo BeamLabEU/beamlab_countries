@@ -76,3 +76,8 @@ IT:
   subdivision_type: Region
   timezones:
   - Europe/Rome
+  number_format_locale: "it"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

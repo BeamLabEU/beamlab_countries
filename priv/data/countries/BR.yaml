@@ -88,3 +88,8 @@ BR:
   - America/Manaus
   - America/Eirunepe
   - America/Rio_Branco
+  number_format_locale: "pt"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}\u00a0{{amount}}"

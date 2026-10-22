@@ -59,3 +59,8 @@ NA:
   subdivision_type: Region
   timezones:
   - Africa/Windhoek
+  number_format_locale: "en-NA"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

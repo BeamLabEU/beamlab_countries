@@ -54,3 +54,8 @@ LR:
   subdivision_type: Region
   timezones:
   - Africa/Monrovia
+  number_format_locale: "en-LR"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

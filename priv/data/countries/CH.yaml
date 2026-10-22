@@ -83,3 +83,8 @@ CH:
   subdivision_type: Canton
   timezones:
   - Europe/Zurich
+  number_format_locale: "de-CH"
+  decimal_separator: "."
+  thousands_separator: "'"
+  date_format: "DD.MM.YYYY"
+  currency_format: "{{symbol}}\u00a0{{amount}}"

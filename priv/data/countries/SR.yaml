@@ -53,3 +53,8 @@ SR:
   subdivision_type: Region
   timezones:
   - America/Paramaribo
+  number_format_locale: "nl-SR"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "DD-MM-YYYY"
+  currency_format: "{{symbol}}\u00a0{{amount}}"

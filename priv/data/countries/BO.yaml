@@ -60,3 +60,8 @@ BO:
   subdivision_type: Department
   timezones:
   - America/La_Paz
+  number_format_locale: "es-BO"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "D/M/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

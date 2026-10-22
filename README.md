@@ -21,6 +21,7 @@ After you are done, run `mix deps.get` in your shell to fetch and compile beamla
 Full documentation is available at [HexDocs](https://beamlab-countries.hexdocs.pm).
 
 - [BeamLabCountries](https://beamlab-countries.hexdocs.pm/BeamLabCountries.html) - Main country API
+- [BeamLabCountries.Formats](https://beamlab-countries.hexdocs.pm/BeamLabCountries.Formats.html) - Number, date and currency formatting
 - [BeamLabCountries.Unions](https://beamlab-countries.hexdocs.pm/BeamLabCountries.Unions.html) - International organizations
 - [BeamLabCountries.Languages](https://beamlab-countries.hexdocs.pm/BeamLabCountries.Languages.html) - Languages and locales
 - [BeamLabCountries.Translations](https://beamlab-countries.hexdocs.pm/BeamLabCountries.Translations.html) - Country name translations
@@ -107,6 +108,68 @@ BeamLabCountries.exists?(:name, "Poland")
 BeamLabCountries.exists?(:alpha2, "XX")
 # false
 ```
+
+### Number, date and currency formats
+
+Each country has the decimal and thousands separators, short date pattern and currency pattern
+it uses, from [Unicode CLDR](https://cldr.unicode.org). They describe the country's main
+language (`number_format_locale`), one format per country:
+
+```elixir
+de = BeamLabCountries.get("DE")
+{de.decimal_separator, de.thousands_separator, de.date_format, de.currency_format}
+# {",", ".", "DD.MM.YYYY", "{{amount}}\u00A0{{symbol}}"}
+
+BeamLabCountries.get("CH") |> Map.take([:decimal_separator, :thousands_separator, :date_format])
+# %{decimal_separator: ".", thousands_separator: "'", date_format: "DD.MM.YYYY"}
+
+BeamLabCountries.get("US").date_format
+# "M/D/YYYY"
+```
+
+Some separators are non-breaking spaces, as in CLDR (Estonia uses `"\u00A0"`, France `"\u202F"`),
+so a number is never split across lines. `currency_format` uses `{{amount}}` and `{{symbol}}`
+placeholders.
+
+`BeamLabCountries.Formats` applies them to a country struct or an alpha2 code:
+
+```elixir
+alias BeamLabCountries.Formats
+
+Formats.format_number("DE", 1234567.891)
+# "1.234.567,89"
+
+Formats.format_number("EE", 1234.5)
+# "1\u00A0234,50"
+
+Formats.format_number("CH", -1234.5, decimals: 1)
+# "-1'234.5"
+
+Formats.format_date("US", ~D[2026-03-07])
+# "3/7/2026"
+
+Formats.format_date("DE", ~U[2026-03-07 10:00:00Z])
+# "07.03.2026"
+
+Formats.format_currency("GB", 1234.56)
+# "£1,234.56"
+
+Formats.format_currency("DE", 1234.56)
+# "1.234,56\u00A0€"
+
+# The currency defaults to the country's own; the number of decimals comes from the currency
+Formats.format_currency("CH", 1234.56, currency: "CHF")
+# "CHF\u00A01'234.56"
+
+Formats.format_currency("JP", 1234)
+# "¥1,234"
+
+Formats.format_number("XX", 1)
+# nil
+```
+
+Digits are grouped by thousands everywhere (no Indian lakh grouping) and dates use the Gregorian
+calendar. See `BeamLabCountries.Formats` and `BeamLabCountries.Country` for the details.
 
 ### Subdivisions
 

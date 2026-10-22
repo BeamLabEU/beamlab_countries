@@ -63,3 +63,8 @@ AL:
   subdivision_type: County
   timezones:
   - Europe/Tirane
+  number_format_locale: "sq"
+  decimal_separator: ","
+  thousands_separator: "\u00a0"
+  date_format: "D.M.YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

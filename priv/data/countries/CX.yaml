@@ -58,3 +58,8 @@ CX:
   subdivision_type: Region
   timezones:
   - Indian/Christmas
+  number_format_locale: "en-CX"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

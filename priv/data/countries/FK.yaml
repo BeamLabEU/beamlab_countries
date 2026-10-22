@@ -56,3 +56,8 @@ FK:
   subdivision_type: Region
   timezones:
   - Atlantic/Stanley
+  number_format_locale: "en-FK"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

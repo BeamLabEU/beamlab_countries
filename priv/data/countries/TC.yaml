@@ -58,3 +58,8 @@ TC:
   subdivision_type: Region
   timezones:
   - America/Grand_Turk
+  number_format_locale: "en-TC"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

@@ -62,3 +62,8 @@ JP:
   subdivision_type: Prefecture
   timezones:
   - Asia/Tokyo
+  number_format_locale: "ja"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "YYYY/MM/DD"
+  currency_format: "{{symbol}}{{amount}}"

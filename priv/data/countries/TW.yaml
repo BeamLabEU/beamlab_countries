@@ -61,3 +61,8 @@ TW:
   subdivision_type: County
   timezones:
   - Asia/Taipei
+  number_format_locale: "zh"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "YYYY/M/D"
+  currency_format: "{{symbol}}{{amount}}"

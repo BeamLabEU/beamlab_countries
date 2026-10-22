@@ -67,3 +67,8 @@ TR:
   subdivision_type: Province
   timezones:
   - Europe/Istanbul
+  number_format_locale: "tr"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "D.MM.YYYY"
+  currency_format: "{{symbol}}{{amount}}"

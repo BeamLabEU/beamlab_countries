@@ -61,3 +61,8 @@ HK:
   subdivision_type: District
   timezones:
   - Asia/Hong_Kong
+  number_format_locale: "en-HK"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "D/M/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

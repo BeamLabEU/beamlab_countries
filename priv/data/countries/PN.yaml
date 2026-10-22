@@ -53,3 +53,8 @@ PN:
   subdivision_type: Region
   timezones:
   - Pacific/Pitcairn
+  number_format_locale: "en-PN"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

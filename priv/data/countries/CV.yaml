@@ -56,3 +56,8 @@ CV:
   subdivision_type: Region
   timezones:
   - Atlantic/Cape_Verde
+  number_format_locale: "pt-CV"
+  decimal_separator: ","
+  thousands_separator: "\u00a0"
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

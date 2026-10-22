@@ -67,3 +67,8 @@ GL:
   - America/Danmarkshavn
   - America/Scoresbysund
   - America/Thule
+  number_format_locale: "kl"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "YYYY-MM-DD"
+  currency_format: "{{symbol}}{{amount}}"

@@ -52,3 +52,8 @@ CR:
   subdivision_type: Province
   timezones:
   - America/Costa_Rica
+  number_format_locale: "es-CR"
+  decimal_separator: ","
+  thousands_separator: "\u00a0"
+  date_format: "D/M/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

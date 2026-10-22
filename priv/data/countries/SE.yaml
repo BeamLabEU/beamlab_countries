@@ -74,3 +74,8 @@ SE:
   subdivision_type: County
   timezones:
   - Europe/Stockholm
+  number_format_locale: "sv"
+  decimal_separator: ","
+  thousands_separator: "\u00a0"
+  date_format: "YYYY-MM-DD"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

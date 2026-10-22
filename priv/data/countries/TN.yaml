@@ -60,3 +60,8 @@ TN:
   subdivision_type: Governorate
   timezones:
   - Africa/Tunis
+  number_format_locale: "ar-TN"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "D/M/YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

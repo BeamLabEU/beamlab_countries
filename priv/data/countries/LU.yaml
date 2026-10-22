@@ -79,3 +79,8 @@ LU:
   subdivision_type: Canton
   timezones:
   - Europe/Luxembourg
+  number_format_locale: "fr-LU"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

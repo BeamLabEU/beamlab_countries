@@ -55,3 +55,8 @@ UM:
   timezones:
   - Pacific/Midway
   - Pacific/Wake
+  number_format_locale: "en-UM"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "M/D/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

@@ -59,3 +59,8 @@ LY:
   subdivision_type: District
   timezones:
   - Africa/Tripoli
+  number_format_locale: "ar-LY"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "D/M/YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

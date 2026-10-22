@@ -54,3 +54,8 @@ KI:
   - Pacific/Tarawa
   - Pacific/Kanton
   - Pacific/Kiritimati
+  number_format_locale: "en-KI"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

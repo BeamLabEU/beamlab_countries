@@ -62,3 +62,8 @@ BY:
   subdivision_type: Region
   timezones:
   - Europe/Minsk
+  number_format_locale: "ru-BY"
+  decimal_separator: ","
+  thousands_separator: "\u00a0"
+  date_format: "DD.MM.YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

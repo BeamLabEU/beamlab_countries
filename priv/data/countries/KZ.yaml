@@ -66,3 +66,8 @@ KZ:
   - Asia/Aqtau
   - Asia/Atyrau
   - Asia/Oral
+  number_format_locale: "kk-KZ"
+  decimal_separator: ","
+  thousands_separator: "\u00a0"
+  date_format: "DD.MM.YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"

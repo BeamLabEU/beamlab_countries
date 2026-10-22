@@ -52,3 +52,8 @@ IO:
   subdivision_type: Region
   timezones:
   - Indian/Chagos
+  number_format_locale: "en-IO"
+  decimal_separator: "."
+  thousands_separator: ","
+  date_format: "DD/MM/YYYY"
+  currency_format: "{{symbol}}{{amount}}"

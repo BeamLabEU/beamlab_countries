@@ -74,3 +74,8 @@ DK:
   subdivision_type: Region
   timezones:
   - Europe/Copenhagen
+  number_format_locale: "da"
+  decimal_separator: ","
+  thousands_separator: "."
+  date_format: "DD.MM.YYYY"
+  currency_format: "{{amount}}\u00a0{{symbol}}"
