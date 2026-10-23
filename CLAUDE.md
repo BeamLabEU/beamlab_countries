@@ -34,7 +34,7 @@ BeamLabCountries is a compile-time data library providing ISO 3166 country infor
 - `BeamLabCountries` (lib/countries.ex) - Main API: `all/0`, `count/0`, `get/1`, `get!/1`, `get_by/2`, `get_by_alpha3/1`, `filter_by/2`, `exists?/2`
 - `BeamLabCountries.Country` (lib/country.ex) - Struct with 42 fields (alpha2, alpha3, name, short_name, phone_prefix, region, currency, eu_member, eea_member, languages_official, timezones, decimal_separator, thousands_separator, date_format, currency_format, etc.)
 - `BeamLabCountries.Loader` (lib/loader.ex) - Compile-time YAML parser for country data
-- `BeamLabCountries.Formats` (lib/formats.ex) - `format_number/3`, `format_date/2`, `format_currency/3`: apply a country's separators, date pattern and currency pattern (country struct or alpha2)
+- `BeamLabCountries.Formats` (lib/formats.ex) - `format_number/3`, `format_date/2`, `format_currency/3`: apply a country's separators, date pattern and currency pattern (country struct or alpha2); numbers may be integers, floats or `Decimal` structs (matched by shape, `decimal` is only a dev/test dependency)
 - `BeamLabCountries.Random` (lib/random.ex) - `country/0`, `flag/0`
 
 **Subdivisions Modules:**

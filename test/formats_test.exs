@@ -149,4 +149,79 @@ defmodule BeamLabCountries.FormatsTest do
       assert Formats.format_currency(country, 1, currency: "EUR") == "1,00\u00A0€"
     end
   end
+
+  describe "Decimal amounts" do
+    test "format_number/3 is exact" do
+      assert Formats.format_number("DE", Decimal.new("30921.85")) == "30.921,85"
+
+      assert Formats.format_number("US", Decimal.new("12345678901234567890.125"), decimals: 3) ==
+               "12,345,678,901,234,567,890.125"
+    end
+
+    test "default decimals are the ones the Decimal already has" do
+      assert Formats.format_number("GB", Decimal.new("5")) == "5"
+      assert Formats.format_number("GB", Decimal.new("1.50")) == "1.50"
+      assert Formats.format_number("GB", Decimal.new("1E+3")) == "1,000"
+      assert Formats.format_number("GB", Decimal.new("0.000125")) == "0.000125"
+    end
+
+    test "rounds half away from zero, unlike the nearest float" do
+      assert Formats.format_number("GB", Decimal.new("2.675"), decimals: 2) == "2.68"
+      assert Formats.format_number("GB", 2.675, decimals: 2) == "2.67"
+      assert Formats.format_number("GB", Decimal.new("-2.675"), decimals: 2) == "-2.68"
+      assert Formats.format_number("GB", Decimal.new("0.5"), decimals: 0) == "1"
+      assert Formats.format_number("GB", Decimal.new("0.4999"), decimals: 0) == "0"
+      assert Formats.format_number("GB", Decimal.new("999.995"), decimals: 2) == "1,000.00"
+    end
+
+    test "pads with zeros and keeps leading zeros of the fraction" do
+      assert Formats.format_number("GB", Decimal.new("3"), decimals: 2) == "3.00"
+      assert Formats.format_number("GB", Decimal.new("0.05"), decimals: 2) == "0.05"
+      assert Formats.format_number("GB", Decimal.new("0.001"), decimals: 2) == "0.00"
+    end
+
+    test "drops the sign of a negative that rounds to zero" do
+      assert Formats.format_number("GB", Decimal.new("-0.004"), decimals: 2) == "0.00"
+      assert Formats.format_number("GB", Decimal.new("-0"), decimals: 0) == "0"
+      assert Formats.format_number("GB", Decimal.new("-0.005"), decimals: 2) == "-0.01"
+    end
+
+    test "NaN and infinity raise" do
+      for value <- ["NaN", "Infinity", "-Infinity"] do
+        assert_raise ArgumentError, ~r/NaN and infinity/, fn ->
+          Formats.format_number("GB", Decimal.new(value))
+        end
+      end
+    end
+
+    test "format_currency/3 rounds to the currency's decimal places" do
+      assert Formats.format_currency("DE", Decimal.new("30921.855")) == "30.921,86\u00A0€"
+      assert Formats.format_currency("DE", Decimal.new("30921.85")) == "30.921,85\u00A0€"
+      assert Formats.format_currency("GB", Decimal.new("-1234.5")) == "-£1,234.50"
+      assert Formats.format_currency("JP", Decimal.new("1234.5")) == "¥1,235"
+      assert Formats.format_currency("DE", Decimal.new("3"), currency: "JPY") == "3\u00A0¥"
+      assert Formats.format_currency("US", Decimal.new("-0.001")) == "$0.00"
+    end
+
+    test "an invoice total survives where the float does not" do
+      # 1.005 is stored as 1.00499999999999989...
+      assert Formats.format_currency("US", 1.005) == "$1.00"
+      assert Formats.format_currency("US", Decimal.new("1.005")) == "$1.01"
+    end
+
+    test "accepts any map shaped like a Decimal, so Decimal 2.x and 3.x both work" do
+      assert Formats.format_number("DE", %{__struct__: Decimal, sign: 1, coef: 3_092_185, exp: -2}) ==
+               "30.921,85"
+    end
+
+    test "unknown country is still nil" do
+      assert Formats.format_number("XX", Decimal.new("1")) == nil
+      assert Formats.format_currency("XX", Decimal.new("1")) == nil
+    end
+
+    test "other terms are still rejected" do
+      assert_raise FunctionClauseError, fn -> Formats.format_number("DE", "30921.85") end
+      assert_raise FunctionClauseError, fn -> Formats.format_currency("DE", "30921.85") end
+    end
+  end
 end

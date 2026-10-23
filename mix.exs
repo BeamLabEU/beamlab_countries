@@ -27,6 +27,8 @@ defmodule BeamLabCountries.MixProject do
   defp deps do
     [
       {:yaml_elixir, "~> 2.12", runtime: false},
+      # Formats accepts Decimal structs by shape; the package is only needed to test it.
+      {:decimal, "~> 3.0", only: [:dev, :test]},
       {:ex_doc, "~> 0.39", only: :dev, runtime: false},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.4", only: [:dev, :test], runtime: false}

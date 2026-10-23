@@ -8,6 +8,9 @@ defmodule BeamLabCountries.Formats do
   for an unknown code. Separators are CLDR's, so some are non-breaking spaces (`"\\u00A0"`
   or `"\\u202F"`). Negative numbers get an ASCII `-` in front of the whole value.
 
+  Numbers and amounts may be integers, floats or `Decimal` structs. Decimals are formatted
+  exactly, never through a float, so they are the right input for prices and invoice totals.
+
   One format per country is used, taken from its main language, and digits are grouped
   by thousands everywhere (no Indian lakh grouping), see `BeamLabCountries.Country`.
   """
@@ -19,14 +22,25 @@ defmodule BeamLabCountries.Formats do
 
   @type country :: Country.t() | String.t()
 
+  # A `Decimal` struct, matched by shape so that the `decimal` package is not a dependency.
+  @type decimal :: %{
+          __struct__: Decimal,
+          sign: 1 | -1,
+          coef: non_neg_integer() | :NaN | :inf,
+          exp: integer()
+        }
+
+  defguardp is_decimal(value) when is_struct(value, Decimal)
+
   @doc """
   Formats a number with the country's separators.
 
   ## Options
 
     * `:decimals` - digits after the decimal separator, from `0` to `15`.
-      Default: `0` for integers, `2` for floats.
-      Floats are rounded, integers are padded with zeros.
+      Default: `0` for integers, `2` for floats, and for a `Decimal` the number of
+      decimal places it already has. Floats and decimals are rounded (half away from zero),
+      integers are padded with zeros.
 
   ## Examples
 
@@ -42,20 +56,29 @@ defmodule BeamLabCountries.Formats do
       iex> BeamLabCountries.Formats.format_number("EE", 1234.5)
       "1\\u00A0234,50"
 
+      iex> BeamLabCountries.Formats.format_number("DE", Decimal.new("30921.85"))
+      "30.921,85"
+
+      iex> BeamLabCountries.Formats.format_number("DE", Decimal.new("2.675"), decimals: 2)
+      "2,68"
+
       iex> BeamLabCountries.Formats.format_number("XX", 1)
       nil
 
-  Raises `ArgumentError` for a `:decimals` outside `0..15`.
-  Integer inputs retain their full precision; floats use binary floating-point rounding.
+  Raises `ArgumentError` for a `:decimals` outside `0..15`, and for a `Decimal` that is
+  `NaN` or infinite. Integers and decimals keep their full precision; floats use binary
+  floating-point rounding (`2.675` is stored as `2.67499...`), so use a `Decimal` where
+  the last digit matters.
   """
-  @spec format_number(country(), number(), keyword()) :: String.t() | nil
-  def format_number(country, number, opts \\ []) when is_number(number) do
+  @spec format_number(country(), number() | decimal(), keyword()) :: String.t() | nil
+  def format_number(country, number, opts \\ [])
+      when is_number(number) or is_decimal(number) do
     case fetch(country) do
       nil ->
         nil
 
       country ->
-        decimals = decimals!(opts, if(is_integer(number), do: 0, else: 2))
+        decimals = decimals!(opts, default_decimals(number))
         {sign, digits} = digits(number, decimals)
         sign <> localize(digits, country)
     end
@@ -126,9 +149,16 @@ defmodule BeamLabCountries.Formats do
 
       iex> BeamLabCountries.Formats.format_currency("JP", 1234)
       "¥1,234"
+
+      iex> BeamLabCountries.Formats.format_currency("DE", Decimal.new("30921.855"))
+      "30.921,86\\u00A0€"
+
+  A `Decimal` amount is rounded to the currency's decimal places (half away from zero)
+  without going through a float.
   """
-  @spec format_currency(country(), number(), keyword()) :: String.t() | nil
-  def format_currency(country, amount, opts \\ []) when is_number(amount) do
+  @spec format_currency(country(), number() | decimal(), keyword()) :: String.t() | nil
+  def format_currency(country, amount, opts \\ [])
+      when is_number(amount) or is_decimal(amount) do
     with %Country{currency_format: pattern} = country <- fetch(country),
          code when is_binary(code) <- Keyword.get(opts, :currency, country.currency_code),
          %{decimal_digits: decimals} = currency <- Currencies.get(code) do
@@ -149,7 +179,23 @@ defmodule BeamLabCountries.Formats do
   # Absolute value as a "1234.50" string plus its sign. A negative amount that rounds to zero
   # has no sign. Also used by `Currencies.format/3`.
   @doc false
-  @spec digits(number(), non_neg_integer()) :: {String.t(), String.t()}
+  @spec digits(number() | decimal(), non_neg_integer()) :: {String.t(), String.t()}
+  def digits(%{__struct__: Decimal, sign: sign, coef: coef, exp: exp}, decimals)
+      when is_integer(coef) do
+    scaled = round_scaled(coef, exp + decimals)
+
+    digits =
+      scaled |> Integer.to_string() |> String.pad_leading(decimals + 1, "0")
+
+    {whole, fraction} = String.split_at(digits, String.length(digits) - decimals)
+    digits = if decimals == 0, do: whole, else: whole <> "." <> fraction
+    {if(sign == -1 and scaled != 0, do: "-", else: ""), digits}
+  end
+
+  def digits(%{__struct__: Decimal} = decimal, _decimals) do
+    raise ArgumentError, "cannot format #{inspect(decimal)}: NaN and infinity have no digits"
+  end
+
   def digits(amount, decimals) when is_integer(amount) do
     sign = if amount < 0, do: "-", else: ""
     {sign, integer_digits(abs(amount), decimals)}
@@ -168,6 +214,21 @@ defmodule BeamLabCountries.Formats do
 
     {sign, digits}
   end
+
+  # coef * 10^shift as an integer, rounding half away from zero when the shift is negative.
+  defp round_scaled(coef, shift) when shift >= 0, do: coef * Integer.pow(10, shift)
+
+  defp round_scaled(coef, shift) do
+    divisor = Integer.pow(10, -shift)
+    quotient = div(coef, divisor)
+    if rem(coef, divisor) * 2 >= divisor, do: quotient + 1, else: quotient
+  end
+
+  defp default_decimals(%{__struct__: Decimal, coef: coef, exp: exp}) when is_integer(coef),
+    do: max(-exp, 0)
+
+  defp default_decimals(number) when is_integer(number) or is_struct(number, Decimal), do: 0
+  defp default_decimals(number) when is_float(number), do: 2
 
   defp integer_digits(integer, decimals) do
     fraction = if decimals == 0, do: "", else: "." <> String.duplicate("0", decimals)

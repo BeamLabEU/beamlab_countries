@@ -168,6 +168,25 @@ Formats.format_number("XX", 1)
 # nil
 ```
 
+Prices and invoice totals should be `Decimal`s. They are formatted exactly, never through a float
+(`Decimal` is not a dependency of this library, add it to yours):
+
+```elixir
+Formats.format_currency("DE", Decimal.new("30921.85"))
+# "30.921,85\u00A0€"
+
+Formats.format_currency("US", Decimal.new("1.005"))
+# "$1.01" (the float 1.005 is stored as 1.00499... and gives "$1.00")
+
+Formats.format_number("DE", Decimal.new("30921.85"))
+# "30.921,85" (keeps the decimal places the Decimal has)
+
+Formats.format_number("DE", Decimal.new("2.675"), decimals: 2)
+# "2,68"
+```
+
+Amounts are rounded half away from zero. `NaN` and infinite decimals raise `ArgumentError`.
+
 Digits are grouped by thousands everywhere (no Indian lakh grouping) and dates use the Gregorian
 calendar. See `BeamLabCountries.Formats` and `BeamLabCountries.Country` for the details.
 
